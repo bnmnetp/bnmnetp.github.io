@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Teaching | A Reputable Journal]]></title>
+  <link href="http://bnmnetp.github.io/blog/categories/teaching/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
   <updated>2014-01-08T18:07:43-08:00</updated>
   <id>http://bnmnetp.github.io/</id>

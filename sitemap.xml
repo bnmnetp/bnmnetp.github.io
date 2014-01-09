@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://bnmnetp.github.io/blog/2014/01/08/jterm-2014-day-1-at-amazon/</loc>
+        <lastmod>2014-01-08T17:53:52-08:00</lastmod>
+    </url>
+    <url>
         <loc>http://bnmnetp.github.io/blog/archives/</loc>
-        <lastmod>2014-01-07T17:52:03-08:00</lastmod>
+        <lastmod>2014-01-08T17:53:52-08:00</lastmod>
     </url>
     <url>
         <loc>http://bnmnetp.github.io/</loc>
-        <lastmod>2014-01-07T17:52:03-08:00</lastmod>
+        <lastmod>2014-01-08T17:53:52-08:00</lastmod>
     </url>
     <url>
         <loc>http://bnmnetp.github.io/robots.txt</loc>
