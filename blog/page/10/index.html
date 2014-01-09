@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>A Reputable Journal</title>
+  <meta name="author" content="Brad Miller">
+
+  
+  <meta name="description" content="Getting unicode right in Python Posted by Nick Johnson | Filed under python, text, unicode, rant Yup, I&#8217;m back from holidays! Apologies to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bnmnetp.github.io/blog/page/10">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="A Reputable Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">A Reputable Journal</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/11/16/getting-unicode-right-in-python-nick-s-blog/">Getting Unicode Right in Python - Nick&#8217;s Blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-16T00:00:00-08:00" pubdate data-updated="true">Nov 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='posterous_autopost'><div class="posterous_bookmarklet_entry"> <blockquote><div>    <h3>Getting unicode right in Python</h3>  <p>  Posted by Nick Johnson    | Filed under    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">python</a>,    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">text</a>,    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">unicode</a>,    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">rant</a>      </p>  <p>Yup, I&#8217;m back from holidays! Apologies to everyone for the delayed return - it&#8217;s taking me a long while to catch up on everything that built up while I was away.</p>    <p>Proper text processing - specifically, correct handling of unicode - is one of those things that consistently confounds even experienced developers. This isn&#8217;t because it&#8217;s difficult, but rather, I believe, because most developers carry around a few key misconceptions about what text (in the context of software) is and how it&#8217;s represented. A search on StackOverflow for <a href="http://stackoverflow.com/search?q=unicodedecodeerror">UnicodeDecodeError</a> demonstrates just how prevalent these misconceptions are. These misconceptions date back to the days before unicode - longer than many developers have been in the industry, including myself - but they&#8217;re still nothing if not widespread. This is in part because a number of well known and popular languages continue to, at worst, perpetuate the misunderstandings, and at best are insufficiently good at helping developers get it right.</p>    <p>We can divide languages into four categories along the axis of unicode support:</p>    <ol>  <li>Languages that were written before unicode was defined, or widespread. C and C++ fall into this category. Languages in this category tend to have unicode support that&#8217;s spotty, not built into the language, or difficult to use correctly, making the path of least resistance the wrong one, more often than not.</li>  <li>Languages that should know better. These languages were written after unicode was already widespread, but managed to get things horribly wrong. They have all the weaknesses of category 1, without the excuse of age. Prime amongst these, in my experience, is PHP, though there are doubtless many more languages that do just as badly.</li>  <li>Languages that get it basically right, but have a few critical flaws. Languages in this category are &#8216;modern&#8217; and understand unicode, but fail to make the path of least resistance for developers the correct one, which results in some serious shortfalls in unicode support for things implemented in these languages. Python 2.X, to my dismay, falls into this category - more about which, later.</li>  <li>Languages that Get It Right. They support unicode, and they make it easy to do the right thing, and hard to do the wrong thing. Java and the .NET platform both fall into this category.</li>  </ol>    <p>So what&#8217;s the deal with unicode, and how are we getting it wrong? Joel&#8217;s post, <a href="http://www.joelonsoftware.com/articles/Unicode.html">the absolute minimum every software developer absolutely, positively must know about unicode</a> is an excellent place to start for this, but for the sake of brevity and those who are naturally impatient, I&#8217;ll summarize.</p>    <h3>Characters and bytes</h3>    <p>The essential fact that you <b>must</b> understand in order to handle text properly is the abstract concept of a character. A character is a representation of a single symbol in a piece of text - a platonic ideal, of sorts. Crucially, a character is <b>not</b> a byte. Let me repeat for emphasis: A character is <b>not, not, not</b> a byte. Furthermore, there&#8217;s no single way of representing a given character as one or more bytes - as I said, a character is the platonic ideal of the smallest unit of text.</p>    <p>Unicode, then, is a way of defining a set of characters that everyone can agree on. It consists of a huge database of characters, and each one is associated with a unique number, called a code point. Thus, the english letter capital A has the codepoint U+0041. The euro symbol has codepoint U+20A0, and so forth. A text string is simply a series of these codepoints, representing the character for each element in the string.</p>    <p>Of course, sooner or later, you need a way to store and transmit your platonic unicode strings. It helps if you choose a method that other people can understand, so that you can send text to them, and they to you, in a mutually comprehensible fashion. This is where character encodings come in.</p>    <p>A character encoding defines a mapping between our platonic characters and some way of representing them as bytes. The mapping doesn&#8217;t have to be complete - it may have no way to represent certain characters - and it doesn&#8217;t need to use the same amount of space for each character - some characters may be encoded as a single byte, while others may require several.</p>    <p>Because there are many ways of representing the same character as bytes, this means that if you have a series of bytes, but do not know their encoding - even if you know the data is textual - the data is meaningless. You can guess, but you&#8217;d be doing just that, guessing. In short, <b>bytes are not text</b>. If you forget everything else in this article, remember that. In order to read and write text, you must first know the encoding you are using, whether from of convention, out of band information, or any other mechanism.</p>    <h3>How Python handles unicode</h3>    <p>This is where Python&#8217;s unicode support comes in. In Python&#8217;s type heirarchy, there are three distinct string types: &#8216;unicode&#8217;, which represents unicode strings (text strings), &#8216;str&#8217;, which represents byte strings (binary data), and &#8216;basestring&#8217;, which acts as a parent class for both of the other string types. This is where, in my opinion, Python makes its misstep in handling unicode which pushes it into category 3, instead of category 4, by my definition above.</p>    <p>As I&#8217;ve just spent several paragraphs belabouring, bytes and characters are fundamentally different entities, only interconvertible with the help of a character encoding. Python, unfortunately, does its best to help you forget this, with two separate missteps:</p>    <p>The first is of debatable significance: treating sequences of bytes as strings. It&#8217;s arguable whether or not this is a good thing; Java and .NET support the proposition that it&#8217;s not, while other languages make good arguments in the other direction. In any case, it&#8217;s certainly true that certain operations you might want to preform on text strings - regular expression matching, string replacement, and so forth - don&#8217;t entirely make sense on sequences of bytes. Python, though, treats bytes as just a different type of string, and allows the same set of operations on both.</p>    <p>The second misstep is the more significant one: Python&#8217;s attempt at transparently converting between byte strings and character strings. In a variety of circumstances, Python will attempt to convert a byte string to a unicode string or vice-versa, when the situation warrants - for example, when attempting to concatenate a byte string and a unicode string together. Since, as we&#8217;ve previously detailed, conversion between the two types is meaningless without an encoding, Python relies on a &#8216;default encoding&#8217;, specified by sys.setdefaultencoding(). On most platforms, this defaults to ASCII, and it&#8217;s almost certainly wrong for any given conversion. Other places this encoding is used include calls to str() or unicode() without specifying an encoding yourself, and functions that expect one type of string but are passed the other.</p>    <p>One solution to some of your unicode woes, then, would be to call sys.setdefaultencoding(), setting the default encoding to whatever you ought to be using. This only masks the root problem, though, which is your failure to handle text correctly in the first place. It may also be impractical, since many apps, particularly webapps, may have to deal with multiple different text encodings in different places.</p>    <p>The correct solution is to fix your code so that you handle text correctly. Here&#8217;s the cliff&#8217;s notes on what you should be doing:</p>    <ul>  <li>All text strings, everywhere should be of type unicode, not str. If you&#8217;re handling text, and your variable is a str, it&#8217;s a bug!</li>  <li>To decode a byte string as text, use var.decode(encoding) (eg, var.decode(&#8216;utf-8&#8217;), with the correct encoding. To encode a text string as bytes, use var.encode(encoding).</li>  <li>Never ever use str() on a unicode string, or unicode() on a byte string without a second argument specifying the encoding.</li>  <li>Whenever you read data from outside your app, expect it to be bytes - eg, of type str - and call .decode() on it to interpret it as text. Likewise, always call .encode() on text you want to send to the outside world.</li>  <li>If a string literal in your code is intended to represent text, it should always be prefixed with &#8216;u&#8217;. In fact, you probably never want to define a raw string literal in your code at all. For what it&#8217;s worth, though, I&#8217;m terrible at this one, as I&#8217;m sure pretty much everyone else is, too.</li>  </ul>    <p>Python 3, by the way, fixes things, and gets unicode and string handling right, putting it solidly into category 4. See <a href="http://docs.python.org/release/3.0.1/whatsnew/3.0.html#text-vs-data-instead-of-unicode-vs-8-bit">this section of the What&#8217;s new page</a> for details.</p>    <p>Hopefully this made sense, and if you had any doubts about what exactly unicode is and how to handle it, they&#8217;re now cleared up. Next time you get a UnicodeEncodeError or UnicodeDecodeError in your app, then, you&#8217;ll know exactly what&#8217;s gone wrong, and how to fix it!</p>  <p>  <span>21 July, 2010</span>  </p>    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">Previous Post</a>      <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">Next Post</a>        <h3>Comments</h3>  <p>      <a href="http://disqus.com/forums/notdot-blog/?url=ref">View the discussion thread.</a>  <a href="http://disqus.com">blog comments powered by <span>Disqus</span></a>      		</p></div></blockquote>    <div class="posterous_quote_citation">via <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python">blog.notdot.net</a></div> <p>Good article on the issues you encounter when working with strings and unicode in Python.</p></div></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-8099313241295933953?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/11/12/steve-sack-november-11-2010/">Steve Sack - November 11, 2010</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-12T00:00:00-08:00" pubdate data-updated="true">Nov 12<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='posterous_autopost'>via <a href="http://comics.com/"><i>November 11, 2010 Comics</i></a><p align="center"><a href="http://comics.com/steve_sack/2010-11-11/"><img src="http://c0389161.cdn.cloudfiles.rackspacecloud.com/dyn/str_strip/343590.full.gif" /></a></p> <a href="http://comics.com/steve_sack/2010-11-11/">Read More >></a></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-4154938086237541385?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/11/06/in-praise-of-the-two-fat-ladies/">In Praise of the Two Fat Ladies</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-06T00:00:00-07:00" pubdate data-updated="true">Nov 6<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='posterous_autopost'>via <a href="http://www.amateurgourmet.com/"><i>The Amateur Gourmet</i></a><p align="center"><a href="http://feedproxy.google.com/~r/TheAmateurGourmet/~3/mD5f39j3gCo/in_praise_of_the_two_fat_ladies.html"><img src="http://www.amateurgourmet.com/assets_c/2010/11/clarissMS2508_468x327-thumb-425x296-1188.jpeg" /></a></p>Mr. Game Show was a Hanukkah gift that my parents bought me one year in the 1980s. It looked like a regular board game (small &#8230; <a href="http://feedproxy.google.com/~r/TheAmateurGourmet/~3/mD5f39j3gCo/in_praise_of_the_two_fat_ladies.html">Read More >></a></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-6114793939386260196?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/11/01/strange-brew-november-1-2010/">Strange Brew - November 1, 2010</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-01T00:00:00-07:00" pubdate data-updated="true">Nov 1<span>st</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='posterous_autopost'>via <a href="http://comics.com/"><i>November 1, 2010 Comics</i></a><p align="center"><a href="http://comics.com/strange_brew/2010-11-01/"><img src="http://c0389161.cdn.cloudfiles.rackspacecloud.com/dyn/str_strip/341629.full.gif" /></a></p> <a href="http://comics.com/strange_brew/2010-11-01/">Read More >></a></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-8077330036053955444?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/09/17/dear-apple/">Dear Apple</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-17T00:00:00-07:00" pubdate data-updated="true">Sep 17<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Dear Apple,<br /><br />You lost a sale today.  I know its just one less iPhone you are going to sell, and in the grand scheme of things does not amount to anything.  I suppose its not really your fault, and as a loyal Apple customer its much easier for me to blame AT&T than you.  Still, it makes me sad to have to tell you this.  I waited as long as I could for AT&T to expand their network in my direction. I&#8217;ve hung on every Verizon rumor for two years.  Finally after enduring a year of carrying my iPod touch in the same pocket as the mind numbingly horrible Motorola Crush I bought an HTC Desire yesterday.  Android!! I never thought I would see the day.<br /><br />Here&#8217;s whats even worse, I like it!  It has some great apps Gmail, Calendar, and many apps that I already love on my iPod Touch and iPad:  Dropbox, Evernote, 1Password, Kindle, Facebook, Twitter, Weather, Stocks, and a 5, yes 5, megapixel camera!  I already love the gps, so the location aware apps work, I love the WiFi and the Bluetooth.<br /><br />I&#8217;m going to miss OmniFocus, but I carry around my Ipad almost everywhere I go so I don&#8217;t think I&#8217;ll miss it that much.<br /><br />So Apple, I&#8217;ll remain a loyal customer, at least for now.  I&#8217;m going to continue to develop my app for the iPad, I still love my iMac and my MacBook Pro.  But if US Cellular comes out with a decent family data plan in the next month or so you may lose two more sales as the rest of my family follows me into the smartphone world.<br /><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-7948861859540801287?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/08/19/ebook-man-is-cleaning-out-the-library/">eBook Man Is Cleaning Out the Library</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-19T00:00:00-07:00" pubdate data-updated="true">Aug 19<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">So today I sat in my office and looked over at my library of books, probably about 700 books all together.  The top half of the library contains my cookbook collection and lots of other non-fiction books.  The bottom half is largely science fiction, some paperbacks that I&#8217;ve had for 30 years,  The Lord of the Rings trilogy for example.  There were also several large stacks of books on the floor because the shelves are full.  Jane is wanting me to do something to get the books off the floor.  Even though she doesn&#8217;t spend that much time in my office so I don&#8217;t know why it bothers her, but she&#8217;s right the piles have been accumulating and its time to do something.<br /><br />Suddenly it hit me, I could let all of the paperbacks go.  I&#8217;ve been saving them for years because they are my favorites and maybe I&#8217;ll read them again, or maybe I just like to look at the shelves and see my old favorites sitting there. I&#8217;m not sure what the precise reason is, whatever it is I&#8217;m over it.  I just realized that if I did want to read them again, I would no longer want to do it by holding a real book in my hand.  I realized that just like all of my old &#8217;80s music that I had on cassette tape these are relics of my past, and if I did want to read them again I would be happier to download them to my iPad and read them in the kindle app or iBooks.  But, fat chance that the iBooks store would have any of these old favorites.  I prefer the iPad over the dedicated Kindle because it saves me one device.  Plus until now the kindle required cell coverage that I don&#8217;t have.<br /><br />So, here, for posterity, and maybe to remind me in the future if I come back and read this post instead of staring at bookshelves, is a random walk through the lower half of my library. If you have suggestions for what I can do with the paperbacks let me know.  If you read this list and have suggestions for other authors you think I would like, definitely let me know.<br /><br /><ul><li>Rober Sawyer, every book ever written by him except for the current WWW series which I bought in electronic form from the beginning.  Factoring Humanity, Calculating God, the Hominid Series, great ideas<br /><br /><li>Isaac Asimov, The robot books, and the entire foundation series.  These books took me through college.<br /><br /><li>Stephen R. Donaldson, the Thomas Covenant Chronicles.  Covenant is still one frustrating guy whenever I think about these books.  Although I notice that there are some new additions to the series that are out in eBook form&#8230;<br /><br /><li>Dan Simmons, the Hyperion, Endymion series.  The Shrike was one scary monster.<br /><br /><li>David Brin, Despite the absolutely dismal movie the Postman is still a favorite in how it forshadowed the web.  I also have some Brin on the upper half of the library, The Transparent Society is an excellent book to get you thinking about privacy in the digital age.<br /><br /><li>Orson Scott Card, the Enders Game series&#8230; I loved all of these books, and I even like some of the more recent ones where he goes back and fills in some missing pieces from the perspective of other characters.<br /><br /><li>Connie Willis, The Doomesday Book is awesome as are many of her other stories although none have captivated me as much as that one.<br /><br /><li>Frank Herbert, The Dune series of course.<br /><br /><li>Robert Heinlien, Stranger in a Strange Land and others.<br /><br /><li>Mary Doria Russel, The Sparrow.  This is one of my all time favorite books, in fact I even made my Paideia students read it last year.  I&#8217;m sure they thought I was off the deep end for making them read Science Fiction in a serious class like Paideia but Oh well.<br /><br /><li>Robert Russo, not science fiction but a great writer.  I like all of his books, but teaching at a small college, I get tears in my eyes from laughing so hard when I read Straight Man.<br /><br /><li>And speaking of non-science fiction books, Jon Hassler, this guy captures small town midwest living so well.  From Staggerford to Rookery Blues they are amazing.  I miss him, and I miss Connie Helgen who recommended him to me.  After our trip to Ireland this summer I&#8217;ve been longing to go back and read a Green Journey again, but I just checked and its not available in the Kindle store.  Horrors!<br /><br /><li>James Halperin, The Truth Machine, and I just read an article this morning about a group out in california that is using MRI as a new lie detector.  Anyway, read this book.<br /><br /><li>Roger Zelazny, the whole Amber Series, kind of a disfunctional family but the whole series is fun to read.<br /><br /><li>John Grisham, hmmm why did I save all of these??<br /><br /><li>Carl Sagan, Contact.  I read this way before the Jodi Foster movie.  That was just a bonus for a young geek who loved her in the after school specials.<br /><br /><li>J. R. R. Tolkien, a boxed set of the Hobbit and the Lord of the Rings.  I don&#8217;t think I can part with these.  I still remember reading these late at night with a flashlight under my blanket.  I&#8217;ve still never been able to make it through the Silmarillion though.<br /><br /><li>Douglass Adams, such a loss, The Hitchhikers Guide to the Galaxy series.  I swear I can open up any of these books to a random page and start reading and I&#8217;ll be laughing in no time.<br /><br /><li>Neal Stephenson, Snow Crash and Cryptonomicon.  I&#8217;ve never had the energy to make it through the Quicksilver books, but I have Anathem on my iPad so we&#8217;ll see.<br /><br /><li>Gordon R. Dickson, Dorsai, the Chantry Guild, The Final Encyclopedia<br /><br /><li>Larry Niven, the Ringword Books, and other books with Jerry Pournelle (a Mote in God&#8217;s Eye)  I still remember looking forward to reading Pournelle&#8217;s Chaos Manor column in Byte magazine every month<br /><br /><li>Robert Charles Wilson, Spin, Darwinia, The Chronoliths, and others.<br /><br /><li>Vernor Vinge, A Fire Upon the Deep, a Deepness in the Sky<br /><br /><li>Ursula K. LeGuin, The Dispossessed, and the Earthsea books.<br /><br /><li>Mary Stewart, The Crystal Cave series that retells the legend of King Arthur.<br /></ul><br /><br /><br />I also discovered a rather interesting section on the shelves devoted to historical fiction, but I&#8217;ll leave that for another time.  I just wanted to mention it in case you&#8217;ve concluded that I&#8217;m hopelessly one dimensional.<br /><br />I would also say that I&#8217;ve discovered that computer science reference books work very well as ebooks.  I&#8217;ve been teaching myself to program my iPad and I have several good references in electronic form.  Its nice to have them open on my big screen, and its easy to find examples when you can search.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-1345374799381159586?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/08/16/google-app-engine-service-login/">Google App Engine Service Login</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-16T00:00:00-07:00" pubdate data-updated="true">Aug 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">So I&#8217;m working on an app during my sabbatical that has an iPad component and an online Google App Engine component.  The Google App Engine part is half web based and half web service based.  Of course this means that the local client part has to be able to authenticate itself to the Google App Engine before it can communicate and do useful stuff.  Finding good reliable examples of how to do this is surprisingly hard.  For the Objective C code I&#8217;m working on I found a nice set of classes that do the trick for you here:  <a href="http://github.com/cameronr/GoogleAppEngineAuth">On Github</a>  For Python I found some example code on <a href="http://stackoverflow.com/questions/101742/how-do-you-access-an-authenticated-google-app-engine-service-from-a-non-web-p">stackoverflow</a>.  However it was not really in a reusable form.<br /><br />The basic outline of what you have to do is as follows:<br /><br />1.  Login to https://www.google.com/accounts/ClientLogin  This will give you an auth token.<br />2.  Use the token you gained in step 1 to login to your Google App engine application or service.  When you have successfully logged in to your service google will set an ACSID cookie for you to use when you make subsequent requests to your service.  This prevents you from having to login each time you make a web service request.<br /><br />I&#8217;ve taken some ideas from both places mentioned above and have created a Python class for logging in and accessing app engine services from Python.  To use this module you just need to import it and create a GoogleAppEngineLogin object.  Once the object is created you can use the open method on the object to access further services.  The open method is just a convenience wrapper around urllib2.urlopen but it also makes sure that your cookie has not expired before it makes a request.  If you have comments or suggestions for how to improve the code please let me know via email or leave a comment.<br /><br />The code is reproduced below, but you can also just download the file from git clone git@gist.github.com:36b1c45ed39298178907.git<br /><pre class="prettyprint" style="overflow: auto;"><br />import getpass<br />import urllib<br />import urllib2<br />import cookielib<br /><br /><br />class GoogleAppEngineLogin(object):<br />    """<br />   Logging in to an App Engine Account (when you use google users) is<br />   a two step process: First you must login to Google generally.  This<br />   gets you an auth token.  The auth token is used as part of a<br />   request to login to your app/service During the login process for<br />   your app/service the server sets a cookie with the name of ACSID,<br />   it is this cookie and its value that serves as the authentication<br />   token for your own service/app.  So, for future requests you need<br />   to give the server the cookie as part of your request.  Handling<br />   cookies can be a bit tricky if you haven't had some experience with<br />   it but luckily Python's cookielib module makes it all pretty<br />   automatic.<br /><br />    This class takes care of the whole login process for you, and then<br />    gives you a simple helper to access the URLs for your service.<br />    The helper function makes sure the cookie is still valid and<br />    passes on the request along with the cookie.  Technically you<br />    would not even need to use the helper function, you could use<br />    urllib2 directly to access your service but this seems a bit<br />    neater to me.<br /><br />    Some of this code was inspired by and lifted from an example on<br />    stackoverflow.com, but that was all in-line code my contribution<br />    is to add some error handling and encapsulate the whole thing<br />    inside a class to make it easier to include in my/your own<br />    programs.  Here's a link to the original thread on stackoverflow<br />    http://stackoverflow.com/questions/101742/how-do-you-access-an-authenticated-google-app-engine-service-from-a-non-web-pyt<br /><br />    """<br />    <br />    def __init__(self, user_email, user_pw, uri, source):<br />        """<br />        Create a Google App Engine Object.<br />        Arguments:<br />        - `user_email`:  your google username<br />        - `user_pw`: your google password<br />        - `uri`:  The url of your google app engine service<br />        - `source`: The unique name of your google app engine service<br />        """<br />        self._user_email = user_email<br />        self._user_pw = user_pw<br />        self._uri = uri<br />        self._source = source<br />        self._authtoken = None<br />        self._auth_cookie = None<br />        <br />        if not self.google_client_login():<br />            raise RuntimeError("Could not login to Google")<br />        <br />        if not self.app_engine_login():<br />            raise RuntimeError("Could not login to your application")<br /><br />        <br />    def google_client_login(self):<br />        #<br />        # get an AuthToken from Google accounts<br />        #<br />        auth_uri = 'https://www.google.com/accounts/ClientLogin'<br />        authreq_data = urllib.urlencode({ "Email":   self._user_email,<br />                                          "Passwd":  self._user_pw,<br />                                          "service": "ah",<br />                                          "source":  self._source,<br />                                          "accountType": "HOSTED_OR_GOOGLE" })<br />        auth_req = urllib2.Request(auth_uri, data=authreq_data)<br />        try:<br />            auth_resp = urllib2.urlopen(auth_req)<br />            auth_resp_body = auth_resp.read()<br />        except:<br />            return False<br />        # auth response includes several fields - we're interested in <br />        #  the bit after Auth= <br />        auth_resp_dict = dict(x.split("=")<br />                              for x in auth_resp_body.split("\n") if x)<br />        try:<br />            self._authtoken = auth_resp_dict["Auth"]<br />        except:<br />            return False<br /><br />        return True<br /><br />    def app_engine_login(self):<br />        #<br />        #  Get a cookie<br />        #  we use a cookie to authenticate with Google App Engine<br />        #  by registering a cookie handler here, this will automatically store the <br />        #  cookie returned when we use urllib2 to open<br />        #  http://www.google.com/accounts/ClientLogin<br />        self._cookiejar = cookielib.LWPCookieJar()<br />        opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(self._cookiejar))<br />        urllib2.install_opener(opener)<br /><br /><br />        serv_args = {}<br />        serv_args['continue'] = self._uri<br />        serv_args['auth']     = self._authtoken<br /><br />        full_serv_uri = "%s/_ah/login?%s" % (self._uri,urllib.urlencode(serv_args))<br /><br />        serv_req = urllib2.Request(full_serv_uri)<br />        serv_resp = urllib2.urlopen(serv_req)<br />        serv_resp_body = serv_resp.read()<br /><br /><br />        for i, c in enumerate(self._cookiejar):<br />            if c.name == 'ACSID':<br />                self._auth_cookie = c<br />                return True<br /><br />        return False<br /><br />    def open(self,url,data=None):<br />        """<br />        url should be a properly encoded url ready to go.  data is<br />        optional and should be used to provide parameters to pass<br />        along with the URL when you want to use POST instead of GET.<br />        If you provide data it must be properly encoded just as if you<br />        were calling urlopen directly yourself.<br />        """<br />        if self._auth_cookie.is_expired():<br />            if not self.google_client_login() or not self.app_engine_login():<br />                raise RuntimeError("Cannot get proper authorization for this request")<br />            <br />        serv_req = urllib2.Request(url,data)<br />        return urllib2.urlopen(serv_req)<br />        <br /><br />if __name__ == "__main__":<br />    user = raw_input("User: ")<br />    pw = getpass.getpass("Password: ")<br />    service_url = "http://myapp.appspot.com"<br />    service_name = "myapp"<br />    gae = GoogleAppEngineLogin(user,pw,service_url,service_name)<br />    h = gae.open("http://myapp.appspot.com/my/service")<br />    print h.read()<br />        <br /></pre><br /><br /><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-6097603738466978791?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/21/polk-county-biking/">Polk County Biking</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-21T00:00:00-07:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Here&#8217;s a quiz for you&#8230; What do deer, old cars, a saw mill, and black bears all have in common?  These are all things I regularly see on my rides around polk county.  The countryside by our cabin is some of the best riding around, every road is paved and very lightly travelled.  I can ride around any number of lakes and have all kinds of flexibility to make a route that is anywhere from 12 to 50 miles long.  Bone Lake, Half Moon, Pipe, Balsam, Little Blake, Butternut, these are a few of the lakes that I loop in and through on a regular basis.<br /><br />So, the other night I took my camera for a ride and focused more on the picture taking that the riding.  Here&#8217;s my favorite shot from the night and you can find the rest of them <a href="http://www.facebook.com/album.php?aid=2064788&id=59203846&l=2defc9fdd3">here:</a><img src="http://lh3.ggpht.com/_wISL1SSAaEA/TEcaYq9NsuI/AAAAAAAAAH4/fbqhEL_1Zj0/IMG_1264.jpg?imgmax=800" alt="IMG_1264.jpg" title="IMG_1264.jpg" border="0" width="518" height="345" /><br /><br />Incidentally, this picture illustrates where the bear comes in to the picture.  This little pond is at the bottom of a little hill and around a nice little corner.  One morning a came coasting down the hill and around the corner to see a black bear, he would have been right in the bottom right corner of the picture.  I don&#8217;t know which of us was more surprised!  The bear took off one way and I took off as fast as I could up the hill and past the pond.  We&#8217;ve never seen each other again.<br /><br /><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-1629252102942453605?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/06/27-inches-of-bliss/">27 Inches of Bliss</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-06T00:00:00-07:00" pubdate data-updated="true">Jul 6<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Why I&#8217;m writing this on a 27 in iMac</h2><br /><br />I&#8217;m almost lost as I stare at the screen to write this post.  27 inches is a lot of screen real estate to work with, but boy do I love this new iMac!  It is fast, fast, fast.  I never thought of my Macbook Pro as being a slow machine but this is crazy fast in comparison.  Typesetting my textbook project used to take minutes on the MBP, now it takes just a few seconds.  Why all this speed?  Maybe it is due to the 8 GB of memory and the 2.8 GHz Intel Core i7 processor.<br /><br />The more interesting question is why am I replacing my MBP with an iMac?  The answer, in a word, is iPad.  After trying out my iPad for a few days back in April I was convinced that I would no longer need a notebook, and that my money would be better spent on a desktop.  After traveling in Europe for 28 days with the iPad as my only computer I am convinced I was right.  The iPad is the best computer ever for traveling.<br /><br /><h2>On the Plane</h2><br />Flying with an iPad is great.  We had a seven hour flight and I had loaded several movies and a bunch of TV show episodes onto my iPad, I&#8217;ve never had a more enjoyable long flight.  I can&#8217;t sleep on planes, so it was great to be able to watch two movies and a few episodes of Merlin on the flight over.  My Bose noise canceling headphones make the experience even better as they do such a great job of blocking out the jet noise.<br /><br />When I wasn&#8217;t watching a video I was reading.  I had several books loaded on both iBooks and Kindle apps.  I really wish there was more selection in the iBooks store, as I&#8217;m finding they rarely have the book I want, so the kindle app gets used more frequently.<br /><br />Finally, if I wasn&#8217;t watching or reading I had several games loaded to keep me entertained.  I like Scrabble, Strategery, and Fieldrunners the best, although I did play a few games of chess against tChess Lite.<br /><br /><h2>On the Ground</h2><br />While on the ground I found several apps to be incredibly useful.  WeatherBug is awesome for checking the weather forecast while away, its easy to add new cities and the coverage in the UK, Ireland, and Scandinavia is excellent. <br /><br />For keeping up with the daily technology news I really like Early Edition.  It is beautiful in that it takes away all the hassle of marking things as read or whatever, every day you just get a nice newspaper like layout of the new articles that have come in since yesterday.  I love how this keeps me from getting overwhelmed with stuff when I get a few days behind.  If someone comes out with an Early Edition like reader for the mac I&#8217;m almost sure that would replace my longtime favorite, NetNewsWire, on my desktop.<br /><br />Every day I also used the Photo app, it was so easy to transfer pictures from my Canon 7D to the iPad. After the transfer I could delete the really bad pictures right away, and it was great to be able to look at the photos I had taken on the iPad size screen rather than the little screen on the camera.  I really wish apple would make it possible to rate and organize pictures on the iPad that would make it even better.  Now that I&#8217;m home, I still have to go through the process of picking the best of the 1000 pictures I took and organizing them into an album.  If you could do that on the iPad then I could pick the best of each day as I go along.  I also bought PhotoForge for the iPad because there were a couple of times that I wanted to upload a photo to Facebook, and its impossible to edit the photos on Facebook using Safari on the iPad.  PhotoForge is great and very easy to use.<br /><br />The other app that got a lot of use was Evernote.  prior to leaving my wife had prepared notes for each day of the trip, along with pdf maps and other info about each destination.  Although she had saved them as notes in our shared Dropbox account I found it to be much easier to drag them all into Evernote rather than the hassle of marking each document as a favorite in Dropbox so I could have offline access.  I really wish Dropbox would improve the iPad and iPhone clients to make it easier to keep things available offline.<br /><br />Finally, I wrote a blog entry almost every day of the trip using BlogPress.  I purchased an Apple Bluetooth keyboard for writing purposes and I really love it for writing longer blog entries.  For Facebook and email the onscreen keyboard is fine, but for longer writing the keyboard was awesome, and it proved to be very durable and easy to carry along in my daypack.  BlogPress itself worked like a champ.  It was a breeze to choose pictures from the Photo app to drop into the blog, and it also worked very well offline.  A lot of times I would write the blog entry when I wasn&#8217;t in wi-fi range and then just post it when I found some free wi-fi.  I also like how BlogPress makes it easy to make a Facebook posting every time I publish a blog entry.  That was a great way for friends and family to know there was something new to read.<br /><br />Incidentally I did not find myself wishing for a 3G iPad at all.  I was always able to find some kind of wi-fi no matter where we were.  Every hotel we stayed in had wi-fi available, not always free, but I would say in 90% of the hotels it was free.  If it wasn&#8217;t free in the hotel it was not too hard to find a pub or restaurant nearby that did have it available, for the price of a coffee or drink.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-2083102877647968900?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/07/01/now-i-know-why-ireland-is-so-green/">Now I Know Why Ireland Is So Green</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-07-01T00:00:00-07:00" pubdate data-updated="true">Jul 1<span>st</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">It was the best of times, it was the worst of times&#8230;  This morning the sky was mostly cloudy, and there was almost no wind.  So I went along with Dan, Brian, James, and Joanna to do the mast ride.  This was an optional 8 mile ride for the before breakfast crowd.  The main feature of this ride was an 840 (Padraic said 250, but the GPS showed the lie) foot climb.  Most of that 840 feet was in the last 3/4 of a mile.  For those of you from Decorah just imagine the First Lutheran hill extended to 3/4 of a mile.<br /><br />The view from the mast was fantastic, we could see the ocean and a couple of beautiful lakes.  The hill was so steep, and the roads were just a little bit damp, that I actually had to walk my bike the last 100 yards, because I could not get enough traction when I was sitting on the bike and pedaling!  The ride down was almost as exciting, in fact it seemed quite a bit more dangerous than the ride up as it was difficult to keep your speed down without skidding all over the place.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/64.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_64.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />After finishing that ride I was very ready for my breakfast back at Rosleague Manor.  I had a ham and cheese omelet with some of the best croissants ever.  To wash down the omelet I had a glass of grapefruit juice and a cup of black coffee.  The manor employs a great French chef, and they have an exchange program to bring over young people from france to learn Irish service customs.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/65.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_65.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />After breakfast there was another optional ride.  From Rosleague we rode to Letterfrack, then out on the Connemara loop, past Molly the pirate queen&#8217;s castle, and then on to Renvyle, Tulley, Tulley Cross, and then back to Letterfrack by a different road.  Once again we had fantastic views, we saw a small vertical wind turbine, and learned about Grace O&#8217;Malley the pirate queen.  Back in the 1500&#8217;s she was a very powerful woman who enjoyed plundering the english royal ships that were in turn plundering all of Ireland.  She and queen Elizabeth met to try and resolve the issue but as long as Elizabeth was unwilling to stop plundering Ireland, Grace O&#8217;Malley was unwilling to stop sinking and plundering their ships.  Apparently they ended up agreeing to disagree, but I&#8217;m sure it was an exciting meeting.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/66.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_66.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />We met up with the rest of the group in Letterfrack for lunch at Currachs.  Although three courses were offered as part of lunch most of us could not imagine eating more than one course and maybe a bit of dessert.  Many of us had the Irish pizza and it was quite good.  A nice change from the last couple of days.  I also had a chocolate chip cookie for desert which was excellent but a bad choice as the chocolate muffin was clearly superior.  Kaia had snicker bar pie which would have been a close second or third I&#8217;m sure.  Jane and Josh had apple pie and ice cream.<br /><br />Here&#8217;s where the story of the day takes a turn for the worse.  Just as we were finishing up, the weather forecast for the day came true.  Rain after noon.  We rode to the Kylmore Abbey in a torrential rain.  At one point we came out from behind a wind break and I was nearly stopped in my tracks by the strength of the wind.  My little water resistant biking wind breaker was doing nothing to stop this rain and I was wet and chilled by the time we got to the Abbey.  The Abbey was pretty impressive in the oppressive weather, and I&#8217;m sure it would have been brilliant in good weather.<br /><br />After the Abbey I seriously considered buying a new waterproof winter coat, but instead I borrowed one of Padriac&#8217;s extra rain jackets.  We had 17 additional miles to get to Ballynahinch (pronounced like bal-in-the-hinch if you say it really fast) Castle.  After a half a mile we were all soaked through completely, my shoes were completely soaked, my pants were soaked, all of my layers were soaked.  And the headwind was horrific.  After a while we realized that there was no possible way we could get any wetter, so we might just as well accept our fate and enjoy the ride.  Once again, I&#8217;m sure that in reasonable weather it would have been beautiful.  As it was I was still nice.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/67.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_67.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />Now we are at the castle, showered, dried, and warm.  Our clothes have been sent off to be dried, and the porter will collect our shoes to leave them in the boiler room to dry over night.  All is well, as DuVine takes good care of us.  Our only remaining decision for the day is whether to stay here at the castle and eat at the pub or to go into town and try one of the restaurants there.<br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Ballynahinch%20castle&z=10'>Ballynahinch castle</a></p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-8838488372752005579?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/11/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/9/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/">Chapel Talk 11 4 Nehemiah 13 1 3 23 31</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/">Runestone Interactive Announces New Editions of Interactive Textbooks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/bnmnetp">@bnmnetp</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bnmnetp',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Brad Miller -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

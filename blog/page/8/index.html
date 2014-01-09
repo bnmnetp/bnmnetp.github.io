@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>A Reputable Journal</title>
+  <meta name="author" content="Brad Miller">
+
+  
+  <meta name="description" content="I&#8217;ve recently been looking for ways to run Python in a browser. There are lots of reasons why I think this is a cool idea. For example, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bnmnetp.github.io/blog/page/8">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="A Reputable Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">A Reputable Journal</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/02/14/python-in-your-browser-in-javascript/">Python in Your Browser&#8230; In Javascript!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-14T00:00:00-08:00" pubdate data-updated="true">Feb 14<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I&#8217;ve recently been looking for ways to run Python in a browser.  There are lots of reasons why I think this is a cool idea.  For example, creating some simple tutorials, Making some online quizzes and tests, getting Python to run on my iPad&#8230;<br /><br />It looks like there are two projects that are actively working on solving this problem.  The first is called skulpt  (see the demo on <a href="http://www.skulpt.org/">skulpt.org</a>.)  This project actually reimplements the core of Python in Javascript by hand.  They are working on some modules, but right now it is basically the core Python language.<br /><br />The other project uses <a href="http://code.google.com/p/emscripten/">Emscripten</a> to compile the CPython C source code to javascript!  Yep you read that right.  You can see <a href="http://syntensity.com/static/python.html">here</a> that the core of Python 2.7 is running.  You can import sys, but thats about it.  Nevertheless both of these are really useful for beginning Python exercises.<br /><br />The problem with both of these is that right now there is no user level documentation.  Skulpt is particularly difficult as you can&#8217;t even look at the demo page to see how its done.  You need to go digging through some additional source files from the distribution to figure out how to make it work for yourself.  The source code of the syntensity page is pretty easy to follow.  So here&#8217;s a hello world program using skulpt.<br /><br /><pre class="prettyprint" style="overflow: auto;">&lt;script src="skulpt.js" type="text/javascript"&gt;<br />&lt;/script&gt;<br /><br /><br />&lt;script type="text/javascript"&gt;<br />function outf(text) {<br />   var mypre = document.getElementById("output");<br />   mypre.innerHTML = mypre.innerHTML + text;<br />}<br /><br />function runit() {<br />   var prog = document.getElementById("yourcode").value;<br />   var mypre = document.getElementById("output");<br />   mypre.innerHTML = '';<br />   Sk.configure({output:outf});<br />   try {<br />      eval(Sk.importMainWithBody("&lt;stdin&gt;",false,prog));<br />   } catch (e) {<br />      alert(e);<br />   }<br />}<br />&lt;/script&gt;<br />&lt;h3&gt;Try This&lt;/h3&gt;<br />&lt;form&gt;<br />&lt;textarea edit_id="eta_5" id="yourcode"&gt;<br />print "Hello World"<br />&lt;/textarea&gt;<br />&lt;button onclick="runit()" type="button"&gt;Run&lt;/button&gt;<br />&lt;/form&gt;<br /><br />&lt;pre id="output"&gt;&lt;/pre&gt;<br /></pre><br /><br />Its a bit on the verbose side, and it could certainly be improved so that less code would have to be replicated if you wanted to put multiple input/output areas on a single page, but as a learning example I think it works OK.  The try/catch block around the Sk.importMainWithBody function call will capture Python runtime errors and throw them.  This is a nice way to inform your users of syntax errors in any code they are trying out.<br /><br />I&#8217;m certainly no expert in either implementation, I just offer this post as an example and a time saver for anyone else trying to get going with either implementation.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-7271951656985409817?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/28/second-edition-of-data-structures-book-is-out/">Second Edition of Data Structures Book Is Out!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-28T00:00:00-08:00" pubdate data-updated="true">Jan 28<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Now that I&#8217;m back from my JTerm travels, I&#8217;m happy to let you know that the second edition of Problem Solving with Algorithms and Data Structures using Python is available. &nbsp;(www.fbeedle.com)  David and I have worked hard on this new edition for about a year now, and we are really excited about it.  We think it is a great step forward from the first edition, and I&#8217;m really looking forward to teaching out of it next year.<br /><br /><br />Here&#8217;s whats new:<br /><br /><ul><li>All code is now written using Python 3.2</li><li>Chapter 1 now introduces Python sets, and exception processing.</li><li>Eliminated third party graphics package. &nbsp;All graphics are done using the built-in turtle module</li><li>Focus on algorithm analysis in a newly written chapter 2. &nbsp;In addition this chapter includes the analysis of Key Python data structures used throughout the book</li><li>New section on linked list implementation in Chapter 3</li><li>Moved Dynamic Programming to the end of chapter 4</li><li>Introduction of C style arrays and array management in Chapter 8</li><li>More focus on graphical recursive algorithms, including recursive tree drawing, and a recursive maze search program.</li><li>All source code for data structures has been organized into a single Python package to make it easy to incorporate into homework assignments.</li><li>Source for complete examples from each chapter are included so you do not need to piece together code from each listing</li><li>A new improved version of binary search trees in chapter 6.</li><li>New secion on balanced binary trees (AVL trees) added to chapter 6.</li></ul>The main site for resources for this book is at http://www.pythonworks.org  <br /><p>In the meantime, here&#8217;s the cover for the second edition</p><img src="http://lh6.ggpht.com/_wISL1SSAaEA/TUNP2iMUwpI/AAAAAAAAAL0/xohu9bItiOo/PythonDScover.jpg?imgmax=800" alt="PythonDScover.jpg" title="PythonDScover.jpg" border="0" width="400" /><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-5068655818648164128?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/26/the-long-road-home/">The Long Road Home</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-26T00:00:00-08:00" pubdate data-updated="true">Jan 26<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>4:00 PM Laguardia Airport</p><p>I have never wanted to be home so badly in all my life.  The group of 16 is sitting here in the American Eagle concourse of Laguardia.  We are at the airport very early for several reasons.  Number one, they are remodeling the lobby of the Seafarers and it sounded like the entire building was going to fall down.  Number two, the &#8220;seafarers&#8221; watching TV on the Mezzanine were on their second bottle of alcohol (gin for breakfast and whiskey for lunch) and were starting to creep everyone out.  Number three we though that this mornings snow might have traffic all backed up and we didn&#8217;t want to be fretting our way through security, but as it turned out we got over here in no time at all.  Number five, we feared that there would be long lines at checkin and security due to flight changes and cancellations, which also proved to be a non-issue.  So, here we sit, two hours before boarding, the flight is on time so far&#8230;</p><p>The morning started out early, I was wide awake at 4AM, my mind on the trip home today.  We had to be out the door at 7AM to catch our train to Stamford Connecticut, where we visited NBC.  We had two great speakers today John Fritsche, and Bucky Gunt (Google him, he&#8217;s won a ton of Emmys).  Unfortunately as we were on the train to Stamford some lovely white flakes of snow began to come out of the sky.  Sadly in New York even a few white flakes raise havoc with the schedules at Laguardia, Newark, and JFK.  On top of that tomorrow there is a winter storm watch out for our area.</p><p>Backing up to this morning again.  We got to the Union Square station where we were going to take any of the uptown bound trains to grand central station.  We told everyone, if the cars are crowded meet up on the platform  The cars were indeed crowded but after our london experience you would not believe how proficient our students have become at jamming themselves onto a subway.  So we all made it onto the train.  But not 30 seconds after we got off both Craig and I came up one student short.  I knew that student was on the train because I saw him and talked to him on the way to grand central.  But just like that he was gone!  Where did he go?  Did he fail to &#8220;mind the gap?&#8221;  Was he abducted by a band of roving gypsies?  Did a crazed herd of subway rats drag him away?  We had to move to the platform to catch our train to Stamford and unfortunately this student did not have his cell phone along.  So one stayed behind until the last possible minute to see if he returned, and the rest of us went on to catch our Stamford train.  Sadly, we had lost him.  Well, I knew that other than missing the NBC presentations he would be fine.  He could always go back to the hotel and meet us there later.</p><p>As we were standing in the snow in Stamford he finally called.  He was at a pay-phone and was safe and sound.  He had gone up the stairs following someone in a coat that looked suspiciously like Craig&#8217;s.  After following not-craig for a while he finally realized that he was following the wrong guy.  By then he didn&#8217;t know how to get back to us and we were probably gone by then anyway.  We are all hopeful that this will be the final mass transit mishap of the trip!  &#8211; A short update craig just surmised that our inbound plane is 20 minutes ahead of schedule.  So, the good news is that we have an inbound plane, it is in the air, and it is ahead of schedule.  Yea!!</p><p>5:30  Well, scratch that&#8230; Our plane is actually now going to arrive about 16 minutes late.  It took off late from Charlotte, so is behind schedule.</p><p>9:23 CST:  Finally off the plane, after landing only about a minute late we were informed by the captain that an AA 737 landed just 10 seconds ahead of us.  Unfortunately they only have one ground crew so we wait on the tarmac unable to pull into our gate.  Finally we pull into the gate but we wait another 10 minutes before someone finally moves the jet bridge into place.  I&#8217;m pretty sure that was Cat having her final revenge on me for publicly calling her out in an earlier post.</p><p>But, all is well that ends well.  Even though we waited a long time (25 minutes) to get off the plane, our luggage was waiting for us at baggage claim, so there was no additional wait there.  By 10PM Craig and I were in my car, yes my car, freedom, no reliance on public transportation, no waiting for cranky gate agents, we could just get in my car and drive the last 2:20 minutes to get home to Decorah.  We arrived just after midnight.  Sweet.  It was a great trip, but there&#8217;s no place like home.</p><p> </p><p> </p><p> </p><p> </p><p> </p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-6608147763903952442?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/25/things-i-miss-the-most-after-21-days-on-the-road/">Things I Miss the Most After 21 Days on the Road</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-25T00:00:00-08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div><ol><li><strong>My Family</strong> &#8211; This has been a great trip,and I think everyone has been getting along very nicely.  Its fun to watch a mixed group of students come together and form new friendships over the course of a couple of weeks.  At least one trip romance has blossomed.  But, I miss my wife, and I have missed way too many basketball games.  I keep watching the video of Josh&#8217;s first varsity game over and over.</li><li><strong>My House</strong> &#8211; We have had some pretty nice accommodations along the way, and a few sketchy ones as well.  Sadly, the last two days here in New York are the worst of the trip.  A couple of the students just told me that they slept with their winter coats on last night because their room was so cold!  My room was warm, and the sheets were clean but the whole place is pretty worn and grimy looking.  And, there is just one kind of gross shower for each half of our floor.  But the quiet!!  The week in London at the &#8220;Royal National&#8221;  was not very royal but again the sheets and rooms were clean and I had my own nice clean bathroom.  By far the best of the trip was the hostel in Interlaken.  But I am so looking forward to getting home to my own bed and my own shower, and my own hot water and tea&#8230;</li><li><strong>Cooking for myself</strong> &#8211; Its been fun enjoying the local cuisines along the way.  Germany:  Schnitzel and Wurst and the beer at the Hofbrau house.  Switzerland: Interlaken more good german food but Lausanne was not so interesting.  Torino:  We had an awesome little meal at a neighborhood restaurant in Torino and some other good pasta options as well.  The challenge was finding restaurants that could accommodate all of us.  Most of them were pretty small so to fit the entire group we ended up using some cafeteria style places where everyone could work their way through.  London:  Good Indian, Chinese, and of course the fish and chips at the pubs was really good.  But, I&#8217;m ready to cook some of my favorites and just eat a little less!</li><li><strong>My Routine</strong> &#8211; I&#8217;m such a creature of habit.  I miss getting up in the morning and doing Kettlebells, I miss getting up and just going up to my office to quietly read the news and have a cup of tea.  On the road I have to shower and get dressed before I can go find someplace to sit, and read, and even then it is not quiet, its someplace like starbucks or some local coffee joint that is bustling with activity.  I end up not reading and people watching.</li><li><strong>Playing 500</strong> &#8211; Another great part of the rhythm of my life at home is gathering on the weekends to play cards with friends.  Around the table we catch up, discuss Decorah and National politics, parenting, and whatever.  Some nights are really intense, and some nights can be downright depressing if the cards are bad.  But nobody really remembers who won or lost a week later.</li><li><strong>Decorah</strong> &#8211; Three weeks of being in big cities really reminds me of all the things I appreciate about our community.  I love going into a restaurant and knowing the staff, and knowing that while I eat my lunch I&#8217;m going to see people I know and have the chance to catch up with them.  I miss having my coffee at Java Johns were again I know the staff, and all of the interesting people that come in each morning.  I miss the smallness and familiarity.</li></ol></div><div></div><div></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-4352687159455891480?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/25/30-rock/">30 Rock</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-25T00:00:00-08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>So today Craig and I had an afternoon to do some site seeing.  Despite the cold cold temperatures here in new york we decided to start with some Dim Sum.  So, we headed to Chinatown.  I took out the trusty Urbanspoon app on my phone and we were soon headed to Ping&#8217;s.  Good Dim Sum at a great price.  Great shrimp and pork dumplings, Great potstickers and fried spring rolls.  The beef short ribs were OK, but not my favorite.  We finished up with some fried bacon wrapped shrimp.  A great way to close out the meal.  We were stuffed and only a few bucks poorer.</p><p>After lunch we headed up to 30 rock to do the studio tour and visit Top of Rock.  The studio tour was fun.  We saw Dr. Oz&#8217;s studio (who??) and the Jimmy Fallon set, also home to Johnny Carson&#8217;s show when he was in New York.  Finally we saw the SNL set.  Lots of great memorabilia and great memories in looking at that set.  Unfortunately there is a no picture policy on the tour so nothing to share there.</p><p>What I can share is this video clip.  Partway through the tour, our guides asked for a couple of volunteers to &#8216;do some reading&#8217;  Craig and I both volunteered, and it turned out they were going to show us how a mini news broadcast goes together.  So, Craig is the anchorman, and I am the weather guy.  Its not as easy as it looks standing in front of the green screen, reading the teleprompter, and moving pointing at something nonexistent behind you.</p><object type="application/x-shockwave-flash" width="400" height="225" data="http://www.flickr.com/apps/video/stewart.swf?v=71377" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"><param name="flashvars" value="intl_lang=en-us&photo_secret=d8e0373a91&photo_id=5402162164"></param><param name="movie" value="http://www.flickr.com/apps/video/stewart.swf?v=71377"></param><param name="bgcolor" value="#000000"></param><param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/video/stewart.swf?v=71377" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&photo_secret=d8e0373a91&photo_id=5402162164" height="225" width="400"></embed></object><p>Sadly Flickr uses flash to do these embedded videos, Here&#8217;s a link to the mov non flash file I uploaded&#8230; http://www.flickr.com/photos/bonelake/5402162164/</p><p>After the tour we went up to the Top of Rock experience.  This is a great view of the city on a nice mostly clear day.  Here&#8217;s a few photos for you to enjoy the view from up there as well.  We had hoped to close out the afternoon with a happy hour cocktail at the Rainbow Room, but it was closed.</p><p><img title="IMG_2331.jpg" src="http://lh5.ggpht.com/_wISL1SSAaEA/TT9QQBlBJpI/AAAAAAAAALg/gVNYzxouN-I/IMG_2331.jpg?imgmax=800" border="0" alt="IMG_2331.jpg" width="400" height="300" /></p><p><img title="IMG_2336.jpg" src="http://lh4.ggpht.com/_wISL1SSAaEA/TT9QR4SNgxI/AAAAAAAAALk/TwVRQp8mOyE/IMG_2336.jpg?imgmax=800" border="0" alt="IMG_2336.jpg" width="400" height="300" /></p><p> </p><p><img title="IMG_2339.jpg" src="http://lh5.ggpht.com/_wISL1SSAaEA/TT9QTvmnxeI/AAAAAAAAALo/AwgkekoHeXA/IMG_2339.jpg?imgmax=800" border="0" alt="IMG_2339.jpg" width="400" height="300" /></p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-5202653552439122819?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/24/jet-lag-recovery-mode/">Jet Lag Recovery Mode</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-24T00:00:00-08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m sitting in Starbucks off Union Square, its 6:30 here in Manhattan and I&#8217;m wide awake.  I made it until about 9:30 last night but then fell soundly asleep until 2:30AM, 8:30AM London time of course.  The relative quiet of my room at Seafarers International house was awesome.</p><p>The flight home was a Godsend as well.  I went up to the desk to ask if I could change from a center to an aisle seat.  The lady said no problem, she moved me to row 31 and said that it was likely nobody else would be beside me.  So yes, I had a whole row to myself for the flight home.  As it turned out we all could have had our own rows as the back third of the plane was pretty much empty.</p><p>Following all instructions we arrived at Heathrow three hours in advance of our flight, the Picadilly line was much more crowded that we expected it to be for 7:30 on a sunday morning.  But when we got to heathrow, there was no waiting at the continental desk to check in for our flight, and there was virtually no waiting in the security line either.  So, we had plenty of time to sit around the gate area and wait for our flight.  I think we all spent more time waiting to get through passport control at Newark than we did in the security line at Heathrow.</p><p>We just missed the 3:15 train to New York Penn Station, so we ended up having to wait there for the 4:04.  Every other hour of the day has an xx:28 train to Penn station except for 3pm.  Once we got into the city we had to get subway passes for everyone.  Unlike London, it is impossible in New York to use a credit card to by 26 unlimited passes.  So, we had to trudge to the Herald Square station and have everyone line up to use their own cards to get their subway passes for the two days here in New York.</p><p>Finally, about 4 hours after landing we made it to Seafarers.  It is midnight London time, but everyone was excited to eat some american food, and catch the end of the Packers, Bears game.  More american football was to come with the Steelers and the Jets.  Craig and I went to watch the end of the Packers game at TGI Fridays, and then headed out to Pete&#8217;s Tavern.  It was great to have an American hamburger, with blue cheese!  I loved the fish and chips at all of the london pubs, but it was really nice to be back home.  Although we are still a 3 hour flight from Minneapolis I feel like we are close enough to home to reach out and touch it.</p><p>Today we have a group  meeting at 9, then a speaker from NBC Olympics at 10.  Everyone is on their own for the day after our speaker, until we have our final group dinner tonight.  Tomorrow will be a busy day as we have a meeting in Connecticut, and then by mid afternoon the group will begin to disperse for the various flights back home.</p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-5030927952139964923?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/22/premier-league/">Premier League</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-22T00:00:00-08:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img title="IMG_2316.jpg" src="http://lh6.ggpht.com/_wISL1SSAaEA/TTs3v8onh4I/AAAAAAAAALU/FtE05itJakg/IMG_2316.jpg?imgmax=800" border="0" alt="IMG_2316.jpg" width="200" height="150" /></p><p>I can&#8217;t think of a better way to end a trip to London that with a Premier League Football match.  We were very fortunate to get group tickets to the Fulham versus Stoke City match this afternoon.  Fulham plays in a venue known as Craven Cottage.  Its a smaller, more intimate stadium, but we ended up with great seats.  We were in about the 24th row behind and to the keepers left of the goal.  A high hard kick over the crossbar would land right in my lap.</p><p><img title="IMG_2324.jpg" src="http://lh6.ggpht.com/_wISL1SSAaEA/TTs3tsRgiTI/AAAAAAAAALQ/Vp1f1ONprCY/IMG_2324.jpg?imgmax=800" border="0" alt="IMG_2324.jpg" width="400" height="300" /></p><p>Fulham won the game handily 2 nil with Clint Dempsey scoring both goals for Fulham.  We thought, briefly, about a USA USA chant for Dempsey, but decided that might not be appreciated by all of the other football fans around us, so we just cheered loudly.</p><p>Going to an English Premier League match is a fun experience. We sat in the neutral zone of the stadium so we were not right in with the Fulham or the Stokes City fans.  So our section was a bit quieter than all the others.  We were the closest to the Stokes City visitors section and it was really a riot to listen to them sing, and chant, and carry on throughout the game.  They only quieted down about midway through the second half when it became very clear that there was no way they were going to win the game.</p><p>There were a couple of Dads right behind me that had brought their two young boys to the game, so it was interesting to listen to them explain football to the boys, who already knew as much about the game as many of us.  It was a great experience and one that I will remember fondly for a long time.</p><p>The last few days are really a blur.  We have had more great meetings and class discussions, and finally some time to explore the city on our own.  Quite honestly I&#8217;m &#8216;museumed out&#8217; at the moment.  I&#8217;ve been to The British Museum, The London Transportation Museum, the Tate Modern, The London Docklands, The Imperial War Museum, and the British Library.  All were interesting in their own way, but you get museum, and information overload at some point.</p><p>A couple of the highlights for me were the Transportation Museum, seeing the development of the London Underground, beginning in the 1830s and moving forward is a pretty interesting study in engineering, and city planning.   The development of tunneling technologies, and the escalator were really interesting.</p><p>Another highlight was seeing a letter from Ada Lovelace to Charles Babbage at the British Library.  The library has labelled this letter as the first computer program, as she is explaining how to program the difference engine to solve a mathematical problem that had never been solved by hand before.  Also at the Library was Handel&#8217;s original score for the Messiah!  You could see his notes as well as the names of the soloists that were performing the different parts.  They also have one of four copies of the Magna Carta on display.  This is a document written in 1215 or so, and is widely considered to be a model for our own constitution.</p><p>Last night we had our final group dinner in London, and the Imperial China restaurant.  We had our own room, with a Karaoke machine and a special menu.  Tons of food, and great fun was had singing karaoke by all.    Here you can see Paul, Joe, and Carl treating us to a country song.  We also had Rap, Glen Campbell, and even a couple of Disco numbers.  It is really strange to think that all of these students know the lyrics to every Backstreet boys song ever written.</p><p><img title="IMG_2305.jpg" src="http://lh5.ggpht.com/_wISL1SSAaEA/TTs3zOSV8BI/AAAAAAAAALY/3W0K3rSBHeQ/IMG_2305.jpg?imgmax=800" border="0" alt="IMG_2305.jpg" width="400" height="300" /></p><p>Tomorrow is an early morning as we have to be on the Tube going to heathrow by 7:30.  We leave London at around 11:15am and arrive in New York at about 3:00pm.  We&#8217;ve all enjoyed our time in Europe, but we are also ready to be back in the states again.  I know that even after a proper football game this afternoon, a number of the students are hoping to make it</p><p> </p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-3432422924557260243?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/20/we-will-rock-you/">We Will Rock You</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-20T00:00:00-08:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Yesterday was another great day in London.  We started out at 8:00 with our daily discussion of the assigned reading.  24 of the 26 members of the class were a little unhappy about the 8:00 starting time, but the other two (Craig and I) wanted to get them up and out of bed so they would have the middle part of the day for seeing the sites of London.  This would really be the first extended time they would have since we arrived for doing some touring on their own.</p><p>We met up again at 4:00 at a place called the View Tube.  This is an educational facility that overlooks the Olympic stadium and Village area.  We met with an architect who is the project manager for the Olympic Village.  It was an absolutely fascinating meeting.  How do you design a village to house 10,000 athletes that will be turned into market housing as well as affordable housing once the games are over?  Furthermore how do you build all of this to the latest green standards?  How do you design a new city neighborhood, with safety and security as primary design constraints?  How do you move millions of people in and out of this neighborhood on a daily basis?  These are just some of the design goals for the Olympic Village and park area.  Here are a couple of pictures of the stadium and the aquatic center in construction:</p><p><img title="IMG_2288.jpg" src="http://lh4.ggpht.com/_wISL1SSAaEA/TTf3RUObaLI/AAAAAAAAALE/D1tjdgB9KQc/IMG_2288.jpg?imgmax=800" border="0" alt="IMG_2288.jpg" width="400" height="300" /></p><p><img title="IMG_2289.jpg" src="http://lh3.ggpht.com/_wISL1SSAaEA/TTf3S3TkGFI/AAAAAAAAALI/2TdTfSvpaS4/IMG_2289.jpg?imgmax=800" border="0" alt="IMG_2289.jpg" width="400" height="300" /></p><p>The apartments that house the athletes during the games are all built without kitchens and other &#8216;extra&#8217; rooms to provide extra bedroom space.  After the games the kitchens are added before they go on sale.  We also learned that all of these apartments are designed and built so that they do not need heating during the winter!  This is amazing to me, but we were further told that they didn&#8217;t think they could sell them without heat, so in floor heating is added throughout.  The water for the in-floor heat comes from a central facility, so should it ever be needed it is extremely efficient!</p><p>This project really is amazing, the amount of social and civic engineering that has gone into the design of the village really boggles my mind.  Not only that but consider that much of this was designed, and even some construction was started before the economic crash in 2008.  The crash led to a full time out to re-evaluate and re-finance much of the operation.  Its just amazing that they are going to pull this off.</p><p>After our meeting at the View Tube, we all scattered for dinner on our own and then met up again at the Dominion Theater for We Will Rock You.  This is a musical where the plot and characters are loosely based around the Bohemian Rhapsody .  Lots of great Queen songs that we all wanted to sing along with.  Craig and I had our dinner at the Tottenham Pub, and I decided that I really needed to try a meat pie during my stay in London, so I had a chicken and mushroom pie for supper.  I was pleasantly surprised by how good it was.</p><p> </p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-1758184722208780685?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/19/wimbledon/">Wimbledon</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-19T00:00:00-08:00" pubdate data-updated="true">Jan 19<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After the rain and dreary weather of the past many days it was delightful to get up this morning and head outside to see the sun.  The early part of the morning is free, so my plan was to go pick up our tickets to We Will Rock You, but the box office did not open until noon.  It was a productive walk anyway as I found a free WiFi connection that was 10 times faster than the Royal National and that allowed me to finish downloading the London2Go app for my iTouch.  Its a nice app that works off line and has all of the london highlights, plus tube information, and a map.  All of this works great even without WiFi so its very handy to have in your pocket when you are walking around or on the train.</p><p>At 10:30 we gathered for a trip down to Wimbledon.  First on the agenda for the day was a walking tour of the stadium.  It was fantastic.  Everything you would expect from Wimbledon.  Of course at this time of year the place is pretty quiet except for the workers who are already at work preparing the stadium for the Championship at the end of June.  Much of this enormous complex is only used for a couple of weeks during the year.  There are courts that the members are allowed to use, but not the competition courts.</p><p><img title="IMG_2264.jpg" src="http://lh3.ggpht.com/_wISL1SSAaEA/TTbqrURzTqI/AAAAAAAAAK4/7xTUYCDEvV8/IMG_2264.jpg?imgmax=800" border="0" alt="IMG_2264.jpg" width="450" height="147" /></p><p>Our guide told us the story of how the week after the tournament, the process begins to prepare the courts for the next year.</p><ol><li>Dig up the current turf.</li><li>Put weed killer on the remaining bits of grass.</li><li>Remove the top six inches of dirt to get rid of the weed killer and any remaining grass or (gasp) weeds.</li><li>Replace with fresh dirt.</li><li>Seed with rye grass</li><li>The grass is then watered, mowed, and generally allowed to grow naturally until about April. Mostly naturally anyway, we saw that the had little heat lamps that moved slowly back and forth over the grass during the course of a week. You can see the lamps in the picture below.  In April the grounds keepers begin mowing the grass shorter and shorter.  By competition time the grass is down to just 6 millimeters in length.  The cutting must be done very gradually or the grass will go into shock, and you know thats not good.</li></ol><p> </p><p><img title="IMG_2285.jpg" src="http://lh5.ggpht.com/_wISL1SSAaEA/TTbqutSMPYI/AAAAAAAAAK8/u7tT2UctGWY/IMG_2285.jpg?imgmax=800" border="0" alt="IMG_2285.jpg" width="400" height="300" />Finally, testing begins.  A person comes in and literally counts the blades of grass per square meter to make sure the turf is the right density, and that the tennis ball will bounce to the correct height. when dropped from a test machine.</p><p>We also got to go in the press room, and sit in the chairs where the players come every day to give their interviews.  It was fun to sit in the same chair as Nadal, Federer, and MacEnroe.</p><p>We were allowed to sit in the stands on court 1 as well as Centre Court, so we got a good idea of how intimate the Wimbledon stadiums are and what it would be like to actually attend a match.  After the stadium tour we had a marketing presentation and learned a little about the way they market the stadium and the museum during the other 50 weeks of the year.  All in all it was an impressive experience.</p><p> </p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-6919700742587553671?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/01/18/training-for-the-olympics/">Training for the Olympics</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-01-18T00:00:00-08:00" pubdate data-updated="true">Jan 18<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The first stop on our tour of London was a walking tour around the Olympic venues.  To get there was easy.  Take the Picadilly line from Russel Square up to Kings Cross St. Pancras and transfer to the Hammersmith and City line which would take us East directly to Bromley by Bow where we would meet our guide.  Nothing could be easier right?  Except that when we got to Kings Cross, the train to Bromley by Bow was pretty full.  But we jammed ourselves on like true Londoners.  At the last second I noticed that some of our students had not jammed themselves on the train and a voice in the back of my head said &#8216;jump off.&#8217;  I ignored the little voice because we had given them clear instructions that if they didn&#8217;t make it on this train just jump on the next on and we would meet up on the platform at our destination.</p><p>When we arrived at Bromley by Bow, we did a quick count and realized we had a little more than half of our group.  When the next train pulled in we looked for the rest of the group, but not a single student got off the train.  Soon another train pulled in and I noticed that this was a district line train so I didn&#8217;t expect any students to get off.  Well, train after train came into the station but they were all district line trains.  That voice in the back of my head told me &#8216;somethings not right&#8217;  so I went up to the ticket office to inquire when the next Hammersmith and City train was expected.  &#8221;Service is suspended.&#8221; he told me.</p><p>&#8220;Till when?&#8221;  I asked.</p><p>&#8220;indefinitely.&#8221; I was told.</p><p>Crap!  Why didn&#8217;t I listen to that voice that told me to jump off the train?  Time to regroup.  Craig and I decided that he would take the students that were here on the tour and I would wait at the station.  We knew that within the group there was the intelligence to figure out a way to get down to the district line and out here eventually.  I would meet them and call craig and we would figure out how to catch up.</p><p>So, Craig and the guide and the group took off in the rain on the tour and I hung out in the station.  Pretty soon I noticed that there were not any district line trains coming in any more.  So, back to the information desk.  Yep, District line service is also suspended due to signaling problems at Bow Road station.  Well, that does it, I had already waited around the station for 40 minutes so there was no way they were going to make it now and even if they did the tour would be finishing up.  So I hopped on the next train heading back in.  As I passed each station, I scanned the faces on the platform on the other side.  If I saw the group I could hop off and catch up with them.  But they were no where to be seen.</p><p>It took me about an hour to get back to Russell square and our hotel and when I walked in a group of the cheerfully greeted me in the lobby.  &#8221;We tried to catch up with you but all the lines were suspended.&#8221;  They had their own odyssey of planes and busses and walking in the rain that you can read about on the class blog.  (olympicsjterm11.blogspot.com).  They had tried their best using all of their ingenuity to catch up with us, but it just was not to be.  They were all safe, and sound and much the better for having to learn how to navigate the London Tube system on their own.</p><p>Now, if you have been following this blog you may be wondering how on earth I came to be allowed to lead students abroad.  Torn ligaments, separated shoulders, leaving students behind on busses and trains.  Is there any defense for all that?  Nope, these are ingenious  Luther students, in every case they knew where they had to be and how to get there.  In my mind this is part of the experience of learning how to navigate your way around a foreign country.  We&#8217;re having a blast and we&#8217;ll make sure we get everyone home in one piece.</p><p>Today we are off to Wimbledon, and looking forward to our meetings and tour there.  But, if I do hear that voice telling me to jump off the train to stay with the group, I think I&#8217;ll listen to it today.</p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-7361298176501809442?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/9/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/7/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/">Chapel Talk 11 4 Nehemiah 13 1 3 23 31</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/">Runestone Interactive Announces New Editions of Interactive Textbooks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/bnmnetp">@bnmnetp</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bnmnetp',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Brad Miller -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

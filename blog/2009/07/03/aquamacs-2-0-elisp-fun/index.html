@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Aquamacs 2.0 Elisp Fun - A Reputable Journal</title>
+  <meta name="author" content="Brad Miller">
+
+  
+  <meta name="description" content="While waiting for the white smoke to emerge on Textmate 2.0, I decidedto revisit an old friend. It turns out the emacsen have been busysince I&#8217; &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bnmnetp.github.io/blog/2009/07/03/aquamacs-2-0-elisp-fun">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="A Reputable Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">A Reputable Journal</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Aquamacs 2.0 Elisp Fun</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-03T00:00:00-07:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><div xmlns="http://www.w3.org/1999/xhtml">While waiting for the white smoke to emerge on Textmate 2.0, I decidedto revisit an old friend.  It turns out the emacsen have been busysince I&#8217;ve been using TextMate.  Aquamacs 2.0 is a great Cocoa port ofEmacs 23.  Not sure whether I should call it a port since emacsofficially supports the OS X operating system.The first thing I did was check out some of the old modes I used touse.  AucTeX, GNUs are both packaged with emacs now.   The SQL mode that comes withis great and &#8220;just works&#8221; with mysql and postgresql. There is goodsupport for Python and of course HTML. Two minor gliches in thoseareas that I wish I could fix:<ul><li>I cannot get MMM (multi-major-mode) to work properly.  I wouldreally like to have both HTML and Javascript colorized properly whenI&#8217;m working on my Django projects.  If anyone has any advice ongetting MMM to work right in emacs 23 I would really appreciate apointer.</li><li>Completion in iPython does not work right.  Instead of completingin the ipython shell it just indents more.</li></ul>In addition to some old friends I discovered a bunch of new modes thatare really nice.  JDE for Java development, Muse for creating lecturenotes in a personal wiki style.  In addition Muse lets you publish amarkup style format really easily in lots of differnt output formats.I&#8217;ve been a big fan of using Pandoc with TextMate over the last fewyears, but Muse is every bit as nice.One thing lacking in Muse was the ability to quickly bold or ital ortt some part of the text I&#8217;m working on.  So I decided to dust off mylisp coding ability and cook up my own.  The result is shown below.  Ithink it is a nice example of a lot of what you need to do in writingbasic lisp extensions for any text processing mode.  I&#8217;d be happy toget comments on how to improve this.The idea of these simple commands is that pressing cmd-b should boldthe word the cursor is currently on, or the region (if there is one)or simply insert **|** when the cursor is not on a word.   It alsotook some research to figure out how to bind a function to the commandkey. (side note: I&#8217;ve finally gotten comfortable with using the optionkey for meta in emacs.)<br /><br /><pre style="overflow:auto;" class="prettyprint lang-el"><br />(defun muse-bold-word ()<br />  (interactive)<br />  (muse-wrap-with-string "**" 2)<br />)<br /><br />(defun muse-ital-word ()<br />  (interactive)<br />  (muse-wrap-with-string "*" 1)<br />)<br /><br />(defun muse-tt-word () <br />  (interactive)<br />  (muse-wrap-with-string "=" 1)<br />)<br /><br />(defun muse-wrap-with-string (str len)<br />  (if mark-active<br />      (progn<br /> (kill-region (point) (mark))<br /> (let ((myword (car kill-ring)))<br />   (insert (concat str myword str) )))<br />    (let ((myStr (thing-at-point 'word)))<br />      (if myStr<br />   (let ((myBounds (bounds-of-thing-at-point 'word)))<br />     (kill-region (car myBounds) (cdr myBounds))<br />     (insert (concat str myStr str)))<br /> (progn<br />   (insert (concat str str))<br />   (goto-char (- (point) len)) ) ) ))<br />)<br /><br />(define-key muse-mode-map `[(,osxkeys-command-key b)] 'muse-bold-word)<br />(define-key muse-mode-map `[(,osxkeys-command-key i)] 'muse-ital-word)<br />(define-key muse-mode-map `[(,osxkeys-command-key k)] 'muse-tt-word)<br /><br /></pre>    </div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-7610258374161196053?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Brad Miller</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-03T00:00:00-07:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/emacs/'>Emacs</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bnmnetp.github.io/blog/2009/07/03/aquamacs-2-0-elisp-fun/" data-via="bnmnetp" data-counturl="http://bnmnetp.github.io/blog/2009/07/03/aquamacs-2-0-elisp-fun/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/06/30/test/" title="Previous Post: Test">&laquo; Test</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/07/23/beautifulsoup-bonktown-and-growl/" title="Next Post: BeautifulSoup, Bonktown and Growl">BeautifulSoup, Bonktown and Growl &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/">Chapel Talk 11 4 Nehemiah 13 1 3 23 31</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/">Runestone Interactive Announces New Editions of Interactive Textbooks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bnmnetp">@bnmnetp</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bnmnetp',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Brad Miller -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

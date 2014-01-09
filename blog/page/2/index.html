@@ -1,0 +1,681 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>A Reputable Journal</title>
+  <meta name="author" content="Brad Miller">
+
+  
+  <meta name="description" content="We passed 3 million entries in our log data for InteractivePython.org which got me to wondering about how we are growing. The site has been live for &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bnmnetp.github.io/blog/page/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="A Reputable Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">A Reputable Journal</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-/">We Passed 3 Million Entries in Our Log Data for Interactivepython Org Which Got</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-17T00:00:00-08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><img src="/images/31.media.tumblr.com/9c55cab1486b5c7bb35cf993249f6b4c/tumblr_midzqpGQSy1r729pmo1_1280.png" />
+
+<p>We passed 3 million entries in our log data for <a href="http://interactivepython.org">InteractivePython.org</a> which got me to wondering about how we are growing.  The site has been live for 275 days.  You can really see how the site took off after day 100, which makes sense because that was bout the time fall classes started around the country.  The tiny plateau between day 225 and 250 corresponds to Christmas/winter break for most schools, and now that Spring semester is in full swing it looks like the slope has gotten steeper again.</p>
+
+<p>The dotted line is the linear best fit line with a slope of 12,836.7.  Even if our log database is not growing exponentially thats an impressively steep slope.</p>
+
+<p>And just because this is all about Python and education, here&#8217;s the Python code that created the graph.  I love matplotlib, it is such a powerful tool for quickly looking at your data.</p>
+
+<pre>
+import matplotlib.pyplot as plt
+from numpy import polyfit, arange
+
+f = open('bydate','r')
+days = f.readlines()
+totals = [0]
+
+for d in days:
+    day,count = d.split('|')
+    count = int(count)
+    totals.append(totals[-1]+count)
+
+x = arange(len(totals))
+m,b = polyfit(x,totals,1)
+print m
+plt.plot(x,totals,x,m*x+b, '--k')
+plt.ylim(ymin=0)
+plt.show()
+</pre>
+
+<p>The data file is simple. One day per line with the date in one column and the number of actions in the other column.  Here are the last few days:</p>
+
+<pre>
+ 2013-02-14 | 24349
+ 2013-02-15 | 17396
+ 2013-02-16 | 12645
+</pre>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/31/and-now-it-can-be-told/">And Now It Can Be Told</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-31T00:00:00-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Loyal readers will remember that last summer we cruised to Alaska, and some very secretive things were happening on that cruise that I could only refer to rather cryptically.  Well, with the airing of last nights episode of Top Chef the story can now be told.</p>
+
+<p>We were on the set for the filming of the Quickfire challenge onboard the ship!  Although the filming took several hours, we got less than 1 second of screen time.  But here we are!  Brian and I happened to be in a pretty good spot as the camera flashes past us several times.  The ladies we were talking to turned out to be from Wisconsin, in fact from right by our cabin!  The two in the print shirts actually got an additional 2 seconds of screen time along with their comments on the food.
+
+<a href="http://www.flickr.com/photos/71706244@N00/8433342727" title="View 'IMG_0276' on Flickr.com"><img height="375" title="IMG_0276" alt="IMG_0276" border="0" src="http://farm9.staticflickr.com/8354/8433342727_68204d7fdd.jpg" width="500"/></a>
+
+Jane, Brian, and I all made it on again towards the end of the challenge.  Sadly there is no sign of Holly.
+<a href="http://www.flickr.com/photos/71706244@N00/8434428742" title="View 'IMG_0277' on Flickr.com"><img height="375" title="IMG_0277" alt="IMG_0277" border="0" src="http://farm9.staticflickr.com/8355/8434428742_32af448c8b.jpg" width="500"/></a>
+
+<p>Of course since this was all way before the show started we had no idea who any of the chefs really were.  I do remember really liking Sheldon&#8217;s lettuce cups as well as Stefan&#8217;s little potato soup cup.  I could swear that I remember seeing Kristin on the ship, so maybe she got to come along since she would be competing in last chance kitchen in Juneau. </p>
+
+<p>Right now I&#8217;m looking forward to the finale.  I&#8217;m not sure who I want to win the most, with Stefan and Josie gone all the villains are off the show.  I think it would be awesome if Kristin makes it through LCK and gets to compete against Sheldon or Josh in the Finale.  Thats Josh, by the way, in the first photo.</p>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/25/the-debary-institute/">The DeBary Institute</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-25T00:00:00-08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">Its been a great J-Term.  A trip to Vail for some Skiing, **and** a trip to Florida to solve the worlds problems with great friends at the DeBary Institute.  For those who do not know, the DeBary institute is a newly renowned think tank with roots in the Bone Lake Global Institute.
+
+We arrived on Friday and spent a wonderful late afternoon enjoying the hospitality and home of our host, Tim Peter.
+
+<a href="http://www.flickr.com/photos/71706244@N00/8405885066" title="View 'IMG_0214' on Flickr.com"><img height="375" title="IMG_0214" alt="IMG_0214" border="0" src="http://farm9.staticflickr.com/8510/8405885066_aaa4dd8469.jpg" width="500"/></a>
+
+On Saturday we toured Stetson University in the morning.
+
+<a href="http://www.flickr.com/photos/71706244@N00/8405885966" title="View 'IMG_0221' on Flickr.com"><img height="500" title="IMG_0221" alt="IMG_0221" border="0" src="http://farm9.staticflickr.com/8212/8405885966_564e8ca398.jpg" width="375"/></a>
+
+
+Later we repaired to Smyrna Beach, it was a bit windy but we enjoyed it all the same.
+<a href="http://www.flickr.com/photos/71706244@N00/8404793959" title="View 'IMG_0229' on Flickr.com"><img height="375" title="IMG_0229" alt="IMG_0229" border="0" src="http://farm9.staticflickr.com/8237/8404793959_3faa6ba998.jpg" width="500"/></a>
+
+The culinary highlight of our trip was dinner at the Swamp House Grill and Tiki Bar.  We enjoyed some lovely alligator bites as appetizers:
+<a href="http://www.flickr.com/photos/71706244@N00/8405887432" title="View 'IMG_0236' on Flickr.com"><img height="200" title="IMG_0236" alt="IMG_0236" border="0" src="http://farm9.staticflickr.com/8374/8405887432_1b8fb2bf27.jpg" /></a>  (Yes, as the famous frog said, they do taste like chicken)
+
+After dinner we sat around enjoying the music of <a href="https://www.facebook.com/markdmooreoriginals">Mark Moore</a>.
+
+Sunday was Football (European and American) and then Golf day.
+
+<a href="http://www.flickr.com/photos/71706244@N00/8405887790" title="View 'IMG_0245' on Flickr.com"><img height="375" title="IMG_0245" alt="IMG_0245" border="0" src="http://farm9.staticflickr.com/8516/8405887790_1e84e19b80.jpg" width="500"/></a>
+
+Dinner was provided by Gregory and Brad who made a charming seafood alfredo.
+
+Monday morning we left the house at 5:50AM.   The temperature was 62 degrees.  Five hours later we arrived in Cedar Rapids where the temperature was -2.  Thats a big swing for a monday morning.
+
+Already looking forward to next year!
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/13/everyday-python-new-blog/">Everyday Python - New Blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-13T00:00:00-08:00" pubdate data-updated="true">Jan 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve decided that it will be best to keep my personal blog separate from the new Everyday Python blog project.  All of the infrastructure to make the posts interactive just work so much better when I have control of the server and everything else.  So  You can head over to <a href="http://interactivepython.org/courselib/everyday">Everyday Python</a> and click on the Everyday Python link there, or if you want to subscribe to the RSS feed for that project you can use <a href="http://feeds.feedburner.com/everydaypython">this link</a>.
+</p>
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/11/vail-2013/">Vail 2013</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-11T00:00:00-08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just got back from four awesome days of skiing in Vail and Beaver Creek.</p>
+
+<a href="http://www.flickr.com/photos/71706244@N00/8370576743" title="View 'Vail 2013' on Flickr.com"><img height="375" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8079/8370576743_c4f2dc7325.jpg" width="500"/></a>
+
+<p>The Colorado resorts have a really cool new way of handling the ski passes, instead of clipping a tag on your jacket you now get a credit card with an RFID chip in it.  Talk about a ski pass that appeals to the Geek in me!  But whats even better is that every time you go on a lift, there is an RFID reader that grabs your ID and logs that lift ride.  So now at the end of the day you can go on to a website and see how many vertical feet you skiied that day.  Very cool.  Over our four days of skiing we did just over 95,000 vertical feet!  If we&#8217;d only known how close to 100k we would get we surely would have had a shorter lunch break on day one!</p>
+<p>Since snow started late and has been a bit sparse since Christmas there was a lot of snow making going on.  The mounds of snow created by the snow machines remind you of a Dr. Seuss drawing:
+
+<a href="http://www.flickr.com/photos/71706244@N00/8370575981" title="View 'Vail 2013' on Flickr.com"><img height="241" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8367/8370575981_cdf794cd8c.jpg" width="500"/></a>
+</p>
+
+<p>I&#8217;m pleased to say that my skiing has really improved thanks to my Solomon BBR 8.9 skis.  I&#8217;ve started to call them my magic skis because I can even do the moguls!  Here&#8217;s a picture I took of craig at the top of one particularly narrow and moguly run.  Note that I got down first with enough time to turn around and snap some pictures.
+
+<a href="http://www.flickr.com/photos/71706244@N00/8371644502" title="View 'Vail 2013' on Flickr.com"><img height="500" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8190/8371644502_c6ea8baee7.jpg" width="375"/></a></p>
+
+<p>Here&#8217;s another shot of Craig just before he jumped off the cliff.  Note once again who went first to take the picture:   :-)
+<a href="http://www.flickr.com/photos/71706244@N00/8370575729" title="View 'Vail 2013' on Flickr.com"><img height="375" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8470/8370575729_b21214285b.jpg" width="500"/></a> </p>
+
+<p>All in all it was a great four days of skiing with the guys.  Can&#8217;t wait until next year. </p>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/03/generating-a-password-part-1/">Generating a Password - Part 1</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-03T00:00:00-08:00" pubdate data-updated="true">Jan 3<span>rd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>OK, here is the first installment of the new Everyday Python series.  Today I&#8217;m just providing a link, as I still have some infrastructure work to get done in order to publish each installment both here and at Runestone Interactive.</p>
+
+<a href="http://interactivepython.org/courselib/static/everyday/2013/01/2_password.html">Generating a password part 1</a>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/02/introducing-everyday-python/">Introducing Everyday Python</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-02T00:00:00-08:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">  <div class="section" id="everyday-python">
+<h1>Everyday Python<a class="headerlink" href="#everyday-python" title="Permalink to this headline">¶</a></h1>
+<p>It is always risky to make your New Years resolutions public, but this is one I&#8217;ve
+been thinking about for a while now, and so I&#8217;m going to go ahead and impose a
+measure of accountability on myself by proclaiming this publicly.  This week, I&#8217;m
+starting a series of educational blog posts here, and as a part of my <a class="reference external" href="http://interactivepython.org">Runestone
+Interactive</a> publishing project.</p>
+<p>My idea is to publish a series of Python programming projects, aimed at solving
+everyday problems, or puzzles. Hopefully these little projects will be interesting
+and will give learners motivation to dig into the details of the solutions.  I
+will provide links to the relevant Python programming constructs and data types in
+either of the two interactive books (<a class="reference external" href="http://interactivepython.org/courselib/static/thinkcspy/index.html">How to think like a computer scientist:
+Interactive Edition</a> , or
+<a class="reference external" href="http://interactivepython.org/courselib/static/pythonds/index.html">Problem Solving with Algorithms and Data Structures using Python</a>) This will let me
+focus on the problems, and not the minutia of the language.  Lets face it, reading
+about all the different possible string methods is not that exciting, but seeing
+them in action, and then wondering about what else you might be able to do with
+strings is OK.</p>
+<p>The great thing about Python is that if you write things in a straightforward
+manner its pretty easy to follow even if you don&#8217;t know all the details.  So, that
+is my intention.  Write a solution and do it in straightforward Python that
+beginners can understand.  Each project will appear over several days, and
+will likely include some homework related to the project.  I&#8217;ll provide the solution
+in a followup post.  In addition, I may refine the solution over the course of
+several days introducing more and interesting solutions or more advanced features
+of the Python language.</p>
+<p>In the back of my mind I am drawing inspiration from the old <em>Communications of the ACM</em> column by John
+Bently called <em>Programming Pearls</em> In John&#8217;s columns he would feature a particular
+problem or algorithm, and present it in a straight forward way, but then he would
+refine that solution again and again polishing it until he had an incredibly
+elegant solution.  It was beautiful because even a novice programmer could
+understand what was going on at the start of the article, but would get sucked in
+to the beautiful solution and would learn more than they thought possible.  While
+advanced programmers might chuckle at the initial solutions, even they would have
+to admit that they learned something by the end of each column.</p>
+<p>I already have a few ideas in mind for the first few projects.  I&#8217;m going to try
+to start fairly easy with some string and list kind of projects, and work my way up
+to more complex problems and algorithms, again this is meant to be educational so
+that in theory a beginner might read through these posts more or less
+chronologically, and learn some computer science along the way.</p>
+<p>Click the title to leave a comment.</p>
+</div>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/09/here-s-the-headcam-video-of-the-zipline-at-icy-strait/">Here&#8217;s the Headcam Video of the Zipline at Icy Strait.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-09T00:00:00-07:00" pubdate data-updated="true">Aug 9<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">video/mp4mp44803601910
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/05/euchre-etiquette/">Euchre Etiquette</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-05T00:00:00-07:00" pubdate data-updated="true">Aug 5<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">How do you know you have an enduring friendship?  When after more than 27 years as friends, and seven days of traveling together you can play Euchre &#8211; couple against couple &#8211; and still be friends at the end of the train ride from Seward to Anchorage.  Now you might think that a simple card game means nothing, but there a few members of our party of 4 who are a little on the competitive side.<br /><br />The controversy in this story came after our third missed bear siting on the train.  &#8220;There&#8217;s a bear up ahead on the left side of the train&#8230; No now its on the right&#8230; no, now its on the left&#8230;&#8221;  This is some kind of weird plan by the conductor to get the train rocking back and forth, or something to get the people in the back cars of the train to drink more.  So, here it is dear readers, as we are all in a state of frustration over bear sitings, the up card is a heart, I&#8217;m holding three diamonds (but no bowers).  Everyone passes, and it comes back around to me.  I bid diamonds.  This is when the trouble starts.  As it turns out, Holly has both red bowers and only passed because she had better diamonds than hearts.  Needless to say we get set, and I launch into some kind of self righteous tirade about &#8220;maur passing&#8221; just to set us.  This scenario plays itself out three times again over the course of the train ride&#8230;  Now last night I might have said some mean words about Holly&#8217;s card playing ethics, but today in hindsight, and in the spirit of type 2 fun, I can see that I might have been overly harsh in my judgement.<br /><br /><br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5773054740292003042'><img src='https://lh3.googleusercontent.com/--QmjSY4dcis/UB4Cswf9ZOI/AAAAAAAAAuI/29IDXmbLkyc/s288/1.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />The card playing on the train was the culmination of a long day.  The last day of a cruise is always a long hard day.  For one thing, I think thats one of the things that all cruise lines suck at.  You are an awesome person who must be waited on and pampered at every turn, until the last morning of the cruise.  Then you yesterday&#8217;s news, who must get up early and off the ship as soon as possible, so your room can be turned over to someone new and wonderful who must be pampered at every turn.   Or maybe I&#8217;m just grumpy that I&#8217;m not the new wonderful person anymore.  In any case we love cruising and its ability to allow you to see great places in the world, all the while knowing that you have a safe comfortable place to eat and sleep each night.<br /><br />We spent our day on a Kenai Fjord tour.   We had another day of wildlife sitings.  The new animals we saw today included Dahl Porpoises and up close views of Puffins and Stellar Sea Lions.  The tour company was really good, it was Major Marine Tours.  Its not the largest tour company in the marina but the service can&#8217;t be beat.  When we got out into open ocean areas and the swells got large they were especially kind to the large number of people at the back railing &#8220;going for distance.&#8221;<br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5773054789764538754'><img src='https://lh5.googleusercontent.com/-WzbeE1A-HNE/UB4CvozIYYI/AAAAAAAAAuQ/qVkFepDPMzA/s288/0.jpg' border='0' width='400' height='400' style='margin:5px'></a></center><br /><br />As I post this picture of the sea lions &#8211; whose population has been declining for the last several years &#8211; I am reminded of one especially redeeming quality of the day.  SUN!! This is the first day since we left Minneapolis that we&#8217;ve had a sunny day.<br /><br />After a long day, we arrived at the Anchorage train station at 10:30 PM.  We got our luggage and the hotel shuttle picked us up for our ride to the hotel.  Holly and I transported all of our bags to our room, while Jane and Brian stayed on the shuttle to go to the airport to get our car.  We lucked out on the emerald aisle and got a good sized Dodge.  At least its big enough to hold all of our luggage and all of us.  We had envisioned a number of scenarios in which we stored our luggage at the hotel while we went North to Denali.<br /><br />As I write this we are in our room in the Mckinley Creekside Cabins.  Its not quite the same as our cabin on board the ship, but as Gabe would say, in Alaska, &#8220;Warm and Dry is more than you can hope for&#8221;  We had a pretty good drive in the rain to get here, including a swell stop at the liquor store in Wasilla, and some fake pictures of where we imagine Sarah Palin might have lived.  We got our tickets for tomorrows bus tour of Denali and then spent some time visiting with the sled dogs of Denali.  We took the very scenic Rock Creek hiking path back to the visitors center and then headed out to Prospectors Pizza for a delicious meal.<br /><br />Tomorrow will be another long day of hiking and bus riding as we go in search of Bear and Moose here in Denali National Park.  We are hoping for another clear day so that we can see Mount McKinley.<br /><br /><br />- Posted using BlogPress from my iPad<br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Alaska&z=10'>Alaska</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/02/icy-strait-hoonah/">Icy Strait / Hoonah</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-02T00:00:00-07:00" pubdate data-updated="true">Aug 2<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I mentioned type 3 fun in a previous posting, and although there was plenty of type 1 fun to be had in Icy Strait I&#8217;d like to begin this post with a little description of some type 3 fun.  As a reminder, the definition of type 3 fun is something that is lame when you do it, and remains lame and not fun even in the retelling.  Thus was our bike tour of Hoonah.<br /><br />I should start out by saying that it is not the fault of the bike tour guide, or anyone else involved with tours at Icy Straits.  We signed up for the bike tour / zip line combination tour through the cruise line because that was the only way we could sign up for a zip line tour in the afternoon.  The idea of an eight mile bike ride sounded appealing, a bike tour is a great way to see an area at a faster pace than walking, and is a nice way to get to know an area better than you do in a tour bus.  but, the simple truth is that Hoonah is a nice small fishing town in Alaska, but there really isn&#8217;t that much to see.  So, we saw the ferry terminal (3-4 ferries per week), the office bar, the seaplane dock, the library, the post office, and the airport.  Oh yeah, and it was RAINING yes  really really raining.  We were absolutely soaked to the bone through our pants and jackets and everything.  Yuck!  <br /><br />We all agreed that what we should have done was just not ride the bikes.  We could have stayed at the visitor center for a while staying warm and dry and then gotten on the bus to the top of the zip line.  Our mistake.  So, yes a wet cold bike ride through a town of 800 is virtually the definition of type 3 fun.<br /><br />But, lets leave that in the past and talk about the highlights of our day in Icy Strait.<br /><br />It began in the morning with our whale watching adventure.  We had booked a small tour with a private operator.   I would highly recommend that everyone does this.  The small boats are so much more nimble, and you get to know some of the local people in a way that you can&#8217;t when you are on a big boat with 100 other people.   So it happened that there were only six of us on the boat with captain Floyd.  We had plenty of room to spread out and we were not vying for position with other people when the whales showed up.<br /><br />As whale watching trips go, this one just couldn&#8217;t be beat.  We were not even out of the harbor before we were treated to a humpback bubble netting.  Bubble netting is one feeding strategy used by the humpacks.  They circle under the water making tons of bubbles that confuse the smelt to the point where they don&#8217;t know which way is up.  Then the whale swoops in from below with mouth wide open and scoops up hundreds of gallons of water and fish.  The whale closes its mouth and strains out all the yummy fish through its baleen.  Here&#8217;s a picture of the first whale we encountered.<br /><br /><br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5772201170222499842'><img src='https://lh4.googleusercontent.com/-OifYXuv-7IQ/UBr6YcM0yAI/AAAAAAAAAtc/raUOXRCW-io/s288/0.jpg' border='0' width='281' height='187' style='margin:5px'></a></center><br /> <br />Now, of course, anyone who has ever been on a whale watching trip has seen lots of whale tails.  As the humpbacks typically come up, show their hump for a while, and then dive deep.  When they dive deep they do so with their tail straight up in the air.  What most people do not get the opportunity to see first hand is a humpback breaching.  This is when the whale propels its whole body out of the water.  This is an amazing feet for an animal that averages 40 feet in length and weighs about 1000 pounds per foot of length!<br /><br /><br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5772201228003321314'><img src='https://lh4.googleusercontent.com/-NLYwtiSx1xw/UBr6bzc2JeI/AAAAAAAAAtk/eHT2vUkj01c/s288/1.jpg' border='0' width='400' height='400' style='margin:5px'></a></center><br /><br />We were lucky enough to see several such breaches.  I was lucky enough to have my camera pointed in the right direction when this one happened!<br /><br />Finally, we were in for one more bonus.  Orcas!  Its pretty rare to get to see Orcas on a whale watching trip!  After watching the humpbacks for a while our captain informed us that there were Orcas in the area.  This is another great example of the benefit of going on a smaller ship.  The captain can just take off and follow the whales you want to see.<br /><br /><br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5772201284964585906'><img src='https://lh5.googleusercontent.com/-BMXR--caUPo/UBr6fHpeEbI/AAAAAAAAAts/92AveghNBZE/s288/2.jpg' border='0' width='400' height='400' style='margin:5px'></a></center><br /><br />Here are two Orcas from the small pod we were following.  For a while we thought we were going to see the death of one of the sea lions swimming perilously close to this group, but I guess they were not hungry at the time.  The dorsal fin in the picture above is about six feet tall!<br /><br />So, the whale watching was awesome, but our final act of the day was also a  real blast.  The worlds longest, highest, fastest zip line!  Its a one shot ride from the top of the mountain outside of hoonah, down to sea level.  This was  really a stretch for Holly, who is a not a lover of heights, but the ride was fun.  Unlike other zip lines, this one actually has a harness that allows you to sit quite comfortably.  You don&#8217;t have any brakes to worry about as that is taken care of for you at the bottom by Physics.<br /><br />At the top of the zip line you brace your feet against the starting gate, six people at a time, and then they count down from three.  The gates open and you are off.  In our case we started out in the clouds, flying downward.  Suddenly you are out of the clouds and the ship and the water all come into beautiful view right in front of your eyes.  In just about 90 seconds the ride is over, but its a real thrill.  I&#8217;ve got some great video from the head mounted camera, but I&#8217;ll have to wait until I get home to edit that and post it.<br /><br /><br /><br />- Posted using BlogPress from my iPad<br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Hoonah,%20AK&z=10'>Hoonah, AK</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/">Chapel Talk 11 4 Nehemiah 13 1 3 23 31</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/">Runestone Interactive Announces New Editions of Interactive Textbooks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/bnmnetp">@bnmnetp</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bnmnetp',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Brad Miller -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

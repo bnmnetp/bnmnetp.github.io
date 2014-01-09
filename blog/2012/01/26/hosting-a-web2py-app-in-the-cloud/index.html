@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hosting a Web2py App in the Cloud - A Reputable Journal</title>
+  <meta name="author" content="Brad Miller">
+
+  
+  <meta name="description" content="I consider myself pretty up to speed on web development.&#13;
+I’ve spent the last two days trying to find a hosting solution for the data structures &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://bnmnetp.github.io/blog/2012/01/26/hosting-a-web2py-app-in-the-cloud">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="A Reputable Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">A Reputable Journal</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Hosting a Web2py App in the Cloud</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-26T00:00:00-08:00" pubdate data-updated="true">Jan 26<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I consider myself pretty up to speed on web development.</p>&#13;
+<p>I’ve spent the last two days trying to find a hosting solution for the data structures eBook…. I looked at too many of the following:</p>&#13;
+<ul><li>Google App Engine — I’m a long time GAE user, but the setup I have uses sphinx to generate content on the fly which it wants to store in pickle files on the local file system.  This doesn’t work with a GAE and some other systems that treat the file system as read only and expect any writing you do to go to a database.</li>&#13;
+<li>heroku — seems very promising, but I’m not sure how to configure web2py so it doesn’t need any local file system write access.  The lack of ssh access is a bit disconcerting.</li>&#13;
+<li>dotcloud — seems promising but the app kept hanging for no discernible reason.  I fought with it for the better part of the afternoon before deciding to move on.</li>&#13;
+<li>fluxflex — easy to get web2py installed, (1 minute)  but a real pain to try to work with a real app.  I’m not going to use the web interface for all my editing.  I want to git push and/or git pull to deploy and update the app.  It doesn’t seem possible to get both ease of installation and robust configuration management.</li>&#13;
+<li>pythonanywhere - non-starter</li>&#13;
+<li>webfaction — Its not free, but at least it has a command line I can work with and I’ve got the whole thing running.  The only confusing thing about webfaction is that they don’t list web2py as a supported framework, but when you type it in under other it magically works for  you….  The other annoying thing that I <em><strong>just</strong></em> discovered is that the 256MB limit is way too low for the default configuration.  I just now got a helpful email saying a support ticket had been opened for me because I was using too much memory.  This was like 15 minutes after I finally got my app running and I’d made about 5 page requests.</li>&#13;
+</ul> 
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Brad Miller</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-26T00:00:00-08:00" pubdate data-updated="true">Jan 26<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/python/'>python</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bnmnetp.github.io/blog/2012/01/26/hosting-a-web2py-app-in-the-cloud/" data-via="bnmnetp" data-counturl="http://bnmnetp.github.io/blog/2012/01/26/hosting-a-web2py-app-in-the-cloud/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/08/preppeller-13-13-wooohooo-just-a-quick-tumble-to-say-that-alfred-has-been-chosen/" title="Previous Post: Preppeller 13 13 Wooohooo Just A Quick Tumble To Say That Alfred Has Been Chosen">&laquo; Preppeller 13 13 Wooohooo Just A Quick Tumble To Say That Alfred Has Been Chosen</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/06/06/runestone-interactive/" title="Next Post: Runestone Interactive">Runestone Interactive &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/">Chapel Talk 11 4 Nehemiah 13 1 3 23 31</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/02/john-riedl-tribute/">John Riedl Tribute</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/">Runestone Interactive Announces New Editions of Interactive Textbooks</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/bnmnetp">@bnmnetp</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'bnmnetp',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Brad Miller -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
