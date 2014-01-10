@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-09T13:19:13-08:00</updated>
+  <updated>2014-01-10T14:06:21-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -194,6 +194,68 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[To Infinity and Beyond]]></title>
+    <link href="http://bnmnetp.github.io/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-/"/>
+    <updated>2013-02-17T00:00:00-08:00</updated>
+    <id>http://bnmnetp.github.io/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-</id>
+    <content type="html"><![CDATA[<p><img src="http://bnmnetp.github.io/images/31.media.tumblr.com/9c55cab1486b5c7bb35cf993249f6b4c/tumblr_midzqpGQSy1r729pmo1_1280.png" /></p>
+
+<p>We passed 3 million entries in our log data for <a href="http://interactivepython.org">InteractivePython.org</a> which got me to wondering about how we are growing.  The site has been live for 275 days.  You can really see how the site took off after day 100, which makes sense because that was bout the time fall classes started around the country.  The tiny plateau between day 225 and 250 corresponds to Christmas/winter break for most schools, and now that Spring semester is in full swing it looks like the slope has gotten steeper again.</p>
+
+
+
+
+<p>The dotted line is the linear best fit line with a slope of 12,836.7.  Even if our log database is not growing exponentially thats an impressively steep slope.</p>
+
+
+
+
+<p>And just because this is all about Python and education, here's the Python code that created the graph.  I love matplotlib, it is such a powerful tool for quickly looking at your data.</p>
+
+
+
+
+<pre>
+import matplotlib.pyplot as plt
+from numpy import polyfit, arange
+
+f = open('bydate','r')
+days = f.readlines()
+totals = [0]
+
+for d in days:
+    day,count = d.split('|')
+    count = int(count)
+    totals.append(totals[-1]+count)
+
+x = arange(len(totals))
+m,b = polyfit(x,totals,1)
+print m
+plt.plot(x,totals,x,m*x+b, '--k')
+plt.ylim(ymin=0)
+plt.show()
+</pre>
+
+
+
+
+<p>The data file is simple. One day per line with the date in one column and the number of actions in the other column.  Here are the last few days:</p>
+
+
+
+
+<pre>
+ 2013-02-14 | 24349
+ 2013-02-15 | 17396
+ 2013-02-16 | 12645
+</pre>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Everyday Python - New Blog]]></title>
     <link href="http://bnmnetp.github.io/blog/2013/01/13/everyday-python-new-blog/"/>
     <updated>2013-01-13T00:00:00-08:00</updated>
@@ -215,71 +277,6 @@
 
 
 <p><a href="http://interactivepython.org/courselib/static/everyday/2013/01/2_password.html">Generating a password part 1</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Introducing Everyday Python]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/01/02/introducing-everyday-python/"/>
-    <updated>2013-01-02T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/01/02/introducing-everyday-python</id>
-    <content type="html"><![CDATA[<p>  <div class="section" id="everyday-python"></p>
-
-<h1>Everyday Python<a class="headerlink" href="#everyday-python" title="Permalink to this headline">¶</a></h1>
-
-
-<p>It is always risky to make your New Years resolutions public, but this is one I&#8217;ve
-been thinking about for a while now, and so I&#8217;m going to go ahead and impose a
-measure of accountability on myself by proclaiming this publicly.  This week, I&#8217;m
-starting a series of educational blog posts here, and as a part of my <a class="reference external" href="http://interactivepython.org">Runestone
-Interactive</a> publishing project.</p>
-
-
-<p>My idea is to publish a series of Python programming projects, aimed at solving
-everyday problems, or puzzles. Hopefully these little projects will be interesting
-and will give learners motivation to dig into the details of the solutions.  I
-will provide links to the relevant Python programming constructs and data types in
-either of the two interactive books (<a class="reference external" href="http://interactivepython.org/courselib/static/thinkcspy/index.html">How to think like a computer scientist:
-Interactive Edition</a> , or
-<a class="reference external" href="http://interactivepython.org/courselib/static/pythonds/index.html">Problem Solving with Algorithms and Data Structures using Python</a>) This will let me
-focus on the problems, and not the minutia of the language.  Lets face it, reading
-about all the different possible string methods is not that exciting, but seeing
-them in action, and then wondering about what else you might be able to do with
-strings is OK.</p>
-
-
-<p>The great thing about Python is that if you write things in a straightforward
-manner its pretty easy to follow even if you don&#8217;t know all the details.  So, that
-is my intention.  Write a solution and do it in straightforward Python that
-beginners can understand.  Each project will appear over several days, and
-will likely include some homework related to the project.  I&#8217;ll provide the solution
-in a followup post.  In addition, I may refine the solution over the course of
-several days introducing more and interesting solutions or more advanced features
-of the Python language.</p>
-
-
-<p>In the back of my mind I am drawing inspiration from the old <em>Communications of the ACM</em> column by John
-Bently called <em>Programming Pearls</em> In John&#8217;s columns he would feature a particular
-problem or algorithm, and present it in a straight forward way, but then he would
-refine that solution again and again polishing it until he had an incredibly
-elegant solution.  It was beautiful because even a novice programmer could
-understand what was going on at the start of the article, but would get sucked in
-to the beautiful solution and would learn more than they thought possible.  While
-advanced programmers might chuckle at the initial solutions, even they would have
-to admit that they learned something by the end of each column.</p>
-
-
-<p>I already have a few ideas in mind for the first few projects.  I&#8217;m going to try
-to start fairly easy with some string and list kind of projects, and work my way up
-to more complex problems and algorithms, again this is meant to be educational so
-that in theory a beginner might read through these posts more or less
-chronologically, and learn some computer science along the way.</p>
-
-
-<p>Click the title to leave a comment.</p>
-
-
-<p></div></p>
 ]]></content>
   </entry>
   

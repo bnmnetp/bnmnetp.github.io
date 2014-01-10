@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-09T13:19:13-08:00</updated>
+  <updated>2014-01-10T14:06:21-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How Many Trees in the State of Washington?]]></title>
+    <link href="http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle/"/>
+    <updated>2014-01-09T10:59:31-08:00</updated>
+    <id>http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle</id>
+    <content type="html"><![CDATA[<p>What?  There is no real way to know the answer to this question, but it is one that was posed to the group today.  How do you handle uncertainty?  How do well do you think on your feet?  This is a typical interview question used by many high tech companies.  At Luther we might ask prospective faculty, &ldquo;how many cornstalks in the state of Iowa?&rdquo;</p>
+
+<p>This question definitely stumped a few people in the room, but others got the idea quickly.  This question isn&rsquo;t about getting the right answer.  There is a right answer, but nobody could tell you exactly what it is.  There is definitely a wrong answer:  &ldquo;I don&rsquo;t know,&rdquo; or &ldquo;Its not possible.&rdquo; are two examples of the wrong answer to this question.</p>
+
+<p>So what do you do?  You have to make some assumptions.  What fraction of the state of Washington is forested, what is the density of trees in the forested area.  If you use some reasonable numbers for those two items you can make a reasonable, and defensible estimate.  That is something that startups have to do every day.  Use the information they have available, and make their best guess.  Check the assumptions, and be ready to refine the answer.  This is not just true of startups, it is true for all businesses, projects, and life.</p>
+
+<p>Here are a few more highlights and themes from today:</p>
+
+<ul>
+<li>When you interview, have a story.  I&rsquo;ve been telling my students this for the last several years, but it is much more compelling when you hear it from someone who is actually making hiring decisions.  The story should be based around something you have built or designed yourself.</li>
+<li>You can have the best technology and still fail in many different ways.</li>
+<li>What is the one core competency of your company?  Starbucks was not coffee, it was training, so that customers had a consistent experience.  McDonalds was not making burgers, but rather distribution.</li>
+<li><p>Finally, it takes four kinds of people to make a successful startup:</p>
+
+<ul>
+<li>The Visionary</li>
+<li>The Builder</li>
+<li>The Designer</li>
+<li>The Closer
+One person may take on multiple of these roles, but you have to have them all in order to be successful as a company.  The Visionary is of course the person who is looking ahead five years and setting the direction.  The Builder, owns the solution space.  Builders are part of a spectrum.  Architects &mdash; Hackers.  Architects want to have a good strong lasting implementation, and tend to plan the whole system out before coding.  Hackers, tend to code as they think, and the best of them have an idea coded by the end of the meeting where it was first introduced.  Where are you on that spectrum?  The Designers interpret the vision to the builders, they own the problem space, and understand the user experience.  In the best case, the builder and the designer are the same person.  Finally, the Closer, usually a sales person, often also the CEO is the person who can close the deal.</li>
+</ul>
+</li>
+<li><p>The better a company is at</p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[JTerm 2014 - Day 1 at Amazon]]></title>
@@ -67,7 +100,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Chapel Talk 11 4 Nehemiah 13 1 3 23 31]]></title>
+    <title type="html"><![CDATA[Chapel Talk - 11/4 Nehemiah 13 1-3, 23-31]]></title>
     <link href="http://bnmnetp.github.io/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/"/>
     <updated>2013-11-05T00:00:00-08:00</updated>
     <id>http://bnmnetp.github.io/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31</id>
@@ -484,7 +517,7 @@ John:  Thats easy, Brad.  I’m not.  I live on in your memories, I live on t
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Oh the Insanity of It All April 19th Josh Is 18 Today the Cabin Got What Looks T]]></title>
+    <title type="html"><![CDATA[Oh the Insanity of It All!]]></title>
     <link href="http://bnmnetp.github.io/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t/"/>
     <updated>2013-04-19T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t</id>
@@ -552,7 +585,7 @@ We had a small mishap this morning. A fork bomb that was meant for a virtual mac
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[We Passed 3 Million Entries in Our Log Data for Interactivepython Org Which Got]]></title>
+    <title type="html"><![CDATA[To Infinity and Beyond]]></title>
     <link href="http://bnmnetp.github.io/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-/"/>
     <updated>2013-02-17T00:00:00-08:00</updated>
     <id>http://bnmnetp.github.io/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-</id>
@@ -766,15 +799,6 @@ chronologically, and learn some computer science along the way.</p>
     <updated>2012-08-09T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2012/08/09/here-s-the-headcam-video-of-the-zipline-at-icy-strait</id>
     <content type="html"><![CDATA[video/mp4mp44803601910
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Euchre Etiquette]]></title>
-    <link href="http://bnmnetp.github.io/blog/2012/08/05/euchre-etiquette/"/>
-    <updated>2012-08-05T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2012/08/05/euchre-etiquette</id>
-    <content type="html"><![CDATA[How do you know you have an enduring friendship?  When after more than 27 years as friends, and seven days of traveling together you can play Euchre &#8211; couple against couple &#8211; and still be friends at the end of the train ride from Seward to Anchorage.  Now you might think that a simple card game means nothing, but there a few members of our party of 4 who are a little on the competitive side.<br /><br />The controversy in this story came after our third missed bear siting on the train.  &#8220;There&#8217;s a bear up ahead on the left side of the train&#8230; No now its on the right&#8230; no, now its on the left&#8230;&#8221;  This is some kind of weird plan by the conductor to get the train rocking back and forth, or something to get the people in the back cars of the train to drink more.  So, here it is dear readers, as we are all in a state of frustration over bear sitings, the up card is a heart, I&#8217;m holding three diamonds (but no bowers).  Everyone passes, and it comes back around to me.  I bid diamonds.  This is when the trouble starts.  As it turns out, Holly has both red bowers and only passed because she had better diamonds than hearts.  Needless to say we get set, and I launch into some kind of self righteous tirade about &#8220;maur passing&#8221; just to set us.  This scenario plays itself out three times again over the course of the train ride&#8230;  Now last night I might have said some mean words about Holly&#8217;s card playing ethics, but today in hindsight, and in the spirit of type 2 fun, I can see that I might have been overly harsh in my judgement.<br /><br /><br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5773054740292003042'><img src='https://lh3.googleusercontent.com/--QmjSY4dcis/UB4Cswf9ZOI/AAAAAAAAAuI/29IDXmbLkyc/s288/1.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />The card playing on the train was the culmination of a long day.  The last day of a cruise is always a long hard day.  For one thing, I think thats one of the things that all cruise lines suck at.  You are an awesome person who must be waited on and pampered at every turn, until the last morning of the cruise.  Then you yesterday&#8217;s news, who must get up early and off the ship as soon as possible, so your room can be turned over to someone new and wonderful who must be pampered at every turn.   Or maybe I&#8217;m just grumpy that I&#8217;m not the new wonderful person anymore.  In any case we love cruising and its ability to allow you to see great places in the world, all the while knowing that you have a safe comfortable place to eat and sleep each night.<br /><br />We spent our day on a Kenai Fjord tour.   We had another day of wildlife sitings.  The new animals we saw today included Dahl Porpoises and up close views of Puffins and Stellar Sea Lions.  The tour company was really good, it was Major Marine Tours.  Its not the largest tour company in the marina but the service can&#8217;t be beat.  When we got out into open ocean areas and the swells got large they were especially kind to the large number of people at the back railing &#8220;going for distance.&#8221;<br /><br /><center><a href='https://picasaweb.google.com/116433235603763796408/InstantUpload#5773054789764538754'><img src='https://lh5.googleusercontent.com/-WzbeE1A-HNE/UB4CvozIYYI/AAAAAAAAAuQ/qVkFepDPMzA/s288/0.jpg' border='0' width='400' height='400' style='margin:5px'></a></center><br /><br />As I post this picture of the sea lions &#8211; whose population has been declining for the last several years &#8211; I am reminded of one especially redeeming quality of the day.  SUN!! This is the first day since we left Minneapolis that we&#8217;ve had a sunny day.<br /><br />After a long day, we arrived at the Anchorage train station at 10:30 PM.  We got our luggage and the hotel shuttle picked us up for our ride to the hotel.  Holly and I transported all of our bags to our room, while Jane and Brian stayed on the shuttle to go to the airport to get our car.  We lucked out on the emerald aisle and got a good sized Dodge.  At least its big enough to hold all of our luggage and all of us.  We had envisioned a number of scenarios in which we stored our luggage at the hotel while we went North to Denali.<br /><br />As I write this we are in our room in the Mckinley Creekside Cabins.  Its not quite the same as our cabin on board the ship, but as Gabe would say, in Alaska, &#8220;Warm and Dry is more than you can hope for&#8221;  We had a pretty good drive in the rain to get here, including a swell stop at the liquor store in Wasilla, and some fake pictures of where we imagine Sarah Palin might have lived.  We got our tickets for tomorrows bus tour of Denali and then spent some time visiting with the sled dogs of Denali.  We took the very scenic Rock Creek hiking path back to the visitors center and then headed out to Prospectors Pizza for a delicious meal.<br /><br />Tomorrow will be another long day of hiking and bus riding as we go in search of Bear and Moose here in Denali National Park.  We are hoping for another clear day so that we can see Mount McKinley.<br /><br /><br />- Posted using BlogPress from my iPad<br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Alaska&z=10'>Alaska</a></p>
 ]]></content>
   </entry>
   
