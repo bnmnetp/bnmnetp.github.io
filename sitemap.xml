@@ -621,10 +621,6 @@
         <lastmod>2014-01-09T11:55:06-08:00</lastmod>
     </url>
     <url>
-        <loc>http://bnmnetp.github.io/blog/2013/09/02/john-riedl-tribute/</loc>
-        <lastmod>2014-01-09T08:36:42-08:00</lastmod>
-    </url>
-    <url>
         <loc>
             http://bnmnetp.github.io/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/
         </loc>
@@ -653,6 +649,10 @@
     <url>
         <loc>http://bnmnetp.github.io/</loc>
         <lastmod>2014-01-10T17:57:47-08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bnmnetp.github.io/publications/</loc>
+        <lastmod>2014-01-11T12:57:47-08:00</lastmod>
     </url>
     <url>
         <loc>http://bnmnetp.github.io/robots.txt</loc>
