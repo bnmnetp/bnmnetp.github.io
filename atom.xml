@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-10T14:06:21-08:00</updated>
+  <updated>2014-01-11T10:55:33-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Starlight Coastal]]></title>
+    <link href="http://bnmnetp.github.io/blog/2014/01/10/the-starlight-coastal/"/>
+    <updated>2014-01-10T17:47:25-08:00</updated>
+    <id>http://bnmnetp.github.io/blog/2014/01/10/the-starlight-coastal</id>
+    <content type="html"><![CDATA[<p>A 23 hour train trip?  At some point that seemed like a really charming idea.  Eight hours in, I&rsquo;ll say that the bloom is off the rose.  Its been a nice ride, and a good chance to catch up on some reading and blogging but for the most part its just a long ride on a train full of people.  The views have been OK, but it is now dark outside.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How Many Trees in the State of Washington?]]></title>
@@ -790,15 +799,6 @@ chronologically, and learn some computer science along the way.</p>
 <p>Click the title to leave a comment.</p>
 </div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Here's the Headcam Video of the Zipline at Icy Strait.]]></title>
-    <link href="http://bnmnetp.github.io/blog/2012/08/09/here-s-the-headcam-video-of-the-zipline-at-icy-strait/"/>
-    <updated>2012-08-09T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2012/08/09/here-s-the-headcam-video-of-the-zipline-at-icy-strait</id>
-    <content type="html"><![CDATA[video/mp4mp44803601910
 ]]></content>
   </entry>
   
