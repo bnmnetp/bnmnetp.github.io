@@ -9,7 +9,7 @@
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="Here&#8217;s a quiz for you&#8230; What do deer, old cars, a saw mill, and black bears all have in common? These are all things I regularly see on my &hellip;">
+  <meta name="description" content="So I&#8217;m working on an app during my sabbatical that has an iPad component and an online Google App Engine component. The Google App Engine part &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/08/16/google-app-engine-service-login/">Google App Engine Service Login</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-16T00:00:00-07:00" pubdate data-updated="true">Aug 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">So I&#8217;m working on an app during my sabbatical that has an iPad component and an online Google App Engine component.  The Google App Engine part is half web based and half web service based.  Of course this means that the local client part has to be able to authenticate itself to the Google App Engine before it can communicate and do useful stuff.  Finding good reliable examples of how to do this is surprisingly hard.  For the Objective C code I&#8217;m working on I found a nice set of classes that do the trick for you here:  <a href="http://github.com/cameronr/GoogleAppEngineAuth">On Github</a>  For Python I found some example code on <a href="http://stackoverflow.com/questions/101742/how-do-you-access-an-authenticated-google-app-engine-service-from-a-non-web-p">stackoverflow</a>.  However it was not really in a reusable form.<br /><br />The basic outline of what you have to do is as follows:<br /><br />1.  Login to https://www.google.com/accounts/ClientLogin  This will give you an auth token.<br />2.  Use the token you gained in step 1 to login to your Google App engine application or service.  When you have successfully logged in to your service google will set an ACSID cookie for you to use when you make subsequent requests to your service.  This prevents you from having to login each time you make a web service request.<br /><br />I&#8217;ve taken some ideas from both places mentioned above and have created a Python class for logging in and accessing app engine services from Python.  To use this module you just need to import it and create a GoogleAppEngineLogin object.  Once the object is created you can use the open method on the object to access further services.  The open method is just a convenience wrapper around urllib2.urlopen but it also makes sure that your cookie has not expired before it makes a request.  If you have comments or suggestions for how to improve the code please let me know via email or leave a comment.<br /><br />The code is reproduced below, but you can also just download the file from git clone git@gist.github.com:36b1c45ed39298178907.git<br /><pre class="prettyprint" style="overflow: auto;"><br />import getpass<br />import urllib<br />import urllib2<br />import cookielib<br /><br /><br />class GoogleAppEngineLogin(object):<br />    """<br />   Logging in to an App Engine Account (when you use google users) is<br />   a two step process: First you must login to Google generally.  This<br />   gets you an auth token.  The auth token is used as part of a<br />   request to login to your app/service During the login process for<br />   your app/service the server sets a cookie with the name of ACSID,<br />   it is this cookie and its value that serves as the authentication<br />   token for your own service/app.  So, for future requests you need<br />   to give the server the cookie as part of your request.  Handling<br />   cookies can be a bit tricky if you haven't had some experience with<br />   it but luckily Python's cookielib module makes it all pretty<br />   automatic.<br /><br />    This class takes care of the whole login process for you, and then<br />    gives you a simple helper to access the URLs for your service.<br />    The helper function makes sure the cookie is still valid and<br />    passes on the request along with the cookie.  Technically you<br />    would not even need to use the helper function, you could use<br />    urllib2 directly to access your service but this seems a bit<br />    neater to me.<br /><br />    Some of this code was inspired by and lifted from an example on<br />    stackoverflow.com, but that was all in-line code my contribution<br />    is to add some error handling and encapsulate the whole thing<br />    inside a class to make it easier to include in my/your own<br />    programs.  Here's a link to the original thread on stackoverflow<br />    http://stackoverflow.com/questions/101742/how-do-you-access-an-authenticated-google-app-engine-service-from-a-non-web-pyt<br /><br />    """<br />    <br />    def __init__(self, user_email, user_pw, uri, source):<br />        """<br />        Create a Google App Engine Object.<br />        Arguments:<br />        - `user_email`:  your google username<br />        - `user_pw`: your google password<br />        - `uri`:  The url of your google app engine service<br />        - `source`: The unique name of your google app engine service<br />        """<br />        self._user_email = user_email<br />        self._user_pw = user_pw<br />        self._uri = uri<br />        self._source = source<br />        self._authtoken = None<br />        self._auth_cookie = None<br />        <br />        if not self.google_client_login():<br />            raise RuntimeError("Could not login to Google")<br />        <br />        if not self.app_engine_login():<br />            raise RuntimeError("Could not login to your application")<br /><br />        <br />    def google_client_login(self):<br />        #<br />        # get an AuthToken from Google accounts<br />        #<br />        auth_uri = 'https://www.google.com/accounts/ClientLogin'<br />        authreq_data = urllib.urlencode({ "Email":   self._user_email,<br />                                          "Passwd":  self._user_pw,<br />                                          "service": "ah",<br />                                          "source":  self._source,<br />                                          "accountType": "HOSTED_OR_GOOGLE" })<br />        auth_req = urllib2.Request(auth_uri, data=authreq_data)<br />        try:<br />            auth_resp = urllib2.urlopen(auth_req)<br />            auth_resp_body = auth_resp.read()<br />        except:<br />            return False<br />        # auth response includes several fields - we're interested in <br />        #  the bit after Auth= <br />        auth_resp_dict = dict(x.split("=")<br />                              for x in auth_resp_body.split("\n") if x)<br />        try:<br />            self._authtoken = auth_resp_dict["Auth"]<br />        except:<br />            return False<br /><br />        return True<br /><br />    def app_engine_login(self):<br />        #<br />        #  Get a cookie<br />        #  we use a cookie to authenticate with Google App Engine<br />        #  by registering a cookie handler here, this will automatically store the <br />        #  cookie returned when we use urllib2 to open<br />        #  http://www.google.com/accounts/ClientLogin<br />        self._cookiejar = cookielib.LWPCookieJar()<br />        opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(self._cookiejar))<br />        urllib2.install_opener(opener)<br /><br /><br />        serv_args = {}<br />        serv_args['continue'] = self._uri<br />        serv_args['auth']     = self._authtoken<br /><br />        full_serv_uri = "%s/_ah/login?%s" % (self._uri,urllib.urlencode(serv_args))<br /><br />        serv_req = urllib2.Request(full_serv_uri)<br />        serv_resp = urllib2.urlopen(serv_req)<br />        serv_resp_body = serv_resp.read()<br /><br /><br />        for i, c in enumerate(self._cookiejar):<br />            if c.name == 'ACSID':<br />                self._auth_cookie = c<br />                return True<br /><br />        return False<br /><br />    def open(self,url,data=None):<br />        """<br />        url should be a properly encoded url ready to go.  data is<br />        optional and should be used to provide parameters to pass<br />        along with the URL when you want to use POST instead of GET.<br />        If you provide data it must be properly encoded just as if you<br />        were calling urlopen directly yourself.<br />        """<br />        if self._auth_cookie.is_expired():<br />            if not self.google_client_login() or not self.app_engine_login():<br />                raise RuntimeError("Cannot get proper authorization for this request")<br />            <br />        serv_req = urllib2.Request(url,data)<br />        return urllib2.urlopen(serv_req)<br />        <br /><br />if __name__ == "__main__":<br />    user = raw_input("User: ")<br />    pw = getpass.getpass("Password: ")<br />    service_url = "http://myapp.appspot.com"<br />    service_name = "myapp"<br />    gae = GoogleAppEngineLogin(user,pw,service_url,service_name)<br />    h = gae.open("http://myapp.appspot.com/my/service")<br />    print h.read()<br />        <br /></pre><br /><br /><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-6097603738466978791?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -403,42 +439,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/06/23/ship-building-lessons-in-stockholm/">Ship Building Lessons in Stockholm</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-06-23T00:00:00-07:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Today we heard the name Gustavus Adophus quite a lot.  With apologies to my friends in St. Peter I must say he didn&#8217;t know much about ship building.  In all truth it really wasn&#8217;t his fault from a technical point of view, but he did pay the bill.  I am talking about the Vasa of course.  It is the largest ship to be recovered and salvaged and conserved in a museum.  This is definitely a must see sight if you go to Stockholm.  The Vasa was built in 1628 and was the largest ship in the Swedish fleet.  Unfortunately she sunk on her maiden voyage out of the harbor!  The reason she sank was because there was not enough ballast in the ship to counterbalance the forces on the sails in the heavy breeze.  This seems like an incredibly dumb mistake for a ship builder to make, but there you have it.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/06/23/1331.jpg'><img src='http://blogpress.w18.net/photos/10/06/23/s_1331.jpg' border='0' width='187' height='281' style='margin:5px'></a></center><br />The ship lay submerged for 333 years until an amazing recovery operation in the 1960&#8217;s brought the ship to the surface.  The Vasa is amazingly well preserved due to the water conditions in the Baltic.   The museum is just as interesting for the story of how the ship was raised to the surface and preserved as it was to learn about the building of the ship in 1628.<br /><br />The Vasa Museum was our first stop today in Stockholm.  Our day started early as we had to debark from the vision of the seas by 7:40.  The sailing in to Stockholm was once again beautiful and very reminiscent of Wisconsin and Northern Minnesota.  We are all very lonely for our cabin at the sight of water, boats, rave trampolines and all the pine trees.  The rest of the morning we wandered around stockholm enjoying the shops and the old town.  We did a little shopping.  I got an official USA soccer jersey to wear for the game today.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/06/23/1332.jpg'><img src='http://blogpress.w18.net/photos/10/06/23/s_1332.jpg' border='0' width='187' height='281' style='margin:5px'></a></center><br />After walking around all morning we returned to our hotel to check in and rest up a bit.  We are staying in the Rica Hotel on Gamla Stan in a wonderful part of stockholm.  The streets around here are narrow and cobbled and there are restaurants and bars and little shops everywhere.  We hunted around a little bit to decide where to have a late afternoon dinner and watch the USA versus Algeria match.  We found O&#8217;Leary&#8217;s, a boston themed restaurant owned by a swede who spent time in Boston.  They had the England match on upstairs and the USA match on down.  The American fans were many and much louder than the brits.  In a funny small world moment I recognized one of the other fans in the restaurant as the same person we had watched football with when we were in Balestrand!  They were originally from Minnesota but had moved to Boston.<br /><br />To catch up on our activities, yesterday we were in Tallin Estonia, and the day before was a day at sea.  Tallin was a really nice city, it has the oldest medieval walled city in Europe.  The city reminded us a little of Italy and of some of the walled cities we had visited in Tuscany.  The city is an interesting mix of scandinavian and Russian influences.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/06/23/1333.jpg'><img src='http://blogpress.w18.net/photos/10/06/23/s_1333.jpg' border='0' width='187' height='281' style='margin:5px'></a></center><center><a href='http://blogpress.w18.net/photos/10/06/23/1334.jpg'><img src='http://blogpress.w18.net/photos/10/06/23/s_1334.jpg' border='0' width='187' height='281' style='margin:5px'></a></center><br />Jane had a walking tour of the city that we got on the internet and we followed that plan around the city for several hours.  After that we returned to the ship for our last night on board.<br /><br />We are having a great time, but we are all very tired today.  We just didn&#8217;t have a lot of energy for many touring activities.  And the USA victory took a lot of energy as well.  Early to bed tonight, but up again early tomorrow morning for our flight to Dublin.<br /><br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Stockholm,%20Sweden&z=10'>Stockholm, Sweden</a></p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-1679743920454965479?l=blog.bonelakesoftware.com' alt='' /></div>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/12/">&larr; Older</a>
@@ -456,6 +456,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/14/notes-from-the-road/">Changing the World, JTerm 2014</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/13/student-blogs/">Student Blogs</a>
       </li>
     
@@ -469,10 +473,6 @@
     
       <li class="post">
         <a href="/blog/2014/01/09/last-day-in-seattle/">How Many Trees in the State of Washington?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a>
       </li>
     
   </ul>

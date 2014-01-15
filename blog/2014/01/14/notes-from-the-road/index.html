@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>VPython Version 5 - A Reputable Journal</title>
+  <title>Changing the World, JTerm 2014 - A Reputable Journal</title>
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="The other day I discovered that the folks working on VPython have been very busy over the last couple of years. I had given up on VPython because the &hellip;">
+  <meta name="description" content="The following is a republication of a post I wrote for Luther College&rsquo;s &ldquo;Ideas and Creations&rdquo; Blog. Changing the World: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bnmnetp.github.io/blog/2009/04/18/vpython-version-5">
+  <link rel="canonical" href="http://bnmnetp.github.io/blog/2014/01/14/notes-from-the-road">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="A Reputable Journal" type="application/atom+xml">
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">VPython Version 5</h1>
+      <h1 class="entry-title">Changing the World, JTerm 2014</h1>
     
     
       <p class="meta">
@@ -97,14 +97,32 @@
   
 
 
-<time datetime="2009-04-18T00:00:00-07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2009</time>
+<time datetime="2014-01-14T09:07:18-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">The other day I discovered that the folks working on VPython have been very busy over the last couple of years.  I had given up on VPython because the Mac distribution was so difficult to use.  It required the X windows server and one point and lots of other extra junk at other times.  But now things are easy!  There is a great installer package and it just works.<br /><br />For those of you who have not heard of VPython before it is a 3D graphics module called visual built on top of Python and OpenGL.  You can do a lot of nice 3D graphics very simply with VPython.  Its great for education in math and physics and introductory computer science.<br /><br />So as an experiment I built a turtle graphics module on top of VPython.  I use turtle graphics a lot in teaching but the TKinter turtles all suffer from some event loop problems when you use them with IDLE.  VPython does not suffer from this problem plus gives you a lot of other cool benefits.  One of the benefits is that the window resizes automatically for you based on the units you use in your application.  Want to draw a picture at the atomic level of detail?  No problem, want to draw planets circling each other?  Again no problem.<br /><br />Here&#8217;s a screen capture of a fractal tree created in 3-D using my new turtle.<br /><br /><div style="text-align:center;"><img src="http://lh3.ggpht.com/_wISL1SSAaEA/SenOsybCWeI/AAAAAAAAADI/vUI7S1pADpQ/Picture%202.png?imgmax=800" alt="Picture 2.png" border="0" width="510" height="530" /></div><br /><br />Here&#8217;s the VPython turtle code:<br /><br /><pre><br />def tree(t,trunkLength):<br />    if trunkLength < 5:<br />        return<br />    else:<br />        turnDz = random.randint(20,40)<br />        turnDx = random.randint(20,40)<br />        trunkShort = random.randint(10,20)<br />        t.width(trunkLength/10.0)<br />        if trunkLength < 25:<br />            t.color(color.green)<br />        else:<br />            t.color((174/255.0,145/255.0,0))<br />        t.forward(trunkLength)<br />        # right trunk<br />        t.right(turnDz,ZAXIS)<br />        tree(t,trunkLength-trunkShort)<br />        # left trunk<br />        t.left(2*turnDz,ZAXIS)<br />        tree(t,trunkLength-trunkShort)<br />        # front trunk<br />        t.right(turnDz,ZAXIS)<br />        t.right(turnDx,XAXIS)<br />        tree(t,trunkLength-trunkShort)<br />        # back trunk<br />        t.left(2*turnDx,XAXIS)<br />        tree(t,trunkLength-trunkShort)<br />        # restore<br />        t.right(turnDx,XAXIS)<br />        t.backward(trunkLength)<br /><br /></pre><br /><br />If you want to check out the turtle module and play with it, you are welcome to do so:  hg clone http://bitbucket.org/bnmnetp/vturtle  Or send me mail.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-2070433995579609364?l=blog.bonelakesoftware.com' alt='' /></div>
+<div class="entry-content"><p>The following is a republication of a post I wrote for Luther College&rsquo;s <a href="https://www.luther.edu/ideas-creations-blog/">&ldquo;Ideas and Creations&rdquo; Blog</a>.</p>
+
+<h3>Changing the World: Understanding Entrepreneurship, January 2014</h3>
+
+<p>I have never been so glad to leave Minnesota as I was on January 6th.  The temperature outside was -24 with a windchill that defied all logic.  I was headed for Seattle with 11 Luther students to begin my course on &ldquo;Understanding Entrepreneurship.&rdquo;  I really enjoy traveling with students.  Their energy, their enthusiasm, their ability to eat a <em>doughnut burger</em> at the airport before getting on a three hour flight.</p>
+
+<p>Our itinerary for the three-week course includes four days in Seattle, an overnight train ride, six days in San Francisco, four days in Silicon Valley, a continuation of the train ride to Las Angeles where we will conclude the trip.  Notice the nice progression of temperatures, from -24 in Minneapolis to 48 in Seattle to 68 here in San Francisco today, to even warmer in LA.</p>
+
+<p>The goals of the course are for the students to meet with people from a variety of companies, from early stage startups to very successful large companies, and everything in between.  We’ll meet with technology companies, Venture Capitalists, Public Relations folks, managers, programmers, you name it.  The point is for the students to hear stories.  Sometimes the most interesting and valuable stories are the stories about failure.  Sometimes they are about success.  Almost always they are a combination of the two that demonstrate passion, persistence, and the willingness to take a risk.  The students are from a variety of majors including CS, management, accounting, marketing, and communications.The mix of majors creates good discussion, and questions from a variety of perspectives.</p>
+
+<p>Some of the companies we have visited you have probably heard of:  Microsoft, Pinterest, Google, and Amazon. Many of the people we have talked to at those companies are veterans of smaller companies that have ended up in a large company.  Some of the companies we have visited you maybe haven&rsquo;t heard of, and may never hear of:  Sqwiggle, Moovweb, Strava, Capsule, and Fullscreen.  Some of these smaller companies are still in the &ldquo;garage phase,&rdquo; they are just a couple of people with a great idea and a huge amount of passion to change the world.</p>
+
+<p>I have connections to many of these companies from my former life as a software entrepreneur, but what is even more exciting is that I am connected to some of these companies by former students, and other Luther Alums.  What a great experience it is for the students to see Luther Alumni, here on the west coast, doing great things.</p>
+
+<p><img src="/images/JTerm14/Pinterest.jpg" alt="Dan and John, Two smart guys" /></p>
+
+<p>The students all have their own reasons for taking the course.  Some want to see if the West coast is right for them. Some want to learn about the different job opportunities in the high tech area. Some are exploring.  Some are looking for an internship for next summer at that one cool company.</p>
+
+<p>It is the passion, and the willingness to take a risk on something you believe in that I really hope they take away from this course.  Too often, our Lutheran midwest culture teaches us that failure is bad, something to be ashamed of.  What they hear in Silicon Valley is that not trying is far worse.  Everyone here has stories about failing.  One, two, three or more startups that never made it.  The reasons are as varied as the people.  Something like 90% of newly started companies are not successful.  But, people learn from their mistakes, move on, and do something new, sometimes they do something great.  Always, they are trying to make a difference.  If they learn nothing more than that, the course will be a success.</p>
 </div>
 
 
@@ -127,21 +145,15 @@
   
 
 
-<time datetime="2009-04-18T00:00:00-07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2009</time>
+<time datetime="2014-01-14T09:07:18-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/python/'>Python</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bnmnetp.github.io/blog/2009/04/18/vpython-version-5/" data-via="bnmnetp" data-counturl="http://bnmnetp.github.io/blog/2009/04/18/vpython-version-5/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://bnmnetp.github.io/blog/2014/01/14/notes-from-the-road/" data-via="bnmnetp" data-counturl="http://bnmnetp.github.io/blog/2014/01/14/notes-from-the-road/" >Tweet</a>
   
   
   
@@ -150,10 +162,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2009/02/01/book-plug/" title="Previous Post: Book Plug">&laquo; Book Plug</a>
+        <a class="basic-alignment left" href="/blog/2014/01/13/student-blogs/" title="Previous Post: Student Blogs">&laquo; Student Blogs</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2009/05/11/mit-uses-python-instead-of-scheme-for-intro-cs/" title="Next Post: MIT uses Python instead of Scheme for intro CS">MIT uses Python instead of Scheme for intro CS &raquo;</a>
       
     </p>
   </footer>
