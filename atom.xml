@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-15T16:33:35-08:00</updated>
+  <updated>2014-01-18T10:24:22-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Lesson in Venture Capital]]></title>
+    <link href="http://bnmnetp.github.io/blog/2014/01/17/a-lesson-in-venture-capital/"/>
+    <updated>2014-01-17T11:13:15-08:00</updated>
+    <id>http://bnmnetp.github.io/blog/2014/01/17/a-lesson-in-venture-capital</id>
+    <content type="html"><![CDATA[<p>&ldquo;Ann is on a roll, we are going to be late.&rdquo;  I texted to Phillip.  Indeed she was.  Ann Winblad was the first investor in my Company, Net Perceptions, back in 1996.  She was an investor, a  mentor, and a supporter of us for years.  Today she was giving my students a lesson in the new economics and ecosystems of software development.  <em>I</em> was taking notes as fast as I could to keep up with the stream of new companies and technologies that were <em>must know</em> things according to Ann.</p>
+
+<p>After the lesson she opened up the floor to questions, and the stories began to flow.  And flow, and when the students stopped asking questions she asked them questions and told them stories about their answers.  We were long past the end of our scheduled time, and I noticed her long term assistant Katie, standing across the room arms folded, glaring at Ann.  Heaven only knows what poor entrepreneur was downstairs sweating while she was entertaining us!</p>
+
+<p>Ann repeated a number of themes we&rsquo;ve heard throughout the trip.  One I don&rsquo;t think I&rsquo;ve mentioned here but we have heard from several people:  <strong>Don&rsquo;t sweat your first job.</strong> or Your first job is just your first job, so don&rsquo;t worry about it too much.  This is such a change from when I graduated from college, and I think its a real shock for midwestern students to hear.  But I think it is true.  We tend to think of that fist job as a real important commitment whereas the truth is it is a chance to get experience for 2-3 years and then to help you really decide your direction.</p>
+
+<p>One thing I&rsquo;m not sure I agree with is Ann&rsquo;s assertion that 90% of sofware will be assembled from already existing components.  This may be true for some companies, but it seems to me that <em>real</em>, <em>big</em>, breakthroughs are still going to come from creating new and innovative components for other people.</p>
+
+<p>This is continuing a trend/theme that we have picked up on in this trip, but that may also be a bit troubling.  1.  It is so much cheaper for a software company to get off the ground these days.  Amazon AWS, is just one contributor to this, Sonatype is another.  2. Automated sales and marketing software is yet another.  Gone are the days when you need a big face to face sales force to sell enterprise software. 3. The result of this is that VC&rsquo;s are able to make bets on software companies for a relatively small amount of money.  The downside is that they may not be investing in the riskier, bigger companies that may result in really big breakthroughs.</p>
+
+<p>For my own, and your convenience, here is a list of words of wisdom and interesting companies to check out:</p>
+
+<ul>
+<li>You need to know Atlassian, Github, and Sonatype</li>
+<li>Think about <em>Engagement Moments</em> These are the times that people are really paying attention to their devices and are good times to hit them up with an ad.</li>
+<li>Learn Hadooop</li>
+<li>Writing SQL is a requirement for everyone</li>
+<li>Plumgrid</li>
+<li>Hortonworks</li>
+<li>MongoDB</li>
+<li>Puppet and Chef</li>
+<li>Nuodb</li>
+<li>Baynote</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Changing the World, JTerm 2014]]></title>
@@ -688,35 +721,6 @@ Already looking forward to next year!
     <id>http://bnmnetp.github.io/blog/2013/01/13/everyday-python-new-blog</id>
     <content type="html"><![CDATA[<p>I&#8217;ve decided that it will be best to keep my personal blog separate from the new Everyday Python blog project.  All of the infrastructure to make the posts interactive just work so much better when I have control of the server and everything else.  So  You can head over to <a href="http://interactivepython.org/courselib/everyday">Everyday Python</a> and click on the Everyday Python link there, or if you want to subscribe to the RSS feed for that project you can use <a href="http://feeds.feedburner.com/everydaypython">this link</a>.
 </p>
-
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vail 2013]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/01/11/vail-2013/"/>
-    <updated>2013-01-11T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/01/11/vail-2013</id>
-    <content type="html"><![CDATA[<p>I just got back from four awesome days of skiing in Vail and Beaver Creek.</p>
-
-<a href="http://www.flickr.com/photos/71706244@N00/8370576743" title="View 'Vail 2013' on Flickr.com"><img height="375" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8079/8370576743_c4f2dc7325.jpg" width="500"/></a>
-
-<p>The Colorado resorts have a really cool new way of handling the ski passes, instead of clipping a tag on your jacket you now get a credit card with an RFID chip in it.  Talk about a ski pass that appeals to the Geek in me!  But whats even better is that every time you go on a lift, there is an RFID reader that grabs your ID and logs that lift ride.  So now at the end of the day you can go on to a website and see how many vertical feet you skiied that day.  Very cool.  Over our four days of skiing we did just over 95,000 vertical feet!  If we&#8217;d only known how close to 100k we would get we surely would have had a shorter lunch break on day one!</p>
-<p>Since snow started late and has been a bit sparse since Christmas there was a lot of snow making going on.  The mounds of snow created by the snow machines remind you of a Dr. Seuss drawing:
-
-<a href="http://www.flickr.com/photos/71706244@N00/8370575981" title="View 'Vail 2013' on Flickr.com"><img height="241" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8367/8370575981_cdf794cd8c.jpg" width="500"/></a>
-</p>
-
-<p>I&#8217;m pleased to say that my skiing has really improved thanks to my Solomon BBR 8.9 skis.  I&#8217;ve started to call them my magic skis because I can even do the moguls!  Here&#8217;s a picture I took of craig at the top of one particularly narrow and moguly run.  Note that I got down first with enough time to turn around and snap some pictures.
-
-<a href="http://www.flickr.com/photos/71706244@N00/8371644502" title="View 'Vail 2013' on Flickr.com"><img height="500" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8190/8371644502_c6ea8baee7.jpg" width="375"/></a></p>
-
-<p>Here&#8217;s another shot of Craig just before he jumped off the cliff.  Note once again who went first to take the picture:   :-)
-<a href="http://www.flickr.com/photos/71706244@N00/8370575729" title="View 'Vail 2013' on Flickr.com"><img height="375" title="Vail 2013" alt="Vail 2013" border="0" src="http://farm9.staticflickr.com/8470/8370575729_b21214285b.jpg" width="500"/></a> </p>
-
-<p>All in all it was a great four days of skiing with the guys.  Can&#8217;t wait until next year. </p>
-
 
 
 ]]></content>
