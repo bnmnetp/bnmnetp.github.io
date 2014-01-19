@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Jterm14, | A Reputable Journal]]></title>
+  <title><![CDATA[Category: JTerm14 | A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/blog/categories/jterm14/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-18T10:24:22-08:00</updated>
+  <updated>2014-01-18T16:54:23-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -14,31 +14,21 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Envisioning the Future]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/08/envisioning-the-future/"/>
-    <updated>2014-01-08T12:38:25-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/08/envisioning-the-future</id>
-    <content type="html"><![CDATA[<p>Today was a big day.  The Microsoft mother ship.</p>
+    <title type="html"><![CDATA[There Is No Cure for Curiosity]]></title>
+    <link href="http://bnmnetp.github.io/blog/2014/01/14/there-is-no-cure-for-curiosity/"/>
+    <updated>2014-01-14T08:07:07-08:00</updated>
+    <id>http://bnmnetp.github.io/blog/2014/01/14/there-is-no-cure-for-curiosity</id>
+    <content type="html"><![CDATA[<p>Curiosity is the cure for boredom.  There is no cure for curiosity.  We began our day with a visit to PR firm, Schwartz MSL, Bryan Scanlon gave the group a great overview of the players in the PR space and how PR companies work.   The tagline for their group may be something like &ldquo;telling stories that matter.&rdquo; I like this and it resonates well with a lot of the career advice people are sharing with the students.</p>
 
-<p>We began our visit with an hour in the Envisioning Center, this is Microsoft&rsquo;s take on the future, 5 years out.  There was some pretty cool stuff in there.  If you&rsquo;ve ever drooled over the fancy table on Hawaii Five-O where they can flick things from phone to table, table to screen, etc. You have a pretty good idea of where Microsoft thinks the workplace of the future is headed.  I&rsquo;m there, I want it.  I&rsquo;m already imagining myself walking into the classroom, iPad in hand, and flicking a copy of where we left off last class from my iPad to the board.  Wait, thats a bit of a mixed vision, I&rsquo;m pretty sure they were surface pads, not iPads.  But you get the idea.</p>
+<p>In fact Bryan told a great story about his brother that really helped emphasize the message that you have to find a real world outlet for your skills and then use your skills to develop something real, something that you can tell a story about.</p>
 
-<p>After the Envisioning center we moved to another of the 128 buildings on the Microsoft campus where we had time to have our daily group meeting and book presentation.  We were escorted by Tina Wang, and she joined in to the discussion of Sara Lacy&rsquo;s Once you&rsquo;re Lucky, Twice you&rsquo;re good.  Tina works as part of Enwe&rsquo;s group, but is the only one here in the US.  After our lunch we had a really fun talk with Neil Leslie, who shared a lot of wisdom with the group.  And finally Dave Maltz joined us for a final hour on scaling up the data center.  Its fair to say that by the time Dave was done everyone had soaked up about as much information as is possible for brain to take in one day.</p>
+<p>Lunch time was great as Gage, Dylan, and I went to an Irish pub called Irish Times.  The outstanding feature of this pub is that they had the Arsenal game on all of the TVs during lunch today.  The arsenal were taking on Aston Villa, in a game we needed to win to retake &ldquo;top of the table.&rdquo;  In a stroke of good luck I got to see both Arsenal goals before we had to take off for our afternoon meeting.</p>
 
-<p>A couple observations.  This is not the Microsoft of the 90&rsquo;s.  The Microsoft that I knew and worked with at Net Perceptions were, well, to be blunt, they were bullies back then, because they could be.  I get a real sense that is gone.  Instead they talk of change, how they need to compete, and if you&rsquo;re comfortable, you shouldn&rsquo;t be there.</p>
+<p>The afternoon meeting was at Hatch Today, a co-working space that houses many many small companies.  We visited for over an hour with Eric, one of the co-founders of Sqwiggle.  Eric is young, energetic, has a thousand side projects going, and is the epitome of young founders here in the area.</p>
 
-<p>Returning to key themes:</p>
+<p>The software that sqwiggle produces is somewhat like Google Hangouts, but the video is only in black and white and only updates every 10 seconds, unless you are actively in a conversation with a co-worker.  The idea is you can have sqwiggle on all day, without using a ton of bandwidth, and your fellow workers can see when you are in your office.  If they need to have a quick conversation, they just double click on you.  This allows for good interaction in a company that is totally distributed.  Sqwiggle is a great example of such a company.  One founder is in the UK, one in San Francisco, and one of their developers is Luther alum Cam Webb, currently in Atlanta, but soon to move to Des Moines.  I think many of us were skeptical of the idea until we met with Eric, saw it in action, and learned a bit more.</p>
 
-<ul>
-<li>Passion:  I don&rsquo;t think I need to say more about this.</li>
-<li>Projects:  I&rsquo;ve told my seniors this for a few years now, but it has a lot more credibility coming from an outsider.  You need to have a project to show when you go to interview.  Bring an app you have built on your phone.  Show a website you have developed on the browser.  Be prepared to talk about the challenges, trade-offs, and succeesses you have had in developing your project.</li>
-<li>Linked In:  This is a critical tool for finding a job.  If you are a CS junior or senior and have not created a LinkedIn profile.  Do it now.</li>
-<li>Failure:  We heard a lot of stories about failure today, and we will continue to hear of them.  Startups, started and &lsquo;buried,&rsquo; products and projects that failed and never saw the light of day.  The most important message, that I hope students get from this trip, and talking to a bunch of successful people, is that failure is OK.  <strong>Fail Fast</strong>, and learn from your mistakes.  It is a cliche to say that you learn more from failure than success, but it is true.</li>
-</ul>
-
-
-<p>In the evening it was fun to unwind with our first group dinner.  We met up with recent Luther Alum Jake Nowosatka at Cutters Crabhouse.  Its at the far end of Pike Place Market.</p>
-
-<p><img src="/images/JTerm14/PikePlace.jpg" alt="" /></p>
+<p>Many of the themes we&rsquo;ve been hearing about were repeated by Eric this afternoon, but I would like to highlight one that has not been mentioned yet.  <strong>Measurement</strong>  Eric showed us the company dashboard.  Very cool, how many user, how many paying users, how many active users, revenue per month.  All great metrics to run the business by.  In addition he talked about other metrics they are collecting relative to the details of the software.  This is a really important lesson.  If you want to really improve something, you need to measure it.  For example, bandwidth usage, number of active users in a conversation, you need to set goals, and then work on designing your software to meet those goals.</p>
 ]]></content>
   </entry>
   
