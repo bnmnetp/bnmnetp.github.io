@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-19T09:29:34-08:00</updated>
+  <updated>2014-01-19T09:58:33-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -50,7 +50,7 @@
     <id>http://bnmnetp.github.io/blog/2014/01/17/a-lesson-in-venture-capital</id>
     <content type="html"><![CDATA[<p>&ldquo;Ann is on a roll, we are going to be late.&rdquo;  I texted to Phillip.  Indeed she was.  Ann Winblad was the first investor in my Company, Net Perceptions, back in 1996.  She was an investor, a  mentor, and a supporter of us for years.  Today she was giving my students a lesson in the new economics and ecosystems of software development.  <em>I</em> was taking notes as fast as I could to keep up with the stream of new companies and technologies that were <em>must know</em> things according to Ann.</p>
 
-<p>After the lesson she opened up the floor to questions, and the stories began to flow.  And flow, and when the students stopped asking questions she asked them questions and told them stories about their answers.  We were long past the end of our scheduled time, and I noticed her long term assistant Katie, standing across the room arms folded, glaring at Ann.  Heaven only knows what poor entrepreneur was downstairs sweating while she was entertaining us!</p>
+<p>After the lesson she opened up the floor to questions, and the stories began to flow. <!-- more --> And flow, and when the students stopped asking questions she asked them questions and told them stories about their answers.  We were long past the end of our scheduled time, and I noticed her long term assistant Katie, standing across the room arms folded, glaring at Ann.  Heaven only knows what poor entrepreneur was downstairs sweating while she was entertaining us!</p>
 
 <p>Ann repeated a number of themes we&rsquo;ve heard throughout the trip.  One I don&rsquo;t think I&rsquo;ve mentioned here but we have heard from several people:  <strong>Don&rsquo;t sweat your first job.</strong> or Your first job is just your first job, so don&rsquo;t worry about it too much.  This is such a change from when I graduated from college, and I think its a real shock for midwestern students to hear.  But I think it is true.  We tend to think of that fist job as a real important commitment whereas the truth is it is a chance to get experience for 2-3 years and then to help you really decide your direction.</p>
 
@@ -87,7 +87,7 @@
 
 <p>I have never been so glad to leave Minnesota as I was on January 6th.  The temperature outside was -24 with a windchill that defied all logic.  I was headed for Seattle with 11 Luther students to begin my course on &ldquo;Understanding Entrepreneurship.&rdquo;  I really enjoy traveling with students.  Their energy, their enthusiasm, their ability to eat a <em>doughnut burger</em> at the airport before getting on a three hour flight.</p>
 
-<p>Our itinerary for the three-week course includes four days in Seattle, an overnight train ride, six days in San Francisco, four days in Silicon Valley, a continuation of the train ride to Las Angeles where we will conclude the trip.  Notice the nice progression of temperatures, from -24 in Minneapolis to 48 in Seattle to 68 here in San Francisco today, to even warmer in LA.</p>
+<p>Our itinerary for the three-week course includes four days in Seattle, an overnight train ride, six days in San Francisco, four days in Silicon Valley, a continuation of the train ride to Las Angeles where we will conclude the trip. <!-- more --> Notice the nice progression of temperatures, from -24 in Minneapolis to 48 in Seattle to 68 here in San Francisco today, to even warmer in LA.</p>
 
 <p>The goals of the course are for the students to meet with people from a variety of companies, from early stage startups to very successful large companies, and everything in between.  We’ll meet with technology companies, Venture Capitalists, Public Relations folks, managers, programmers, you name it.  The point is for the students to hear stories.  Sometimes the most interesting and valuable stories are the stories about failure.  Sometimes they are about success.  Almost always they are a combination of the two that demonstrate passion, persistence, and the willingness to take a risk.  The students are from a variety of majors including CS, management, accounting, marketing, and communications.The mix of majors creates good discussion, and questions from a variety of perspectives.</p>
 
@@ -110,7 +110,9 @@
     <id>http://bnmnetp.github.io/blog/2014/01/14/there-is-no-cure-for-curiosity</id>
     <content type="html"><![CDATA[<p>Curiosity is the cure for boredom.  There is no cure for curiosity.  We began our day with a visit to PR firm, Schwartz MSL, Bryan Scanlon gave the group a great overview of the players in the PR space and how PR companies work.   The tagline for their group may be something like &ldquo;telling stories that matter.&rdquo; I like this and it resonates well with a lot of the career advice people are sharing with the students.</p>
 
-<p>In fact Bryan told a great story about his brother that really helped emphasize the message that you have to find a real world outlet for your skills and then use your skills to develop something real, something that you can tell a story about.</p>
+<p>In fact Bryan told a great story about his brother that really helped emphasize the message that you have to find a real world outlet for your skills and then use your skills to develop something real, something that you can tell a story about. <!-- more --></p>
+
+<p>Bryan&rsquo;s story was that at an interview for an engineering job his brother was asked to glue together two PVC pipes.  A pretty practical, maybe even mundane, task for someone applying for an engineering job.  However his brother took stock of the situation and said he couldn&rsquo;t do it.  &ldquo;Why not?&rdquo; asked the interviewer.  &ldquo;You don&rsquo;t have any cleaning fluid&rdquo; was the reply, &ldquo;without cleaning fluid I can&rsquo;t do a proper job and the joint won&rsquo;t last.&rdquo;  He was hired.</p>
 
 <p>Lunch time was great as Gage, Dylan, and I went to an Irish pub called Irish Times.  The outstanding feature of this pub is that they had the Arsenal game on all of the TVs during lunch today.  The arsenal were taking on Aston Villa, in a game we needed to win to retake &ldquo;top of the table.&rdquo;  In a stroke of good luck I got to see both Arsenal goals before we had to take off for our afternoon meeting.</p>
 
@@ -182,7 +184,7 @@
     <id>http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle</id>
     <content type="html"><![CDATA[<p>What?  There is no real way to know the answer to this question, but it is one that was posed to the group today.  How do you handle uncertainty?  How do well do you think on your feet?  This is a typical interview question used by many high tech companies.  At Luther we might ask prospective faculty, &ldquo;how many cornstalks in the state of Iowa?&rdquo;</p>
 
-<p>This question definitely stumped a few people in the room, but others got the idea quickly.  This question isn&rsquo;t about getting the right answer.  There is a right answer, but nobody could tell you exactly what it is.  There is definitely a wrong answer:  &ldquo;I don&rsquo;t know,&rdquo; or &ldquo;Its not possible.&rdquo; are two examples of the wrong answer to this question.</p>
+<p>This question definitely stumped a few people in the room, but others got the idea quickly. <!-- more --> This question isn&rsquo;t about getting the right answer.  There is a right answer, but nobody could tell you exactly what it is.  There is definitely a wrong answer:  &ldquo;I don&rsquo;t know,&rdquo; or &ldquo;Its not possible.&rdquo; are two examples of the wrong answer to this question.</p>
 
 <p>So what do you do?  You have to make some assumptions.  What fraction of the state of Washington is forested, what is the density of trees in the forested area.  If you use some reasonable numbers for those two items you can make a reasonable, and defensible estimate.  That is something that startups have to do every day.  Use the information they have available, and make their best guess.  Check the assumptions, and be ready to refine the answer.  This is not just true of startups, it is true for all businesses, projects, and life.</p>
 
