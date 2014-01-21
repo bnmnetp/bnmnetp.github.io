@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Python | A Reputable Journal]]></title>
+  <title><![CDATA[Category: python | A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-19T09:58:33-08:00</updated>
+  <updated>2014-01-20T17:41:15-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -121,7 +121,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Making Python3 My Default]]></title>
+    <title type="html"><![CDATA[Making Python3 my default]]></title>
     <link href="http://bnmnetp.github.io/blog/2013/04/15/making-python3-my-default/"/>
     <updated>2013-04-15T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2013/04/15/making-python3-my-default</id>
@@ -269,7 +269,7 @@ plt.show()
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Generating a Password - Part 1]]></title>
+    <title type="html"><![CDATA[Generating a password - part 1]]></title>
     <link href="http://bnmnetp.github.io/blog/2013/01/03/generating-a-password-part-1/"/>
     <updated>2013-01-03T00:00:00-08:00</updated>
     <id>http://bnmnetp.github.io/blog/2013/01/03/generating-a-password-part-1</id>

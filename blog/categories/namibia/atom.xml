@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Namibia | A Reputable Journal]]></title>
+  <title><![CDATA[Category: namibia | A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/blog/categories/namibia/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-19T09:58:33-08:00</updated>
+  <updated>2014-01-20T17:41:15-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Saying Goodbye to Namibia]]></title>
+    <title type="html"><![CDATA[Saying goodbye to Namibia]]></title>
     <link href="http://bnmnetp.github.io/blog/2012/07/06/saying-goodbye-to-namibia/"/>
     <updated>2012-07-06T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2012/07/06/saying-goodbye-to-namibia</id>
@@ -30,7 +30,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Almost Back to Windhoek]]></title>
+    <title type="html"><![CDATA[Almost back to Windhoek]]></title>
     <link href="http://bnmnetp.github.io/blog/2012/07/02/almost-back-to-windhoek/"/>
     <updated>2012-07-02T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2012/07/02/almost-back-to-windhoek</id>
@@ -64,7 +64,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Photo Highlights From Namibia]]></title>
+    <title type="html"><![CDATA[Photo Highlights from Namibia]]></title>
     <link href="http://bnmnetp.github.io/blog/2012/06/30/photo-highlights-from-namibia/"/>
     <updated>2012-06-30T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2012/06/30/photo-highlights-from-namibia</id>
@@ -76,7 +76,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[On the Road Again]]></title>
+    <title type="html"><![CDATA[On the road again]]></title>
     <link href="http://bnmnetp.github.io/blog/2012/06/30/on-the-road-again/"/>
     <updated>2012-06-30T00:00:00-07:00</updated>
     <id>http://bnmnetp.github.io/blog/2012/06/30/on-the-road-again</id>
