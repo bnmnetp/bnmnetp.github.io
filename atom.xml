@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
   <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-20T17:41:15-08:00</updated>
+  <updated>2014-01-22T12:51:58-08:00</updated>
   <id>http://bnmnetp.github.io/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Applied Math and Physics]]></title>
+    <link href="http://bnmnetp.github.io/blog/2014/01/22/applied-math-and-physics/"/>
+    <updated>2014-01-22T10:38:12-08:00</updated>
+    <id>http://bnmnetp.github.io/blog/2014/01/22/applied-math-and-physics</id>
+    <content type="html"><![CDATA[<p>You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn&rsquo;t have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.</p>
+
+<p><img src="http://bnmnetp.github.io/images/JTerm14/SportVision2.jpg" alt="SportVision" /></p>
+
+<p>Here&rsquo;s the group on the &ldquo;practice Field&rdquo;  They were moving the blue and the yellow line for us as we stood there. You can kind of see them on the big screen on the wall.  The rack of equipment behind me is what they need to bring to each game, and the computers on the desk are whats used by the operator during the game.  The operator can adjust all sorts of parameters based on field conditions and uniform colors etc.  In addition, in the case of a really bad snow storm, they can also project all the yard markers on top of the snow so the people at home have a better view of the field than the players.</p>
+
+<!-- more -->
+
+
+<p>In addition to football, Sportvision is also a big provider of on screen information for NASCAR and Major League Baseball.  In the case of NASCAR they display a box of statistics right above the car as it goes around the track.  For Major League Baseball, they show the ball and strike zone, and a bunch of statistics about pitch placement.  They also collect statistics about every player on the diamond.  They track the ball and the players using an array of cameras placed around the ballpark.  Here&rsquo;s where the cool math and physics comes in.  Based on the flight of the ball, they compute the spin!  The cameras are not good enough yet to track the laces, but with some math, they can provide a visualization of how the ball is spinning!  Very cool.</p>
+
+<p>Sportvision is looking at lots of sports, and looking at newer ways to get more information about every player.  For example Football players may have special chips embedded in their shoulder pads someday in the future.  NASCAR cars already have a special box in them that tracks all kinds of information for Sportvision, Soccer players are not likely to have any special chips as it would likely inhibit their play, unless something could be put in their shoes.</p>
+
+<p><img src="http://bnmnetp.github.io/images/JTerm14/SportVision1.jpg" alt="SportVision" /></p>
+
+<p>Like most of the companies we have met with Big Data is an important part of Sportvision&rsquo;s  future plans.  Right now their main customers are the television networks, but in the future individual teams will pay for data.  One interesting aspect of the big data strategy for Sportvision is that they don&rsquo;t have to productize the analytics part of it. The reason is because most teams just want the data, and they consider the analytics to be a competitive advantage.  This doesn&rsquo;t mean that Sportvision won&rsquo;t productize some analysis software, because there is a market at the college level and below where teams can&rsquo;t afford to pay for their own data scientists.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Social Implications of a Self-Driving Car]]></title>
@@ -701,29 +725,6 @@ plt.show()
  2013-02-15 | 17396
  2013-02-16 | 12645
 </pre>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[And Now it can be told]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/01/31/and-now-it-can-be-told/"/>
-    <updated>2013-01-31T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/01/31/and-now-it-can-be-told</id>
-    <content type="html"><![CDATA[<p>Loyal readers will remember that last summer we cruised to Alaska, and some very secretive things were happening on that cruise that I could only refer to rather cryptically.  Well, with the airing of last nights episode of Top Chef the story can now be told.</p>
-
-<p>We were on the set for the filming of the Quickfire challenge onboard the ship!  Although the filming took several hours, we got less than 1 second of screen time.  But here we are!  Brian and I happened to be in a pretty good spot as the camera flashes past us several times.  The ladies we were talking to turned out to be from Wisconsin, in fact from right by our cabin!  The two in the print shirts actually got an additional 2 seconds of screen time along with their comments on the food.
-
-<a href="http://www.flickr.com/photos/71706244@N00/8433342727" title="View 'IMG_0276' on Flickr.com"><img height="375" title="IMG_0276" alt="IMG_0276" border="0" src="http://farm9.staticflickr.com/8354/8433342727_68204d7fdd.jpg" width="500"/></a>
-
-Jane, Brian, and I all made it on again towards the end of the challenge.  Sadly there is no sign of Holly.
-<a href="http://www.flickr.com/photos/71706244@N00/8434428742" title="View 'IMG_0277' on Flickr.com"><img height="375" title="IMG_0277" alt="IMG_0277" border="0" src="http://farm9.staticflickr.com/8355/8434428742_32af448c8b.jpg" width="500"/></a>
-
-<p>Of course since this was all way before the show started we had no idea who any of the chefs really were.  I do remember really liking Sheldon&#8217;s lettuce cups as well as Stefan&#8217;s little potato soup cup.  I could swear that I remember seeing Kristin on the ship, so maybe she got to come along since she would be competing in last chance kitchen in Juneau. </p>
-
-<p>Right now I&#8217;m looking forward to the finale.  I&#8217;m not sure who I want to win the most, with Stefan and Josie gone all the villains are off the show.  I think it would be awesome if Kristin makes it through LCK and gets to compete against Sheldon or Josh in the Finale.  Thats Josh, by the way, in the first photo.</p>
-
-
 
 ]]></content>
   </entry>
