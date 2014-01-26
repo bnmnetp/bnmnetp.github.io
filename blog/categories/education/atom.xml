@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: education | A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/blog/categories/education/atom.xml" rel="self"/>
-  <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-22T12:51:58-08:00</updated>
-  <id>http://bnmnetp.github.io/</id>
+  <link href="http://reputablejournal.com/blog/categories/education/atom.xml" rel="self"/>
+  <link href="http://reputablejournal.com/"/>
+  <updated>2014-01-25T17:11:06-08:00</updated>
+  <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to Think like a Computer Scientist Interactive Edition]]></title>
-    <link href="http://bnmnetp.github.io/blog/2012/07/25/how-to-think-like-a-computer-scientist-interactive-edition/"/>
+    <link href="http://reputablejournal.com/blog/2012/07/25/how-to-think-like-a-computer-scientist-interactive-edition/"/>
     <updated>2012-07-25T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2012/07/25/how-to-think-like-a-computer-scientist-interactive-edition</id>
+    <id>http://reputablejournal.com/blog/2012/07/25/how-to-think-like-a-computer-scientist-interactive-edition</id>
     <content type="html"><![CDATA[<p>After hosting the interactive edition of How to Think like a Computer Scientist on the Google app engine at thinkcspy.appspot.com for over a year, we finally made the switchover to a new domain.  As of today all requests to thinkcspy will be automatically redirected to <a href="http://interactivepython.org">http://interactivepython.org</a></p>
 
 
@@ -58,9 +58,9 @@
   
   <entry>
     <title type="html"><![CDATA[Runestone Interactive]]></title>
-    <link href="http://bnmnetp.github.io/blog/2012/06/06/runestone-interactive/"/>
+    <link href="http://reputablejournal.com/blog/2012/06/06/runestone-interactive/"/>
     <updated>2012-06-06T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2012/06/06/runestone-interactive</id>
+    <id>http://reputablejournal.com/blog/2012/06/06/runestone-interactive</id>
     <content type="html"><![CDATA[<p>What a week its been!   So much has happened in the last week that I just have to take some time out to organize my thoughts and get some of this information out there where others can read it.</p>
 
 
@@ -164,9 +164,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to Think Like a Computer Scientist - Interactive Edition]]></title>
-    <link href="http://bnmnetp.github.io/blog/2011/09/06/how-to-think-like-a-computer-scientist-interactive-edition/"/>
+    <link href="http://reputablejournal.com/blog/2011/09/06/how-to-think-like-a-computer-scientist-interactive-edition/"/>
     <updated>2011-09-06T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2011/09/06/how-to-think-like-a-computer-scientist-interactive-edition</id>
+    <id>http://reputablejournal.com/blog/2011/09/06/how-to-think-like-a-computer-scientist-interactive-edition</id>
     <content type="html"><![CDATA[<p>Its fun to see my sabbatical project getting loose the wild.  It is always a bit scary to work on something creative and new and then let other people play with it and respond to it.  Such is the case with the new eBook I worked on during my sabbatical.  Unlike other eBooks that you may be aware of,  this book -- in the words of Emeril -- "kicks it up a notch".  Using some cool open source javascript code that I've had to modify and bend a bit for my own use this book allows the reader to try their hand at Python right in the book.  Examples are fully runnable in two different ways.  Each section has an accompanying video.  My co-author, David Ranum and I are using this book in class this Fall and its fun to see how the students interact with the book.  We've had none of the usual Fall frustration at getting Python installed on students machines.  You can have a look at the book <a href="http://thinkcspy.appspot.com">here</a>.  Note, you'll need a good modern browser, and a gmail account.  We've had the best success with Chrome and Safari.  Firefox 6 works but seems  a little flakey at times.</p>
 
 

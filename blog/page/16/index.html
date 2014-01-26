@@ -9,7 +9,7 @@
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="The documentation included with the Python RTM API is a bit sparse, so here is a really simple example of a script that allows you to add tasks to &hellip;">
+  <meta name="description" content="For the trip to Silicon Valley I wanted to have everyone be able to twitter about the experience using their own twitter account, but I also want to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bnmnetp.github.io/blog/page/16/">
+  <link rel="canonical" href="http://reputablejournal.com/blog/page/16/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -53,7 +53,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input type="hidden" name="q" value="site:reputablejournal.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -79,6 +79,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/10/creating-a-group-twitter-repository/">Creating a Group Twitter Repository</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-10T00:00:00-08:00" pubdate data-updated="true">Jan 10<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">For the trip to Silicon Valley I wanted to have everyone be able to twitter about the experience using their own twitter account, but I also want to have a central place for everyone following the trip as a whole to see all of our tweets.  How to do that?  Python and the Twitter API to the rescue.  You can see the results of this by checking out @lutherlive on twitter<br /><br /><pre><br />import twitter<br /><br />USER = "Your group account"<br />PASS = "your group password"<br />TAG = "tag contained in each message"<br /><br />api = twitter.Api(username=USER,password=PASS)<br /><br /># figure out when my last post was<br />statuses = api.GetUserTimeline(user=USER)<br />last_post = statuses[0].GetCreatedAt()<br /><br /># Get the timelines for all friends since my last_post<br />tl = api.GetFriendsTimeline(user=USER,since=last_post)<br />for post in tl:<br />    # since my posts may show up in friends timelines avoid reposting loop<br />    if post.user.screen_name != USER and TAG in post.text:<br />        api.PostUpdate(post.user.screen_name + ": " + post.text)<br /></pre><br /><br />This little script logs in using the twitter account you create for the group.  Importantly, this account must follow all of the group members that you want to be able to re-tweet.  When one of the group members wants a tweet to show up on the group account they must use the TAG, in our case @lutherlive, somewhere in their post.<br /><br />After logging in, the script grabs the timeline for all of the members of the group.  This timeline is restricted to the posts since the last a post was made by the group user.  This is important to do otherwise you would end up with duplicate re-tweets every time the script is run.<br /><br />Next the script simply loops over all of the posts and checks for the tag.  If the tag is in the post the post is updated along with the screen name of the original group member that made the post.<br /><br />I put the script into a cron-job on the computer science server at Luther to run every 15 minutes, so while the @lutherlive user isn&#8217;t a real time reflection of its group members tweets, its pretty darn close.<br /><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-6575147596563953147?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -131,6 +167,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/25/final-visits/">Final Visits</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/22/applied-math-and-physics/">Applied Math and Physics</a>
       </li>
     
@@ -144,10 +184,6 @@
     
       <li class="post">
         <a href="/blog/2014/01/14/notes-from-the-road/">Changing the World, JTerm 2014</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/14/there-is-no-cure-for-curiosity/">There is no Cure for Curiosity</a>
       </li>
     
   </ul>

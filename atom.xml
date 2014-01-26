@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/atom.xml" rel="self"/>
-  <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-22T12:51:58-08:00</updated>
-  <id>http://bnmnetp.github.io/</id>
+  <link href="http://reputablejournal.com/atom.xml" rel="self"/>
+  <link href="http://reputablejournal.com/"/>
+  <updated>2014-01-25T17:11:06-08:00</updated>
+  <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
     
@@ -14,13 +14,40 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Final Visits]]></title>
+    <link href="http://reputablejournal.com/blog/2014/01/25/final-visits/"/>
+    <updated>2014-01-25T16:29:17-08:00</updated>
+    <id>http://reputablejournal.com/blog/2014/01/25/final-visits</id>
+    <content type="html"><![CDATA[<p>My daughter Kaia is getting married next summer.  This is not new news, the proposal was made an accepted last June.  But planning is in full swing now, and I was kind of excited when secured a visit with Capsule, because capsule provides a service where all the guests at your wedding can download the capsule app and it will automatically upload all the photos to a special page for the wedding.</p>
+
+<p>This company was founded by Cyrus, who set out to solve a simple problem, a problem we&rsquo;ve been coping with on this course as well.  When you travel, how do you share all your digital photos with the buddies you are traveling with.  When you have a big party?  When you have a wedding, bachelor party, bachelorette party?  Capsule has solved this in a nice, elegant way.  All the photos uploaded for a particular event, are shared with the participants in the event.  Its that easy.  No need to bore all of your Facebook followers with every photo from your trip.  If you&rsquo;re an Instagram user, its super easy to add a special hashtag to your photo and it will be automatically imported into Capsule as well as shared on Instagram.</p>
+
+<p>What was incredibly interesting for me was to listen to Cyrus talk about business models, and monetizing the service.  Cyrus is not a CS guy, he&rsquo;s a business guy.  Of course as an entrepreneur he can talk the tech talk but his home is on the business side.  Here&rsquo;s an example of how differently we tech people approach a problem than the business guys.</p>
+
+<p><strong>Problem:</strong> Each event needs to have a unique id, that can be given to the participants to use to join the event, and/or tag their Instagram photos.</p>
+
+<p><strong>Tech Solution:</strong> Ha, this is easy, we&rsquo;ll just allow people to pick a unique identifier, lets say <code>#TannerAndKaia</code> No problem, this is easy just give them a text entry box, and a quick database lookup to make sure the hashtag hasn&rsquo;t already been taken.  No big deal, even an intern could code this up.</p>
+
+<p><strong>Business Guy Solution:</strong>  Ok, just generate a random hashtag <code>#JK286TJ</code>.  Now if the bride and the groom want to have a nice hashtag for their wedding, we can sell them that as a strategy to monetize the service.</p>
+
+<p>Brilliant!  We tech guys get so focused on the solution most of the time that we never stop to think about simple strategies to monetize.</p>
+
+<p>Our second visit of the day was to <a href="http://fullscreen.net" title="Fullscreen">Fullscreen</a>.  This is a Culver City company that employs three Luther Alumni!  Two of which I am very proud to say are also alumni of this very course.  Drew is employee number 3 of Fullscreen, and Aaron is number 15, Jacob is not far after Aaron.  Fullscreen now numbers over 220 employees, and is a very fast growing new media company.</p>
+
+<p>What do they do?  What do you mean new media company?  Well, this is where my age really starts to show.  Apparently there are people in this world that spend a lot of time watching &ldquo;shows&rdquo; on youTube.  Shows like that <a href="http://www.youtube.com/user/JennaMarbles" title="JennaMarbles">Marbles girl</a>, or teenagegirl14, and thousands of others.  As Aaron said, this is not your demographic Brad, this is targeted at a group of people that will probably never pay a cable bill.  So Fullscreen is a Network in the sense that they aggregate all kinds of these new generation entertainers, and help them monetize their videos on youtube.  Note that monetize is a euphemism for ad serving, but thats really only a small part of what Fullscreen is about.  Its a great company and Drew, Aaron, and Jacob were excellent hosts.  They even talked their CEO into spending about an hour with us answering questions.</p>
+
+<p>Another interesting story around Fullscreen is that Drew and George (CEO of Fullscreen) met at Coloft Santa Monica.  We were also lucky enough to meet with the founder of Coloft, Avesta, (@avestar).  This is a great example of the synergies that can happen in a co-working facility.  At the time, Drew and a partner were trying to start a little consulting company to do coding for hire.  Avesta happened to be talking to George who was looking for someone with Drew&rsquo;s skill set.  So he introduced each other, and a highly successful company was launched.  I love this!  As an alum and faculty member of a college that counts community as one of its defining characteristics, its great to see other organizations that lift up community as a differentiator as well.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Applied Math and Physics]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/22/applied-math-and-physics/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics/"/>
     <updated>2014-01-22T10:38:12-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/22/applied-math-and-physics</id>
+    <id>http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics</id>
     <content type="html"><![CDATA[<p>You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn&rsquo;t have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/SportVision2.jpg" alt="SportVision" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/SportVision2.jpg" alt="SportVision" /></p>
 
 <p>Here&rsquo;s the group on the &ldquo;practice Field&rdquo;  They were moving the blue and the yellow line for us as we stood there. You can kind of see them on the big screen on the wall.  The rack of equipment behind me is what they need to bring to each game, and the computers on the desk are whats used by the operator during the game.  The operator can adjust all sorts of parameters based on field conditions and uniform colors etc.  In addition, in the case of a really bad snow storm, they can also project all the yard markers on top of the snow so the people at home have a better view of the field than the players.</p>
 
@@ -31,7 +58,7 @@
 
 <p>Sportvision is looking at lots of sports, and looking at newer ways to get more information about every player.  For example Football players may have special chips embedded in their shoulder pads someday in the future.  NASCAR cars already have a special box in them that tracks all kinds of information for Sportvision, Soccer players are not likely to have any special chips as it would likely inhibit their play, unless something could be put in their shoes.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/SportVision1.jpg" alt="SportVision" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/SportVision1.jpg" alt="SportVision" /></p>
 
 <p>Like most of the companies we have met with Big Data is an important part of Sportvision&rsquo;s  future plans.  Right now their main customers are the television networks, but in the future individual teams will pay for data.  One interesting aspect of the big data strategy for Sportvision is that they don&rsquo;t have to productize the analytics part of it. The reason is because most teams just want the data, and they consider the analytics to be a competitive advantage.  This doesn&rsquo;t mean that Sportvision won&rsquo;t productize some analysis software, because there is a market at the college level and below where teams can&rsquo;t afford to pay for their own data scientists.</p>
 ]]></content>
@@ -39,16 +66,16 @@
   
   <entry>
     <title type="html"><![CDATA[The Social Implications of a Self-Driving Car]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/18/a-googeley-day/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/18/a-googeley-day/"/>
     <updated>2014-01-18T10:40:14-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/18/a-googeley-day</id>
+    <id>http://reputablejournal.com/blog/2014/01/18/a-googeley-day</id>
     <content type="html"><![CDATA[<p>Today we moved south, from Fisherman&rsquo;s wharf down to Menlo Park.  But most of the day was spent at Google.  This was certainly a day that everyone has been looking forward to for most of the trip.</p>
 
 <p>My interest in Google+ was renewed by a great tech talk by Ed Chi.  Who said some very nice things about me in front of my students.  They probably think I paid him.  We heard about supporting an organization as large as Google from Luther Alum Charles Banta, and about i18n &mdash; i(nternationalizatio)n from Luther Alum and former CS faculty member Craig Cornelius.  Yes there are 18 letters between the parenthesis!  We had a fabulous tour of campus, a stop in the 3D printer lab, time at the gift shop, and of course, lunch at Charlie&rsquo;s Cafe.</p>
 
 <p>You have probably heard about Google&rsquo;s famous slides, but they also have fire poles for people that want to quickly get down a floor.  And, in case you don&rsquo;t want to walk between buildings they have these cool Google Bikes all over the place.  Guests are encouraged not to ride the bikes, but nobody said anything about posing with one for your picture.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/GoogleBike.jpg" alt="Google Bike" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/GoogleBike.jpg" alt="Google Bike" /></p>
 
 <p>The other talk we heard was from Brian, a member of the self driving car project, who gave us a quick overview of the Google X Chauffeur Project.  The technology is interesting, and I have to admit I hadn&rsquo;t really thought past the cool sensors, and modeling that would be required.  But, what is even more interesting are the many social implications of self driving cars.</p>
 
@@ -59,7 +86,7 @@
 
 <p>What if our self driving cars could take the kids to school in the morning, and then return a while later to bring us to work?  What if we could just bring up our smart phone and request a self driving car to pick us up at work and drop us off at home.  We might not need such large garages.  Could we turn much of our driveway space into gardens?  Would this mean the end of rush hour?  Probably not, but if the car was self driving, could a self driving car pick up you and a couple of friends on a logical path to work and drop you off?  On the freeways would traffic flow more fluidly if the cars could talk to each other and the automated sensor systems were good enough to ensure a nice safe drive with cars spaced out 10 feet apart?  A self driving car has no need to slow down and gawk if there is an accident.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/lexus.jpg" alt="lexus" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/lexus.jpg" alt="lexus" /></p>
 
 <p>Would we collectively own fewer vehicles if our car could be called to pick us up with the touch of a button on our smart phone, or automatically scheduled to pick us up based on our daily calendar?</p>
 
@@ -69,9 +96,9 @@
   
   <entry>
     <title type="html"><![CDATA[A Lesson in Venture Capital]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/17/a-lesson-in-venture-capital/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/17/a-lesson-in-venture-capital/"/>
     <updated>2014-01-17T11:13:15-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/17/a-lesson-in-venture-capital</id>
+    <id>http://reputablejournal.com/blog/2014/01/17/a-lesson-in-venture-capital</id>
     <content type="html"><![CDATA[<p>&ldquo;Ann is on a roll, we are going to be late.&rdquo;  I texted to Phillip.  Indeed she was.  Ann Winblad was the first investor in my Company, Net Perceptions, back in 1996.  She was an investor, a  mentor, and a supporter of us for years.  Today she was giving my students a lesson in the new economics and ecosystems of software development.  <em>I</em> was taking notes as fast as I could to keep up with the stream of new companies and technologies that were <em>must know</em> things according to Ann.</p>
 
 <p>After the lesson she opened up the floor to questions, and the stories began to flow. <!-- more --> And flow, and when the students stopped asking questions she asked them questions and told them stories about their answers.  We were long past the end of our scheduled time, and I noticed her long term assistant Katie, standing across the room arms folded, glaring at Ann.  Heaven only knows what poor entrepreneur was downstairs sweating while she was entertaining us!</p>
@@ -102,9 +129,9 @@
   
   <entry>
     <title type="html"><![CDATA[Changing the World, JTerm 2014]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/14/notes-from-the-road/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/14/notes-from-the-road/"/>
     <updated>2014-01-14T09:07:18-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/14/notes-from-the-road</id>
+    <id>http://reputablejournal.com/blog/2014/01/14/notes-from-the-road</id>
     <content type="html"><![CDATA[<p>The following is a republication of a post I wrote for Luther College&rsquo;s <a href="https://www.luther.edu/ideas-creations-blog/">&ldquo;Ideas and Creations&rdquo; Blog</a>.</p>
 
 <h3>Changing the World: Understanding Entrepreneurship, January 2014</h3>
@@ -119,7 +146,7 @@
 
 <p>I have connections to many of these companies from my former life as a software entrepreneur, but what is even more exciting is that I am connected to some of these companies by former students, and other Luther Alums.  What a great experience it is for the students to see Luther Alumni, here on the west coast, doing great things.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/Pinterest.jpg" alt="Dan and John, Two smart guys" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/Pinterest.jpg" alt="Dan and John, Two smart guys" /></p>
 
 <p>The students all have their own reasons for taking the course.  Some want to see if the West coast is right for them. Some want to learn about the different job opportunities in the high tech area. Some are exploring.  Some are looking for an internship for next summer at that one cool company.</p>
 
@@ -129,9 +156,9 @@
   
   <entry>
     <title type="html"><![CDATA[There is no Cure for Curiosity]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/14/there-is-no-cure-for-curiosity/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/14/there-is-no-cure-for-curiosity/"/>
     <updated>2014-01-14T08:07:07-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/14/there-is-no-cure-for-curiosity</id>
+    <id>http://reputablejournal.com/blog/2014/01/14/there-is-no-cure-for-curiosity</id>
     <content type="html"><![CDATA[<p>Curiosity is the cure for boredom.  There is no cure for curiosity.  We began our day with a visit to PR firm, Schwartz MSL, Bryan Scanlon gave the group a great overview of the players in the PR space and how PR companies work.   The tagline for their group may be something like &ldquo;telling stories that matter.&rdquo; I like this and it resonates well with a lot of the career advice people are sharing with the students.</p>
 
 <p>In fact Bryan told a great story about his brother that really helped emphasize the message that you have to find a real world outlet for your skills and then use your skills to develop something real, something that you can tell a story about. <!-- more --></p>
@@ -150,9 +177,9 @@
   
   <entry>
     <title type="html"><![CDATA[Student Blogs]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/13/student-blogs/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/13/student-blogs/"/>
     <updated>2014-01-13T16:35:04-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/13/student-blogs</id>
+    <id>http://reputablejournal.com/blog/2014/01/13/student-blogs</id>
     <content type="html"><![CDATA[<p>A few people have asked for the links to the students blogs.  Here they are:</p>
 
 <ul>
@@ -175,16 +202,16 @@
   
   <entry>
     <title type="html"><![CDATA[A Golden Bike Ride]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/12/a-golden-bike-ride/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/12/a-golden-bike-ride/"/>
     <updated>2014-01-12T15:08:31-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/12/a-golden-bike-ride</id>
+    <id>http://reputablejournal.com/blog/2014/01/12/a-golden-bike-ride</id>
     <content type="html"><![CDATA[<p>What a great day for a bike ride!  We rented some bikes at Blazing Saddles, right next to the hotel.  Then took off for the golden gate bridge.  It was a beautiful day and no surprise, the bike paths were very crowded with all kinds of people enjoying the outdoors and the scenery.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/GoldenBike1.jpg" alt="" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/GoldenBike1.jpg" alt="" /></p>
 
 <p>About half of the group above rode across the bridge and back.  Here is me leading the pack.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/GoldenBike2.jpg" alt="" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/GoldenBike2.jpg" alt="" /></p>
 
 <p>The other half followed me further on into Sausalito, with the goal of making it to Muir Woods.  The second half of the trek started off very nicely with a long downhill.  which was quickly followed by a steep uphill.  All well and good until my riders started to figure out that &ldquo;what goes down must be climbed back up!&rdquo;  The ride flattened out through Sausalito and beyond so it was a nice easy ride for a while.  But it was getting to noon, and we&rsquo;d already ridden about 12 miles.  I misunderstood the directions from the bike shop and thought we had about 12 more to go.  So, since the guys all had tickets to Alcatraz and had to be ready to board by about 3:30 we decided to turn back short of our goal.  It turns out we were much closer and could have made it to the redwoods!  Bummer.</p>
 
@@ -194,18 +221,18 @@
   
   <entry>
     <title type="html"><![CDATA[The Starlight Coastal]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/10/the-starlight-coastal/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/10/the-starlight-coastal/"/>
     <updated>2014-01-10T17:47:25-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/10/the-starlight-coastal</id>
+    <id>http://reputablejournal.com/blog/2014/01/10/the-starlight-coastal</id>
     <content type="html"><![CDATA[<p>A 23 hour train trip?  At some point that seemed like a really charming idea.  Eight hours in, I&rsquo;ll say that the bloom is off the rose.  Its been a nice ride, and a good chance to catch up on some reading and blogging but for the most part its just a long ride on a train full of people.  The views have been OK, but it is now dark outside.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[How Many Trees in the State of Washington?]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/09/last-day-in-seattle/"/>
     <updated>2014-01-09T10:59:31-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle</id>
+    <id>http://reputablejournal.com/blog/2014/01/09/last-day-in-seattle</id>
     <content type="html"><![CDATA[<p>What?  There is no real way to know the answer to this question, but it is one that was posed to the group today.  How do you handle uncertainty?  How do well do you think on your feet?  This is a typical interview question used by many high tech companies.  At Luther we might ask prospective faculty, &ldquo;how many cornstalks in the state of Iowa?&rdquo;</p>
 
 <p>This question definitely stumped a few people in the room, but others got the idea quickly. <!-- more --> This question isn&rsquo;t about getting the right answer.  There is a right answer, but nobody could tell you exactly what it is.  There is definitely a wrong answer:  &ldquo;I don&rsquo;t know,&rdquo; or &ldquo;Its not possible.&rdquo; are two examples of the wrong answer to this question.</p>
@@ -241,9 +268,9 @@
   
   <entry>
     <title type="html"><![CDATA[JTerm 2014 - Day 1 at Amazon]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/08/jterm-2014-day-1-at-amazon/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon/"/>
     <updated>2014-01-08T17:08:03-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/08/jterm-2014-day-1-at-amazon</id>
+    <id>http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon</id>
     <content type="html"><![CDATA[<p>Jeff Bezos likes to talk about technology and civilization and where we are at in terms of the analogy that we are still at &ldquo;Day One.&rdquo;  He recently observed that we are so early in Day One that the alarm clock hasn&rsquo;t even gone off yet.</p>
 
 <blockquote><p>With new technologies, it’s very tempting to think that you’re further along than you are. But usually, you’re more primitive than you think. My guess is we’re still pretty primitive. We as a society, as a civilization. I doubt we have figured out the new technologies very well yet. At Amazon, we’re doing our part in trying to push things forward, but I have the feeling it’s Day One.</p></blockquote>
@@ -257,7 +284,7 @@
 </ul>
 
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/Amazon.jpg" alt="" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/Amazon.jpg" alt="" /></p>
 
 <p>After our meeting with Amazon we found a coffee shop where we could take over a large table and had some group discussion.  I told my own story of Net Perceptions, which I should probably write down here soon, and tried to relate my own experience with the themes I want the students to look for over the next three weeks.</p>
 ]]></content>
@@ -265,9 +292,9 @@
   
   <entry>
     <title type="html"><![CDATA[Envisioning the Future]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/08/envisioning-the-future/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/08/envisioning-the-future/"/>
     <updated>2014-01-08T12:38:25-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/08/envisioning-the-future</id>
+    <id>http://reputablejournal.com/blog/2014/01/08/envisioning-the-future</id>
     <content type="html"><![CDATA[<p>Today was a big day.  The Microsoft mother ship.</p>
 
 <p>We began our visit with an hour in the Envisioning Center, this is Microsoft&rsquo;s take on the future, 5 years out.  There was some pretty cool stuff in there.  If you&rsquo;ve ever drooled over the fancy table on Hawaii Five-O where they can flick things from phone to table, table to screen, etc. You have a pretty good idea of where Microsoft thinks the workplace of the future is headed.  I&rsquo;m there, I want it.  I&rsquo;m already imagining myself walking into the classroom, iPad in hand, and flicking a copy of where we left off last class from my iPad to the board.  Wait, thats a bit of a mixed vision, I&rsquo;m pretty sure they were surface pads, not iPads.  But you get the idea.</p>
@@ -288,15 +315,15 @@
 
 <p>In the evening it was fun to unwind with our first group dinner.  We met up with recent Luther Alum Jake Nowosatka at Cutters Crabhouse.  Its at the far end of Pike Place Market.</p>
 
-<p><img src="http://bnmnetp.github.io/images/JTerm14/PikePlace.jpg" alt="" /></p>
+<p><img src="http://reputablejournal.com/images/JTerm14/PikePlace.jpg" alt="" /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Chapel Talk - 11/4  Nehemiah 13 1-3, 23-31]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/"/>
+    <link href="http://reputablejournal.com/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/"/>
     <updated>2013-11-05T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31</id>
+    <id>http://reputablejournal.com/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31</id>
     <content type="html"><![CDATA[This is the text from my chapel talk yesterday.  The video (mostly of the top of my head) can be found on the <a href="http://client.stretchinternet.com/client/lutheradmin.portal#">Luther Portal</a>.  Make sure you go to the On Demand tab and look for me on November 4.
 
 
@@ -457,9 +484,9 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   
   <entry>
     <title type="html"><![CDATA[John Riedl Tribute]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/09/02/john-riedl-tribute/"/>
+    <link href="http://reputablejournal.com/blog/2013/09/02/john-riedl-tribute/"/>
     <updated>2013-09-02T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/09/02/john-riedl-tribute</id>
+    <id>http://reputablejournal.com/blog/2013/09/02/john-riedl-tribute</id>
     <content type="html"><![CDATA[<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--></p>
 <div>This is the short tribute speech I gave last Friday at the University of Minnesota.  Actually, I had to edit my speech to be shorter than this, so I thought I would just post this longer version, plus it contains some fun old images I dug up that I didn&#8217;t get to show.</div>
 <div> </div>
@@ -543,9 +570,9 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   
   <entry>
     <title type="html"><![CDATA[Runestone Interactive Announces New Editions of Interactive Textbooks]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/"/>
+    <link href="http://reputablejournal.com/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/"/>
     <updated>2013-08-14T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks</id>
+    <id>http://reputablejournal.com/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks</id>
     <content type="html"><![CDATA[<p>Today I&#8217;m really pleased to announce that  have launched version 2.0 of our interactive computer science  textbooks:</p>
 <ul>
 <li><a href="http://interactivepython.org/runestone/static/thinkcspy/index.html">How to Think Like a Computer Scientist:  Interactive Edition 2.0</a>  (CS 1)</li>
@@ -607,10 +634,10 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   
   <entry>
     <title type="html"><![CDATA[Wow! May 2nd!  Schools in the area are starting late or canceling.  What a crazy spring.]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/05/02/wow-may-2nd-schools-in-the-area-are-starting-late-or-canceling-what-a-crazy-spri/"/>
+    <link href="http://reputablejournal.com/blog/2013/05/02/wow-may-2nd-schools-in-the-area-are-starting-late-or-canceling-what-a-crazy-spri/"/>
     <updated>2013-05-02T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/05/02/wow-may-2nd-schools-in-the-area-are-starting-late-or-canceling-what-a-crazy-spri</id>
-    <content type="html"><![CDATA[<img src="http://bnmnetp.github.io/images/31.media.tumblr.com/82dbeb35b91f519132b38dceeba696fd/tumblr_mm6edoy3yM1r729pmo1_1280.png" />
+    <id>http://reputablejournal.com/blog/2013/05/02/wow-may-2nd-schools-in-the-area-are-starting-late-or-canceling-what-a-crazy-spri</id>
+    <content type="html"><![CDATA[<img src="http://reputablejournal.com/images/31.media.tumblr.com/82dbeb35b91f519132b38dceeba696fd/tumblr_mm6edoy3yM1r729pmo1_1280.png" />
 
 <p>Wow! May 2nd!  Schools in the area are starting late or canceling.  What a crazy spring.</p>
 ]]></content>
@@ -618,10 +645,10 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   
   <entry>
     <title type="html"><![CDATA[Oh the Insanity of it all!]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t/"/>
+    <link href="http://reputablejournal.com/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t/"/>
     <updated>2013-04-19T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t</id>
-    <content type="html"><![CDATA[<img src="http://bnmnetp.github.io/images/25.media.tumblr.com/746b0c798284d68e4f12da178cfbbdff/tumblr_mlifbsVWRE1r729pmo1_1280.png" />
+    <id>http://reputablejournal.com/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t</id>
+    <content type="html"><![CDATA[<img src="http://reputablejournal.com/images/25.media.tumblr.com/746b0c798284d68e4f12da178cfbbdff/tumblr_mlifbsVWRE1r729pmo1_1280.png" />
 
 <p>Oh the Insanity of it all!</p>
 <p>April 19th, Josh is 18 today!</p>
@@ -632,9 +659,9 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   
   <entry>
     <title type="html"><![CDATA[Making Python3 my default]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/04/15/making-python3-my-default/"/>
+    <link href="http://reputablejournal.com/blog/2013/04/15/making-python3-my-default/"/>
     <updated>2013-04-15T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/04/15/making-python3-my-default</id>
+    <id>http://reputablejournal.com/blog/2013/04/15/making-python3-my-default</id>
     <content type="html"><![CDATA[<p>I&#8217;m finally there.  After a long time of writing books using Python 3, and teaching in Python 3 on a daily basis, I&#8217;m finally at the point where I&#8217;m changing my work environment to use Python 3 by default.</p>
 <p>Here are the signs that convinced me it was time:</p>
 <ul>
@@ -666,66 +693,21 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   
   <entry>
     <title type="html"><![CDATA[What most schools don't teach (by CodeOrg) This is a really great video, that just might inspire you to become a computer science major.]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-/"/>
+    <link href="http://reputablejournal.com/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-/"/>
     <updated>2013-02-26T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-</id>
+    <id>http://reputablejournal.com/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-</id>
     <content type="html"><![CDATA[<iframe width="480" height="270" src="http://www.youtube.com/embed/nKIu9yen5nc?feature=oembed" frameborder="0" allowfullscreen></iframe>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[We had a small mishap this morning. A fork bomb that was meant for a virtual machine accidentally got pasted into a terminal window open to our server.   Now I&#x27;m having an identity crisis.]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/02/22/we-had-a-small-mishap-this-morning-a-fork-bomb-that-was-meant-for-a-virtual-mach/"/>
+    <link href="http://reputablejournal.com/blog/2013/02/22/we-had-a-small-mishap-this-morning-a-fork-bomb-that-was-meant-for-a-virtual-mach/"/>
     <updated>2013-02-22T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/02/22/we-had-a-small-mishap-this-morning-a-fork-bomb-that-was-meant-for-a-virtual-mach</id>
-    <content type="html"><![CDATA[<img src="http://bnmnetp.github.io/images/24.media.tumblr.com/24aa6881ffb28285f2fd29667023bbaf/tumblr_min3l0yfAk1r729pmo1_1280.jpe" />
+    <id>http://reputablejournal.com/blog/2013/02/22/we-had-a-small-mishap-this-morning-a-fork-bomb-that-was-meant-for-a-virtual-mach</id>
+    <content type="html"><![CDATA[<img src="http://reputablejournal.com/images/24.media.tumblr.com/24aa6881ffb28285f2fd29667023bbaf/tumblr_min3l0yfAk1r729pmo1_1280.jpe" />
 
 We had a small mishap this morning. A fork bomb that was meant for a virtual machine accidentally got pasted into a terminal window open to our server.   Now I&#x27;m having an identity crisis. 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[To Infinity and Beyond]]></title>
-    <link href="http://bnmnetp.github.io/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-/"/>
-    <updated>2013-02-17T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-</id>
-    <content type="html"><![CDATA[<img src="http://bnmnetp.github.io/images/31.media.tumblr.com/9c55cab1486b5c7bb35cf993249f6b4c/tumblr_midzqpGQSy1r729pmo1_1280.png" />
-
-<p>We passed 3 million entries in our log data for <a href="http://interactivepython.org">InteractivePython.org</a> which got me to wondering about how we are growing.  The site has been live for 275 days.  You can really see how the site took off after day 100, which makes sense because that was bout the time fall classes started around the country.  The tiny plateau between day 225 and 250 corresponds to Christmas/winter break for most schools, and now that Spring semester is in full swing it looks like the slope has gotten steeper again.</p>
-
-<p>The dotted line is the linear best fit line with a slope of 12,836.7.  Even if our log database is not growing exponentially thats an impressively steep slope.</p>
-
-<p>And just because this is all about Python and education, here&#8217;s the Python code that created the graph.  I love matplotlib, it is such a powerful tool for quickly looking at your data.</p>
-
-<pre>
-import matplotlib.pyplot as plt
-from numpy import polyfit, arange
-
-f = open('bydate','r')
-days = f.readlines()
-totals = [0]
-
-for d in days:
-    day,count = d.split('|')
-    count = int(count)
-    totals.append(totals[-1]+count)
-
-x = arange(len(totals))
-m,b = polyfit(x,totals,1)
-print m
-plt.plot(x,totals,x,m*x+b, '--k')
-plt.ylim(ymin=0)
-plt.show()
-</pre>
-
-<p>The data file is simple. One day per line with the date in one column and the number of actions in the other column.  Here are the last few days:</p>
-
-<pre>
- 2013-02-14 | 24349
- 2013-02-15 | 17396
- 2013-02-16 | 12645
-</pre>
-
 ]]></content>
   </entry>
   

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Applications | A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/blog/categories/applications/atom.xml" rel="self"/>
-  <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-22T12:51:58-08:00</updated>
-  <id>http://bnmnetp.github.io/</id>
+  <link href="http://reputablejournal.com/blog/categories/applications/atom.xml" rel="self"/>
+  <link href="http://reputablejournal.com/"/>
+  <updated>2014-01-25T17:11:06-08:00</updated>
+  <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Remember The Milk]]></title>
-    <link href="http://bnmnetp.github.io/blog/2009/01/30/remember-the-milk/"/>
+    <link href="http://reputablejournal.com/blog/2009/01/30/remember-the-milk/"/>
     <updated>2009-01-30T00:00:00-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2009/01/30/remember-the-milk</id>
+    <id>http://reputablejournal.com/blog/2009/01/30/remember-the-milk</id>
     <content type="html"><![CDATA[<p>In the past year, I've been a passionate supporter of three task management apps.  OmniFocus, Things, and Remember The Milk (RTM).  I've switched back and forth between them trying to decide which one works best for me.  I think I'm finally ready to commit to RTM as my long term solution and here's why.</p>
 
 

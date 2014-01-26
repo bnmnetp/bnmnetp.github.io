@@ -9,7 +9,7 @@
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="Today was a big day. The Microsoft mother ship. We began our visit with an hour in the Envisioning Center, this is Microsoft&rsquo;s take on the &hellip;">
+  <meta name="description" content="Jeff Bezos likes to talk about technology and civilization and where we are at in terms of the analogy that we are still at &ldquo;Day One.&rdquo; He &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://bnmnetp.github.io/blog/page/2/">
+  <link rel="canonical" href="http://reputablejournal.com/blog/page/2/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -53,7 +53,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:bnmnetp.github.io" />
+    <input type="hidden" name="q" value="site:reputablejournal.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -79,6 +79,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/01/08/jterm-2014-day-1-at-amazon/">JTerm 2014 - Day 1 at Amazon</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-08T17:08:03-08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Jeff Bezos likes to talk about technology and civilization and where we are at in terms of the analogy that we are still at &ldquo;Day One.&rdquo;  He recently observed that we are so early in Day One that the alarm clock hasn&rsquo;t even gone off yet.</p>
+
+<blockquote><p>With new technologies, it’s very tempting to think that you’re further along than you are. But usually, you’re more primitive than you think. My guess is we’re still pretty primitive. We as a society, as a civilization. I doubt we have figured out the new technologies very well yet. At Amazon, we’re doing our part in trying to push things forward, but I have the feeling it’s Day One.</p></blockquote>
+
+<p>And so it was that we found ourselves in the building called Day One South, meeting with our very gracious host Sam. This was a great way to start, and although Sam had not been prompted in any way about what to say, he hit on some of key themes for the students to take away from the course:</p>
+
+<ul>
+<li><p><strong>Passion</strong> &mdash; You are going to work long hours, so you want to find a place to work and a job to do at that place where you are passionate about whatever it is.  If you aren&rsquo;t excited about it, keep looking.</p></li>
+<li><p><strong>Culture</strong> &mdash; This part of the discussion brought back both great memories and ulcers in my stomach from the days when Amazon was a Net Perceptions customer.  I&rsquo;ve never been pushed harder than I was by Jennifer Jacobi (JJ) when she was my primary contact at Amazon.  She challenged us, held our feet to the fire, threatened to dump us, and ultimately helped us create a better product.  Apparently this is how Amazon treats all its suppliers.</p></li>
+<li><p><strong>Risk</strong> &mdash; High tech companies are full of risk takers.  Sam was no exception as a young graduate who simply moved to Seattle in search of a job.  Years later he is still at Amazon.  Many more years later than he expected.</p></li>
+</ul>
+
+
+<p><img src="/images/JTerm14/Amazon.jpg" alt="" /></p>
+
+<p>After our meeting with Amazon we found a coffee shop where we could take over a large table and had some group discussion.  I told my own story of Net Perceptions, which I should probably write down here soon, and tried to relate my own experience with the themes I want the students to look for over the next three weeks.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -744,78 +795,6 @@ We had a small mishap this morning. A fork bomb that was meant for a virtual mac
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/17/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-/">To Infinity and Beyond</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-17T00:00:00-08:00" pubdate data-updated="true">Feb 17<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><img src="/images/31.media.tumblr.com/9c55cab1486b5c7bb35cf993249f6b4c/tumblr_midzqpGQSy1r729pmo1_1280.png" />
-
-<p>We passed 3 million entries in our log data for <a href="http://interactivepython.org">InteractivePython.org</a> which got me to wondering about how we are growing.  The site has been live for 275 days.  You can really see how the site took off after day 100, which makes sense because that was bout the time fall classes started around the country.  The tiny plateau between day 225 and 250 corresponds to Christmas/winter break for most schools, and now that Spring semester is in full swing it looks like the slope has gotten steeper again.</p>
-
-<p>The dotted line is the linear best fit line with a slope of 12,836.7.  Even if our log database is not growing exponentially thats an impressively steep slope.</p>
-
-<p>And just because this is all about Python and education, here&#8217;s the Python code that created the graph.  I love matplotlib, it is such a powerful tool for quickly looking at your data.</p>
-
-<pre>
-import matplotlib.pyplot as plt
-from numpy import polyfit, arange
-
-f = open('bydate','r')
-days = f.readlines()
-totals = [0]
-
-for d in days:
-    day,count = d.split('|')
-    count = int(count)
-    totals.append(totals[-1]+count)
-
-x = arange(len(totals))
-m,b = polyfit(x,totals,1)
-print m
-plt.plot(x,totals,x,m*x+b, '--k')
-plt.ylim(ymin=0)
-plt.show()
-</pre>
-
-<p>The data file is simple. One day per line with the date in one column and the number of actions in the other column.  Here are the last few days:</p>
-
-<pre>
- 2013-02-14 | 24349
- 2013-02-15 | 17396
- 2013-02-16 | 12645
-</pre>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -833,6 +812,10 @@ plt.show()
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/25/final-visits/">Final Visits</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/22/applied-math-and-physics/">Applied Math and Physics</a>
       </li>
     
@@ -846,10 +829,6 @@ plt.show()
     
       <li class="post">
         <a href="/blog/2014/01/14/notes-from-the-road/">Changing the World, JTerm 2014</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/14/there-is-no-cure-for-curiosity/">There is no Cure for Curiosity</a>
       </li>
     
   </ul>

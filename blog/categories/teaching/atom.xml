@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: teaching | A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/blog/categories/teaching/atom.xml" rel="self"/>
-  <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-22T12:51:58-08:00</updated>
-  <id>http://bnmnetp.github.io/</id>
+  <link href="http://reputablejournal.com/blog/categories/teaching/atom.xml" rel="self"/>
+  <link href="http://reputablejournal.com/"/>
+  <updated>2014-01-25T17:11:06-08:00</updated>
+  <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[JTerm 2014 - Day 1 at Amazon]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/08/jterm-2014-day-1-at-amazon/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon/"/>
     <updated>2014-01-08T17:08:03-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/08/jterm-2014-day-1-at-amazon</id>
+    <id>http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon</id>
     <content type="html"><![CDATA[<p>Jeff Bezos likes to talk about technology and civilization and where we are at in terms of the analogy that we are still at &ldquo;Day One.&rdquo;  He recently observed that we are so early in Day One that the alarm clock hasn&rsquo;t even gone off yet.</p>
 
 <blockquote><p>With new technologies, it’s very tempting to think that you’re further along than you are. But usually, you’re more primitive than you think. My guess is we’re still pretty primitive. We as a society, as a civilization. I doubt we have figured out the new technologies very well yet. At Amazon, we’re doing our part in trying to push things forward, but I have the feeling it’s Day One.</p></blockquote>

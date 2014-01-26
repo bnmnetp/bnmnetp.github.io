@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: JTerm | A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/blog/categories/jterm/atom.xml" rel="self"/>
-  <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-22T12:51:58-08:00</updated>
-  <id>http://bnmnetp.github.io/</id>
+  <link href="http://reputablejournal.com/blog/categories/jterm/atom.xml" rel="self"/>
+  <link href="http://reputablejournal.com/"/>
+  <updated>2014-01-25T17:11:06-08:00</updated>
+  <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Applied Math and Physics]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/22/applied-math-and-physics/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics/"/>
     <updated>2014-01-22T10:38:12-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/22/applied-math-and-physics</id>
+    <id>http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics</id>
     <content type="html"><![CDATA[<p>You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn&rsquo;t have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.</p>
 
 <p><img src="/images/JTerm14/SportVision2.jpg" alt="SportVision" /></p>
@@ -39,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[How Many Trees in the State of Washington?]]></title>
-    <link href="http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle/"/>
+    <link href="http://reputablejournal.com/blog/2014/01/09/last-day-in-seattle/"/>
     <updated>2014-01-09T10:59:31-08:00</updated>
-    <id>http://bnmnetp.github.io/blog/2014/01/09/last-day-in-seattle</id>
+    <id>http://reputablejournal.com/blog/2014/01/09/last-day-in-seattle</id>
     <content type="html"><![CDATA[<p>What?  There is no real way to know the answer to this question, but it is one that was posed to the group today.  How do you handle uncertainty?  How do well do you think on your feet?  This is a typical interview question used by many high tech companies.  At Luther we might ask prospective faculty, &ldquo;how many cornstalks in the state of Iowa?&rdquo;</p>
 
 <p>This question definitely stumped a few people in the room, but others got the idea quickly. <!-- more --> This question isn&rsquo;t about getting the right answer.  There is a right answer, but nobody could tell you exactly what it is.  There is definitely a wrong answer:  &ldquo;I don&rsquo;t know,&rdquo; or &ldquo;Its not possible.&rdquo; are two examples of the wrong answer to this question.</p>

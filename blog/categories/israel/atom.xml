@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: israel | A Reputable Journal]]></title>
-  <link href="http://bnmnetp.github.io/blog/categories/israel/atom.xml" rel="self"/>
-  <link href="http://bnmnetp.github.io/"/>
-  <updated>2014-01-22T12:51:58-08:00</updated>
-  <id>http://bnmnetp.github.io/</id>
+  <link href="http://reputablejournal.com/blog/categories/israel/atom.xml" rel="self"/>
+  <link href="http://reputablejournal.com/"/>
+  <updated>2014-01-25T17:11:06-08:00</updated>
+  <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[High Security]]></title>
-    <link href="http://bnmnetp.github.io/blog/2012/07/06/high-security/"/>
+    <link href="http://reputablejournal.com/blog/2012/07/06/high-security/"/>
     <updated>2012-07-06T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2012/07/06/high-security</id>
+    <id>http://reputablejournal.com/blog/2012/07/06/high-security</id>
     <content type="html"><![CDATA[<p>Well, I'm through security.  Sitting in  Segafredo Zanetti, enjoying a very nice Israeli Chardonnay.  Everyone told me to get to Ben Gurion at least 3 hours before my flight so that I could get through the security process.  Now I understand why.  These people are serious about their security.</p>
 
 
@@ -46,9 +46,9 @@
   
   <entry>
     <title type="html"><![CDATA[Exhaustion]]></title>
-    <link href="http://bnmnetp.github.io/blog/2012/07/06/exhaustion/"/>
+    <link href="http://reputablejournal.com/blog/2012/07/06/exhaustion/"/>
     <updated>2012-07-06T00:00:00-07:00</updated>
-    <id>http://bnmnetp.github.io/blog/2012/07/06/exhaustion</id>
+    <id>http://reputablejournal.com/blog/2012/07/06/exhaustion</id>
     <content type="html"><![CDATA[<p>Its official folks, I'm ready to head home.  The ITiCSE conference is over.  The paper has been presented, I've been to a dozen or more sessions.  I'm tired.  I'd like to get something to eat, but all the restaurants in the area are not even open for dinner yet, and its 7pm!  This is a good conference.  I appreciate that many of the sessions seem a bit more technical than would be typical at SIGCSE and I like that.</p>
 
 

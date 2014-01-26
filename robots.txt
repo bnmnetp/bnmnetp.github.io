@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://bnmnetp.github.io/sitemap.xml 
+Sitemap: http://reputablejournal.com/sitemap.xml 
