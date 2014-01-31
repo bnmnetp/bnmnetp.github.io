@@ -9,8 +9,7 @@
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="via November 11, 2010 Comics Read More >>
-">
+  <meta name="description" content="Getting unicode right in Python Posted by Nick Johnson | Filed under python, text, unicode, rant Yup, I&#8217;m back from holidays! Apologies to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,7 +65,7 @@
         </span>
        
            <span class="blue_dark">
-             A blog you can trust
+             ~ A Blog you can Trust
            </span>
        
     </a></li>
@@ -80,6 +79,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/11/16/getting-unicode-right-in-python-nick-s-blog/">Getting Unicode Right in Python - Nick&#8217;s Blog</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-11-16T00:00:00-07:00" pubdate data-updated="true">Nov 16<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><div class='posterous_autopost'><div class="posterous_bookmarklet_entry"> <blockquote><div>    <h3>Getting unicode right in Python</h3>  <p>  Posted by Nick Johnson    | Filed under    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">python</a>,    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">text</a>,    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">unicode</a>,    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">rant</a>      </p>  <p>Yup, I&#8217;m back from holidays! Apologies to everyone for the delayed return - it&#8217;s taking me a long while to catch up on everything that built up while I was away.</p>    <p>Proper text processing - specifically, correct handling of unicode - is one of those things that consistently confounds even experienced developers. This isn&#8217;t because it&#8217;s difficult, but rather, I believe, because most developers carry around a few key misconceptions about what text (in the context of software) is and how it&#8217;s represented. A search on StackOverflow for <a href="http://stackoverflow.com/search?q=unicodedecodeerror">UnicodeDecodeError</a> demonstrates just how prevalent these misconceptions are. These misconceptions date back to the days before unicode - longer than many developers have been in the industry, including myself - but they&#8217;re still nothing if not widespread. This is in part because a number of well known and popular languages continue to, at worst, perpetuate the misunderstandings, and at best are insufficiently good at helping developers get it right.</p>    <p>We can divide languages into four categories along the axis of unicode support:</p>    <ol>  <li>Languages that were written before unicode was defined, or widespread. C and C++ fall into this category. Languages in this category tend to have unicode support that&#8217;s spotty, not built into the language, or difficult to use correctly, making the path of least resistance the wrong one, more often than not.</li>  <li>Languages that should know better. These languages were written after unicode was already widespread, but managed to get things horribly wrong. They have all the weaknesses of category 1, without the excuse of age. Prime amongst these, in my experience, is PHP, though there are doubtless many more languages that do just as badly.</li>  <li>Languages that get it basically right, but have a few critical flaws. Languages in this category are &#8216;modern&#8217; and understand unicode, but fail to make the path of least resistance for developers the correct one, which results in some serious shortfalls in unicode support for things implemented in these languages. Python 2.X, to my dismay, falls into this category - more about which, later.</li>  <li>Languages that Get It Right. They support unicode, and they make it easy to do the right thing, and hard to do the wrong thing. Java and the .NET platform both fall into this category.</li>  </ol>    <p>So what&#8217;s the deal with unicode, and how are we getting it wrong? Joel&#8217;s post, <a href="http://www.joelonsoftware.com/articles/Unicode.html">the absolute minimum every software developer absolutely, positively must know about unicode</a> is an excellent place to start for this, but for the sake of brevity and those who are naturally impatient, I&#8217;ll summarize.</p>    <h3>Characters and bytes</h3>    <p>The essential fact that you <b>must</b> understand in order to handle text properly is the abstract concept of a character. A character is a representation of a single symbol in a piece of text - a platonic ideal, of sorts. Crucially, a character is <b>not</b> a byte. Let me repeat for emphasis: A character is <b>not, not, not</b> a byte. Furthermore, there&#8217;s no single way of representing a given character as one or more bytes - as I said, a character is the platonic ideal of the smallest unit of text.</p>    <p>Unicode, then, is a way of defining a set of characters that everyone can agree on. It consists of a huge database of characters, and each one is associated with a unique number, called a code point. Thus, the english letter capital A has the codepoint U+0041. The euro symbol has codepoint U+20A0, and so forth. A text string is simply a series of these codepoints, representing the character for each element in the string.</p>    <p>Of course, sooner or later, you need a way to store and transmit your platonic unicode strings. It helps if you choose a method that other people can understand, so that you can send text to them, and they to you, in a mutually comprehensible fashion. This is where character encodings come in.</p>    <p>A character encoding defines a mapping between our platonic characters and some way of representing them as bytes. The mapping doesn&#8217;t have to be complete - it may have no way to represent certain characters - and it doesn&#8217;t need to use the same amount of space for each character - some characters may be encoded as a single byte, while others may require several.</p>    <p>Because there are many ways of representing the same character as bytes, this means that if you have a series of bytes, but do not know their encoding - even if you know the data is textual - the data is meaningless. You can guess, but you&#8217;d be doing just that, guessing. In short, <b>bytes are not text</b>. If you forget everything else in this article, remember that. In order to read and write text, you must first know the encoding you are using, whether from of convention, out of band information, or any other mechanism.</p>    <h3>How Python handles unicode</h3>    <p>This is where Python&#8217;s unicode support comes in. In Python&#8217;s type heirarchy, there are three distinct string types: &#8216;unicode&#8217;, which represents unicode strings (text strings), &#8216;str&#8217;, which represents byte strings (binary data), and &#8216;basestring&#8217;, which acts as a parent class for both of the other string types. This is where, in my opinion, Python makes its misstep in handling unicode which pushes it into category 3, instead of category 4, by my definition above.</p>    <p>As I&#8217;ve just spent several paragraphs belabouring, bytes and characters are fundamentally different entities, only interconvertible with the help of a character encoding. Python, unfortunately, does its best to help you forget this, with two separate missteps:</p>    <p>The first is of debatable significance: treating sequences of bytes as strings. It&#8217;s arguable whether or not this is a good thing; Java and .NET support the proposition that it&#8217;s not, while other languages make good arguments in the other direction. In any case, it&#8217;s certainly true that certain operations you might want to preform on text strings - regular expression matching, string replacement, and so forth - don&#8217;t entirely make sense on sequences of bytes. Python, though, treats bytes as just a different type of string, and allows the same set of operations on both.</p>    <p>The second misstep is the more significant one: Python&#8217;s attempt at transparently converting between byte strings and character strings. In a variety of circumstances, Python will attempt to convert a byte string to a unicode string or vice-versa, when the situation warrants - for example, when attempting to concatenate a byte string and a unicode string together. Since, as we&#8217;ve previously detailed, conversion between the two types is meaningless without an encoding, Python relies on a &#8216;default encoding&#8217;, specified by sys.setdefaultencoding(). On most platforms, this defaults to ASCII, and it&#8217;s almost certainly wrong for any given conversion. Other places this encoding is used include calls to str() or unicode() without specifying an encoding yourself, and functions that expect one type of string but are passed the other.</p>    <p>One solution to some of your unicode woes, then, would be to call sys.setdefaultencoding(), setting the default encoding to whatever you ought to be using. This only masks the root problem, though, which is your failure to handle text correctly in the first place. It may also be impractical, since many apps, particularly webapps, may have to deal with multiple different text encodings in different places.</p>    <p>The correct solution is to fix your code so that you handle text correctly. Here&#8217;s the cliff&#8217;s notes on what you should be doing:</p>    <ul>  <li>All text strings, everywhere should be of type unicode, not str. If you&#8217;re handling text, and your variable is a str, it&#8217;s a bug!</li>  <li>To decode a byte string as text, use var.decode(encoding) (eg, var.decode(&#8216;utf-8&#8217;), with the correct encoding. To encode a text string as bytes, use var.encode(encoding).</li>  <li>Never ever use str() on a unicode string, or unicode() on a byte string without a second argument specifying the encoding.</li>  <li>Whenever you read data from outside your app, expect it to be bytes - eg, of type str - and call .decode() on it to interpret it as text. Likewise, always call .encode() on text you want to send to the outside world.</li>  <li>If a string literal in your code is intended to represent text, it should always be prefixed with &#8216;u&#8217;. In fact, you probably never want to define a raw string literal in your code at all. For what it&#8217;s worth, though, I&#8217;m terrible at this one, as I&#8217;m sure pretty much everyone else is, too.</li>  </ul>    <p>Python 3, by the way, fixes things, and gets unicode and string handling right, putting it solidly into category 4. See <a href="http://docs.python.org/release/3.0.1/whatsnew/3.0.html#text-vs-data-instead-of-unicode-vs-8-bit">this section of the What&#8217;s new page</a> for details.</p>    <p>Hopefully this made sense, and if you had any doubts about what exactly unicode is and how to handle it, they&#8217;re now cleared up. Next time you get a UnicodeEncodeError or UnicodeDecodeError in your app, then, you&#8217;ll know exactly what&#8217;s gone wrong, and how to fix it!</p>  <p>  <span>21 July, 2010</span>  </p>    <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">Previous Post</a>      <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python#">Next Post</a>        <h3>Comments</h3>  <p>      <a href="http://disqus.com/forums/notdot-blog/?url=ref">View the discussion thread.</a>  <a href="http://disqus.com">blog comments powered by <span>Disqus</span></a>      		</p></div></blockquote>    <div class="posterous_quote_citation">via <a href="http://blog.notdot.net/2010/07/Getting-unicode-right-in-Python">blog.notdot.net</a></div> <p>Good article on the issues you encounter when working with strings and unicode in Python.</p></div></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-8099313241295933953?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -102,7 +137,7 @@
   
 
 
-<time datetime="2010-11-12T00:00:00-08:00" pubdate data-updated="true">Nov 12<span>th</span>, 2010</time>
+<time datetime="2010-11-12T00:00:00-07:00" pubdate data-updated="true">Nov 12<span>th</span>, 2010</time>
         
       </p>
     
@@ -138,7 +173,7 @@
   
 
 
-<time datetime="2010-11-06T00:00:00-07:00" pubdate data-updated="true">Nov 6<span>th</span>, 2010</time>
+<time datetime="2010-11-06T00:00:00-06:00" pubdate data-updated="true">Nov 6<span>th</span>, 2010</time>
         
       </p>
     
@@ -174,7 +209,7 @@
   
 
 
-<time datetime="2010-11-01T00:00:00-07:00" pubdate data-updated="true">Nov 1<span>st</span>, 2010</time>
+<time datetime="2010-11-01T00:00:00-06:00" pubdate data-updated="true">Nov 1<span>st</span>, 2010</time>
         
       </p>
     
@@ -210,7 +245,7 @@
   
 
 
-<time datetime="2010-09-17T00:00:00-07:00" pubdate data-updated="true">Sep 17<span>th</span>, 2010</time>
+<time datetime="2010-09-17T00:00:00-06:00" pubdate data-updated="true">Sep 17<span>th</span>, 2010</time>
         
       </p>
     
@@ -246,7 +281,7 @@
   
 
 
-<time datetime="2010-08-19T00:00:00-07:00" pubdate data-updated="true">Aug 19<span>th</span>, 2010</time>
+<time datetime="2010-08-19T00:00:00-06:00" pubdate data-updated="true">Aug 19<span>th</span>, 2010</time>
         
       </p>
     
@@ -282,7 +317,7 @@
   
 
 
-<time datetime="2010-08-16T00:00:00-07:00" pubdate data-updated="true">Aug 16<span>th</span>, 2010</time>
+<time datetime="2010-08-16T00:00:00-06:00" pubdate data-updated="true">Aug 16<span>th</span>, 2010</time>
         
       </p>
     
@@ -318,7 +353,7 @@
   
 
 
-<time datetime="2010-07-21T00:00:00-07:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
+<time datetime="2010-07-21T00:00:00-06:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
         
       </p>
     
@@ -354,7 +389,7 @@
   
 
 
-<time datetime="2010-07-06T00:00:00-07:00" pubdate data-updated="true">Jul 6<span>th</span>, 2010</time>
+<time datetime="2010-07-06T00:00:00-06:00" pubdate data-updated="true">Jul 6<span>th</span>, 2010</time>
         
       </p>
     
@@ -390,7 +425,7 @@
   
 
 
-<time datetime="2010-07-01T00:00:00-07:00" pubdate data-updated="true">Jul 1<span>st</span>, 2010</time>
+<time datetime="2010-07-01T00:00:00-06:00" pubdate data-updated="true">Jul 1<span>st</span>, 2010</time>
         
       </p>
     
@@ -398,42 +433,6 @@
 
 
   <div class="entry-content">It was the best of times, it was the worst of times&#8230;  This morning the sky was mostly cloudy, and there was almost no wind.  So I went along with Dan, Brian, James, and Joanna to do the mast ride.  This was an optional 8 mile ride for the before breakfast crowd.  The main feature of this ride was an 840 (Padraic said 250, but the GPS showed the lie) foot climb.  Most of that 840 feet was in the last 3/4 of a mile.  For those of you from Decorah just imagine the First Lutheran hill extended to 3/4 of a mile.<br /><br />The view from the mast was fantastic, we could see the ocean and a couple of beautiful lakes.  The hill was so steep, and the roads were just a little bit damp, that I actually had to walk my bike the last 100 yards, because I could not get enough traction when I was sitting on the bike and pedaling!  The ride down was almost as exciting, in fact it seemed quite a bit more dangerous than the ride up as it was difficult to keep your speed down without skidding all over the place.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/64.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_64.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />After finishing that ride I was very ready for my breakfast back at Rosleague Manor.  I had a ham and cheese omelet with some of the best croissants ever.  To wash down the omelet I had a glass of grapefruit juice and a cup of black coffee.  The manor employs a great French chef, and they have an exchange program to bring over young people from france to learn Irish service customs.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/65.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_65.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />After breakfast there was another optional ride.  From Rosleague we rode to Letterfrack, then out on the Connemara loop, past Molly the pirate queen&#8217;s castle, and then on to Renvyle, Tulley, Tulley Cross, and then back to Letterfrack by a different road.  Once again we had fantastic views, we saw a small vertical wind turbine, and learned about Grace O&#8217;Malley the pirate queen.  Back in the 1500&#8217;s she was a very powerful woman who enjoyed plundering the english royal ships that were in turn plundering all of Ireland.  She and queen Elizabeth met to try and resolve the issue but as long as Elizabeth was unwilling to stop plundering Ireland, Grace O&#8217;Malley was unwilling to stop sinking and plundering their ships.  Apparently they ended up agreeing to disagree, but I&#8217;m sure it was an exciting meeting.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/66.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_66.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />We met up with the rest of the group in Letterfrack for lunch at Currachs.  Although three courses were offered as part of lunch most of us could not imagine eating more than one course and maybe a bit of dessert.  Many of us had the Irish pizza and it was quite good.  A nice change from the last couple of days.  I also had a chocolate chip cookie for desert which was excellent but a bad choice as the chocolate muffin was clearly superior.  Kaia had snicker bar pie which would have been a close second or third I&#8217;m sure.  Jane and Josh had apple pie and ice cream.<br /><br />Here&#8217;s where the story of the day takes a turn for the worse.  Just as we were finishing up, the weather forecast for the day came true.  Rain after noon.  We rode to the Kylmore Abbey in a torrential rain.  At one point we came out from behind a wind break and I was nearly stopped in my tracks by the strength of the wind.  My little water resistant biking wind breaker was doing nothing to stop this rain and I was wet and chilled by the time we got to the Abbey.  The Abbey was pretty impressive in the oppressive weather, and I&#8217;m sure it would have been brilliant in good weather.<br /><br />After the Abbey I seriously considered buying a new waterproof winter coat, but instead I borrowed one of Padriac&#8217;s extra rain jackets.  We had 17 additional miles to get to Ballynahinch (pronounced like bal-in-the-hinch if you say it really fast) Castle.  After a half a mile we were all soaked through completely, my shoes were completely soaked, my pants were soaked, all of my layers were soaked.  And the headwind was horrific.  After a while we realized that there was no possible way we could get any wetter, so we might just as well accept our fate and enjoy the ride.  Once again, I&#8217;m sure that in reasonable weather it would have been beautiful.  As it was I was still nice.<br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/67.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_67.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />Now we are at the castle, showered, dried, and warm.  Our clothes have been sent off to be dried, and the porter will collect our shoes to leave them in the boiler room to dry over night.  All is well, as DuVine takes good care of us.  Our only remaining decision for the day is whether to stay here at the castle and eat at the pub or to go into town and try one of the restaurants there.<br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Ballynahinch%20castle&z=10'>Ballynahinch castle</a></p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-8838488372752005579?l=blog.bonelakesoftware.com' alt='' /></div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/01/a-beautiful-last-day/">A Beautiful Last Day</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-01T00:00:00-07:00" pubdate data-updated="true">Jul 1<span>st</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">Well, today is our last official day of vacation.  Tomorrow is a day of travel back to Dublin and then we wake up and head to the airport to see Kaia off to France and the rest of us to Chicago.<br /><br />After our rain soaked day yesterday we were thrilled to wake up to see the sun and big puffy white clouds today. What a difference the sun makes!  Our departure this morning was slightly delayed as we were still drying shoes and clothing from yesterday, and (I suspect) because most of the group was in Roundstone partying at the pub until late last night.  The Miller family stayed and had dinner at the castle last night as we are all showing the wear of nearly four weeks on the road.  <br /><br />I can&#8217;t imagine what the maid must have though when she came into our room this morning.  I had been sitting on the floor drying 3 pairs of shoes with the blow drier; the shoes I&#8217;ve worn every day for the last 3 weeks, Josh&#8217;s tennis shoes, and Jane&#8217;s walking shoes.  The smell was indescribable.<br /><br />When we did take off we headed out toward Roundstone, a beautiful little seaside village which is becoming very popular among the well to do here in Ireland.  When you come into town you go right past the house of the guy who wrote the original River Dance. From Roundstone we made our way along the coast toward Ballyconeely where we had our first &#8216;table stop&#8217; of the day. Padraic was busy setting out a table with fruit and granola bars and juice for us.  <br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/1061.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_1061.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />We only had a little further to go to get to Clifden, so we decided to do the Sky Drive loop before lunch rather than after.  That turned out to be a great decision as the weather cooperated perfectly and we were treated to magnificent views of the sea.  Based on the color of the sea you would think that you were in the Caribbean not Ireland!  As you might guess the Sky drive was a bit of a climb but it takes you right out to a point where you can see ocean in three different directions. Here&#8217;s the Miller family at our stop on the point.<br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/1062.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_1062.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />Of course by this time our guides had already schemed to set up another table stop.  They had gone to the store in Clifden and bought some more Bulmers cider, this was the new berry flavor that Padraic had not had before so he was even more excited than usual for us to give it a try.  We toasted a great trip and all of our new found friends.<br /><br />The ride back into Clifden was mostly downhill, but by this time we really were ready for some food.  We ate at E.J. Kings pub, Jane and I had the chicken curry, Kaia had ravioli, and Josh had a club sandwich.  I think Padraic was a little disappointed that we had strayed from traditional irish fare but by this time our palate&#8217;s were ready for something a little more spicy.  We all had to laugh at Josh during lunch because we were talking about the weather and how lucky we were that it wasn&#8217;t raining like it was yesterday.  I said yes, it only rains in Ireland on days that contain a &#8216;y.&#8217;  Jane and Kaia laughed and the conversation moved on.  Suddenly, from out of the blue, Josh says, &#8220;wait every day has a &#8216;y&#8217; in it.&#8221;  We still love him.  <br /><br />By the time we finished lunch it was almost 3:00 and it was time to head back to the Castle.  The Miller family took off a little ahead of the pack, and then Josh and I separated from Jane and Kaia, we made it back in record time.  It was our flattest ride yet.  The interesting thing about riding through the bog is how similar it looks to the prairies of Southern Minnesota, except where the glaciers flattened all the granite in Minnesota there were no glaciers here so the granite still stands in small hills and big chunks of rock sticking up out of the landscape.<br /><br />Josh and I were so fast  that I missed the last table stop.  A little bit of Jameson Irish Whiskey to toast our final ride.  Not being a whiskey fan, that did not hurt my feelings except that Padraic insisted on pouring me a glass in the parking lot of the Castle when he caught up to us.  <br /><br /><br /><center><a href='http://blogpress.w18.net/photos/10/07/01/1063.jpg'><img src='http://blogpress.w18.net/photos/10/07/01/s_1063.jpg' border='0' width='281' height='210' style='margin:5px'></a></center><br />Tonight we have our final group meal in the main dining room here at the castle.  Based on the look I had at the menu last night it will be a feast.  This has really been a great way to finish up our vacation.  The people in our group have been a lot of fun, and DuVine really lives up to their motto, Bike, Eat, Drink, Sleep.  In the photo above we have in the front row, Dan, Craig, Kaia, Laurie, and Joanna.  In the back row we have Patty (Dan&#8217;s wife) Bobby and Brian, Brad and Jane, Josh, and James (Joanna&#8217;s fiance)<br /><br />Not in the picture are our two amazing guides for the week Padraic and Kirk.  These guys are amazing and made for a really fun week.  Its easy to forget that every time we were having fun and sitting around enjoying ourselves they were tending to every minute detail to make sure that our trip was a success.<br /><p class='blogpress_location'>Location:<a href='http://maps.google.com/maps?q=Ballynahinch%20Castle&z=10'>Ballynahinch Castle</a></p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-8969336433699357685?l=blog.bonelakesoftware.com' alt='' /></div>
 </div>
   
   
@@ -458,6 +457,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/30/on-14-inches-of-powder/">On 14 inches of Powder</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/25/final-visits/">Final Visits</a>
       </li>
     
@@ -471,10 +474,6 @@
     
       <li class="post">
         <a href="/blog/2014/01/17/a-lesson-in-venture-capital/">A Lesson in Venture Capital</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/14/notes-from-the-road/">Changing the World, JTerm 2014</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: travel | A Reputable Journal]]></title>
   <link href="http://reputablejournal.com/blog/categories/travel/atom.xml" rel="self"/>
   <link href="http://reputablejournal.com/"/>
-  <updated>2014-01-25T17:11:06-08:00</updated>
+  <updated>2014-01-30T21:05:31-07:00</updated>
   <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -14,9 +14,41 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Final Visits]]></title>
+    <link href="http://reputablejournal.com/blog/2014/01/25/final-visits/"/>
+    <updated>2014-01-25T17:29:17-07:00</updated>
+    <id>http://reputablejournal.com/blog/2014/01/25/final-visits</id>
+    <content type="html"><![CDATA[<p>My daughter Kaia is getting married next summer.  This is not new news, the proposal was made an accepted last June.  But planning is in full swing now, and I was kind of excited when secured a visit with Capsule, because capsule provides a service where all the guests at your wedding can download the capsule app and it will automatically upload all the photos to a special page for the wedding.</p>
+
+<p>This company was founded by Cyrus, who set out to solve a simple problem, a problem we&rsquo;ve been coping with on this course as well.  When you travel, how do you share all your digital photos with the buddies you are traveling with.  When you have a big party?  When you have a wedding, bachelor party, bachelorette party?  Capsule has solved this in a nice, elegant way.  All the photos uploaded for a particular event, are shared with the participants in the event.  Its that easy.  No need to bore all of your Facebook followers with every photo from your trip.  If you&rsquo;re an Instagram user, its super easy to add a special hashtag to your photo and it will be automatically imported into Capsule as well as shared on Instagram.</p>
+
+<!-- more -->
+
+
+<p>What was incredibly interesting for me was to listen to Cyrus talk about business models, and monetizing the service.  Cyrus is not a CS guy, he&rsquo;s a business guy.  Of course as an entrepreneur he can talk the tech talk but his home is on the business side.  Here&rsquo;s an example of how differently we tech people approach a problem than the business guys.</p>
+
+<p><strong>Problem:</strong> Each event needs to have a unique id, that can be given to the participants to use to join the event, and/or tag their Instagram photos.</p>
+
+<p><strong>Tech Solution:</strong> Ha, this is easy, we&rsquo;ll just allow people to pick a unique identifier, lets say <code>#TannerAndKaia</code> No problem, this is easy just give them a text entry box, and a quick database lookup to make sure the hashtag hasn&rsquo;t already been taken.  No big deal, even an intern could code this up.</p>
+
+<p><strong>Business Guy Solution:</strong>  Ok, just generate a random hashtag <code>#JK286TJ</code>.  Now if the bride and the groom want to have a nice hashtag for their wedding, we can sell them that as a strategy to monetize the service.</p>
+
+<p>Brilliant!  We tech guys get so focused on the solution most of the time that we never stop to think about simple strategies to monetize.</p>
+
+<p>Our second visit of the day was to <a href="http://fullscreen.net" title="Fullscreen">Fullscreen</a>.  This is a Culver City company that employs three Luther Alumni!  Two of which I am very proud to say are also alumni of this very course.  Drew is employee number 3 of Fullscreen, and Aaron is number 15, Jacob is not far after Aaron.  Fullscreen now numbers over 220 employees, and is a very fast growing new media company.</p>
+
+<p>What do they do?  What do you mean new media company?  Well, this is where my age really starts to show.  Apparently there are people in this world that spend a lot of time watching &ldquo;shows&rdquo; on youTube.  Shows like that <a href="http://www.youtube.com/user/JennaMarbles" title="JennaMarbles">Marbles girl</a>, or teenagegirl14, and thousands of others.  As Aaron said, this is not your demographic Brad, this is targeted at a group of people that will probably never pay a cable bill.  So Fullscreen is a Network in the sense that they aggregate all kinds of these new generation entertainers, and help them monetize their videos on youtube.  Note that monetize is a euphemism for ad serving, but thats really only a small part of what Fullscreen is about.  Its a great company and Drew, Aaron, and Jacob were excellent hosts.  They even talked their CEO into spending about an hour with us answering questions.</p>
+
+<p>Another interesting story around Fullscreen is that Drew and George (CEO of Fullscreen) met at Coloft Santa Monica.  We were also lucky enough to meet with the founder of Coloft, Avesta, (@avestar). He gave the students  a great no-nonsense talk on his views of entrepreneurship. The story of Drew meeting George is a great example of the synergies that can happen in a co-working facility.  At the time, Drew and a partner were trying to start a little consulting company to do coding for hire.  Avesta happened to be talking to George who was looking for someone with Drew&rsquo;s skill set.  So he introduced the two of them, and a successful company was launched.</p>
+
+<p>I love this story on a couple of different levels.  First, as a professor I take pride in the success and accomplishments of my students even after they leave the campus.  As an alum and faculty member of a college that counts community as one of its defining characteristics, it is great to find other organizations that lift up community as a differentiator.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Applied Math and Physics]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics/"/>
-    <updated>2014-01-22T10:38:12-08:00</updated>
+    <updated>2014-01-22T11:38:12-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics</id>
     <content type="html"><![CDATA[<p>You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn&rsquo;t have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.</p>
 
@@ -40,7 +72,7 @@
   <entry>
     <title type="html"><![CDATA[JTerm 2014 - Day 1 at Amazon]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon/"/>
-    <updated>2014-01-08T17:08:03-08:00</updated>
+    <updated>2014-01-08T18:08:03-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon</id>
     <content type="html"><![CDATA[<p>Jeff Bezos likes to talk about technology and civilization and where we are at in terms of the analogy that we are still at &ldquo;Day One.&rdquo;  He recently observed that we are so early in Day One that the alarm clock hasn&rsquo;t even gone off yet.</p>
 
@@ -64,7 +96,7 @@
   <entry>
     <title type="html"><![CDATA[Envisioning the Future]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/08/envisioning-the-future/"/>
-    <updated>2014-01-08T12:38:25-08:00</updated>
+    <updated>2014-01-08T13:38:25-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/08/envisioning-the-future</id>
     <content type="html"><![CDATA[<p>Today was a big day.  The Microsoft mother ship.</p>
 
@@ -93,7 +125,7 @@
   <entry>
     <title type="html"><![CDATA[And Now it can be told]]></title>
     <link href="http://reputablejournal.com/blog/2013/01/31/and-now-it-can-be-told/"/>
-    <updated>2013-01-31T00:00:00-08:00</updated>
+    <updated>2013-01-31T00:00:00-07:00</updated>
     <id>http://reputablejournal.com/blog/2013/01/31/and-now-it-can-be-told</id>
     <content type="html"><![CDATA[<p>Loyal readers will remember that last summer we cruised to Alaska, and some very secretive things were happening on that cruise that I could only refer to rather cryptically.  Well, with the airing of last nights episode of Top Chef the story can now be told.</p>
 
@@ -110,41 +142,6 @@
 <p><p>Of course since this was all way before the show started we had no idea who any of the chefs really were.  I do remember really liking Sheldon&rsquo;s lettuce cups as well as Stefan&rsquo;s little potato soup cup.  I could swear that I remember seeing Kristin on the ship, so maybe she got to come along since she would be competing in last chance kitchen in Juneau. </p></p>
 
 <p><p>Right now I&rsquo;m looking forward to the finale.  I&rsquo;m not sure who I want to win the most, with Stefan and Josie gone all the villains are off the show.  I think it would be awesome if Kristin makes it through LCK and gets to compete against Sheldon or Josh in the Finale.  Thats Josh, by the way, in the first photo.</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The DeBary Institute]]></title>
-    <link href="http://reputablejournal.com/blog/2013/01/25/the-debary-institute/"/>
-    <updated>2013-01-25T00:00:00-08:00</updated>
-    <id>http://reputablejournal.com/blog/2013/01/25/the-debary-institute</id>
-    <content type="html"><![CDATA[<p>Its been a great J-Term.  A trip to Vail for some Skiing, <strong>and</strong> a trip to Florida to solve the worlds problems with great friends at the DeBary Institute.  For those who do not know, the DeBary institute is a newly renowned think tank with roots in the Bone Lake Global Institute.</p>
-
-<p>We arrived on Friday and spent a wonderful late afternoon enjoying the hospitality and home of our host, Tim Peter.</p>
-
-<p><a href="http://www.flickr.com/photos/71706244@N00/8405885066" title="View 'IMG_0214' on Flickr.com"><img height="375" title="IMG_0214" alt="IMG_0214" border="0" src="http://farm9.staticflickr.com/8510/8405885066_aaa4dd8469.jpg" width="500"/></a></p>
-
-<p>On Saturday we toured Stetson University in the morning.</p>
-
-<p><a href="http://www.flickr.com/photos/71706244@N00/8405885966" title="View 'IMG_0221' on Flickr.com"><img height="500" title="IMG_0221" alt="IMG_0221" border="0" src="http://farm9.staticflickr.com/8212/8405885966_564e8ca398.jpg" width="375"/></a></p>
-
-<p>Later we repaired to Smyrna Beach, it was a bit windy but we enjoyed it all the same.
-<a href="http://www.flickr.com/photos/71706244@N00/8404793959" title="View 'IMG_0229' on Flickr.com"><img height="375" title="IMG_0229" alt="IMG_0229" border="0" src="http://farm9.staticflickr.com/8237/8404793959_3faa6ba998.jpg" width="500"/></a></p>
-
-<p>The culinary highlight of our trip was dinner at the Swamp House Grill and Tiki Bar.  We enjoyed some lovely alligator bites as appetizers:
-<a href="http://www.flickr.com/photos/71706244@N00/8405887432" title="View 'IMG_0236' on Flickr.com"><img height="200" title="IMG_0236" alt="IMG_0236" border="0" src="http://farm9.staticflickr.com/8374/8405887432_1b8fb2bf27.jpg" /></a>  (Yes, as the famous frog said, they do taste like chicken)</p>
-
-<p>After dinner we sat around enjoying the music of <a href="https://www.facebook.com/markdmooreoriginals">Mark Moore</a>.</p>
-
-<p>Sunday was Football (European and American) and then Golf day.</p>
-
-<p><a href="http://www.flickr.com/photos/71706244@N00/8405887790" title="View 'IMG_0245' on Flickr.com"><img height="375" title="IMG_0245" alt="IMG_0245" border="0" src="http://farm9.staticflickr.com/8516/8405887790_1e84e19b80.jpg" width="500"/></a></p>
-
-<p>Dinner was provided by Gregory and Brad who made a charming seafood alfredo.</p>
-
-<p>Monday morning we left the house at 5:50AM.   The temperature was 62 degrees.  Five hours later we arrived in Cedar Rapids where the temperature was -2.  Thats a big swing for a monday morning.</p>
-
-<p>Already looking forward to next year!</p>
 ]]></content>
   </entry>
   

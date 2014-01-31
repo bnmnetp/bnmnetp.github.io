@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://reputablejournal.com/atom.xml" rel="self"/>
   <link href="http://reputablejournal.com/"/>
-  <updated>2014-01-25T17:11:06-08:00</updated>
+  <updated>2014-01-30T21:05:31-07:00</updated>
   <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -14,13 +14,33 @@
 
   
   <entry>
+    <title type="html"><![CDATA[On 14 inches of Powder]]></title>
+    <link href="http://reputablejournal.com/blog/2014/01/30/on-14-inches-of-powder/"/>
+    <updated>2014-01-30T15:45:02-07:00</updated>
+    <id>http://reputablejournal.com/blog/2014/01/30/on-14-inches-of-powder</id>
+    <content type="html"><![CDATA[<p>The weather report said we had 6 inches of snow overnight.  From the moment we walked out the door it was clear that they had underestimated the snowfall by about 8 inches.</p>
+
+<p><img src="http://reputablejournal.com/images/JTerm14/BreckPowder.jpg" alt="Powder" /></p>
+
+<p>We were on the third chair up at 8:30 this morning.  The steep parts of the hill were awesome, with powder over my knees, floating through the snow.  On the gentle parts of the hill we all formed a single file line in order to get through it all.</p>
+
+<p>By mid-day it was work.  The powder had been packed in many places and it was work to get through it.  The snow continued heavily throughout the day, and we are supposed to get another 14 inches overnight.</p>
+
+<p>This has been the perfect few days of rest and relaxation to finish off January term.  Its even better because we bought the Epic local passes this year, which means we don&rsquo;t feel like we have to ski full time, but can actually just ski until we are ready to take a break, and then ski again later.  Its been great.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Final Visits]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/25/final-visits/"/>
-    <updated>2014-01-25T16:29:17-08:00</updated>
+    <updated>2014-01-25T17:29:17-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/25/final-visits</id>
     <content type="html"><![CDATA[<p>My daughter Kaia is getting married next summer.  This is not new news, the proposal was made an accepted last June.  But planning is in full swing now, and I was kind of excited when secured a visit with Capsule, because capsule provides a service where all the guests at your wedding can download the capsule app and it will automatically upload all the photos to a special page for the wedding.</p>
 
 <p>This company was founded by Cyrus, who set out to solve a simple problem, a problem we&rsquo;ve been coping with on this course as well.  When you travel, how do you share all your digital photos with the buddies you are traveling with.  When you have a big party?  When you have a wedding, bachelor party, bachelorette party?  Capsule has solved this in a nice, elegant way.  All the photos uploaded for a particular event, are shared with the participants in the event.  Its that easy.  No need to bore all of your Facebook followers with every photo from your trip.  If you&rsquo;re an Instagram user, its super easy to add a special hashtag to your photo and it will be automatically imported into Capsule as well as shared on Instagram.</p>
+
+<!-- more -->
+
 
 <p>What was incredibly interesting for me was to listen to Cyrus talk about business models, and monetizing the service.  Cyrus is not a CS guy, he&rsquo;s a business guy.  Of course as an entrepreneur he can talk the tech talk but his home is on the business side.  Here&rsquo;s an example of how differently we tech people approach a problem than the business guys.</p>
 
@@ -36,14 +56,16 @@
 
 <p>What do they do?  What do you mean new media company?  Well, this is where my age really starts to show.  Apparently there are people in this world that spend a lot of time watching &ldquo;shows&rdquo; on youTube.  Shows like that <a href="http://www.youtube.com/user/JennaMarbles" title="JennaMarbles">Marbles girl</a>, or teenagegirl14, and thousands of others.  As Aaron said, this is not your demographic Brad, this is targeted at a group of people that will probably never pay a cable bill.  So Fullscreen is a Network in the sense that they aggregate all kinds of these new generation entertainers, and help them monetize their videos on youtube.  Note that monetize is a euphemism for ad serving, but thats really only a small part of what Fullscreen is about.  Its a great company and Drew, Aaron, and Jacob were excellent hosts.  They even talked their CEO into spending about an hour with us answering questions.</p>
 
-<p>Another interesting story around Fullscreen is that Drew and George (CEO of Fullscreen) met at Coloft Santa Monica.  We were also lucky enough to meet with the founder of Coloft, Avesta, (@avestar).  This is a great example of the synergies that can happen in a co-working facility.  At the time, Drew and a partner were trying to start a little consulting company to do coding for hire.  Avesta happened to be talking to George who was looking for someone with Drew&rsquo;s skill set.  So he introduced each other, and a highly successful company was launched.  I love this!  As an alum and faculty member of a college that counts community as one of its defining characteristics, its great to see other organizations that lift up community as a differentiator as well.</p>
+<p>Another interesting story around Fullscreen is that Drew and George (CEO of Fullscreen) met at Coloft Santa Monica.  We were also lucky enough to meet with the founder of Coloft, Avesta, (@avestar). He gave the students  a great no-nonsense talk on his views of entrepreneurship. The story of Drew meeting George is a great example of the synergies that can happen in a co-working facility.  At the time, Drew and a partner were trying to start a little consulting company to do coding for hire.  Avesta happened to be talking to George who was looking for someone with Drew&rsquo;s skill set.  So he introduced the two of them, and a successful company was launched.</p>
+
+<p>I love this story on a couple of different levels.  First, as a professor I take pride in the success and accomplishments of my students even after they leave the campus.  As an alum and faculty member of a college that counts community as one of its defining characteristics, it is great to find other organizations that lift up community as a differentiator.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Applied Math and Physics]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics/"/>
-    <updated>2014-01-22T10:38:12-08:00</updated>
+    <updated>2014-01-22T11:38:12-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/22/applied-math-and-physics</id>
     <content type="html"><![CDATA[<p>You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn&rsquo;t have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.</p>
 
@@ -67,7 +89,7 @@
   <entry>
     <title type="html"><![CDATA[The Social Implications of a Self-Driving Car]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/18/a-googeley-day/"/>
-    <updated>2014-01-18T10:40:14-08:00</updated>
+    <updated>2014-01-18T11:40:14-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/18/a-googeley-day</id>
     <content type="html"><![CDATA[<p>Today we moved south, from Fisherman&rsquo;s wharf down to Menlo Park.  But most of the day was spent at Google.  This was certainly a day that everyone has been looking forward to for most of the trip.</p>
 
@@ -97,7 +119,7 @@
   <entry>
     <title type="html"><![CDATA[A Lesson in Venture Capital]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/17/a-lesson-in-venture-capital/"/>
-    <updated>2014-01-17T11:13:15-08:00</updated>
+    <updated>2014-01-17T12:13:15-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/17/a-lesson-in-venture-capital</id>
     <content type="html"><![CDATA[<p>&ldquo;Ann is on a roll, we are going to be late.&rdquo;  I texted to Phillip.  Indeed she was.  Ann Winblad was the first investor in my Company, Net Perceptions, back in 1996.  She was an investor, a  mentor, and a supporter of us for years.  Today she was giving my students a lesson in the new economics and ecosystems of software development.  <em>I</em> was taking notes as fast as I could to keep up with the stream of new companies and technologies that were <em>must know</em> things according to Ann.</p>
 
@@ -130,7 +152,7 @@
   <entry>
     <title type="html"><![CDATA[Changing the World, JTerm 2014]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/14/notes-from-the-road/"/>
-    <updated>2014-01-14T09:07:18-08:00</updated>
+    <updated>2014-01-14T10:07:18-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/14/notes-from-the-road</id>
     <content type="html"><![CDATA[<p>The following is a republication of a post I wrote for Luther College&rsquo;s <a href="https://www.luther.edu/ideas-creations-blog/">&ldquo;Ideas and Creations&rdquo; Blog</a>.</p>
 
@@ -157,7 +179,7 @@
   <entry>
     <title type="html"><![CDATA[There is no Cure for Curiosity]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/14/there-is-no-cure-for-curiosity/"/>
-    <updated>2014-01-14T08:07:07-08:00</updated>
+    <updated>2014-01-14T09:07:07-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/14/there-is-no-cure-for-curiosity</id>
     <content type="html"><![CDATA[<p>Curiosity is the cure for boredom.  There is no cure for curiosity.  We began our day with a visit to PR firm, Schwartz MSL, Bryan Scanlon gave the group a great overview of the players in the PR space and how PR companies work.   The tagline for their group may be something like &ldquo;telling stories that matter.&rdquo; I like this and it resonates well with a lot of the career advice people are sharing with the students.</p>
 
@@ -178,7 +200,7 @@
   <entry>
     <title type="html"><![CDATA[Student Blogs]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/13/student-blogs/"/>
-    <updated>2014-01-13T16:35:04-08:00</updated>
+    <updated>2014-01-13T17:35:04-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/13/student-blogs</id>
     <content type="html"><![CDATA[<p>A few people have asked for the links to the students blogs.  Here they are:</p>
 
@@ -203,7 +225,7 @@
   <entry>
     <title type="html"><![CDATA[A Golden Bike Ride]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/12/a-golden-bike-ride/"/>
-    <updated>2014-01-12T15:08:31-08:00</updated>
+    <updated>2014-01-12T16:08:31-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/12/a-golden-bike-ride</id>
     <content type="html"><![CDATA[<p>What a great day for a bike ride!  We rented some bikes at Blazing Saddles, right next to the hotel.  Then took off for the golden gate bridge.  It was a beautiful day and no surprise, the bike paths were very crowded with all kinds of people enjoying the outdoors and the scenery.</p>
 
@@ -222,7 +244,7 @@
   <entry>
     <title type="html"><![CDATA[The Starlight Coastal]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/10/the-starlight-coastal/"/>
-    <updated>2014-01-10T17:47:25-08:00</updated>
+    <updated>2014-01-10T18:47:25-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/10/the-starlight-coastal</id>
     <content type="html"><![CDATA[<p>A 23 hour train trip?  At some point that seemed like a really charming idea.  Eight hours in, I&rsquo;ll say that the bloom is off the rose.  Its been a nice ride, and a good chance to catch up on some reading and blogging but for the most part its just a long ride on a train full of people.  The views have been OK, but it is now dark outside.</p>
 ]]></content>
@@ -231,7 +253,7 @@
   <entry>
     <title type="html"><![CDATA[How Many Trees in the State of Washington?]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/09/last-day-in-seattle/"/>
-    <updated>2014-01-09T10:59:31-08:00</updated>
+    <updated>2014-01-09T11:59:31-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/09/last-day-in-seattle</id>
     <content type="html"><![CDATA[<p>What?  There is no real way to know the answer to this question, but it is one that was posed to the group today.  How do you handle uncertainty?  How do well do you think on your feet?  This is a typical interview question used by many high tech companies.  At Luther we might ask prospective faculty, &ldquo;how many cornstalks in the state of Iowa?&rdquo;</p>
 
@@ -269,7 +291,7 @@
   <entry>
     <title type="html"><![CDATA[JTerm 2014 - Day 1 at Amazon]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon/"/>
-    <updated>2014-01-08T17:08:03-08:00</updated>
+    <updated>2014-01-08T18:08:03-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/08/jterm-2014-day-1-at-amazon</id>
     <content type="html"><![CDATA[<p>Jeff Bezos likes to talk about technology and civilization and where we are at in terms of the analogy that we are still at &ldquo;Day One.&rdquo;  He recently observed that we are so early in Day One that the alarm clock hasn&rsquo;t even gone off yet.</p>
 
@@ -293,7 +315,7 @@
   <entry>
     <title type="html"><![CDATA[Envisioning the Future]]></title>
     <link href="http://reputablejournal.com/blog/2014/01/08/envisioning-the-future/"/>
-    <updated>2014-01-08T12:38:25-08:00</updated>
+    <updated>2014-01-08T13:38:25-07:00</updated>
     <id>http://reputablejournal.com/blog/2014/01/08/envisioning-the-future</id>
     <content type="html"><![CDATA[<p>Today was a big day.  The Microsoft mother ship.</p>
 
@@ -322,7 +344,7 @@
   <entry>
     <title type="html"><![CDATA[Chapel Talk - 11/4  Nehemiah 13 1-3, 23-31]]></title>
     <link href="http://reputablejournal.com/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31/"/>
-    <updated>2013-11-05T00:00:00-08:00</updated>
+    <updated>2013-11-05T00:00:00-07:00</updated>
     <id>http://reputablejournal.com/blog/2013/11/05/chapel-talk-11-4-nehemiah-13-1-3-23-31</id>
     <content type="html"><![CDATA[This is the text from my chapel talk yesterday.  The video (mostly of the top of my head) can be found on the <a href="http://client.stretchinternet.com/client/lutheradmin.portal#">Luther Portal</a>.  Make sure you go to the On Demand tab and look for me on November 4.
 
@@ -485,7 +507,7 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   <entry>
     <title type="html"><![CDATA[John Riedl Tribute]]></title>
     <link href="http://reputablejournal.com/blog/2013/09/02/john-riedl-tribute/"/>
-    <updated>2013-09-02T00:00:00-07:00</updated>
+    <updated>2013-09-02T00:00:00-06:00</updated>
     <id>http://reputablejournal.com/blog/2013/09/02/john-riedl-tribute</id>
     <content type="html"><![CDATA[<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?--></p>
 <div>This is the short tribute speech I gave last Friday at the University of Minnesota.  Actually, I had to edit my speech to be shorter than this, so I thought I would just post this longer version, plus it contains some fun old images I dug up that I didn&#8217;t get to show.</div>
@@ -571,7 +593,7 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   <entry>
     <title type="html"><![CDATA[Runestone Interactive Announces New Editions of Interactive Textbooks]]></title>
     <link href="http://reputablejournal.com/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks/"/>
-    <updated>2013-08-14T00:00:00-07:00</updated>
+    <updated>2013-08-14T00:00:00-06:00</updated>
     <id>http://reputablejournal.com/blog/2013/08/14/runestone-interactive-announces-new-editions-of-interactive-textbooks</id>
     <content type="html"><![CDATA[<p>Today I&#8217;m really pleased to announce that  have launched version 2.0 of our interactive computer science  textbooks:</p>
 <ul>
@@ -635,7 +657,7 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   <entry>
     <title type="html"><![CDATA[Wow! May 2nd!  Schools in the area are starting late or canceling.  What a crazy spring.]]></title>
     <link href="http://reputablejournal.com/blog/2013/05/02/wow-may-2nd-schools-in-the-area-are-starting-late-or-canceling-what-a-crazy-spri/"/>
-    <updated>2013-05-02T00:00:00-07:00</updated>
+    <updated>2013-05-02T00:00:00-06:00</updated>
     <id>http://reputablejournal.com/blog/2013/05/02/wow-may-2nd-schools-in-the-area-are-starting-late-or-canceling-what-a-crazy-spri</id>
     <content type="html"><![CDATA[<img src="http://reputablejournal.com/images/31.media.tumblr.com/82dbeb35b91f519132b38dceeba696fd/tumblr_mm6edoy3yM1r729pmo1_1280.png" />
 
@@ -646,7 +668,7 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   <entry>
     <title type="html"><![CDATA[Oh the Insanity of it all!]]></title>
     <link href="http://reputablejournal.com/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t/"/>
-    <updated>2013-04-19T00:00:00-07:00</updated>
+    <updated>2013-04-19T00:00:00-06:00</updated>
     <id>http://reputablejournal.com/blog/2013/04/19/oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t</id>
     <content type="html"><![CDATA[<img src="http://reputablejournal.com/images/25.media.tumblr.com/746b0c798284d68e4f12da178cfbbdff/tumblr_mlifbsVWRE1r729pmo1_1280.png" />
 
@@ -660,7 +682,7 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   <entry>
     <title type="html"><![CDATA[Making Python3 my default]]></title>
     <link href="http://reputablejournal.com/blog/2013/04/15/making-python3-my-default/"/>
-    <updated>2013-04-15T00:00:00-07:00</updated>
+    <updated>2013-04-15T00:00:00-06:00</updated>
     <id>http://reputablejournal.com/blog/2013/04/15/making-python3-my-default</id>
     <content type="html"><![CDATA[<p>I&#8217;m finally there.  After a long time of writing books using Python 3, and teaching in Python 3 on a daily basis, I&#8217;m finally at the point where I&#8217;m changing my work environment to use Python 3 by default.</p>
 <p>Here are the signs that convinced me it was time:</p>
@@ -694,20 +716,9 @@ I’ve spent a lot of time this last week trying to answer the question, where�
   <entry>
     <title type="html"><![CDATA[What most schools don't teach (by CodeOrg) This is a really great video, that just might inspire you to become a computer science major.]]></title>
     <link href="http://reputablejournal.com/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-/"/>
-    <updated>2013-02-26T00:00:00-08:00</updated>
+    <updated>2013-02-26T00:00:00-07:00</updated>
     <id>http://reputablejournal.com/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-</id>
     <content type="html"><![CDATA[<iframe width="480" height="270" src="http://www.youtube.com/embed/nKIu9yen5nc?feature=oembed" frameborder="0" allowfullscreen></iframe>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[We had a small mishap this morning. A fork bomb that was meant for a virtual machine accidentally got pasted into a terminal window open to our server.   Now I&#x27;m having an identity crisis.]]></title>
-    <link href="http://reputablejournal.com/blog/2013/02/22/we-had-a-small-mishap-this-morning-a-fork-bomb-that-was-meant-for-a-virtual-mach/"/>
-    <updated>2013-02-22T00:00:00-08:00</updated>
-    <id>http://reputablejournal.com/blog/2013/02/22/we-had-a-small-mishap-this-morning-a-fork-bomb-that-was-meant-for-a-virtual-mach</id>
-    <content type="html"><![CDATA[<img src="http://reputablejournal.com/images/24.media.tumblr.com/24aa6881ffb28285f2fd29667023bbaf/tumblr_min3l0yfAk1r729pmo1_1280.jpe" />
-
-We had a small mishap this morning. A fork bomb that was meant for a virtual machine accidentally got pasted into a terminal window open to our server.   Now I&#x27;m having an identity crisis. 
 ]]></content>
   </entry>
   

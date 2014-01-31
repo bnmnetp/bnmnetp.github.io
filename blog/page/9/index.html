@@ -9,7 +9,7 @@
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="Now that I&#8217;m back from my JTerm travels, I&#8217;m happy to let you know that the second edition of Problem Solving with Algorithms and Data &hellip;">
+  <meta name="description" content="I&#8217;ve recently been looking for ways to run Python in a browser. There are lots of reasons why I think this is a cool idea. For example, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,7 +65,7 @@
         </span>
        
            <span class="blue_dark">
-             A blog you can trust
+             ~ A Blog you can Trust
            </span>
        
     </a></li>
@@ -79,6 +79,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/02/14/python-in-your-browser-in-javascript/">Python in Your Browser&#8230; In Javascript!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-14T00:00:00-07:00" pubdate data-updated="true">Feb 14<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">I&#8217;ve recently been looking for ways to run Python in a browser.  There are lots of reasons why I think this is a cool idea.  For example, creating some simple tutorials, Making some online quizzes and tests, getting Python to run on my iPad&#8230;<br /><br />It looks like there are two projects that are actively working on solving this problem.  The first is called skulpt  (see the demo on <a href="http://www.skulpt.org/">skulpt.org</a>.)  This project actually reimplements the core of Python in Javascript by hand.  They are working on some modules, but right now it is basically the core Python language.<br /><br />The other project uses <a href="http://code.google.com/p/emscripten/">Emscripten</a> to compile the CPython C source code to javascript!  Yep you read that right.  You can see <a href="http://syntensity.com/static/python.html">here</a> that the core of Python 2.7 is running.  You can import sys, but thats about it.  Nevertheless both of these are really useful for beginning Python exercises.<br /><br />The problem with both of these is that right now there is no user level documentation.  Skulpt is particularly difficult as you can&#8217;t even look at the demo page to see how its done.  You need to go digging through some additional source files from the distribution to figure out how to make it work for yourself.  The source code of the syntensity page is pretty easy to follow.  So here&#8217;s a hello world program using skulpt.<br /><br /><pre class="prettyprint" style="overflow: auto;">&lt;script src="skulpt.js" type="text/javascript"&gt;<br />&lt;/script&gt;<br /><br /><br />&lt;script type="text/javascript"&gt;<br />function outf(text) {<br />   var mypre = document.getElementById("output");<br />   mypre.innerHTML = mypre.innerHTML + text;<br />}<br /><br />function runit() {<br />   var prog = document.getElementById("yourcode").value;<br />   var mypre = document.getElementById("output");<br />   mypre.innerHTML = '';<br />   Sk.configure({output:outf});<br />   try {<br />      eval(Sk.importMainWithBody("&lt;stdin&gt;",false,prog));<br />   } catch (e) {<br />      alert(e);<br />   }<br />}<br />&lt;/script&gt;<br />&lt;h3&gt;Try This&lt;/h3&gt;<br />&lt;form&gt;<br />&lt;textarea edit_id="eta_5" id="yourcode"&gt;<br />print "Hello World"<br />&lt;/textarea&gt;<br />&lt;button onclick="runit()" type="button"&gt;Run&lt;/button&gt;<br />&lt;/form&gt;<br /><br />&lt;pre id="output"&gt;&lt;/pre&gt;<br /></pre><br /><br />Its a bit on the verbose side, and it could certainly be improved so that less code would have to be replicated if you wanted to put multiple input/output areas on a single page, but as a learning example I think it works OK.  The try/catch block around the Sk.importMainWithBody function call will capture Python runtime errors and throw them.  This is a nice way to inform your users of syntax errors in any code they are trying out.<br /><br />I&#8217;m certainly no expert in either implementation, I just offer this post as an example and a time saver for anyone else trying to get going with either implementation.<div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-7271951656985409817?l=blog.bonelakesoftware.com' alt='' /></div>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -101,7 +137,7 @@
   
 
 
-<time datetime="2011-01-28T00:00:00-08:00" pubdate data-updated="true">Jan 28<span>th</span>, 2011</time>
+<time datetime="2011-01-28T00:00:00-07:00" pubdate data-updated="true">Jan 28<span>th</span>, 2011</time>
         
       </p>
     
@@ -137,7 +173,7 @@
   
 
 
-<time datetime="2011-01-26T00:00:00-08:00" pubdate data-updated="true">Jan 26<span>th</span>, 2011</time>
+<time datetime="2011-01-26T00:00:00-07:00" pubdate data-updated="true">Jan 26<span>th</span>, 2011</time>
         
       </p>
     
@@ -173,7 +209,7 @@
   
 
 
-<time datetime="2011-01-25T00:00:00-08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2011</time>
+<time datetime="2011-01-25T00:00:00-07:00" pubdate data-updated="true">Jan 25<span>th</span>, 2011</time>
         
       </p>
     
@@ -209,7 +245,7 @@
   
 
 
-<time datetime="2011-01-25T00:00:00-08:00" pubdate data-updated="true">Jan 25<span>th</span>, 2011</time>
+<time datetime="2011-01-25T00:00:00-07:00" pubdate data-updated="true">Jan 25<span>th</span>, 2011</time>
         
       </p>
     
@@ -245,7 +281,7 @@
   
 
 
-<time datetime="2011-01-24T00:00:00-08:00" pubdate data-updated="true">Jan 24<span>th</span>, 2011</time>
+<time datetime="2011-01-24T00:00:00-07:00" pubdate data-updated="true">Jan 24<span>th</span>, 2011</time>
         
       </p>
     
@@ -281,7 +317,7 @@
   
 
 
-<time datetime="2011-01-22T00:00:00-08:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2011</time>
+<time datetime="2011-01-22T00:00:00-07:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2011</time>
         
       </p>
     
@@ -317,7 +353,7 @@
   
 
 
-<time datetime="2011-01-20T00:00:00-08:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
+<time datetime="2011-01-20T00:00:00-07:00" pubdate data-updated="true">Jan 20<span>th</span>, 2011</time>
         
       </p>
     
@@ -353,7 +389,7 @@
   
 
 
-<time datetime="2011-01-19T00:00:00-08:00" pubdate data-updated="true">Jan 19<span>th</span>, 2011</time>
+<time datetime="2011-01-19T00:00:00-07:00" pubdate data-updated="true">Jan 19<span>th</span>, 2011</time>
         
       </p>
     
@@ -389,7 +425,7 @@
   
 
 
-<time datetime="2011-01-18T00:00:00-08:00" pubdate data-updated="true">Jan 18<span>th</span>, 2011</time>
+<time datetime="2011-01-18T00:00:00-07:00" pubdate data-updated="true">Jan 18<span>th</span>, 2011</time>
         
       </p>
     
@@ -397,42 +433,6 @@
 
 
   <div class="entry-content"><p>The first stop on our tour of London was a walking tour around the Olympic venues.  To get there was easy.  Take the Picadilly line from Russel Square up to Kings Cross St. Pancras and transfer to the Hammersmith and City line which would take us East directly to Bromley by Bow where we would meet our guide.  Nothing could be easier right?  Except that when we got to Kings Cross, the train to Bromley by Bow was pretty full.  But we jammed ourselves on like true Londoners.  At the last second I noticed that some of our students had not jammed themselves on the train and a voice in the back of my head said &#8216;jump off.&#8217;  I ignored the little voice because we had given them clear instructions that if they didn&#8217;t make it on this train just jump on the next on and we would meet up on the platform at our destination.</p><p>When we arrived at Bromley by Bow, we did a quick count and realized we had a little more than half of our group.  When the next train pulled in we looked for the rest of the group, but not a single student got off the train.  Soon another train pulled in and I noticed that this was a district line train so I didn&#8217;t expect any students to get off.  Well, train after train came into the station but they were all district line trains.  That voice in the back of my head told me &#8216;somethings not right&#8217;  so I went up to the ticket office to inquire when the next Hammersmith and City train was expected.  &#8221;Service is suspended.&#8221; he told me.</p><p>&#8220;Till when?&#8221;  I asked.</p><p>&#8220;indefinitely.&#8221; I was told.</p><p>Crap!  Why didn&#8217;t I listen to that voice that told me to jump off the train?  Time to regroup.  Craig and I decided that he would take the students that were here on the tour and I would wait at the station.  We knew that within the group there was the intelligence to figure out a way to get down to the district line and out here eventually.  I would meet them and call craig and we would figure out how to catch up.</p><p>So, Craig and the guide and the group took off in the rain on the tour and I hung out in the station.  Pretty soon I noticed that there were not any district line trains coming in any more.  So, back to the information desk.  Yep, District line service is also suspended due to signaling problems at Bow Road station.  Well, that does it, I had already waited around the station for 40 minutes so there was no way they were going to make it now and even if they did the tour would be finishing up.  So I hopped on the next train heading back in.  As I passed each station, I scanned the faces on the platform on the other side.  If I saw the group I could hop off and catch up with them.  But they were no where to be seen.</p><p>It took me about an hour to get back to Russell square and our hotel and when I walked in a group of the cheerfully greeted me in the lobby.  &#8221;We tried to catch up with you but all the lines were suspended.&#8221;  They had their own odyssey of planes and busses and walking in the rain that you can read about on the class blog.  (olympicsjterm11.blogspot.com).  They had tried their best using all of their ingenuity to catch up with us, but it just was not to be.  They were all safe, and sound and much the better for having to learn how to navigate the London Tube system on their own.</p><p>Now, if you have been following this blog you may be wondering how on earth I came to be allowed to lead students abroad.  Torn ligaments, separated shoulders, leaving students behind on busses and trains.  Is there any defense for all that?  Nope, these are ingenious  Luther students, in every case they knew where they had to be and how to get there.  In my mind this is part of the experience of learning how to navigate your way around a foreign country.  We&#8217;re having a blast and we&#8217;ll make sure we get everyone home in one piece.</p><p>Today we are off to Wimbledon, and looking forward to our meetings and tour there.  But, if I do hear that voice telling me to jump off the train to stay with the group, I think I&#8217;ll listen to it today.</p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-7361298176501809442?l=blog.bonelakesoftware.com' alt='' /></div>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/17/the-ryanair-experience/">The Ryanair Experience</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-17T00:00:00-08:00" pubdate data-updated="true">Jan 17<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;m writing this from 35,000 feet, in the exit row of a Ryanair 737-800.  Its almost noon and we are on our way to London!  We started this morning early with a bus ride to the airport.  We had been expecting a very easy, small airport experience.  We had been told that the Torino airport is quite nice and easy to get around.  However when we entered the terminal at 9:00 for our 10:25 flight the first thing we noticed was that the security line looked like it might take until 3:00 this afternoon to get through.  This set of a general sort of fear among the entire group.</p><p>We had been warned well in advance about all the extra fees that Ryanair charges, so everyone was very careful to make sure their bags were under the 20 kg limit.  The ticketing agent was very friendly and even let a couple of the bags that were slightly over the limit slide through.  After checking bags it was all the way to the back of the line, which stretched all the way across the terminal.  Luckily the line moved along much more quickly that we were used to so we got through security in about 45 minutes.  After security we had to go through passport control. and then get in line.  There are no assigned seats on Ryanair so this is where things get downright pushy.  Everyone was trying to crowd the front of the line.  When they finally announced that our flight was going to be delayed due to the heavy fog.  The delay did not deter anyone from camping out at the front of the line, which is really funny because when we finally got through the boarding line we did not get on the plane!  Instead we had to walk down a bunch of stairs and board a bus, where we waited for another 20 minutes!  Finally the busses closed their doors and were ready to take off.  We almost had a mutiny on our bus when it appeared as though the second bus, with those slackers who were at the back of the line was going to leave for the plane before all of us who had been near the front!  Horrors!</p><p>When the busses arrived at the plane, ours stopped near the front door, but the other bus went around to the back.  It looked like those sluggards were going to catch a break after all.  Luckily for me craig was lucky enough to be right be the door at the back.  He headed straight on and to the middle of the plane to reserve an exit row so that Aaron could stretch out his legs.  As it turned out Aaron could not sit in the exit row because of his crutches, so here I am.</p><p><img title="IMG_2250.jpg" src="http://lh4.ggpht.com/_wISL1SSAaEA/TTP1mMpc0GI/AAAAAAAAAKs/eoi2rZ-i36w/IMG_2250.jpg?imgmax=800" border="0" alt="IMG_2250.jpg" width="400" height="300" /></p><p><img title="IMG_2251.jpg" src="http://lh3.ggpht.com/_wISL1SSAaEA/TTP1pHN7X0I/AAAAAAAAAKw/aMmNZPz-Tnk/IMG_2251.jpg?imgmax=800" border="0" alt="IMG_2251.jpg" width="400" height="300" /></p><p>We took off in heavy fog, but it only took a few seconds to get above it all where we were treated to beautiful views of the mountains surrounding Torino.  The captain says the weather in London is clear and sunny so we are all excited to get to see the sun, and to spend some time in an English speaking country!</p><p> </p><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/2759017781463016019-1618807460059225708?l=blog.bonelakesoftware.com' alt='' /></div>
 </div>
   
   
@@ -457,6 +457,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/30/on-14-inches-of-powder/">On 14 inches of Powder</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/25/final-visits/">Final Visits</a>
       </li>
     
@@ -470,10 +474,6 @@
     
       <li class="post">
         <a href="/blog/2014/01/17/a-lesson-in-venture-capital/">A Lesson in Venture Capital</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/14/notes-from-the-road/">Changing the World, JTerm 2014</a>
       </li>
     
   </ul>
