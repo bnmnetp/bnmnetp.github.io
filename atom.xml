@@ -4,7 +4,7 @@
   <title><![CDATA[A Reputable Journal]]></title>
   <link href="http://reputablejournal.com/atom.xml" rel="self"/>
   <link href="http://reputablejournal.com/"/>
-  <updated>2014-02-01T08:35:15-07:00</updated>
+  <updated>2014-02-01T08:41:50-07:00</updated>
   <id>http://reputablejournal.com/</id>
   <author>
     <name><![CDATA[Brad Miller]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Reflections on January 2014]]></title>
+    <link href="http://reputablejournal.com/blog/2014/02/01/reflections-on-jterm-2014/"/>
+    <updated>2014-02-01T11:28:00-07:00</updated>
+    <id>http://reputablejournal.com/blog/2014/02/01/reflections-on-jterm-2014</id>
+    <content type="html"><![CDATA[<p>I left home on December 27 2013.  When I left I had 3 bags packed.  One for our trip to Mazatlan to celebrate the new year with our friends the Vermace&rsquo;s.  One for my January term class on the west coast, and finally a bag full of ski gear for the rest and relaxation trip to Breckenridge.  Since leaving home I have travelled a bit over 10,000 miles.  My means of travel has included several flights, two long train trips on Amtrak, some time in a car, and lots of time on public transportation.</p>
+
+<p>In the last 35 days I&rsquo;ve had more experiences than many people would have in a lifetime.  I say this out of a sense of gratitude, and to remind myself how lucky I am.</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p>I&rsquo;ve body surfed in the Pacific Ocean on the beach in front of our rented house in Mazatlan called the Sand Castle.  Calling the Sand Castle a house is a bit of an understatement.</p></li>
+<li><p>I&rsquo;ve been deep sea fishing, and reeled in a large Dorado (Mahi Mahi), which was cleaned dockside, and prepared on the grill at the Sand Castle just hours later.</p></li>
+<li><p>I&rsquo;ve toasted the New Year watching fireworks over the beach from the fourth floor of the Sand Castle.</p></li>
+<li><p>I&rsquo;ve gotten to know a group of 11 Luther Students well, and watched as they talked with and learned from some of the most successful entrepreneurs in the country.</p></li>
+<li><p>I&rsquo;ve had four days in Seattle to visit Pike Place Market, eat seafood, visit Pioneer Square.  During the same period we visited Amazon, Microsoft, VMWare, and Percognate.</p></li>
+<li><p>The Amtrak from Seattle to San Francisco promised spectacular views and a comfortable ride.  While the ride was comfortable, if I did it again, I would definitely spring for sleeper cars for the group.</p></li>
+<li><p>I&rsquo;ve had four days on Fisherman&rsquo;s Wharf, led a bike ride across the Golden Gate Bridge, and beyond Suasalito.  While in San Francisco we visited Strava, Pinterest, Moovweb, Bizo, Sqwiggle, Schwartz MSL, and Hummer Winblad.</p></li>
+<li><p>I&rsquo;ve had four days in Menlo Park, including a 32 mile bike ride up Old La Honda road and along Skyline drive.  I introduced the group to turkish food at Sultana restaurant.  While in Menlo Park we spent a day at Google, a morning at SportVision, and learned about patent law at Fenwick West.</p></li>
+<li><p>The train ride from San Jose to Los Angeles lived up to its billing.  The views were spectacular, and we got to see an amazing sunset over the Pacific.</p></li>
+<li><p>To cap off our trip we stayed in a house called Beethoven&rsquo;s Trio in Santa Monica.  Rather than eating out we were able to use the grill and the kitchen and prepare our own communal meals.  It was fun to watch the students cook (and clean up) and eat in a very casual setting.</p></li>
+<li><p>We got to spend the weekend exploring Venice Beach and anything else in the LA area.  Sunday morning I met a group of Chelsea fans at a local British pub.  A fun way to get my soccer fix for the week.</p></li>
+<li><p>While in Santa Monica we visited with Capsule, Coloft, and Fullscreen.  At Fullscreen we were hosted by three Luther alumni two of whom took the Entrepreneurship course and did the journey three four years ago.  It is so gratifying to see your students succeed.</p></li>
+<li><p>Finally I&rsquo;ve been able to spend six days &ldquo;recuperating&rdquo; in Breckenridge.  Some might say that five days of skiing is hardly recuperating, and I would agree.  However, we have had 30+ inches of fresh snow in the last three days, and the locals say this is one of the greatest storms ever.  So to say that the skiing has been fantastic is a bit of an understatement.</p></li>
+</ul>
+
+
+<p>After all of this, perhaps the best thing is that I get to go home tomorrow.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[On 14 inches of Powder]]></title>
@@ -710,15 +743,6 @@ I’ve spent a lot of time this last week trying to answer the question, where�
 <p>Finally, you will want to add the Python 3 bin directory to your PATH.  Edit your .bashrc or .zshenv file.  Note that the following puts the Python 3 bin directory at the front of your PATH, making it the default when you type pip, python, or ipython.  If you need to revert back to python2.7 for some task you will need to be explicit about it.</p>
 <pre>export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:$PATH</pre>
 <p>Easy!  You were expecting this to be a long and arduous process fraught with hacks and silly edits to config files.  Nope, just a few basic commands.  I take this as the final sign that Python 3 is here and ready to be your day to day Python.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What most schools don't teach (by CodeOrg) This is a really great video, that just might inspire you to become a computer science major.]]></title>
-    <link href="http://reputablejournal.com/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-/"/>
-    <updated>2013-02-26T00:00:00-07:00</updated>
-    <id>http://reputablejournal.com/blog/2013/02/26/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-</id>
-    <content type="html"><![CDATA[<iframe width="480" height="270" src="http://www.youtube.com/embed/nKIu9yen5nc?feature=oembed" frameborder="0" allowfullscreen></iframe>
 ]]></content>
   </entry>
   
