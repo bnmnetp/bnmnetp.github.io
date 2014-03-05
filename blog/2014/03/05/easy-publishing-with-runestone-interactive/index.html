@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Mac - A Reputable Journal</title>
+  <title>Easy Publishing with Runestone Interactive - A Reputable Journal</title>
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="Category: Mac">
+  <meta name="description" content="During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://reputablejournal.comblog/categories/mac/">
+  <link rel="canonical" href="http://reputablejournal.com/blog/2014/03/05/easy-publishing-with-runestone-interactive/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -78,49 +78,118 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Mac</h1>
+    
+      <h1 class="entry-title">Easy Publishing With Runestone Interactive</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-05T08:19:04-05:00" pubdate data-updated="true">Mar 5<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been very happy.  Nothing like hacker level control of your own blog.  But more, than just the switch in tools, the move to Octopress inspired me to make it easier for people to publish small or large works using the Runestone tools.</p>
 
-  
-  <h2>2010</h2>
+<p>Yesterday, at the Learning @ Scale conference we demoed this new capability.  See [the demo here](&lt;<a href="http://runestoneinteractive.org/LearningAtScale">http://runestoneinteractive.org/LearningAtScale</a>).  To make it super easy to publish:</p>
 
-<article>
-  
-<h1><a href="/blog/2010/09/17/dear-apple/">Dear Apple</a></h1>
-<time datetime="2010-09-17T00:00:00-04:00" pubdate><span class='month'>Sep</span> <span class='day'>17</span> <span class='year'>2010</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/mac/'>Mac</a></span>
-</footer>
-
-
-</article>
+<ul>
+<li>Lecture slides</li>
+<li>A Tutorial</li>
+<li>Lab Instructions</li>
+<li>In class exercises</li>
+<li>A short module on your favorite topic not covered elsewhere</li>
+<li>An entire book</li>
+</ul>
 
 
+<p>You can simply follow the instructions at this new repository:  <a href="http://github.com/RunestoneInteractive/RunestoneTools">github.com/RunestoneInteractive/RunestoneTools</a>.  In a nutshell:</p>
 
-<article>
-  
-<h1><a href="/blog/2010/07/06/27-inches-of-bliss/">27 Inches of Bliss</a></h1>
-<time datetime="2010-07-06T00:00:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>06</span> <span class='year'>2010</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/mac/'>Mac</a></span>
-</footer>
+<ol>
+<li>Install Sphinx, paver, and paverutils using pip.</li>
+<li>Clone the repository</li>
+<li>Edit the index.rst file in source, and add any additional rst files you may want, depending on how complex your project is.</li>
+<li>run paver build</li>
+</ol>
 
 
-</article>
+<p>Now you have a choice.  In the build directory you have a nice self contained set of html files, these files are set up to make use of the runestone server invisibly in the background.  The static html can be served from any web server.  Just drop in the build directory and you are ready to serve.  OR, you can now host and deploy your project using <strong>GitHub Pages</strong>.  To host on github pages you need to do three things.</p>
 
+<ol>
+<li>Create an empty repository in your github account.</li>
+<li>run <code>paver setup_github_pages</code> and paste in the URL of the new account.</li>
+<li>run paver deploy</li>
+</ol>
+
+
+<p>Now your pages will be available at:  <a href="http://youraccount.github.io/YourRepo">http://youraccount.github.io/YourRepo</a>
+If you want to host these pages behind a custom domain name, you can follow the instructions on github for doing so.  Hint:  Its really easy.</p>
+
+<p>I hope this new capability will inspire lots of people to give these tools a try.  I also hope that we can build a repository of resources built with the tools, so that we can all share our teaching ideas.  Stay tuned for more on that.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Brad Miller</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-05T08:19:04-05:00" pubdate data-updated="true">Mar 5<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://reputablejournal.com/blog/2014/03/05/easy-publishing-with-runestone-interactive/" data-via="bnmnetp" data-counturl="http://reputablejournal.com/blog/2014/03/05/easy-publishing-with-runestone-interactive/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/02/01/reflections-on-jterm-2014/" title="Previous Post: Reflections on January 2014">&laquo; Reflections on January 2014</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

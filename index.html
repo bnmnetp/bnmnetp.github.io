@@ -9,7 +9,7 @@
   <meta name="author" content="Brad Miller">
 
   
-  <meta name="description" content="I left home on December 27 2013. When I left I had 3 bags packed. One for our trip to Mazatlan to celebrate the new year with our friends the Vermace &hellip;">
+  <meta name="description" content="During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -85,6 +85,78 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/03/05/easy-publishing-with-runestone-interactive/">Easy Publishing With Runestone Interactive</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-05T08:19:04-05:00" pubdate data-updated="true">Mar 5<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been very happy.  Nothing like hacker level control of your own blog.  But more, than just the switch in tools, the move to Octopress inspired me to make it easier for people to publish small or large works using the Runestone tools.</p>
+
+<p>Yesterday, at the Learning @ Scale conference we demoed this new capability.  See [the demo here](&lt;<a href="http://runestoneinteractive.org/LearningAtScale">http://runestoneinteractive.org/LearningAtScale</a>).  To make it super easy to publish:</p>
+
+<ul>
+<li>Lecture slides</li>
+<li>A Tutorial</li>
+<li>Lab Instructions</li>
+<li>In class exercises</li>
+<li>A short module on your favorite topic not covered elsewhere</li>
+<li>An entire book</li>
+</ul>
+
+
+<p>You can simply follow the instructions at this new repository:  <a href="http://github.com/RunestoneInteractive/RunestoneTools">github.com/RunestoneInteractive/RunestoneTools</a>.  In a nutshell:</p>
+
+<ol>
+<li>Install Sphinx, paver, and paverutils using pip.</li>
+<li>Clone the repository</li>
+<li>Edit the index.rst file in source, and add any additional rst files you may want, depending on how complex your project is.</li>
+<li>run paver build</li>
+</ol>
+
+
+<p>Now you have a choice.  In the build directory you have a nice self contained set of html files, these files are set up to make use of the runestone server invisibly in the background.  The static html can be served from any web server.  Just drop in the build directory and you are ready to serve.  OR, you can now host and deploy your project using <strong>GitHub Pages</strong>.  To host on github pages you need to do three things.</p>
+
+<ol>
+<li>Create an empty repository in your github account.</li>
+<li>run <code>paver setup_github_pages</code> and paste in the URL of the new account.</li>
+<li>run paver deploy</li>
+</ol>
+
+
+<p>Now your pages will be available at:  <a href="http://youraccount.github.io/YourRepo">http://youraccount.github.io/YourRepo</a>
+If you want to host these pages behind a custom domain name, you can follow the instructions on github for doing so.  Hint:  Its really easy.</p>
+
+<p>I hope this new capability will inspire lots of people to give these tools a try.  I also hope that we can build a repository of resources built with the tools, so that we can all share our teaching ideas.  Stay tuned for more on that.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/02/01/reflections-on-jterm-2014/">Reflections on January 2014</a></h1>
     
     
@@ -101,7 +173,7 @@
   
 
 
-<time datetime="2014-02-01T11:28:00-07:00" pubdate data-updated="true">Feb 1<span>st</span>, 2014</time>
+<time datetime="2014-02-01T13:28:00-05:00" pubdate data-updated="true">Feb 1<span>st</span>, 2014</time>
         
       </p>
     
@@ -144,7 +216,7 @@
   
 
 
-<time datetime="2014-01-30T15:45:02-07:00" pubdate data-updated="true">Jan 30<span>th</span>, 2014</time>
+<time datetime="2014-01-30T17:45:02-05:00" pubdate data-updated="true">Jan 30<span>th</span>, 2014</time>
         
       </p>
     
@@ -188,7 +260,7 @@
   
 
 
-<time datetime="2014-01-25T17:29:17-07:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
+<time datetime="2014-01-25T19:29:17-05:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time>
         
       </p>
     
@@ -231,7 +303,7 @@
   
 
 
-<time datetime="2014-01-22T11:38:12-07:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2014</time>
+<time datetime="2014-01-22T13:38:12-05:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2014</time>
         
       </p>
     
@@ -276,7 +348,7 @@
   
 
 
-<time datetime="2014-01-18T11:40:14-07:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
+<time datetime="2014-01-18T13:40:14-05:00" pubdate data-updated="true">Jan 18<span>th</span>, 2014</time>
         
       </p>
     
@@ -325,7 +397,7 @@
   
 
 
-<time datetime="2014-01-17T12:13:15-07:00" pubdate data-updated="true">Jan 17<span>th</span>, 2014</time>
+<time datetime="2014-01-17T14:13:15-05:00" pubdate data-updated="true">Jan 17<span>th</span>, 2014</time>
         
       </p>
     
@@ -366,7 +438,7 @@
   
 
 
-<time datetime="2014-01-14T10:07:18-07:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
+<time datetime="2014-01-14T12:07:18-05:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
         
       </p>
     
@@ -411,7 +483,7 @@
   
 
 
-<time datetime="2014-01-14T09:07:07-07:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
+<time datetime="2014-01-14T11:07:07-05:00" pubdate data-updated="true">Jan 14<span>th</span>, 2014</time>
         
       </p>
     
@@ -452,7 +524,7 @@
   
 
 
-<time datetime="2014-01-13T17:35:04-07:00" pubdate data-updated="true">Jan 13<span>th</span>, 2014</time>
+<time datetime="2014-01-13T19:35:04-05:00" pubdate data-updated="true">Jan 13<span>th</span>, 2014</time>
         
       </p>
     
@@ -483,52 +555,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/01/12/a-golden-bike-ride/">A Golden Bike Ride</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-12T16:08:31-07:00" pubdate data-updated="true">Jan 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>What a great day for a bike ride!  We rented some bikes at Blazing Saddles, right next to the hotel.  Then took off for the golden gate bridge.  It was a beautiful day and no surprise, the bike paths were very crowded with all kinds of people enjoying the outdoors and the scenery.</p>
-
-<p><img src="/images/JTerm14/GoldenBike1.jpg" alt="" /></p>
-
-<p>About half of the group above rode across the bridge and back.  Here is me leading the pack.</p>
-
-<p><img src="/images/JTerm14/GoldenBike2.jpg" alt="" /></p>
-
-<p>The other half followed me further on into Sausalito, with the goal of making it to Muir Woods.  The second half of the trek started off very nicely with a long downhill.  which was quickly followed by a steep uphill.  All well and good until my riders started to figure out that &ldquo;what goes down must be climbed back up!&rdquo;  The ride flattened out through Sausalito and beyond so it was a nice easy ride for a while.  But it was getting to noon, and we&rsquo;d already ridden about 12 miles.  I misunderstood the directions from the bike shop and thought we had about 12 more to go.  So, since the guys all had tickets to Alcatraz and had to be ready to board by about 3:30 we decided to turn back short of our goal.  It turns out we were much closer and could have made it to the redwoods!  Bummer.</p>
-
-<p>In any case, we rode just over 25 miles, and it sure felt good to be on a bike outside again!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -544,6 +570,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/05/easy-publishing-with-runestone-interactive/">Easy Publishing with Runestone Interactive</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/02/01/reflections-on-jterm-2014/">Reflections on January 2014</a>
       </li>
     
@@ -557,10 +587,6 @@
     
       <li class="post">
         <a href="/blog/2014/01/22/applied-math-and-physics/">Applied Math and Physics</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/18/a-googeley-day/">The Social Implications of a Self-Driving Car</a>
       </li>
     
   </ul>
