@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A Reputable Journal (Python)</title><link>http://reputablejournal.com/</link><description></description><atom:link href="http://reputablejournal.com/categories/python.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 20 Apr 2014 17:31:56 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Easy Publishing with Runestone Interactive</title><link>http://reputablejournal.com/posts/2014/03/easy-publishing-with-runestone-interactive.html</link><description>&lt;div&gt;&lt;p&gt;During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been very happy.  Nothing like hacker level control of your own blog.  But more, than just the switch in tools, the move to Octopress inspired me to make it easier for people to publish small or large works using the Runestone tools.&lt;/p&gt;
+&lt;p&gt;Yesterday, at the Learning @ Scale conference we demoed this new capability.  See &lt;a href="http://runestoneinteractive.org/LearningAtScal"&gt;the demo here&lt;/a&gt;.  To make it super easy to publish:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lecture slides&lt;/li&gt;
+&lt;li&gt;Demonstrations&lt;/li&gt;
+&lt;li&gt;A Tutorial&lt;/li&gt;
+&lt;li&gt;Lab Instructions&lt;/li&gt;
+&lt;li&gt;In class exercises&lt;/li&gt;
+&lt;li&gt;A short module on your favorite topic not covered elsewhere&lt;/li&gt;
+&lt;li&gt;An entire book&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/03/easy-publishing-with-runestone-interactive.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Python</category><category>Runestone</category><guid>http://reputablejournal.com/posts/2014/03/easy-publishing-with-runestone-interactive.html</guid><pubDate>Wed, 05 Mar 2014 05:00:04 GMT</pubDate></item><item><title>Runestone Interactive Announces New Editions of Interactive Textbooks</title><link>http://reputablejournal.com/posts/2013/08/runestone-interactive-announces-new-editions-of-interactive-textbooks.html</link><description>&lt;div&gt;&lt;p&gt;Today I'm really pleased to announce that  have launched version 2.0 of our interactive computer science  textbooks:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://interactivepython.org/runestone/static/thinkcspy/index.html"&gt;How to Think Like a Computer Scientist:  Interactive Edition 2.0&lt;/a&gt;  (CS 1)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://interactivepython.org/runestone/static/pythonds/index.html"&gt;Problem Solving with Algorithms and Data Structures using Python&lt;/a&gt;  (CS 2)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We first launched these books on our &lt;a href="http://interactivepython.org"&gt;interactivepython.org&lt;/a&gt; website in May of 2012, after around a year of private testing in the classroom.  Since then we have had 1.3 million page views by a quarter of a million unique visitors.  Daily, we get around 2,000 unique visitors.  Not bad for a site with zero dollars for an advertising budget.&lt;/p&gt;
+
+&lt;h3&gt;What Makes these Books Unique?&lt;/h3&gt;
+
+&lt;p&gt;These books are unique because they are interactive.  We have developed a set of authoring tools that make it really easy to write an interactive textbook with many interactive features.  We call these the Runestone tools.  Some of the interactive features that are possible include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Activecode&lt;/strong&gt;:  Using a &lt;a href="http://skulpt.org"&gt;Javascript implementation&lt;/a&gt; of Python you can run and modify the examples in the textbook right in the book.  No server connection is required since it is based on javascript and runs right in the browser.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Codelens&lt;/strong&gt;:  Using the amazing power of the &lt;a href="http://www.pythontutor.com"&gt;pythontutor.com&lt;/a&gt;  tools you can step through examples one line at a time, forward and backward.  While you are stepping through the code you can see variables and other data structures change values.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parsons Problems: &lt;/strong&gt; For beginning programmers Parson's problems are like refrigerator magnet poetry.  You can provide your students with the statements needed to write a program, but they must put the statements in the correct order.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inline Quizzes: &lt;/strong&gt;Each section of the book contains some inline quizzes that allow students to check their understanding of the material.  The quizzes have different feedback for each correct or incorrect answer that try to point students in the right direction. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online Homework:&lt;/strong&gt;   At the end of each chapter are programming assignments.  In this new edition we have provided the answers to the odd numbered questions, and discussion forums for students to exchange ideas or ask questions about the homework problems.  As an instructor, you can grade your students programs on one convenient page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Highlighting&lt;/strong&gt;  This is another much requested new feature.  Students can highlight text using the mouse and the highlights magically reappear on any supported browser.  In addition we will remember the students last location in the book and offer to return them to that position when they return.&lt;/li&gt;
+&lt;li&gt;There are many other features but the best way to understand what we are doing is to actually have a look at our &lt;a href="http://interactivepython.org/runestone/static/overview/overview.html"&gt;overview page&lt;/a&gt;, which shows everything I have mentioned here and a lot more in action.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Over this past year we have discovered that we serve two different audiences with these books.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Instructors looking for a textbook to use in their own course&lt;/li&gt;
+&lt;li&gt;People who are interested in teaching themselves some computer science and have found our books through google search, the Python wiki, or some other word of mouth source.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Textbooks as a Service&lt;/h3&gt;
+
+&lt;p&gt;When we launched the site last year we decided to not only provide the books free and open for anyone who wanted to read them, but also as a service for instructors who wanted to have their own custom copy of the book where they could track their students progress, review their answers to quizzes, and grade their students homework.   If you want to use our books in your class you are welcome to do so.  You have two options:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You can use a copy of either book as is with the order of the chapters just as they are on the books linked to above.&lt;/li&gt;
+&lt;li&gt;You can try our custom interface where you can mix and match chapters from both books to create your own custom textbook.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Once you have created your own course then you will be able to see the assignments your students have completed right in the textbook.  I find this to be very valuable as an instructor.  For example if I have assigned the students to read and do the quizzes for a particular section, I can simply go to the quiz question and click on the 'Compare Me' button.  As an instructor I will see a summary of the answers my students gave, as well as the details of the answers that each student tried.&lt;/p&gt;
+
+&lt;h3&gt;Supporting the Independent Learner&lt;/h3&gt;
+
+&lt;p&gt;Perhaps the biggest surprise of this project is the number of people that have found one of the books through google, and are simply teaching themselves to program.  We are hopeful that some of the new features we have added will help foster a  community of learners so that people just learning to program can talk to others in the same situation.  Some things we hope are particularly helpful include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Answers to odd numbered questions&lt;/strong&gt;.  This was probably the number one request I got through email all last year.  How do I know if I did it right?  We decided to risk it and provide the answers, but only to the odd numbered problems.  In addition a student must try to answer the problem at least once before the answer becomes "unlocked"&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Discussion threads&lt;/strong&gt; for homework problems.  Again this may seem like a risky move where students can just publish their answer and others can copy.  But, what we are hoping for is that students will see that there are many ways to get to the "right answer"  There are different approaches and programming styles that can be used to solve the same problem.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compare Me&lt;/strong&gt;  Although we aren't sure about the title on the button, the idea is that after answering one of the quiz questions a learner can check on their overall 'grade' for all quiz questions, and see how their answer compared to all the other learners.  We haven't gone so far as to give out badges, but we think this is a nice intermediate approach.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;The Runestone Tools&lt;/h3&gt;
+
+&lt;p&gt;The books above were built using our &lt;a href="http://runestoneinteractive.org"&gt;Runestone Interactive&lt;/a&gt; toolkit.  These tools are freely available on &lt;a href="http://github.com/bnmnetp/runestone"&gt;github&lt;/a&gt;.  If you want to write your own interactive book, or even just use the tools to create some interactive labs for your students you are welcome to do so.  You can write your materials in an easy to use markup language called restructuredText and add examples or quizzes using very simple tags.  Complete documentation for our extensions to restructuredText is provided on the website.  In addition to our own books, the team at Harvey Mudd College has published &lt;a href="http://www.cs.hmc.edu/csforall"&gt;CS for All&lt;/a&gt;  another introductory textbook using our tools.  I know of at least two other books in progress!  &lt;/p&gt;
+
+&lt;p&gt;If you are interested in following our development or getting involved You can do so in several ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Twitter, follow &lt;a href="http://twitter.com/iRunestone"&gt;iRunestone&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Facebook, &lt;a href="https://www.facebook.com/RunestoneInteractive"&gt;facebook.com/RunestoneInteractive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Google &lt;a href="https://groups.google.com/forum/#!forum/runestoneinteractive"&gt;Groups&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Acknowledgements&lt;/h3&gt;
+
+&lt;p&gt;I am grateful to the many people who have provided us with feedback over the last year.  And I am especially grateful to the ACM SIGCSE social projects committee for providing me with a special projects grant that allowed me to work with a student (Isaac Dontje Lindell) this summer.  He did a ton of work and will be graduating next year.  You should hire him.  In addition this project relies on many open source components which I will mention and link to below.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The original text for&lt;em&gt; How to Think Like a Computer Scientist&lt;/em&gt; comes from Allen Downey, Jeff Elkner and Chris Meyers.  We have modified it a lot, but without a starting point for us to experiment with our interactive ideas this project never would have taken off.&lt;/li&gt;
+&lt;li&gt;The &lt;em&gt;Problem Solving with Algorithms and Data Structures&lt;/em&gt; text is published as a paper textbook by Franklin Beedle and Associates.  Without the forward thinking of Jim Leisy this book would be stuck.  Thankfully Jim freed us to use the text in an interactive form online.&lt;/li&gt;
+&lt;li&gt;Mark Guzdial, Barbara Ericson and the rest of the &lt;a href="http://home.cc.gatech.edu/csl/CSLearning4U"&gt;CSLearning4U&lt;/a&gt; research group at Georgia Tech have provided questions, assessments,  and many other features and ideas.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Activecode&lt;/strong&gt; examples are made possible by &lt;a href="http://skulpt.org"&gt;skulpt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Codelens&lt;/strong&gt; examples are made possible by Philip Guo and his &lt;a href="http://www.pythontutor.com"&gt;pythontutor.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The look and feel of the book is based on the &lt;a href="http://getbootstrap.com/"&gt;bootstrap&lt;/a&gt; templates&lt;/li&gt;
+&lt;li&gt;The system that builds the website from source is called &lt;a href="http://sphinx-doc.org"&gt;Sphinx&lt;/a&gt; and is really the backbone of the system that allows us to write our interactive extensions.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/vkaravir"&gt;Ville Karavirta&lt;/a&gt; wrote the original js-parsons library and Mike Hewner integrated it into the Runestone Tools.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/08/runestone-interactive-announces-new-editions-of-interactive-textbooks.html</guid><pubDate>Wed, 14 Aug 2013 00:00:00 GMT</pubDate></item><item><title>Making Python3 my default</title><link>http://reputablejournal.com/posts/2013/04/making-python3-my-default.html</link><description>&lt;div&gt;&lt;p&gt;I'm finally there.  After a long time of writing books using Python 3, and teaching in Python 3 on a daily basis, I'm finally at the point where I'm changing my work environment to use Python 3 by default.&lt;/p&gt;
+
+&lt;p&gt;Here are the signs that convinced me it was time:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The release of Pillow to provide PIL functionality!&lt;/li&gt;
+&lt;li&gt;Django 1.5&lt;/li&gt;
+&lt;li&gt;IPython and IPython notebook are fully supported  -- I Love IPython Notebook&lt;/li&gt;
+&lt;li&gt;matplotlib !!&lt;/li&gt;
+&lt;li&gt;Sphinx, Jinja, SQLAlchemy, and many others are supported.  See: &lt;a href="https://python3wos.appspot.com/"&gt;https://python3wos.appspot.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are a couple of projects that I use a lot that are not yet on Python3 (web2py) but I'm not going to let that stop me.&lt;/p&gt;
+
+&lt;p&gt;It turns out to be pretty easy to get yourself up and running on all of this stuff with Python 3.  I'm on a Mac running 10.8.3.  The first and most important step is to get a working version of pip for Python3.  First you need to install distribute.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;"&gt;curl -O &lt;a style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; color: black !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 1em !important; direction: ltr !important;" href="http://python-distribute.org/distribute_setup.py"&gt;http://python-distribute.org/distribute_setup.py&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;"&gt;&lt;/code&gt;&lt;span style="font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace; font-size: 13px; line-height: 1.1em; background-color: white; text-align: left; white-space: pre;"&gt;sudo python3 distribute_setup.py&lt;/span&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will install easy_install in your Python home, but go one more step and install pip.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;"&gt;curl -O &lt;a style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; color: black !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 1em !important; direction: ltr !important;" href="https://raw.github.com/pypa/pip/master/contrib/get-pip.py"&gt;https://raw.github.com/pypa/pip/master/contrib/get-pip.py&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;"&gt;&lt;/code&gt;&lt;span style="font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace; font-size: 13px; line-height: 1.1em; background-color: white; text-align: left; white-space: pre;"&gt;sudo python3 get-pip.py&lt;/span&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will create a pip in your /Library/Frameworks/Python.framework/Versions/3.3/bin  directory.&lt;/p&gt;
+
+&lt;p&gt;From there you can begin pip installing pretty much everything you need!&lt;/p&gt;
+
+&lt;p&gt;From my history today as I was setting everything up:&lt;/p&gt;
+
+&lt;pre&gt;10393* pip3 install ipython&lt;br&gt;10409* pip3 install numpy&lt;br&gt;10410* pip3 install matplotlib&lt;br&gt;10429* pip3 install tornado&lt;br&gt;10430* pip3 install pyzmq&lt;/pre&gt;
+
+&lt;pre&gt;10455  pip3 install Sphinx&lt;/pre&gt;
+
+&lt;p&gt;If you are on a Mac you will need to use easy_install to install one thing, for IPython.  For some reason pip installing the readline library puts it too late in the load path to work with IPython, so you need to use easy_install-3.3 readline  to get the history in IPython working just right.&lt;/p&gt;
+
+&lt;p&gt;Finally, you will want to add the Python 3 bin directory to your PATH.  Edit your .bashrc or .zshenv file.  Note that the following puts the Python 3 bin directory at the front of your PATH, making it the default when you type pip, python, or ipython.  If you need to revert back to python2.7 for some task you will need to be explicit about it.&lt;/p&gt;
+
+&lt;pre&gt;export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:$PATH&lt;/pre&gt;
+
+&lt;p&gt;Easy!  You were expecting this to be a long and arduous process fraught with hacks and silly edits to config files.  Nope, just a few basic commands.  I take this as the final sign that Python 3 is here and ready to be your day to day Python.&lt;/p&gt;&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/04/making-python3-my-default.html</guid><pubDate>Mon, 15 Apr 2013 00:00:00 GMT</pubDate></item><item><title>To Infinity and Beyond</title><link>http://reputablejournal.com/posts/2013/02/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-.html</link><description>&lt;div&gt;&lt;p&gt;&lt;img src="http://reputablejournal.com/images/31.media.tumblr.com/9c55cab1486b5c7bb35cf993249f6b4c/tumblr_midzqpGQSy1r729pmo1_1280.png"&gt;&lt;/p&gt;
+&lt;p&gt;We passed 3 million entries in our log data for &lt;a href="http://interactivepython.org"&gt;InteractivePython.org&lt;/a&gt; which got me to wondering about how we are growing.  The site has been live for 275 days.  You can really see how the site took off after day 100, which makes sense because that was bout the time fall classes started around the country.  The tiny plateau between day 225 and 250 corresponds to Christmas/winter break for most schools, and now that Spring semester is in full swing it looks like the slope has gotten steeper again.&lt;/p&gt;
+
+&lt;p&gt;The dotted line is the linear best fit line with a slope of 12,836.7.  Even if our log database is not growing exponentially thats an impressively steep slope.&lt;/p&gt;
+
+&lt;p&gt;And just because this is all about Python and education, here's the Python code that created the graph.  I love matplotlib, it is such a powerful tool for quickly looking at your data.&lt;/p&gt;
+
+&lt;pre&gt;
+import matplotlib.pyplot as plt
+from numpy import polyfit, arange
+
+f = open('bydate','r')
+days = f.readlines()
+totals = [0]
+
+for d in days:
+    day,count = d.split('|')
+    count = int(count)
+    totals.append(totals[-1]+count)
+
+x = arange(len(totals))
+m,b = polyfit(x,totals,1)
+print m
+plt.plot(x,totals,x,m*x+b, '--k')
+plt.ylim(ymin=0)
+plt.show()
+&lt;/pre&gt;
+
+&lt;p&gt;The data file is simple. One day per line with the date in one column and the number of actions in the other column.  Here are the last few days:&lt;/p&gt;
+
+&lt;pre&gt;
+ 2013-02-14 | 24349
+ 2013-02-15 | 17396
+ 2013-02-16 | 12645
+&lt;/pre&gt;&lt;/div&gt;</description><category>Python</category><category>Interactivepython</category><category>Runestoneinteractive</category><guid>http://reputablejournal.com/posts/2013/02/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-.html</guid><pubDate>Sun, 17 Feb 2013 00:00:00 GMT</pubDate></item><item><title>Everyday Python - New Blog</title><link>http://reputablejournal.com/posts/2013/01/everyday-python-new-blog.html</link><description>&lt;p&gt;I've decided that it will be best to keep my personal blog separate from the new Everyday Python blog project.  All of the infrastructure to make the posts interactive just work so much better when I have control of the server and everything else.  So  You can head over to &lt;a href="http://interactivepython.org/courselib/everyday"&gt;Everyday Python&lt;/a&gt; and click on the Everyday Python link there, or if you want to subscribe to the RSS feed for that project you can use &lt;a href="http://feeds.feedburner.com/everydaypython"&gt;this link&lt;/a&gt;.
+&lt;/p&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/everyday-python-new-blog.html</guid><pubDate>Sun, 13 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Generating a password - part 1</title><link>http://reputablejournal.com/posts/2013/01/generating-a-password-part-1.html</link><description>&lt;div&gt;&lt;p&gt;OK, here is the first installment of the new Everyday Python series.  Today I'm just providing a link, as I still have some infrastructure work to get done in order to publish each installment both here and at Runestone Interactive.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://interactivepython.org/courselib/static/everyday/2013/01/2_password.html"&gt;Generating a password part 1&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/generating-a-password-part-1.html</guid><pubDate>Thu, 03 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Introducing Everyday Python</title><link>http://reputablejournal.com/posts/2013/01/introducing-everyday-python.html</link><description>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;div class="section" id="everyday-python"&gt;
+&lt;h2&gt;Everyday Python&lt;a class="headerlink" href="http://reputablejournal.com/posts/2013/01/introducing-everyday-python.html#everyday-python" title="Permalink to this headline"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It is always risky to make your New Years resolutions public, but this is one I’ve
+been thinking about for a while now, and so I’m going to go ahead and impose a
+measure of accountability on myself by proclaiming this publicly.  This week, I’m
+starting a series of educational blog posts here, and as a part of my &lt;a class="reference external" href="http://interactivepython.org"&gt;Runestone
+Interactive&lt;/a&gt; publishing project.&lt;/p&gt;
+&lt;p&gt;My idea is to publish a series of Python programming projects, aimed at solving
+everyday problems, or puzzles. Hopefully these little projects will be interesting
+and will give learners motivation to dig into the details of the solutions.  I
+will provide links to the relevant Python programming constructs and data types in
+either of the two interactive books (&lt;a class="reference external" href="http://interactivepython.org/courselib/static/thinkcspy/index.html"&gt;How to think like a computer scientist:
+Interactive Edition&lt;/a&gt; , or
+&lt;a class="reference external" href="http://interactivepython.org/courselib/static/pythonds/index.html"&gt;Problem Solving with Algorithms and Data Structures using Python&lt;/a&gt;) This will let me
+focus on the problems, and not the minutia of the language.  Lets face it, reading
+about all the different possible string methods is not that exciting, but seeing
+them in action, and then wondering about what else you might be able to do with
+strings is OK.&lt;/p&gt;
+&lt;p&gt;The great thing about Python is that if you write things in a straightforward
+manner its pretty easy to follow even if you don’t know all the details.  So, that
+is my intention.  Write a solution and do it in straightforward Python that
+beginners can understand.  Each project will appear over several days, and
+will likely include some homework related to the project.  I’ll provide the solution
+in a followup post.  In addition, I may refine the solution over the course of
+several days introducing more and interesting solutions or more advanced features
+of the Python language.&lt;/p&gt;
+&lt;p&gt;In the back of my mind I am drawing inspiration from the old &lt;em&gt;Communications of the ACM&lt;/em&gt; column by John
+Bently called &lt;em&gt;Programming Pearls&lt;/em&gt; In John’s columns he would feature a particular
+problem or algorithm, and present it in a straight forward way, but then he would
+refine that solution again and again polishing it until he had an incredibly
+elegant solution.  It was beautiful because even a novice programmer could
+understand what was going on at the start of the article, but would get sucked in
+to the beautiful solution and would learn more than they thought possible.  While
+advanced programmers might chuckle at the initial solutions, even they would have
+to admit that they learned something by the end of each column.&lt;/p&gt;
+&lt;p&gt;I already have a few ideas in mind for the first few projects.  I’m going to try
+to start fairly easy with some string and list kind of projects, and work my way up
+to more complex problems and algorithms, again this is meant to be educational so
+that in theory a beginner might read through these posts more or less
+chronologically, and learn some computer science along the way.&lt;/p&gt;
+&lt;p&gt;Click the title to leave a comment.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/introducing-everyday-python.html</guid><pubDate>Wed, 02 Jan 2013 00:00:00 GMT</pubDate></item><item><title>How to Think like a Computer Scientist Interactive Edition</title><link>http://reputablejournal.com/posts/2012/07/how-to-think-like-a-computer-scientist-interactive-edition.html</link><description>&lt;div&gt;&lt;p&gt;After hosting the interactive edition of How to Think like a Computer Scientist on the Google app engine at thinkcspy.appspot.com for over a year, we finally made the switchover to a new domain.  As of today all requests to thinkcspy will be automatically redirected to &lt;a href="http://interactivepython.org"&gt;http://interactivepython.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This new domain, is hosted by Webfaction.com.  They have very reasonable hosting rates, along with plenty of bandwidth and disk space.   I have more control over the development platform that I use, I get to keep my data in a real relational database (postgresql) where I can write queries and export my data as much as I want, and finally, if I ever need to move from Webfaction, I own the domain and can move it with me, and I won't need to go through this name change again.&lt;/p&gt;
+
+&lt;p&gt;For those of you who have used the thinkcspy site, you will notice a few upgrades to the content of the book have taken place.  In addition, we are now hosting another book along side thinkcspy.  So we now have coverage for both CS1 and CS2.&lt;/p&gt;
+
+&lt;p&gt;CS1 -- &lt;a href="http://interactivepython.org/courselib/static/thinkcspy/index.html"&gt;http://interactivepython.org/courselib/static/thinkcspy/index.html&lt;/a&gt;  &lt;/p&gt;
+
+&lt;p&gt;CS2 --&lt;a href="http://interactivepython.org/courselib/static/pythonds/index.html"&gt; http://interactivepython.org/courselib/static/pythonds/index.html&lt;/a&gt;  &lt;/p&gt;
+
+&lt;p&gt;The CS2 book is based on our paperback book, Problem Solving with Algorithms and Data Structures using Python by Brad Miller and David Ranum.  Our forward thinking publisher has given us permission to convert the paper book into an interactive version and make it available online!&lt;/p&gt;
+
+&lt;p&gt;The other great thing about the move to interactivepython.org is that you can now host your own course.  That is you can use one of our books online, but you are the instructor, so you can grade homework assignments, and look at activity reports for the students in your class.  So far we have 20 different institutions hosting one of the two books for a course currently,  or for the upcoming fall term.  The links to create your own course are right there on the home page, so if you are interested in using this site for a course go right ahead.&lt;/p&gt;
+
+&lt;p&gt;The one downside to this move is that I did not migrate any of the data from the old thinkcspy site.  So if you have saved programs there you will need to recreate them at the new site.  I gave people plenty of notice about the move, so I'm hoping this won't turn into a big issue.  If it is, let me know, and I'll try to pull your code out of the google datastore for you.&lt;/p&gt;
+
+&lt;p&gt;The second issue with the move is that I don't use google accounts  anymore.  If you want to save your programs you will need to create an account on the site.&lt;/p&gt;
+
+&lt;p&gt;If you have a link to thinkcspy.appspot.com on any pages you control, please make the change to point to the new domain and location.  Thanks!&lt;/p&gt;
+
+&lt;p&gt;If you are interested in contributing to the project, have a book you would like to host, or are just interested in how we are doing this, you can check out the code on github:  http://github.com/bnmnetp/runestone   If you don't want to go that far, but have assignments, or assessment questions you would like to contribute, please contact me!&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;&lt;/div&gt;</description><category>Python</category><category>Education</category><guid>http://reputablejournal.com/posts/2012/07/how-to-think-like-a-computer-scientist-interactive-edition.html</guid><pubDate>Wed, 25 Jul 2012 00:00:00 GMT</pubDate></item><item><title>Runestone Interactive</title><link>http://reputablejournal.com/posts/2012/06/runestone-interactive.html</link><description>&lt;div&gt;&lt;p&gt;What a week its been!   So much has happened in the last week that I just have to take some time out to organize my thoughts and get some of this information out there where others can read it.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;h4&gt;What is Runestone Interactive?&lt;/h4&gt;
+&lt;p&gt;Runestone Interactive is primarily a home for both the content and the technologies that go into publishing interactive textbooks.  At the moment interactive textbooks for Computer Science, but who knows how far this could go.  Probably the best way to see this is to actually visit our site and play around.  But in the meantime here is a short video to give you an introduction.&lt;/p&gt;
+&lt;p&gt;&lt;iframe frameborder="0" height="315" src="http://www.youtube.com/embed/Us4fpoNht68" width="560"&gt;&lt;/iframe&gt; &lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Home to our open source publishing tools.  My goal as that these tools become the LaTeX of interactive publishing. There is lots of work to do before we can claim success here, but I think we have a good vision and a decent start.&lt;/li&gt;
+&lt;li&gt;A model for a new online only publishing house. At some point, I think it is important for content to go through an editorial process, not just for copy editing quality, but for coherence, and quality of approach. Right now the number of content creators using our system is pretty small, but I can already see that starting to grow. We have lots of thinking to do about this.&lt;/li&gt;
+&lt;li&gt;A home for hosting online courses or textbooks.&lt;/li&gt;
+&lt;/ol&gt;&lt;h4&gt;Who is your audience?&lt;/h4&gt;
+&lt;p&gt;At the moment, I think we serve three distinct groups of people.&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;The  teacher out there who wants a good quality textbook, but is not interested in forcing their students to pay $100+ and is interesting in trying an interactive book, all for free.   So to serve this audience we have &lt;a href="http://interactivepython.org"&gt;interactvepython.org&lt;/a&gt;. You can select one of our pre-defined books and set up a course where you are the instructor and have access to grading etc. Or you can use the drag-and-drop interface to put together a book by selecting from the library of modules. Maybe some of these teachers have an exercise or two they would like to contribute, but mostly they are just looking for good materials to help them with their course.&lt;/li&gt;
+&lt;li&gt;Authors who would like to contribute significant chunks of content -- chapters or section sized -- or videos. For example I'm working with an entrepreneur who wants to add content and a graphics package that looks more like Nodebox. He's very interested in putting together materials for middle school kids.  Others, including other Computer Science researchers, are more interested in algorithm visualization and working together on building in more visualization tools to the tool box.  Others have their own CS course materials that they would like to get into an interactive form and make available to the world.&lt;/li&gt;
+&lt;li&gt;People who are interested in learning CS on their own.  We get a ton of people coming to the site just to learn on their own. I had the most heartfelt letter from a guy the other day who found our site as he is trying to retool after being laid off for a couple of years. He said this is the first thing he's come across that really worked for him and helped him learn a bit of CS.  How does this compare with Udacity and Coursera?  Both of those companies are primarily video oriented, and both of those companies are running courses that are in some sense synchronous.  You have to move through the course on their schedule to get the full benefit.  Our books/courses can be done at your own pace, on your own time.&lt;/li&gt;
+&lt;/ol&gt;&lt;div&gt; &lt;/div&gt;
+&lt;h4&gt;I would like to use this for my own class how do I get started?&lt;/h4&gt;
+&lt;p&gt;Its easy, just follow these steps:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Go to&lt;a href="http://interactivepython.org"&gt; interactivepython.org&lt;/a&gt; and register yourself as a user.&lt;/li&gt;
+&lt;li&gt;Click on Create a Custom Course link in the right sidebar.&lt;/li&gt;
+&lt;li&gt;Select a short name for your course that uniquely identifies it among all the other courses.&lt;/li&gt;
+&lt;li&gt;Type in a short description for your course&lt;/li&gt;
+&lt;li&gt;Now you get to choose.  Do you want to use one of our standard configurations, either How to Think Like a Computer Scientist: Interactive Edition, or Problem Solving with Algorithms and Data Structures using Python  or do you want to build a custom book by choosing modules from both of the above?&lt;/li&gt;
+&lt;li&gt;Click on the build button.  Wait a few minutes and you will have a page with a link to your new course.&lt;/li&gt;
+&lt;/ol&gt;&lt;div&gt;Now you can send your students to interactivepython.org and simply tell them to register for your course.  &lt;/div&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;div&gt;Why would you choose to build your own course when you could just use one of the open books?  When you create your own course you become the instructor and admin for that course.  You can grade your students assignments right online, and even access their homework in progress if they have questions.  You can also get a sense for the different activities they are choosing to use in the textbook.&lt;/div&gt;
+&lt;h4&gt;How can I get involved?&lt;/h4&gt;
+&lt;p&gt;There are lots of ways you can get involved:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;We need readers who are willing to be critical and report bugs on everything from typos to activecode blocks that don't work exactly right.&lt;/li&gt;
+&lt;li&gt;We need web developers who are willing to work on the back end, developing reports for instructors and making sure our infrastructure is sound.&lt;/li&gt;
+&lt;li&gt;We need web developers who are interested in developing user facing features, everything from algorithm visualizations to interactive assessment tools like the multiple choice and fill in the blank questions you see already.&lt;/li&gt;
+&lt;li&gt;We need compiler geeks who can help fix bugs in our Javascript implementation of Python.&lt;/li&gt;
+&lt;li&gt;We need authors who want to add new and interesting content, either entire courses, or new modules that could be combined with the modules already there.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>Python</category><category>Education</category><guid>http://reputablejournal.com/posts/2012/06/runestone-interactive.html</guid><pubDate>Wed, 06 Jun 2012 00:00:00 GMT</pubDate></item><item><title>Hosting a web2py app in the cloud</title><link>http://reputablejournal.com/posts/2012/01/hosting-a-web2py-app-in-the-cloud.html</link><description>&lt;div&gt;&lt;p&gt;I consider myself pretty up to speed on web development.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;I’ve spent the last two days trying to find a hosting solution for the data structures eBook…. I looked at too many of the following:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Google App Engine — I’m a long time GAE user, but the setup I have uses sphinx to generate content on the fly which it wants to store in pickle files on the local file system.  This doesn’t work with a GAE and some other systems that treat the file system as read only and expect any writing you do to go to a database.&lt;/li&gt;
+&lt;li&gt;heroku — seems very promising, but I’m not sure how to configure web2py so it doesn’t need any local file system write access.  The lack of ssh access is a bit disconcerting.&lt;/li&gt;
+&lt;li&gt;dotcloud — seems promising but the app kept hanging for no discernible reason.  I fought with it for the better part of the afternoon before deciding to move on.&lt;/li&gt;
+&lt;li&gt;fluxflex — easy to get web2py installed, (1 minute)  but a real pain to try to work with a real app.  I’m not going to use the web interface for all my editing.  I want to git push and/or git pull to deploy and update the app.  It doesn’t seem possible to get both ease of installation and robust configuration management.&lt;/li&gt;
+&lt;li&gt;pythonanywhere - non-starter&lt;/li&gt;
+&lt;li&gt;webfaction — Its not free, but at least it has a command line I can work with and I’ve got the whole thing running.  The only confusing thing about webfaction is that they don’t list web2py as a supported framework, but when you type it in under other it magically works for  you….  The other annoying thing that I &lt;em&gt;&lt;strong&gt;just&lt;/strong&gt;&lt;/em&gt; discovered is that the 256MB limit is way too low for the default configuration.  I just now got a helpful email saying a support ticket had been opened for me because I was using too much memory.  This was like 15 minutes after I finally got my app running and I’d made about 5 page requests.&lt;/li&gt;
+&lt;/ul&gt; &lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2012/01/hosting-a-web2py-app-in-the-cloud.html</guid><pubDate>Thu, 26 Jan 2012 00:00:00 GMT</pubDate></item></channel></rss>

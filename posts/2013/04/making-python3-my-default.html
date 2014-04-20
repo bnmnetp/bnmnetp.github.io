@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="Brad Miller">
+    <title>Making Python3 my default | A Reputable Journal</title>
+    
+    
+        
+            <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+        
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    
+        
+            <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+        
+    
+    
+
+    
+
+    
+
+
+
+    
+
+
+    
+    
+</head>
+<body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top" id="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="http://reputablejournal.com/">
+            A Reputable Journal
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    
+    
+        
+            
+                <li><a href="../../../stories/about.html">About</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../../../archive.html">Archives</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../../../categories/index.html">Tags</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../../../rss.xml">RSS</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../../../galleries">Photos</a>
+            
+        
+    
+        
+            
+                </li><li><a href="../../../stories/publications.html">Publications</a>
+            
+        
+    
+
+                </li></ul>
+                
+                    
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://reputablejournal.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
+                
+                <ul class="nav pull-right">
+                
+                
+                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+    <article class="postbox post-text">
+    <div class="h-entry" itemscope="itemscope" itemtype="http://schema.org/Article">
+    
+    <h1 class="p-name" itemprop="headline name">Making Python3 my default</h1>
+    
+
+    <hr>
+    <small>
+        Posted: <time class="published dt-published" datetime="2013-04-15T00:00:00+00:00" itemprop="datePublished">2013-04-15 00:00</time>
+        
+    
+
+		
+    
+          |  More posts about
+        
+            <a class="tag" href="../../../categories/python.html"><span class="badge badge-info">Python</span></a>
+        
+    
+
+          |  
+		
+		
+			<a href="making-python3-my-default.md" id="sourcelink">Source</a>
+		
+		
+    </small>
+    <hr>
+    <div class="e-content" itemprop="articleBody text">
+    <div><p>I'm finally there.  After a long time of writing books using Python 3, and teaching in Python 3 on a daily basis, I'm finally at the point where I'm changing my work environment to use Python 3 by default.</p>
+
+<p>Here are the signs that convinced me it was time:</p>
+
+<ul>
+<li>The release of Pillow to provide PIL functionality!</li>
+<li>Django 1.5</li>
+<li>IPython and IPython notebook are fully supported  -- I Love IPython Notebook</li>
+<li>matplotlib !!</li>
+<li>Sphinx, Jinja, SQLAlchemy, and many others are supported.  See: <a href="https://python3wos.appspot.com/">https://python3wos.appspot.com/</a></li>
+</ul>
+
+<p>There are a couple of projects that I use a lot that are not yet on Python3 (web2py) but I'm not going to let that stop me.</p>
+
+<p>It turns out to be pretty easy to get yourself up and running on all of this stuff with Python 3.  I'm on a Mac running 10.8.3.  The first and most important step is to get a working version of pip for Python3.  First you need to install distribute.</p>
+
+<pre><code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;">curl -O <a style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; color: black !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 1em !important; direction: ltr !important;" href="http://python-distribute.org/distribute_setup.py">http://python-distribute.org/distribute_setup.py</a></code></pre>
+
+<pre><code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;"></code><span style="font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace; font-size: 13px; line-height: 1.1em; background-color: white; text-align: left; white-space: pre;">sudo python3 distribute_setup.py</span></pre>
+
+<p>This will install easy_install in your Python home, but go one more step and install pip.</p>
+
+<pre><code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;">curl -O <a style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; color: black !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 1em !important; direction: ltr !important;" href="https://raw.github.com/pypa/pip/master/contrib/get-pip.py">https://raw.github.com/pypa/pip/master/contrib/get-pip.py</a></code></pre>
+
+<pre><code class="plain plain" style="background-image: none !important; border: 0px !important; margin: 0px !important; padding: 0px !important; vertical-align: baseline !important; font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; bottom: auto !important; float: none !important; height: auto !important; left: auto !important; line-height: 1.1em !important; outline: 0px !important; overflow: visible !important; position: static !important; right: auto !important; top: auto !important; width: auto !important; box-sizing: content-box !important; font-size: 13px; direction: ltr !important; display: inline !important; color: black !important;"></code><span style="font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace; font-size: 13px; line-height: 1.1em; background-color: white; text-align: left; white-space: pre;">sudo python3 get-pip.py</span></pre>
+
+<pre><br><br></pre>
+
+<p>This will create a pip in your /Library/Frameworks/Python.framework/Versions/3.3/bin  directory.</p>
+
+<p>From there you can begin pip installing pretty much everything you need!</p>
+
+<p>From my history today as I was setting everything up:</p>
+
+<pre>10393* pip3 install ipython<br>10409* pip3 install numpy<br>10410* pip3 install matplotlib<br>10429* pip3 install tornado<br>10430* pip3 install pyzmq</pre>
+
+<pre>10455  pip3 install Sphinx</pre>
+
+<p>If you are on a Mac you will need to use easy_install to install one thing, for IPython.  For some reason pip installing the readline library puts it too late in the load path to work with IPython, so you need to use easy_install-3.3 readline  to get the history in IPython working just right.</p>
+
+<p>Finally, you will want to add the Python 3 bin directory to your PATH.  Edit your .bashrc or .zshenv file.  Note that the following puts the Python 3 bin directory at the front of your PATH, making it the default when you type pip, python, or ipython.  If you need to revert back to python2.7 for some task you will need to be explicit about it.</p>
+
+<pre>export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:$PATH</pre>
+
+<p>Easy!  You were expecting this to be a long and arduous process fraught with hacks and silly edits to config files.  Nope, just a few basic commands.  I take this as the final sign that Python 3 is here and ready to be your day to day Python.</p></div>
+    </div>
+    
+    </div>
+    
+    
+        <ul class="pager">
+        
+            <li class="previous">
+                <a href="../02/what-most-schools-don-t-teach-by-codeorg-this-is-a-really-great-video-that-just-.html" rel="prev">← Previous post</a>
+            </li>
+        
+        
+            <li class="next">
+                <a href="oh-the-insanity-of-it-all-april-19th-josh-is-18-today-the-cabin-got-what-looks-t.html" rel="next">Next post →</a>
+            </li>
+        
+        </ul>
+    
+
+    
+        
+    
+        
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div class="g-comments" data-href="http://reputablejournal.com/posts/2013/04/making-python3-my-default.html" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">
+</div>
+
+    
+
+    
+    
+    
+
+    </article>
+
+    </div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    Contents © 2014         <a href="mailto:bonelake@mac.com">Brad Miller</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+</div>
+
+    
+        
+            <script src="../../../assets/js/all-nocdn.js" type="text/javascript"></script>
+        
+    
+
+
+    
+<!-- Social buttons -->
+<div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+<a class="addthis_button_more">Share</a>
+<ul><li><a class="addthis_button_facebook"></a>
+</li><li><a class="addthis_button_google_plusone_share"></a>
+</li><li><a class="addthis_button_linkedin"></a>
+</li><li><a class="addthis_button_twitter"></a>
+</li></ul>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+<!-- End of social buttons -->
+
+
+    <script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});
+    $(window).on('hashchange', function(){
+        if (location.hash && $(location.hash)[0]) {
+            $('body').animate({scrollTop: $(location.hash).offset().top - $('#navbar').outerHeight(true)*1.2 }, 1);
+        }
+    });
+    $(document).ready(function(){$(window).trigger('hashchange')});
+    </script>
+    
+    
+    
+ <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32638348-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>
