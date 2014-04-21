@@ -1,8 +1,8 @@
 <!--
-.. title: From Penduka we went on to the Heroe's Acre.  This is a huge monument to commemorate the Namibian Freedom Fighters.  Its so interesting to see this history of their struggle for freedom in a country that is Barely 30 years old.  Here's a picture of Josh Maritin from the base of the monument.
+.. title: Heroe's Acre
 .. date: 2012/06/20
 .. slug: from-penduka-we-went-on-to-the-heroe-s-acre-this-is-a-huge-monument-to-commemora
-.. tags: Josh martin at heroe's acre
+.. tags: Travel, Namibia
 .. link: 
 .. description: 
 -->
@@ -10,4 +10,4 @@
 
 <img src="/images/31.media.tumblr.com/tumblr_m5xcfkvykt1r729pmo1_400.png" />
 
-<p>From Penduka we went on to the Heroe's Acre.  This is a huge monument to commemorate the Namibian Freedom Fighters.  Its so interesting to see this history of their struggle for freedom in a country that is Barely 30 years old.  Here's a picture of Josh Maritin from the base of the monument.</p>
+<p>From Penduka we went on to the Heroe's Acre.  This is a huge monument to commemorate the Namibian Freedom Fighters.  Its so interesting to see this history of their struggle for freedom in a country that is Barely 30 years old.  Here's a picture of Josh Martin from the base of the monument.</p>

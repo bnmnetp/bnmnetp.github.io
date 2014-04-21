@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>A Reputable Journal</title><link>http://reputablejournal.com/</link><description>A site you can trust.</description><atom:link href="http://reputablejournal.com/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 20 Apr 2014 18:29:52 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Moving to Nikola</title><link>http://reputablejournal.com/posts/2014/04/moving-to-nikola.html</link><description>&lt;div&gt;&lt;p&gt;When I moved this blog to Octopress in January, it was inspiring in many ways.  There were two things that slightly bugged me.&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>A Reputable Journal</title><link>http://reputablejournal.com/</link><description>A site you can trust.</description><atom:link rel="self" href="http://reputablejournal.com/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 20 Apr 2014 18:51:47 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Moving to Nikola</title><link>http://reputablejournal.com/posts/2014/04/moving-to-nikola.html</link><description>&lt;div&gt;&lt;p&gt;When I moved this blog to Octopress in January, it was inspiring in many ways.  There were two things that slightly bugged me.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Octopress is entirely too ruby based.  Rake, and all of that made me feel bad, like I was cheating on Python.  Surely there must be a similar tool in the Python world I thought to myself.&lt;/li&gt;
 &lt;li&gt;Octopress uses markdown.  I really like my restructuredText, and its just a bit irritating to have to think about the differences when I want to do a blog post.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well, this weekend I found a couple of new static blog site generators that &lt;strong&gt;were&lt;/strong&gt; python based, and after playing around with Pelican, and &lt;a class="reference external" href="http://getnikola.com"&gt;Nikola&lt;/a&gt; I settled on the move to Nikola.  I really like the image galleries and slideshows that are built in, and I feel like I can jump in and start hacking if something develops that I really want to change.  Plus, having already hacked a bunch of restructuredText directives, I know I can extend my blogging tool to do all kinds of fun things.&lt;/p&gt;&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2014/04/moving-to-nikola.html</guid><pubDate>Sun, 20 Apr 2014 17:38:39 GMT</pubDate></item><item><title>Why MOOCs? Why not?</title><link>http://reputablejournal.com/posts/2014/04/why-moocs-why-not.html</link><description>&lt;p&gt;I just wanted to include a link here to my latest post on Luther's Ideas and Creations blog.  Its just some thoughts and questions I had on MOOCs and online education at Luther College.  &lt;a href="https://www.luther.edu/ideas-creations-blog/?story_id=541741"&gt;Why Moocs? Why Not?&lt;/a&gt;&lt;/p&gt;</description><category>Education</category><guid>http://reputablejournal.com/posts/2014/04/why-moocs-why-not.html</guid><pubDate>Wed, 02 Apr 2014 05:00:30 GMT</pubDate></item><item><title>Winter Skiing in the Spring</title><link>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</link><description>&lt;div&gt;&lt;p&gt;Two days of skiing at Tahoe are in the bag, but what a difference between the two days.  Yesterday we got the true spring skiing experience.  It was cool and crusty in the morning and a bit slushy in the afternoon.  Its been a pretty bad winter here in Tahoe so a lot of the runs were not accessible.  In the morning we went up the Stagecoach express and turned left, to try the Stagecoach run.  It was the worst skiing I have ever experienced in my life.  Thankfully, we learned the trick.  Stay on the groomed runs!  Once we figured that out the day was a blast, if a bit repetitive.  One thing you can't beat is the views.  Bright sunny day, clear blue sky, good friends to ski with.  What could be better?&lt;/p&gt;
 &lt;p&gt;I also love this photo for all of the layers.  High clouds, low clouds, shadows of clouds on the brown/green valley floor below.&lt;/p&gt;
-&lt;div id="slides_5d8caf18285f4b56bf8437dcc8357d9c" class="carousel slide"&gt;
+&lt;div id="slides_f03754abc891465ca3e545aaf535489d" class="carousel slide"&gt;
     &lt;ol class="carousel-indicators"&gt;
     
         
-            &lt;li data-target="#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide-to="0" class="active"&gt;
+            &lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="0" class="active"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide-to="1"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="1"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide-to="2"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="2"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide-to="3"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="3"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide-to="4"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="4"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide-to="5"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="5"&gt;
         
     
     &lt;/li&gt;&lt;/ol&gt;
@@ -61,8 +61,8 @@
             
         
     &lt;/div&gt;
-    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide="prev"&gt;‹&lt;/a&gt;
-    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_5d8caf18285f4b56bf8437dcc8357d9c" data-slide="next"&gt;›&lt;/a&gt;
+    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_f03754abc891465ca3e545aaf535489d" data-slide="prev"&gt;‹&lt;/a&gt;
+    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_f03754abc891465ca3e545aaf535489d" data-slide="next"&gt;›&lt;/a&gt;
 &lt;/div&gt;&lt;p&gt;Overnight, the winds kicked in, and the snow came down.  Up to eight inches in the higher elevations.  This made for a second day of mid-winter like skiing.  Suddenly, all the runs that were not good yesterday were very ski-able with a fresh layer of snow.  The only downside was that the winds and snow continued.  We were told in the morning that all the lifts might have to shut down, at some point because thunder (and lightning) were in the forecast for the day.  I've never thought about being up on a ski lift in a thunderstorm before but I'm pretty sure I wouldn't want to be there.&lt;/p&gt;
 &lt;p&gt;In any case, if they do shut down certain of the lifts, then you are in trouble anyway...&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</guid><pubDate>Wed, 26 Mar 2014 05:00:11 GMT</pubDate></item><item><title>Lake Tahoe</title><link>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</link><description>&lt;div&gt;&lt;h3&gt;A Rare Day&lt;/h3&gt;
 &lt;p&gt;Lake Tahoe is beautiful.  We arrived last night from Napa and got to our VRBO home, it is great and we had a beautiful view of the lake out our windows.  The sun was just going down and I captured this picture of the Sequoia outside our window.&lt;/p&gt;
