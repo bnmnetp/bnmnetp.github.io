@@ -16,6 +16,16 @@ Lake Tahoe is beautiful.  We arrived last night from Napa and got to our VRBO ho
 
 Today we drove the east side of the lake and met Jim and Karen for lunch, then we went to Emerald bay in the afternoon after Pete and Kim joined us.  Its really hard to describe or write too much about this, so I will just add a few photos here.
 
+.. slides::
+
+    /galleries/tahoe/IMG_0890.jpg
+    /galleries/tahoe/IMG_0892.jpg    
+    /galleries/tahoe/IMG_0898.jpg        
+    /galleries/tahoe/IMG_0899.jpg    
+    /galleries/tahoe/IMG_0910.jpg        
+    /galleries/tahoe/IMG_0930.jpg        
+    /galleries/tahoe/IMG_0936.jpg            
+    
 <a href="http://flic.kr/p/mpB46r" title="My Photo Stream-937 by -bnmnetp-"><img src="http://farm3.staticflickr.com/2864/13394254095_50431b4b5f_z.jpg" width="640" height="480" alt="My Photo Stream-937"></a>
 
 <a href="http://flic.kr/p/mpB7k2" title="My Photo Stream-945 by -bnmnetp-"><img src="http://farm4.staticflickr.com/3738/13394264975_629e723ea5_z.jpg" width="640" height="480" alt="My Photo Stream-945"></a>
