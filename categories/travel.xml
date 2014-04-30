@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A Reputable Journal (Travel)</title><link>http://reputablejournal.com/</link><description></description><atom:link href="http://reputablejournal.com/categories/travel.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 21 Apr 2014 07:45:00 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Winter Skiing in the Spring</title><link>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</link><description>&lt;div&gt;&lt;p&gt;Two days of skiing at Tahoe are in the bag, but what a difference between the two days.  Yesterday we got the true spring skiing experience.  It was cool and crusty in the morning and a bit slushy in the afternoon.  Its been a pretty bad winter here in Tahoe so a lot of the runs were not accessible.  In the morning we went up the Stagecoach express and turned left, to try the Stagecoach run.  It was the worst skiing I have ever experienced in my life.  Thankfully, we learned the trick.  Stay on the groomed runs!  Once we figured that out the day was a blast, if a bit repetitive.  One thing you can't beat is the views.  Bright sunny day, clear blue sky, good friends to ski with.  What could be better?&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>A Reputable Journal (Travel)</title><link>http://reputablejournal.com/</link><description></description><atom:link href="http://reputablejournal.com/categories/travel.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 30 Apr 2014 09:32:08 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Winter Skiing in the Spring</title><link>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</link><description>&lt;div&gt;&lt;p&gt;Two days of skiing at Tahoe are in the bag, but what a difference between the two days.  Yesterday we got the true spring skiing experience.  It was cool and crusty in the morning and a bit slushy in the afternoon.  Its been a pretty bad winter here in Tahoe so a lot of the runs were not accessible.  In the morning we went up the Stagecoach express and turned left, to try the Stagecoach run.  It was the worst skiing I have ever experienced in my life.  Thankfully, we learned the trick.  Stay on the groomed runs!  Once we figured that out the day was a blast, if a bit repetitive.  One thing you can't beat is the views.  Bright sunny day, clear blue sky, good friends to ski with.  What could be better?&lt;/p&gt;
 &lt;p&gt;I also love this photo for all of the layers.  High clouds, low clouds, shadows of clouds on the brown/green valley floor below.&lt;/p&gt;
-&lt;div id="slides_f03754abc891465ca3e545aaf535489d" class="carousel slide"&gt;
+&lt;div id="slides_02c8e117920749e78ed4ebfb6d32d922" class="carousel slide"&gt;
     &lt;ol class="carousel-indicators"&gt;
     
         
-            &lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="0" class="active"&gt;
+            &lt;li data-target="#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide-to="0" class="active"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="1"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide-to="1"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="2"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide-to="2"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="3"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide-to="3"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="4"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide-to="4"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_f03754abc891465ca3e545aaf535489d" data-slide-to="5"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide-to="5"&gt;
         
     
     &lt;/li&gt;&lt;/ol&gt;
@@ -56,41 +56,41 @@
             
         
     &lt;/div&gt;
-    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_f03754abc891465ca3e545aaf535489d" data-slide="prev"&gt;‹&lt;/a&gt;
-    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_f03754abc891465ca3e545aaf535489d" data-slide="next"&gt;›&lt;/a&gt;
+    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide="prev"&gt;‹&lt;/a&gt;
+    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_02c8e117920749e78ed4ebfb6d32d922" data-slide="next"&gt;›&lt;/a&gt;
 &lt;/div&gt;&lt;p&gt;Overnight, the winds kicked in, and the snow came down.  Up to eight inches in the higher elevations.  This made for a second day of mid-winter like skiing.  Suddenly, all the runs that were not good yesterday were very ski-able with a fresh layer of snow.  The only downside was that the winds and snow continued.  We were told in the morning that all the lifts might have to shut down, at some point because thunder (and lightning) were in the forecast for the day.  I've never thought about being up on a ski lift in a thunderstorm before but I'm pretty sure I wouldn't want to be there.&lt;/p&gt;
 &lt;p&gt;In any case, if they do shut down certain of the lifts, then you are in trouble anyway...&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</guid><pubDate>Wed, 26 Mar 2014 05:00:11 GMT</pubDate></item><item><title>Lake Tahoe</title><link>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</link><description>&lt;div&gt;&lt;p&gt;A Rare Day&lt;/p&gt;
 &lt;p&gt;Lake Tahoe is beautiful.  We arrived last night from Napa and got to our VRBO home, it is great and we had a beautiful view of the lake out our windows.  The sun was just going down and I captured this picture of the Sequoia outside our window.&lt;/p&gt;
 &lt;a href="http://flic.kr/p/mouxs6" title="Camera Roll-482 by -bnmnetp-"&gt;&lt;img src="http://farm3.staticflickr.com/2840/13381667205_c6d0cc90bf_z.jpg" width="478" height="640" alt="Camera Roll-482"&gt;&lt;/a&gt;&lt;p&gt;Today we drove the east side of the lake and met Jim and Karen for lunch, then we went to Emerald bay in the afternoon after Pete and Kim joined us.  Its really hard to describe or write too much about this, so I will just add a few photos here.&lt;/p&gt;
-&lt;div id="slides_8617ea0d29bb45f5a2da9dd6e990c300" class="carousel slide"&gt;
+&lt;div id="slides_585976d8018e4772be7118e1c3dcaeff" class="carousel slide"&gt;
     &lt;ol class="carousel-indicators"&gt;
     
         
-            &lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="0" class="active"&gt;
+            &lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="0" class="active"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="1"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="1"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="2"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="2"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="3"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="3"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="4"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="4"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="5"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="5"&gt;
         
     
         
-            &lt;/li&gt;&lt;li data-target="#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide-to="6"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_585976d8018e4772be7118e1c3dcaeff" data-slide-to="6"&gt;
         
     
     &lt;/li&gt;&lt;/ol&gt;
@@ -125,8 +125,8 @@
             
         
     &lt;/div&gt;
-    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide="prev"&gt;‹&lt;/a&gt;
-    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_8617ea0d29bb45f5a2da9dd6e990c300" data-slide="next"&gt;›&lt;/a&gt;
+    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_585976d8018e4772be7118e1c3dcaeff" data-slide="prev"&gt;‹&lt;/a&gt;
+    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_585976d8018e4772be7118e1c3dcaeff" data-slide="next"&gt;›&lt;/a&gt;
 &lt;/div&gt;&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</guid><pubDate>Tue, 25 Mar 2014 05:00:08 GMT</pubDate></item><item><title>The Word of the Day is Malolactic</title><link>http://reputablejournal.com/posts/2014/03/the-word-of-the-day-is-malolactic.html</link><description>&lt;div&gt;&lt;h4&gt;Brought to You by the Letter 'C'&lt;/h4&gt;
 &lt;p&gt;I must confess, after all of the Chardonnay I've consumed, and I have consumed my share over the years, I have never really got the "buttery oaky Chardonnay" thing.  Butter is just not something I've ever tasted in my Chardonnay, despite the fact that one of my all time favorites is Rombaur, which according to more than one person in Napa, is the "poster child" for buttery oaky Chardonnays. Really, who wants their Chardonnay to taste like butter?  The whole describing wine thing is another thing I find really interesting.  One of the tasting room hosts, recommended the movie &lt;em&gt;Somm&lt;/em&gt; to us as we were chatting.  I see you can get/rent it on iTunes, so I'm adding that to my list.  Its about a group of guys preparing for the master sommelier exam, which may sound a bit dull, but the reviews for it are fantastic.&lt;/p&gt;
 &lt;p&gt;But after two days of tastings in Napa its all clear to me now.  The key that helped me understand the difference, and I'm confident I'm now an expert, is Malolactic Fermentation.  The science of it all, unsurprisingly, has stuck in my brain.  Here's a quick summary of more than you ever probably wanted to know.&lt;/p&gt;
