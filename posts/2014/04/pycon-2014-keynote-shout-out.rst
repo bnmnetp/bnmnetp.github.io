@@ -10,4 +10,4 @@ I am going to have to go to PyCon.  Not next year, as I'm going to be in Malta a
 
 I just got done watching one of the Keynote presentations online from PyCon 2014 held in Montreal April 9-17.  I'm linking to it below, because it goes right to the heart of most of my academic work.  But, it was especially exciting at the 20:05 mark.  Where she highlights `interactivepython.org <http://interactivepython.org>`_ and the `Skulpt <http://skulpt.org>`_ projects!
 
-.. video:: 4QOoAw6Su7M
+.. youtube:: 4QOoAw6Su7M
