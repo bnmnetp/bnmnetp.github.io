@@ -17,6 +17,8 @@ during my career.   Here is a summary of  some tips and things that I have
 observed.  I practice all of these things in my own development work, and you
 should too.  In my opinion there is no more valuable advice than the first section on Incremental Development. But, I would love to hear from friends, and former students.  What tips would you give beginning to intermediate students on writing software?
 
+.. TEASER_END
+
 Incremental Development
 ~~~~~~~~~~~~~~~~~~~~~~~
 
