@@ -9,13 +9,26 @@
 Development Tips
 ================
 
-I have been writing programs since I was in 9th grade, that would be 35 years (Yikes!)  I have more than put in my 10,000 hours to attain some level of mastery, but I like to think of it as wisdom.  Studies have shown that there can be huge differences in the ability level of even the most experienced coders.  More than a factor of 20, in some cases! I think beginning and intermediate CS students really struggle with this.  They see some of their classmates streaking on ahead of them effortlessly writing lines and lines of code.  But for them its a constant struggle.  I've watched some of my students really struggling with the latest homework assignment, and I felt compelled to write down some "words of wisdom" to try and help them through the rest of the semester.
+I have been writing programs since I was in 9th grade, that would be 
+35 years (Yikes!)  I have more than put in my 10,000 hours to attain 
+some level of mastery, but I like to think of it as wisdom.  Studies 
+have shown that there can be huge differences in the ability level of 
+even the most experienced coders.  More than a factor of 20, in some 
+cases! I think beginning and intermediate CS students really struggle 
+with this.  They see some of their classmates streaking on ahead of 
+them effortlessly writing lines and lines of code.  But for them its 
+a constant struggle.  I've watched some of my students really struggling 
+with the latest homework assignment, and I felt compelled to write down 
+some "words of wisdom" to try and help them through the rest of the semester.
 
 
 I have been lucky enough to work with some of the best developers in the world
 during my career.   Here is a summary of  some tips and things that I have
 observed.  I practice all of these things in my own development work, and you
-should too.  In my opinion there is no more valuable advice than the first section on Incremental Development. But, I would love to hear from friends, and former students.  What tips would you give beginning to intermediate students on writing software?
+should too.  In my opinion there is no more valuable advice than the 
+first section on Incremental Development. But, I would love to hear 
+from friends, and former students.  What tips would you give beginning 
+to intermediate students on writing software?
 
 .. TEASER_END
 
@@ -84,6 +97,35 @@ Use The Tools
    several years of C++ programming you will have all of the options
    memorized, but until then, use the documentation.  Even googling
    large parts of a compiler error message may lead you to a solution.
+
+
+Debugging
+~~~~~~~~~
+
+#. **Talk it out.**  Either to yourself, or even better, to someone else
+   The number of times that I sit in my office and simply ask a student
+   to explain their code to me is amazing.  Very often, while that 
+   explanation is in progress a lightbulb goes on, and the student
+   sees the problem.  I wish it was because of my mystical professorial
+   powers, but more often than not it is by telling someone else that
+   we are forced to...
+#. **Confront your assumptions.**   Way too often we are conviced our
+   code is correct because we don't see what we actually wrote.  In most
+   cases we see what we think we wrote.  By explaining to someone else
+   we are forced to see what we actually put in the file.  In some 
+   extreme cases I find that students are convinced that there must 
+   be some other evil force in the universe that is causing their 
+   program to fail, becuase they have done everything right.  This 
+   has never been the case yet.  The programs that we write for class
+   are not going to be the programs that find new bugs in the C++ compiler
+   or the Python programming language.
+#. Sometimes you just can't beat good old fashioned **pen and paper style
+   tracing.** In this world of fast turnarounds, instant compiles, and fancy IDE's
+   we too often get caught up in making quick changes to the program just
+   to see if that fixes the problem.  Usually this is just masking some
+   logic error or assumption we are making.  Pen and paper style tracing
+   is another way to force our minds into focusing on what is there 
+   instead of what we assume is there.
 
 Those Pesky Compiler Errors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
