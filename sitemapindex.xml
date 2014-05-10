@@ -128,4 +128,8 @@
   <loc>http://reputablejournal.com/sitemap.xml</loc>
   <lastmod>2014-05-10</lastmod>
  </sitemap>
+ <sitemap>
+  <loc>http://reputablejournal.com/sitemapindex.xml</loc>
+  <lastmod>2014-05-10</lastmod>
+ </sitemap>
 </sitemapindex>

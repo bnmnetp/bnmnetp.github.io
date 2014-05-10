@@ -1,133 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A Reputable Journal (Travel)</title><link>http://reputablejournal.com/</link><description></description><atom:link href="http://reputablejournal.com/categories/travel.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 06 May 2014 11:13:29 GMT</lastBuildDate><generator>Nikola &lt;http://getnikola.com/&gt;</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Winter Skiing in the Spring</title><link>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</link><description>&lt;div&gt;&lt;p&gt;Two days of skiing at Tahoe are in the bag, but what a difference between the two days.  Yesterday we got the true spring skiing experience.  It was cool and crusty in the morning and a bit slushy in the afternoon.  Its been a pretty bad winter here in Tahoe so a lot of the runs were not accessible.  In the morning we went up the Stagecoach express and turned left, to try the Stagecoach run.  It was the worst skiing I have ever experienced in my life.  Thankfully, we learned the trick.  Stay on the groomed runs!  Once we figured that out the day was a blast, if a bit repetitive.  One thing you can't beat is the views.  Bright sunny day, clear blue sky, good friends to ski with.  What could be better?&lt;/p&gt;
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>A Reputable Journal (Travel)</title><link>http://reputablejournal.com/</link><description></description><language>en</language><lastBuildDate>Sat, 10 May 2014 17:18:09 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Winter Skiing in the Spring</title><link>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;Two days of skiing at Tahoe are in the bag, but what a difference between the two days.  Yesterday we got the true spring skiing experience.  It was cool and crusty in the morning and a bit slushy in the afternoon.  Its been a pretty bad winter here in Tahoe so a lot of the runs were not accessible.  In the morning we went up the Stagecoach express and turned left, to try the Stagecoach run.  It was the worst skiing I have ever experienced in my life.  Thankfully, we learned the trick.  Stay on the groomed runs!  Once we figured that out the day was a blast, if a bit repetitive.  One thing you can't beat is the views.  Bright sunny day, clear blue sky, good friends to ski with.  What could be better?&lt;/p&gt;
 &lt;p&gt;I also love this photo for all of the layers.  High clouds, low clouds, shadows of clouds on the brown/green valley floor below.&lt;/p&gt;
-&lt;div id="slides_8de124ab4ddf445a96e277655ca08e54" class="carousel slide"&gt;
+
+&lt;div id="slides_1a953201ce8e4542902a682a0dbfcc06" class="carousel slide"&gt;
     &lt;ol class="carousel-indicators"&gt;
-    
-        
-            &lt;li data-target="#slides_8de124ab4ddf445a96e277655ca08e54" data-slide-to="0" class="active"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_8de124ab4ddf445a96e277655ca08e54" data-slide-to="1"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_8de124ab4ddf445a96e277655ca08e54" data-slide-to="2"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_8de124ab4ddf445a96e277655ca08e54" data-slide-to="3"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_8de124ab4ddf445a96e277655ca08e54" data-slide-to="4"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_8de124ab4ddf445a96e277655ca08e54" data-slide-to="5"&gt;
-        
-    
+            &lt;li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="0" class="active"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="1"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="2"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="3"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="4"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="5"&gt;
     &lt;/li&gt;&lt;/ol&gt;
     &lt;div class="carousel-inner"&gt;
-        
-            
                 &lt;div class="item active"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0527.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0961.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0964.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0965.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0971.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0972.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
     &lt;/div&gt;
-    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_8de124ab4ddf445a96e277655ca08e54" data-slide="prev"&gt;‹&lt;/a&gt;
-    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_8de124ab4ddf445a96e277655ca08e54" data-slide="next"&gt;›&lt;/a&gt;
-&lt;/div&gt;&lt;p&gt;Overnight, the winds kicked in, and the snow came down.  Up to eight inches in the higher elevations.  This made for a second day of mid-winter like skiing.  Suddenly, all the runs that were not good yesterday were very ski-able with a fresh layer of snow.  The only downside was that the winds and snow continued.  We were told in the morning that all the lifts might have to shut down, at some point because thunder (and lightning) were in the forecast for the day.  I've never thought about being up on a ski lift in a thunderstorm before but I'm pretty sure I wouldn't want to be there.&lt;/p&gt;
-&lt;p&gt;In any case, if they do shut down certain of the lifts, then you are in trouble anyway...&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</guid><pubDate>Wed, 26 Mar 2014 05:00:11 GMT</pubDate></item><item><title>Lake Tahoe</title><link>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</link><description>&lt;div&gt;&lt;p&gt;A Rare Day&lt;/p&gt;
+    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide="prev"&gt;‹&lt;/a&gt;
+    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide="next"&gt;›&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Overnight, the winds kicked in, and the snow came down.  Up to eight inches in the higher elevations.  This made for a second day of mid-winter like skiing.  Suddenly, all the runs that were not good yesterday were very ski-able with a fresh layer of snow.  The only downside was that the winds and snow continued.  We were told in the morning that all the lifts might have to shut down, at some point because thunder (and lightning) were in the forecast for the day.  I've never thought about being up on a ski lift in a thunderstorm before but I'm pretty sure I wouldn't want to be there.&lt;/p&gt;
+&lt;p&gt;In any case, if they do shut down certain of the lifts, then you are in trouble anyway...&lt;/p&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/winter-skiing-in-the-spring.html</guid><pubDate>Wed, 26 Mar 2014 05:00:11 GMT</pubDate></item><item><title>Lake Tahoe</title><link>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;A Rare Day&lt;/p&gt;
 &lt;p&gt;Lake Tahoe is beautiful.  We arrived last night from Napa and got to our VRBO home, it is great and we had a beautiful view of the lake out our windows.  The sun was just going down and I captured this picture of the Sequoia outside our window.&lt;/p&gt;
 &lt;a href="http://flic.kr/p/mouxs6" title="Camera Roll-482 by -bnmnetp-"&gt;&lt;img src="http://farm3.staticflickr.com/2840/13381667205_c6d0cc90bf_z.jpg" width="478" height="640" alt="Camera Roll-482"&gt;&lt;/a&gt;&lt;p&gt;Today we drove the east side of the lake and met Jim and Karen for lunch, then we went to Emerald bay in the afternoon after Pete and Kim joined us.  Its really hard to describe or write too much about this, so I will just add a few photos here.&lt;/p&gt;
-&lt;div id="slides_332839d6c8774c25af03d6cba7b834a5" class="carousel slide"&gt;
+
+&lt;div id="slides_5645980981b44419bb13ff1655781c23" class="carousel slide"&gt;
     &lt;ol class="carousel-indicators"&gt;
-    
-        
-            &lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="0" class="active"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="1"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="2"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="3"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="4"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="5"&gt;
-        
-    
-        
-            &lt;/li&gt;&lt;li data-target="#slides_332839d6c8774c25af03d6cba7b834a5" data-slide-to="6"&gt;
-        
-    
+            &lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="0" class="active"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="1"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="2"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="3"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="4"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="5"&gt;
+            &lt;/li&gt;&lt;li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="6"&gt;
     &lt;/li&gt;&lt;/ol&gt;
     &lt;div class="carousel-inner"&gt;
-        
-            
                 &lt;div class="item active"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0890.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0892.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0898.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0899.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0910.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0930.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
-            
                 &lt;div class="item"&gt;&lt;img src="http://reputablejournal.com/galleries/tahoe/IMG_0936.jpg" alt="" style="margin: 0 auto 0 auto;"&gt;&lt;/div&gt;
-            
-        
     &lt;/div&gt;
-    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_332839d6c8774c25af03d6cba7b834a5" data-slide="prev"&gt;‹&lt;/a&gt;
-    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_332839d6c8774c25af03d6cba7b834a5" data-slide="next"&gt;›&lt;/a&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</guid><pubDate>Tue, 25 Mar 2014 05:00:08 GMT</pubDate></item><item><title>The Word of the Day is Malolactic</title><link>http://reputablejournal.com/posts/2014/03/the-word-of-the-day-is-malolactic.html</link><description>&lt;div&gt;&lt;h4&gt;Brought to You by the Letter 'C'&lt;/h4&gt;
+    &lt;a class="left carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_5645980981b44419bb13ff1655781c23" data-slide="prev"&gt;‹&lt;/a&gt;
+    &lt;a class="right carousel-control" href="http://reputablejournal.com/posts/2014/03/lake-tahoe.html#slides_5645980981b44419bb13ff1655781c23" data-slide="next"&gt;›&lt;/a&gt;
+&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/03/lake-tahoe.html</guid><pubDate>Tue, 25 Mar 2014 05:00:08 GMT</pubDate></item><item><title>The Word of the Day is Malolactic</title><link>http://reputablejournal.com/posts/2014/03/the-word-of-the-day-is-malolactic.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;h4&gt;Brought to You by the Letter 'C'&lt;/h4&gt;
 &lt;p&gt;I must confess, after all of the Chardonnay I've consumed, and I have consumed my share over the years, I have never really got the "buttery oaky Chardonnay" thing.  Butter is just not something I've ever tasted in my Chardonnay, despite the fact that one of my all time favorites is Rombaur, which according to more than one person in Napa, is the "poster child" for buttery oaky Chardonnays. Really, who wants their Chardonnay to taste like butter?  The whole describing wine thing is another thing I find really interesting.  One of the tasting room hosts, recommended the movie &lt;em&gt;Somm&lt;/em&gt; to us as we were chatting.  I see you can get/rent it on iTunes, so I'm adding that to my list.  Its about a group of guys preparing for the master sommelier exam, which may sound a bit dull, but the reviews for it are fantastic.&lt;/p&gt;
 &lt;p&gt;But after two days of tastings in Napa its all clear to me now.  The key that helped me understand the difference, and I'm confident I'm now an expert, is Malolactic Fermentation.  The science of it all, unsurprisingly, has stuck in my brain.  Here's a quick summary of more than you ever probably wanted to know.&lt;/p&gt;
 &lt;p&gt;Malolactic Fermentation is the process of converting Malic Acid (which tastes tart,and citrussy to my mouth) to Lactic Acid which is a much more mellow flavor.  Malolactic fermentation occurs after fermentation and is the result of injecting a particular bacteria into the process.&lt;/p&gt;
@@ -141,23 +63,23 @@
 &lt;/ul&gt;
 &lt;h4&gt;Conquering the Tannins&lt;/h4&gt;
 &lt;p&gt;I've never been able to drink red wine much due to my allergies.  What am I allergic to in red wine?  Tannin is a chemical that comes from the skins, seeds, and stems of the wine.  They are much more prevalent in red wine than in white.  Now according to our host at Chateau Montelena (see also the movie Bottle Shock) I need to develop a resistance to Tannins in order to drink red wine.  The way to do this, according to this would be allergist, is to begin with Pinot Noir, and work my way up from there.  Well it sounds like a project, and I do enjoy a nice glass of Pinot.  So, something to work on.  All in the name of self improvement of course.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://flic.kr/p/movtdk" title="My Photo Stream-978 by -bnmnetp-"&gt;&lt;img src="http://farm3.staticflickr.com/2877/13381848063_83f9dd310c.jpg" width="500" height="170" alt="My Photo Stream-978"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><category>Wine</category><guid>http://reputablejournal.com/posts/2014/03/the-word-of-the-day-is-malolactic.html</guid><pubDate>Sun, 23 Mar 2014 05:00:05 GMT</pubDate></item><item><title>Reflections on January 2014</title><link>http://reputablejournal.com/posts/2014/01/reflections-on-jterm-2014.html</link><description>&lt;div&gt;&lt;p&gt;I left home on December 27 2013.  When I left I had 3 bags packed.  One for our trip to Mazatlan to celebrate the new year with our friends the Vermace's.  One for my January term class on the west coast, and finally a bag full of ski gear for the rest and relaxation trip to Breckenridge.  Since leaving home I have travelled a bit over 10,000 miles.  My means of travel has included several flights, two long train trips on Amtrak, some time in a car, and lots of time on public transportation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://flic.kr/p/movtdk" title="My Photo Stream-978 by -bnmnetp-"&gt;&lt;img src="http://farm3.staticflickr.com/2877/13381848063_83f9dd310c.jpg" width="500" height="170" alt="My Photo Stream-978"&gt;&lt;/a&gt;&lt;/p&gt;</description><category>Travel</category><category>Wine</category><guid>http://reputablejournal.com/posts/2014/03/the-word-of-the-day-is-malolactic.html</guid><pubDate>Sun, 23 Mar 2014 05:00:05 GMT</pubDate></item><item><title>Reflections on January 2014</title><link>http://reputablejournal.com/posts/2014/01/reflections-on-jterm-2014.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;I left home on December 27 2013.  When I left I had 3 bags packed.  One for our trip to Mazatlan to celebrate the new year with our friends the Vermace's.  One for my January term class on the west coast, and finally a bag full of ski gear for the rest and relaxation trip to Breckenridge.  Since leaving home I have travelled a bit over 10,000 miles.  My means of travel has included several flights, two long train trips on Amtrak, some time in a car, and lots of time on public transportation.&lt;/p&gt;
 &lt;p&gt;In the last 35 days I've had more experiences than many people would have in a lifetime.  I say this out of a sense of gratitude, and to remind myself how lucky I am.&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/reflections-on-jterm-2014.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/reflections-on-jterm-2014.html</guid><pubDate>Sat, 01 Feb 2014 08:00:00 GMT</pubDate></item><item><title>On 14 inches of Powder</title><link>http://reputablejournal.com/posts/2014/01/on-14-inches-of-powder.html</link><description>&lt;div&gt;&lt;p&gt;The weather report said we had 6 inches of snow overnight.  From the moment we walked out the door it was clear that they had underestimated the snowfall by about 8 inches.&lt;/p&gt;
+&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/reflections-on-jterm-2014.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/reflections-on-jterm-2014.html</guid><pubDate>Sat, 01 Feb 2014 08:00:00 GMT</pubDate></item><item><title>On 14 inches of Powder</title><link>http://reputablejournal.com/posts/2014/01/on-14-inches-of-powder.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;The weather report said we had 6 inches of snow overnight.  From the moment we walked out the door it was clear that they had underestimated the snowfall by about 8 inches.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Powder" src="http://reputablejournal.com/images/JTerm14/BreckPowder.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;We were on the third chair up at 8:30 this morning.  The steep parts of the hill were awesome, with powder over my knees, floating through the snow.  On the gentle parts of the hill we all formed a single file line in order to get through it all.&lt;/p&gt;
 &lt;p&gt;By mid-day it was work.  The powder had been packed in many places and it was work to get through it.  The snow continued heavily throughout the day, and we are supposed to get another 14 inches overnight.&lt;/p&gt;
-&lt;p&gt;This has been the perfect few days of rest and relaxation to finish off January term.  Its even better because we bought the Epic local passes this year, which means we don't feel like we have to ski full time, but can actually just ski until we are ready to take a break, and then ski again later.  Its been great.&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/on-14-inches-of-powder.html</guid><pubDate>Thu, 30 Jan 2014 07:00:02 GMT</pubDate></item><item><title>Final Visits</title><link>http://reputablejournal.com/posts/2014/01/final-visits.html</link><description>&lt;div&gt;&lt;p&gt;My daughter Kaia is getting married next summer.  This is not new news, the proposal was made an accepted last June.  But planning is in full swing now, and I was kind of excited when secured a visit with Capsule, because capsule provides a service where all the guests at your wedding can download the capsule app and it will automatically upload all the photos to a special page for the wedding.&lt;/p&gt;
+&lt;p&gt;This has been the perfect few days of rest and relaxation to finish off January term.  Its even better because we bought the Epic local passes this year, which means we don't feel like we have to ski full time, but can actually just ski until we are ready to take a break, and then ski again later.  Its been great.&lt;/p&gt;</description><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/on-14-inches-of-powder.html</guid><pubDate>Thu, 30 Jan 2014 07:00:02 GMT</pubDate></item><item><title>Final Visits</title><link>http://reputablejournal.com/posts/2014/01/final-visits.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;My daughter Kaia is getting married next summer.  This is not new news, the proposal was made an accepted last June.  But planning is in full swing now, and I was kind of excited when secured a visit with Capsule, because capsule provides a service where all the guests at your wedding can download the capsule app and it will automatically upload all the photos to a special page for the wedding.&lt;/p&gt;
 &lt;p&gt;This company was founded by Cyrus, who set out to solve a simple problem, a problem we've been coping with on this course as well.  When you travel, how do you share all your digital photos with the buddies you are traveling with.  When you have a big party?  When you have a wedding, bachelor party, bachelorette party?  Capsule has solved this in a nice, elegant way.  All the photos uploaded for a particular event, are shared with the participants in the event.  Its that easy.  No need to bore all of your Facebook followers with every photo from your trip.  If you're an Instagram user, its super easy to add a special hashtag to your photo and it will be automatically imported into Capsule as well as shared on Instagram.&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/final-visits.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/final-visits.html</guid><pubDate>Sat, 25 Jan 2014 08:00:17 GMT</pubDate></item><item><title>Applied Math and Physics</title><link>http://reputablejournal.com/posts/2014/01/applied-math-and-physics.html</link><description>&lt;div&gt;&lt;p&gt;You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn't have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.&lt;/p&gt;
+&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/final-visits.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/final-visits.html</guid><pubDate>Sat, 25 Jan 2014 08:00:17 GMT</pubDate></item><item><title>Applied Math and Physics</title><link>http://reputablejournal.com/posts/2014/01/applied-math-and-physics.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;You know those yellow lines on the football field?  They are harder to draw than they look.  Think for a minute about all of the different field conditions.  Natural green turf, artificial turf, mud, snow, cold brown grass.  Now think about all of the different colored uniforms the players wear.  Now, look closely.  The line never covers up any part of a player, or the ball.  Notice that?  The ball doesn't have a yellow strip, the ball blocks out the yellow line.  The same with players shoes.  Today we got to learn about the yellow lines, the blue lines, the down and distance information,  and many more cool effects that Sportvision puts on our television screens.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="SportVision" src="http://reputablejournal.com/images/JTerm14/SportVision2.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Here's the group on the "practice Field"  They were moving the blue and the yellow line for us as we stood there. You can kind of see them on the big screen on the wall.  The rack of equipment behind me is what they need to bring to each game, and the computers on the desk are whats used by the operator during the game.  The operator can adjust all sorts of parameters based on field conditions and uniform colors etc.  In addition, in the case of a really bad snow storm, they can also project all the yard markers on top of the snow so the people at home have a better view of the field than the players.&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/applied-math-and-physics.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><category>Jterm14</category><guid>http://reputablejournal.com/posts/2014/01/applied-math-and-physics.html</guid><pubDate>Wed, 22 Jan 2014 08:00:12 GMT</pubDate></item><item><title>Transportation Cogitation</title><link>http://reputablejournal.com/posts/2014/01/transportation-cogitation.html</link><description>&lt;div&gt;&lt;p&gt;This is a post I've been thinking about for a few days.  Its a serious post, but especially after today, its surrounded in humor.  Here's the problem, to me this is funny, but if you had to live with it every day of your life, it might not be funny.
-&lt;/p&gt;&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/transportation-cogitation.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Travel</category><category>Jterm14</category><guid>http://reputablejournal.com/posts/2014/01/transportation-cogitation.html</guid><pubDate>Mon, 20 Jan 2014 08:00:44 GMT</pubDate></item><item><title>The Social Implications of a Self-Driving Car</title><link>http://reputablejournal.com/posts/2014/01/a-googeley-day.html</link><description>&lt;div&gt;&lt;p&gt;Today we moved south, from Fisherman's wharf down to Menlo Park.  But most of the day was spent at Google.  This was certainly a day that everyone has been looking forward to for most of the trip.  &lt;/p&gt;
+&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/applied-math-and-physics.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/applied-math-and-physics.html</guid><pubDate>Wed, 22 Jan 2014 08:00:12 GMT</pubDate></item><item><title>Transportation Cogitation</title><link>http://reputablejournal.com/posts/2014/01/transportation-cogitation.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;This is a post I've been thinking about for a few days.  Its a serious post, but especially after today, its surrounded in humor.  Here's the problem, to me this is funny, but if you had to live with it every day of your life, it might not be funny.
+&lt;/p&gt;&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/transportation-cogitation.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/transportation-cogitation.html</guid><pubDate>Mon, 20 Jan 2014 08:00:44 GMT</pubDate></item><item><title>The Social Implications of a Self-Driving Car</title><link>http://reputablejournal.com/posts/2014/01/a-googeley-day.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;Today we moved south, from Fisherman's wharf down to Menlo Park.  But most of the day was spent at Google.  This was certainly a day that everyone has been looking forward to for most of the trip.  &lt;/p&gt;
 &lt;p&gt;My interest in Google+ was renewed by a great tech talk by Ed Chi.  Who said some very nice things about me in front of my students.  They probably think I paid him.  We heard about supporting an organization as large as Google from Luther Alum Charles Banta, and about i18n -- i(nternationalizatio)n from Luther Alum and former CS faculty member Craig Cornelius.  Yes there are 18 letters between the parenthesis!  We had a fabulous tour of campus, a stop in the 3D printer lab, time at the gift shop, and of course, lunch at Charlie's Cafe.&lt;/p&gt;
 &lt;p&gt;You have probably heard about Google's famous slides, but they also have fire poles for people that want to quickly get down a floor.  And, in case you don't want to walk between buildings they have these cool Google Bikes all over the place.  Guests are encouraged not to ride the bikes, but nobody said anything about posing with one for your picture.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Google Bike" src="http://reputablejournal.com/images/JTerm14/GoogleBike.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;The other talk we heard was from Brian, a member of the self driving car project, who gave us a quick overview of the Google X Chauffeur Project.  The technology is interesting, and I have to admit I hadn't really thought past the cool sensors, and modeling that would be required.  But, what is even more interesting are the many social implications of self driving cars.&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/a-googeley-day.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/a-googeley-day.html</guid><pubDate>Sat, 18 Jan 2014 08:00:14 GMT</pubDate></item><item><title>A Lesson in Venture Capital</title><link>http://reputablejournal.com/posts/2014/01/a-lesson-in-venture-capital.html</link><description>&lt;div&gt;&lt;p&gt;"Ann is on a roll, we are going to be late."  I texted to Phillip.  Indeed she was.  Ann Winblad was the first investor in my Company, Net Perceptions, back in 1996.  She was an investor, a  mentor, and a supporter of us for years.  Today she was giving my students a lesson in the new economics and ecosystems of software development.  &lt;em&gt;I&lt;/em&gt; was taking notes as fast as I could to keep up with the stream of new companies and technologies that were &lt;em&gt;must know&lt;/em&gt; things according to Ann.&lt;/p&gt;
+&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/a-googeley-day.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/a-googeley-day.html</guid><pubDate>Sat, 18 Jan 2014 08:00:14 GMT</pubDate></item><item><title>A Lesson in Venture Capital</title><link>http://reputablejournal.com/posts/2014/01/a-lesson-in-venture-capital.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;"Ann is on a roll, we are going to be late."  I texted to Phillip.  Indeed she was.  Ann Winblad was the first investor in my Company, Net Perceptions, back in 1996.  She was an investor, a  mentor, and a supporter of us for years.  Today she was giving my students a lesson in the new economics and ecosystems of software development.  &lt;em&gt;I&lt;/em&gt; was taking notes as fast as I could to keep up with the stream of new companies and technologies that were &lt;em&gt;must know&lt;/em&gt; things according to Ann.&lt;/p&gt;
 &lt;p&gt;After the lesson she opened up the floor to questions, and the stories began to flow.  And flow, and when the students stopped asking questions she asked them questions and told them stories about their answers.  We were long past the end of our scheduled time, and I noticed her long term assistant Katie, standing across the room arms folded, glaring at Ann.  Heaven only knows what poor entrepreneur was downstairs sweating while she was entertaining us!&lt;/p&gt;
-&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/a-lesson-in-venture-capital.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/a-lesson-in-venture-capital.html</guid><pubDate>Fri, 17 Jan 2014 08:00:15 GMT</pubDate></item></channel></rss>
+&lt;p class="more"&gt;&lt;a href="http://reputablejournal.com/posts/2014/01/a-lesson-in-venture-capital.html"&gt;Read more…&lt;/a&gt;&lt;/p&gt;</description><category>Jterm14</category><category>Travel</category><guid>http://reputablejournal.com/posts/2014/01/a-lesson-in-venture-capital.html</guid><pubDate>Fri, 17 Jan 2014 08:00:15 GMT</pubDate></item></channel></rss>

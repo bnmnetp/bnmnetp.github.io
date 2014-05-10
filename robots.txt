@@ -1,4 +1,2 @@
-User-agent: *
-Disallow: 
+Sitemap: http://reputablejournal.com/sitemapindex.xml
 
-Sitemap: http://reputablejournal.com/sitemap.xml 
