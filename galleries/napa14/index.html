@@ -2,7 +2,7 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
     <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>napa14 | A Reputable Journal</title>
 
     
@@ -38,25 +38,25 @@
 
 <!-- Menubar -->
 
-<div class="navbar navbar-fixed-top" id="navbar">
-    <div class="navbar-inner">
-        <div class="container">
-
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </a>
-
-            <a class="brand" href="http://reputablejournal.com/">
+            </button>
+            <a class="navbar-brand" href="http://reputablejournal.com/">
 
                 <span id="blog-title">A Reputable Journal</span>
             </a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                
                 <li>
 <a href="../../stories/about.html">About</a>
                 </li>
@@ -75,10 +75,10 @@
 <li>
 <a href="../../stories/publications.html">Publications</a>
 
-                    
-                </li>
+                
+            </li>
 </ul>
-                    
+                
 <!-- Custom search -->
 <form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
 <input type="hidden" name="sites" value="http://reputablejournal.com/">
@@ -90,23 +90,26 @@
 </form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right">
+
+            <ul class="nav navbar-nav navbar-right">
                 
                 
                 
-                </ul>
-            </div>
+            </ul>
         </div>
+<!-- /.navbar-collapse -->
     </div>
-</div>
+<!-- /.container -->
+</nav>
+
 <!-- End of Menubar -->
-<div class="container-fluid" id="container-fluid">
-    <!--Body content-->
-    <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
-    
-    
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
     
 <nav class="breadcrumbs">
 <ul class="breadcrumb">
@@ -151,14 +154,16 @@
 </ul>
 </noscript>
 
+        </div>
+        <!--End of body content-->
+
+        <footer>
+            Contents © 2014         <a href="mailto:bonelake@mac.com">Brad Miller</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
     </div>
-    </div>
-    <!--End of body content-->
 </div>
-<div class="footerbox">
-    Contents © 2014         <a href="mailto:bonelake@mac.com">Brad Miller</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
-    
-</div>
+
 
             <script src="../../assets/js/all-nocdn.js"></script>
     
@@ -188,7 +193,7 @@
     
 <script src="../../assets/js/flowr.plugin.js"></script>
 <script>
-jsonContent = [{"url_thumb": "IMG_0852.thumbnail.jpg", "title": "Img 0852", "url": "IMG_0852.jpg", "size": {"w": 180, "h": 135}}, {"url_thumb": "IMG_0856.thumbnail.jpg", "title": "Img 0856", "url": "IMG_0856.jpg", "size": {"w": 135, "h": 180}}, {"url_thumb": "IMG_0859.thumbnail.jpg", "title": "Img 0859", "url": "IMG_0859.jpg", "size": {"w": 180, "h": 135}}, {"url_thumb": "IMG_0866.thumbnail.jpg", "title": "Img 0866", "url": "IMG_0866.jpg", "size": {"w": 135, "h": 180}}, {"url_thumb": "IMG_0871.thumbnail.jpg", "title": "Img 0871", "url": "IMG_0871.jpg", "size": {"w": 180, "h": 135}}, {"url_thumb": "IMG_0877.thumbnail.jpg", "title": "Img 0877", "url": "IMG_0877.jpg", "size": {"w": 720, "h": 244}}, {"url_thumb": "IMG_0888.thumbnail.jpg", "title": "Img 0888", "url": "IMG_0888.jpg", "size": {"w": 135, "h": 180}}];
+jsonContent = [{"url_thumb": "IMG_0852.thumbnail.jpg", "title": "Img 0852", "size": {"w": 1024, "h": 768}, "url": "IMG_0852.jpg"}, {"url_thumb": "IMG_0856.thumbnail.jpg", "title": "Img 0856", "size": {"w": 768, "h": 1024}, "url": "IMG_0856.jpg"}, {"url_thumb": "IMG_0859.thumbnail.jpg", "title": "Img 0859", "size": {"w": 1024, "h": 768}, "url": "IMG_0859.jpg"}, {"url_thumb": "IMG_0866.thumbnail.jpg", "title": "Img 0866", "size": {"w": 768, "h": 1024}, "url": "IMG_0866.jpg"}, {"url_thumb": "IMG_0871.thumbnail.jpg", "title": "Img 0871", "size": {"w": 1024, "h": 768}, "url": "IMG_0871.jpg"}, {"url_thumb": "IMG_0877.thumbnail.jpg", "title": "Img 0877", "size": {"w": 1024, "h": 348}, "url": "IMG_0877.jpg"}, {"url_thumb": "IMG_0888.thumbnail.jpg", "title": "Img 0888", "size": {"w": 768, "h": 1024}, "url": "IMG_0888.jpg"}];
 $("#gallery_container").flowr({
         data : jsonContent,
         height : 180*.6,

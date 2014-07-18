@@ -14,7 +14,7 @@ When we were in Las Vegas last fall, I had the most delicious steak I’ve ever 
 
 Since then, I’ve been reading the books, like *Modernist Cuisine at Home*, and lots of articles on “Serious Eats”, I’ve seen it done on *Chopped* and *Iron Chef*.  Then the other day I got a Kickstarter notice about the new Anova Precision Cooker.  Its an immersion circulator that lets you do sous-vide cooking without one of the big fancy sous-vide appliances.  This just clips on the edge of one of your big pots, and away you go.  Alton Brown would love it.   Unfortunately this new fancy one that even connects to your iPhone will not be available  until later this year, so I decided to give the Nomiku a try.  It was the highest rated of three options on Amazon, and was Prime Eligible.  If I really like it I figure I can always upgrade to the Anova later.  So here's my setup for an afternoon of high-tech cooking:
 
-.. image:: ../../../files/images/SousVideSetup.JPG
+.. image:: /images/SousVideSetup.JPG
 
 
 The idea behind sous-vide cooking is that you can cook at a lower temperature for a longer period of time.  bringing the water and your food into equilibrium.  Whats cool about that is that you can cook a steak to exactly 132 degrees, and you can leave it go for an extra hour or two and it will remain at the perfect medium rare done-ness.  You can also cook chicken. without heating it to 165 degrees!
