@@ -2,8 +2,9 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
     <head>
     <meta charset="utf-8">
+    <meta name="description" content="Days of Downtime, caught in the crossfire">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Almost back to Windhoek | A Reputable Journal</title>
+    <title>On the Denial of Service Attack | A Reputable Journal</title>
 
     
             <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
@@ -11,7 +12,7 @@
     
             <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 
-      <link rel="canonical" href="http://reputablejournal.com/posts/2012/07/almost-back-to-windhoek.html">
+      <link rel="canonical" href="http://reputablejournal.com/posts/2014/07/on-the-denial-of-service-attack.html">
 
 
 
@@ -25,9 +26,9 @@
 
     <meta name="author" content="Brad Miller">
     
-        <meta name="og:title" content="Almost back to Windhoek">
-        <meta name="og:url" content="http://reputablejournal.com/posts/2012/07/almost-back-to-windhoek.html">
-            <meta name="og:description" content="Well, here we are on the B2 not 55km from Windhoek and the Safari Hotel.  Suddenly our coach makes a very bad noise and we begin to coast down the road.  Joey looks rather concerned.  We coast to a st">
+        <meta name="og:title" content="On the Denial of Service Attack">
+        <meta name="og:url" content="http://reputablejournal.com/posts/2014/07/on-the-denial-of-service-attack.html">
+            <meta name="og:description" content="Days of Downtime, caught in the crossfire">
         <meta name="og:site_name" content="A Reputable Journal">
         <meta name="og:type" content="article">
 
@@ -118,49 +119,53 @@
     
     <header>
         
-    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">Almost back to Windhoek</a></h1>
+    <h1 class="p-name entry-title" itemprop="headline name"><a href="#" class="u-url">On the Denial of Service Attack</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
-            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2012-07-02T00:00:00+00:00" itemprop="datePublished" title="Publication date">2012-07-02 00:00</time></a></p>
+            <p class="dateline"><a href="#" rel="bookmark"><time class="published dt-published" datetime="2014-07-18T19:24:31+00:00" itemprop="datePublished" title="Publication date">2014-07-18 19:24</time></a></p>
                 <p class="commentline">
         
 </p>
-<div class="g-commentcount" data-href="/posts/2012/07/almost-back-to-windhoek.html"></div>
+<div class="g-commentcount" data-href="/posts/2014/07/on-the-denial-of-service-attack.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
 
             
 
+                <meta name="description" itemprop="description" content="Days of Downtime, caught in the crossfire">
         </div>
         
 
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p>Well, here we are on the B2 not 55km from Windhoek and the Safari Hotel.  Suddenly our coach makes a very bad noise and we begin to coast down the road.  Joey looks rather concerned.  We coast to a stop and pull over to the side of the road.  One of the few places in all of Namibia where there is almost no shoulder.  The diagnosis is dire, the clutch plate is out.  Luckily its only 1:15 in the afternoon and we are close to our destination.  David is on the phone getting another coach on its way.  This bus that we've spent so many hours with is not taking us any further.</p>
-
-<p>So far we are all in good spirits.  The sun is out, the weather is nice.  We are joking about our plight and assessing our provisions.  In the cooler we have some apples, a half bottle of Riesling and one Windhoek light.  Suddenly Joey says… "I need a beer!"  We all crack up, we'd be happy to give Joey our last beer, he's been such a good sport with great humor this entire trip.</p>
-
-<p>We are thankful that this little mishap happened here.  When we think of all the places this could have happened. The middle of Etosha, the middle of the desert, Each of which would be hours and hours from anywhere likely to have the ability to come and get us.  We'll be just fine, and this answers the important question of what to write about in today's blog.</p>
-
-<p>UPDATE:  We're moving again, in a lovely, highly air conditioned coach.  Its just 2:55 so we were only delayed about 1:45.  When the replacement bus got here we formed a bucket brigade and transferred the luggage from one to the other in no time.  We're looking forward to arriving at the Safari and we'll still have some time to relax and refresh before we go to our dinner at Nampa and Matty's house.</p>
+    <p>Well its been an interesting week.  My daughter is married, and I've been caught in the crossfire of a Distributed Denial of Service (DDoS) attack on Webfaction, my hosting provider.  I'm quite sure the two are unrelated.</p>
+<p>For those of you who have been frustrated in your attempts to access any of the books on <a class="reference external" href="http://interactivepython.org">interactivepython.org</a>, I'm sorry.  We were not the target of the attack, but we were in the same subdomain and got blasted.  I can't believe that it took over four days to clear up the mess.  But thats about what happened.  This is a new one for me.  I've never considered that an open source textbook project would have to worry about something like this.  At one point Webfaction said they were getting 4Gbps (yes, 4 gigabits per second) of malicious traffic affecting about a dozen machines.</p>
+<p>I've been so frustrated with Webfaction's response that I've been thinking about moving to a different hosting service.  But I'm left with the following questions:</p>
+<ol class="arabic simple">
+<li>Could Webfaction done better?  The only thing I'm qualified to say here is that they could have done way better in communicating with those of us affected.  Here was the initial response I got from tech support:</li>
+</ol>
+<blockquote>
+There is no ETA as to when this issue will be fully resolved as only the attacker(s) can determine that. At times the target against a server can be large enough that our hardware mitigation system can not handle the volume. Please let us know if you need anything else.</blockquote>
+<p>Ok, maybe dealing with a DDoS <strong>is</strong> a really hard problem, but as a frustrated owner of the site here is what I heard.  "Sorry, nothing we can do.  You will just have to wait until the bad guys get tired and go away."  In addition, it was maddeningly long between their status updates. You can see their <a class="reference external" href="http://statusblog.webfaction.com/2014/07/13/ddos-attacks-on-multiple-servers/">updates here</a>   As a site owner, all I want to do is get my site back up and running.  In order to make good decisions about what to do I need timely information, not vague intermittent messages.</p>
+<ol class="arabic simple" start="2">
+<li>What are standard practices in building web applications to protect against an attack like this?</li>
+<li>How do you know whether one hosting provider is going to be any better than another in dealing with an attack like this?  Is paying for AWS or Google compute engine the only way to know you are getting a provider with the resources to take on a big attack?</li>
+</ol>
+<p>If you have answers to these questions, please leave a comment.</p>
     </div>
     <aside class="postpromonav">
     <nav>
     
         <ul itemprop="keywords" class="tags">
-           <li><a class="tag p-category" href="../../../categories/namibia.html" rel="tag">Namibia</a></li>
-           <li><a class="tag p-category" href="../../../categories/travel.html" rel="tag">Travel</a></li>
+           <li><a class="tag p-category" href="../../../categories/python.html" rel="tag">Python</a></li>
         </ul>
 
     
         <ul class="pager">
             <li class="previous">
-                <a href="../06/a-day-in-the-dunes.html" rel="prev" title="A Day in the Dunes">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="high-security.html" rel="next" title="High Security">Next post</a>
+                <a href="../05/the-sous-vide-adventure-begins.html" rel="prev" title="The Sous Vide Adventure Begins">Previous post</a>
             </li>
         </ul>
 
@@ -171,7 +176,7 @@
         
         
 <script src="https://apis.google.com/js/plusone.js"></script>
-<div class="g-comments" data-href="http://reputablejournal.com/posts/2012/07/almost-back-to-windhoek.html" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">
+<div class="g-comments" data-href="http://reputablejournal.com/posts/2014/07/on-the-denial-of-service-attack.html" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD">
 </div>
 
 
