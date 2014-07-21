@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
     <head>
     <meta charset="utf-8">
     <meta name="description" content="A site you can trust.">
     <meta name="viewport" content="width=device-width">
     <title>A Reputable Journal | A Reputable Journal</title>
 
-    
-            <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+                <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 
-    
-            <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+                <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 
       <link rel="canonical" href="http://reputablejournal.com/index.html">
 
@@ -22,33 +23,30 @@
     
 
 
-
-
 </head>
 <body>
 
 <!-- Menubar -->
 
-<div class="navbar navbar-fixed-top" id="navbar">
-    <div class="navbar-inner">
-        <div class="container">
-
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-        </a>
-
-            <a class="brand" href="http://reputablejournal.com/">
+            </button>
+            <a class="navbar-brand" href="http://reputablejournal.com/">
 
                 <span id="blog-title">A Reputable Journal</span>
             </a>
-            <!-- Everything you want hidden at 940px or less, place within here -->
-            <div class="nav-collapse collapse">
-                <ul class="nav">
-                    
-                <li>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                                <li>
 <a href="stories/about.html">About</a>
                 </li>
 <li>
@@ -66,10 +64,10 @@
 <li>
 <a href="stories/publications.html">Publications</a>
 
-                    
-                </li>
+                
+            </li>
 </ul>
-                    
+                
 <!-- Custom search -->
 <form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
 <input type="hidden" name="sites" value="http://reputablejournal.com/">
@@ -81,33 +79,61 @@
 </form>
 <!-- End of custom search -->
 
-                <ul class="nav pull-right">
+
+            <ul class="nav navbar-nav navbar-right">
                 
-                
-                
-                </ul>
-            </div>
+            </ul>
         </div>
+<!-- /.navbar-collapse -->
     </div>
-</div>
+<!-- /.container -->
+</nav>
+
 <!-- End of Menubar -->
-<div class="container-fluid" id="container-fluid">
-    <!--Body content-->
-    <div class="row-fluid">
-    <div class="span2"></div>
-    <div class="span8">
-    
-    
+
+<div class="container">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
 <div class="postindex">
+    <article class="h-entry post-text">
+    <header>
+        <h1 class="p-name entry-title"><a href="posts/2014/07/on-the-denial-of-service.html" class="u-url">On the Denial of Service Attack</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
+            <p class="dateline"><a href="posts/2014/07/on-the-denial-of-service.html" rel="bookmark"><time class="published dt-published" datetime="2014-07-21T21:55:17+00:00" itemprop="datePublished" title="Publication date">2014-07-21 21:55</time></a></p>
+                <p class="commentline">        </p>
+<div class="g-commentcount" data-href="/posts/2014/07/on-the-denial-of-service.html"></div>
+<script src="https://apis.google.com/js/plusone.js"></script>
+
+
+        </div>
+    </header>
+    <div class="p-summary entry-summary">
+    <p>Well its been an interesting week. My daughter is married, and I've been caught in the crossfire of a Distributed Denial of Service (DDoS) attack on Webfaction, my hosting provider. I'm quite sure the two are unrelated.</p>
+<p>For those of you who have been frustrated in your attempts to access any of the books on interactivepython.org, I'm sorry. We were not the target of the attack, but we were in the same subdomain and got blasted. I can't believe that it took over four days to clear up the mess. But thats about what happened. This is a new one for me. I've never considered that an open source textbook project would have to worry about something like this. At one point Webfaction said they were getting 4Gbps (yes, 4 gigabits per second) of malicious traffic affecting about a dozen machines.</p>
+<p>I've been so frustrated with Webfaction's response that I've been thinking about moving to a different hosting service. But I'm left with the following questions:</p>
+<ol class="arabic simple">
+<li>Could Webfaction done better? The only thing I'm qualified to say here is that they could have done way better in communicating with those of us affected. Here was the initial response I got from tech support:</li>
+</ol>
+<blockquote>
+&gt; There is no ETA as to when this issue will be fully resolved as only the attacker(s) can determine that. At times the target against a server can be large enough that our hardware mitigation system can not handle the volume. Please let us know if you need anything else.</blockquote>
+<p>Ok, maybe dealing with a DDoS is a really hard problem, but as a frustrated owner of the site here is what I heard. "Sorry, nothing we can do. You will just have to wait until the bad guys get tired and go away." In addition, it was maddeningly long between their status updates. You can see their updates here As a site owner, all I want to do is get my site back up and running. In order to make good decisions about what to do I need timely information, not vague intermittent messages.</p>
+<ol class="arabic simple" start="2">
+<li>What are standard practices in building web applications to protect against an attack like this?</li>
+</ol>
+<p>3.  How do you know whether one hosting provider is going to be any better than another in dealing with an attack like this? Is paying for AWS or Google compute engine the only way to know you are getting a provider with the resources to take on a big attack?
+If you have answers to these questions, please leave a comment.</p>
+    </div>
+    </article>
     <article class="h-entry post-text">
     <header>
         <h1 class="p-name entry-title"><a href="posts/2014/05/the-sous-vide-adventure-begins.html" class="u-url">The Sous Vide Adventure Begins</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/05/the-sous-vide-adventure-begins.html" rel="bookmark"><time class="published dt-published" datetime="2014-05-10T21:36:09+00:00" itemprop="datePublished" title="Publication date">2014-05-10 21:36</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/05/the-sous-vide-adventure-begins.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -117,7 +143,7 @@
     <div class="p-summary entry-summary">
     <p>When we were in Las Vegas last fall, I had the most delicious steak I’ve ever eaten. It was at Bobby Flay’s Mesa Grill.  This blew me away. Although I love a good steak at a restaurant, usually I can do just as well at home.  But this steak was amazing.  This was a two inch think tenderloin that was perfectly medium rare from edge to edge! The very outside edge was seared perfectly too.  Whoa, I thought at the time,  how did they do that?  How can you have a steak so uniformly done?  The answer of course is Sous-vide.</p>
 <p>Since then, I’ve been reading the books, like <em>Modernist Cuisine at Home</em>, and lots of articles on “Serious Eats”, I’ve seen it done on <em>Chopped</em> and <em>Iron Chef</em>.  Then the other day I got a Kickstarter notice about the new Anova Precision Cooker.  Its an immersion circulator that lets you do sous-vide cooking without one of the big fancy sous-vide appliances.  This just clips on the edge of one of your big pots, and away you go.  Alton Brown would love it.   Unfortunately this new fancy one that even connects to your iPhone will not be available  until later this year, so I decided to give the Nomiku a try.  It was the highest rated of three options on Amazon, and was Prime Eligible.  If I really like it I figure I can always upgrade to the Anova later.  So here's my setup for an afternoon of high-tech cooking:</p>
-<img alt="../../../files/images/SousVideSetup.JPG" src="files/images/SousVideSetup.JPG">
+<img alt="/images/SousVideSetup.JPG" src="images/SousVideSetup.JPG">
 <p>The idea behind sous-vide cooking is that you can cook at a lower temperature for a longer period of time.  bringing the water and your food into equilibrium.  Whats cool about that is that you can cook a steak to exactly 132 degrees, and you can leave it go for an extra hour or two and it will remain at the perfect medium rare done-ness.  You can also cook chicken. without heating it to 165 degrees!</p>
 <p>What!?  I thought?  this cannot be.  But then I started to do some reading and once again science rocks.  <a class="reference external" href="http://www.seriouseats.com/2010/04/sous-vide-basics-low-temperature-chicken.html">http://www.seriouseats.com/2010/04/sous-vide-basics-low-temperature-chicken.html</a>  It turns out that you can kill all the nasty bacteria at 135 degrees, it just takes longer!  Like 90 minutes!  Heating chicken to 165 kills the bacteria too, instantly.  But it also gives you dry chicken.</p>
 <p>One other aspect of sous vide is that you use a vacuum sealer to seal your food in plastic before you immerse it in the water.  This allows you to season the food and add aromatics to your bag.  Yum.</p>
@@ -131,9 +157,7 @@
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/04/development-tips.html" rel="bookmark"><time class="published dt-published" datetime="2014-05-06T11:14:28+00:00" itemprop="datePublished" title="Publication date">2014-05-06 11:14</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/04/development-tips.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -168,9 +192,7 @@ to intermediate students on writing software?</p>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/04/pycon-2014-keynote-shout-out.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-30T14:20:59+00:00" itemprop="datePublished" title="Publication date">2014-04-30 14:20</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/04/pycon-2014-keynote-shout-out.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -189,9 +211,7 @@ to intermediate students on writing software?</p>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/ipython-in-nikola.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-20T19:13:42+00:00" itemprop="datePublished" title="Publication date">2014-04-20 19:13</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/ipython-in-nikola.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -314,9 +334,7 @@ In []:
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/04/moving-to-nikola.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-20T17:38:39+00:00" itemprop="datePublished" title="Publication date">2014-04-20 17:38</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/04/moving-to-nikola.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -338,9 +356,7 @@ In []:
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/04/why-moocs-why-not.html" rel="bookmark"><time class="published dt-published" datetime="2014-04-02T05:00:30+00:00" itemprop="datePublished" title="Publication date">2014-04-02 05:00</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/04/why-moocs-why-not.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -357,9 +373,7 @@ In []:
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/03/winter-skiing-in-the-spring.html" rel="bookmark"><time class="published dt-published" datetime="2014-03-26T05:00:11+00:00" itemprop="datePublished" title="Publication date">2014-03-26 05:00</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/03/winter-skiing-in-the-spring.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -369,20 +383,19 @@ In []:
     <div class="p-summary entry-summary">
     <p>Two days of skiing at Tahoe are in the bag, but what a difference between the two days.  Yesterday we got the true spring skiing experience.  It was cool and crusty in the morning and a bit slushy in the afternoon.  Its been a pretty bad winter here in Tahoe so a lot of the runs were not accessible.  In the morning we went up the Stagecoach express and turned left, to try the Stagecoach run.  It was the worst skiing I have ever experienced in my life.  Thankfully, we learned the trick.  Stay on the groomed runs!  Once we figured that out the day was a blast, if a bit repetitive.  One thing you can't beat is the views.  Bright sunny day, clear blue sky, good friends to ski with.  What could be better?</p>
 <p>I also love this photo for all of the layers.  High clouds, low clouds, shadows of clouds on the brown/green valley floor below.</p>
-
-<div id="slides_1a953201ce8e4542902a682a0dbfcc06" class="carousel slide">
+<div id="slides_1ac966f5cf5a4541802c4b05cd12ac19" class="carousel slide">
     <ol class="carousel-indicators">
-            <li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="0" class="active">
+            <li data-target="#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide-to="0" class="active">
             </li>
-<li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="1">
+<li data-target="#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide-to="1">
             </li>
-<li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="2">
+<li data-target="#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide-to="2">
             </li>
-<li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="3">
+<li data-target="#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide-to="3">
             </li>
-<li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="4">
+<li data-target="#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide-to="4">
             </li>
-<li data-target="#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide-to="5">
+<li data-target="#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide-to="5">
     </li>
 </ol>
     <div class="carousel-inner">
@@ -393,10 +406,9 @@ In []:
                 <div class="item"><img src="galleries/tahoe/IMG_0971.jpg" alt="" style="margin: 0 auto 0 auto;"></div>
                 <div class="item"><img src="galleries/tahoe/IMG_0972.jpg" alt="" style="margin: 0 auto 0 auto;"></div>
     </div>
-    <a class="left carousel-control" href="posts/2014/03/winter-skiing-in-the-spring.html#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="posts/2014/03/winter-skiing-in-the-spring.html#slides_1a953201ce8e4542902a682a0dbfcc06" data-slide="next">›</a>
+    <a class="left carousel-control" href="posts/2014/03/winter-skiing-in-the-spring.html#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide="prev"><span class="icon-prev"></span></a>
+    <a class="right carousel-control" href="posts/2014/03/winter-skiing-in-the-spring.html#slides_1ac966f5cf5a4541802c4b05cd12ac19" data-slide="next"><span class="icon-next"></span></a>
 </div>
-
 <p>Overnight, the winds kicked in, and the snow came down.  Up to eight inches in the higher elevations.  This made for a second day of mid-winter like skiing.  Suddenly, all the runs that were not good yesterday were very ski-able with a fresh layer of snow.  The only downside was that the winds and snow continued.  We were told in the morning that all the lifts might have to shut down, at some point because thunder (and lightning) were in the forecast for the day.  I've never thought about being up on a ski lift in a thunderstorm before but I'm pretty sure I wouldn't want to be there.</p>
 <p>In any case, if they do shut down certain of the lifts, then you are in trouble anyway...</p>
     </div>
@@ -407,9 +419,7 @@ In []:
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/03/lake-tahoe.html" rel="bookmark"><time class="published dt-published" datetime="2014-03-25T05:00:08+00:00" itemprop="datePublished" title="Publication date">2014-03-25 05:00</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/03/lake-tahoe.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -420,22 +430,21 @@ In []:
     <p>A Rare Day</p>
 <p>Lake Tahoe is beautiful.  We arrived last night from Napa and got to our VRBO home, it is great and we had a beautiful view of the lake out our windows.  The sun was just going down and I captured this picture of the Sequoia outside our window.</p>
 <a href="http://flic.kr/p/mouxs6" title="Camera Roll-482 by -bnmnetp-"><img src="http://farm3.staticflickr.com/2840/13381667205_c6d0cc90bf_z.jpg" width="478" height="640" alt="Camera Roll-482"></a><p>Today we drove the east side of the lake and met Jim and Karen for lunch, then we went to Emerald bay in the afternoon after Pete and Kim joined us.  Its really hard to describe or write too much about this, so I will just add a few photos here.</p>
-
-<div id="slides_5645980981b44419bb13ff1655781c23" class="carousel slide">
+<div id="slides_834e3a340abb4cc3aad2187f15936d9b" class="carousel slide">
     <ol class="carousel-indicators">
-            <li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="0" class="active">
+            <li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="0" class="active">
             </li>
-<li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="1">
+<li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="1">
             </li>
-<li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="2">
+<li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="2">
             </li>
-<li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="3">
+<li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="3">
             </li>
-<li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="4">
+<li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="4">
             </li>
-<li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="5">
+<li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="5">
             </li>
-<li data-target="#slides_5645980981b44419bb13ff1655781c23" data-slide-to="6">
+<li data-target="#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide-to="6">
     </li>
 </ol>
     <div class="carousel-inner">
@@ -447,8 +456,8 @@ In []:
                 <div class="item"><img src="galleries/tahoe/IMG_0930.jpg" alt="" style="margin: 0 auto 0 auto;"></div>
                 <div class="item"><img src="galleries/tahoe/IMG_0936.jpg" alt="" style="margin: 0 auto 0 auto;"></div>
     </div>
-    <a class="left carousel-control" href="posts/2014/03/lake-tahoe.html#slides_5645980981b44419bb13ff1655781c23" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="posts/2014/03/lake-tahoe.html#slides_5645980981b44419bb13ff1655781c23" data-slide="next">›</a>
+    <a class="left carousel-control" href="posts/2014/03/lake-tahoe.html#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide="prev"><span class="icon-prev"></span></a>
+    <a class="right carousel-control" href="posts/2014/03/lake-tahoe.html#slides_834e3a340abb4cc3aad2187f15936d9b" data-slide="next"><span class="icon-next"></span></a>
 </div>
     </div>
     </article>
@@ -458,9 +467,7 @@ In []:
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
             <p class="dateline"><a href="posts/2014/03/the-word-of-the-day-is-malolactic.html" rel="bookmark"><time class="published dt-published" datetime="2014-03-23T05:00:05+00:00" itemprop="datePublished" title="Publication date">2014-03-23 05:00</time></a></p>
-                <p class="commentline">
-        
-</p>
+                <p class="commentline">        </p>
 <div class="g-commentcount" data-href="/posts/2014/03/the-word-of-the-day-is-malolactic.html"></div>
 <script src="https://apis.google.com/js/plusone.js"></script>
 
@@ -485,30 +492,7 @@ In []:
 <p><a href="http://flic.kr/p/movtdk" title="My Photo Stream-978 by -bnmnetp-"><img src="http://farm3.staticflickr.com/2877/13381848063_83f9dd310c.jpg" width="500" height="170" alt="My Photo Stream-978"></a></p>
     </div>
     </article>
-    <article class="h-entry post-text">
-    <header>
-        <h1 class="p-name entry-title"><a href="posts/2014/03/the-long-winter.html" class="u-url">The Long Winter</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Brad Miller</span></p>
-            <p class="dateline"><a href="posts/2014/03/the-long-winter.html" rel="bookmark"><time class="published dt-published" datetime="2014-03-08T06:00:03+00:00" itemprop="datePublished" title="Publication date">2014-03-08 06:00</time></a></p>
-                <p class="commentline">
-        
-</p>
-<div class="g-commentcount" data-href="/posts/2014/03/the-long-winter.html"></div>
-<script src="https://apis.google.com/js/plusone.js"></script>
-
-
-        </div>
-    </header>
-    <div class="p-summary entry-summary">
-    <p>When I was little, I read all of the Laura Ingalls Wilder books, including <em>The Long Winter</em>. That was the winter of 1880-1881 in case you are wondering.  Lately my reading tastes lean more towards the <em>Game of Thrones</em> and the coming long winter in that story.  Yesterday I arrived back in Minnesota after a chilly week in Atlanta, You will note by the date it is already the 8th of March.  I'm writing this simply to document how much snow we've had here at Bone Lake this winter!  As I pulled onto Indian Point road, I saw this:</p>
-<p><img alt="Where's the Sign?" src="images/Winter2014/IndianPoint.JPG" title="Where's the Sign?"></p>
-<p>Ok, I'd been seeing road signs totally buried in huge snow drifts since I turned North off highway 8, so I wasn't totally surprised that all the signs were buried.  I wondered what our driveway would look like.</p>
-<p class="more"><a href="posts/2014/03/the-long-winter.html">Read more…</a></p>
-    </div>
-    </article>
 </div>
-
         <nav class="postindexpager">
         <ul class="pager">
             <li class="next">
@@ -517,20 +501,17 @@ In []:
         </ul>
         </nav>
 
-
         
 
 
+        </div>
+        <!--End of body content-->
 
-
-
+        <footer>
+            Contents © 2014         <a href="mailto:bonelake@mac.com">Brad Miller</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
     </div>
-    </div>
-    <!--End of body content-->
-</div>
-<div class="footerbox">
-    Contents © 2014         <a href="mailto:bonelake@mac.com">Brad Miller</a> - Powered by         <a href="http://getnikola.com" rel="nofollow">Nikola</a>         
-    
 </div>
 
             <script src="assets/js/all-nocdn.js"></script>
@@ -558,7 +539,6 @@ In []:
 
 
     <script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
-    
 
  <script type="text/javascript">
     var _gaq = _gaq || [];
