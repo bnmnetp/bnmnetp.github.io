@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A Reputable Journal (Python)</title><link>http://reputablejournal.com/</link><description></description><language>en</language><lastBuildDate>Mon, 18 Aug 2014 10:14:31 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Version 3.0 of Runestone Interactive released</title><link>http://reputablejournal.com/posts/2014/08/runestone-interactive-3-0.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;I'm pleased to announce that over the weekend, I updated &lt;a class="reference external" href="http://interactivepython.org"&gt;interactivepython.org&lt;/a&gt; to version 3.0.  This release completes another summer of hacking, and integrating contributions from colleagues around the world.&lt;/p&gt;
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>A Reputable Journal (Python)</title><link>http://reputablejournal.com/</link><description></description><language>en</language><lastBuildDate>Sat, 20 Sep 2014 15:38:12 GMT</lastBuildDate><generator>http://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Runestone Fall 2014</title><link>http://reputablejournal.com/posts/2014/09/runestone-fall-report.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;School is underway again, and now that we are a few weeks in to the semester I wanted to take a minute to talk about growth.  Last year about this time things were still pretty chaotic, with the unexpected success of the books the servers were laboring intensely to keep up with all of the new users.   This necessitated a weekend switch to a larger server.&lt;/p&gt;
+&lt;div class="section" id="growth"&gt;
+&lt;h2&gt;Growth&lt;/h2&gt;
+&lt;p&gt;This year, Google Analytics is showing that our daily traffic has doubled from last fall!  Here's a comparison to a year ago, adjusting for the days of the week to be the same.  Its amazing how consistent the weekly pattern is.&lt;/p&gt;
+&lt;img alt="/images/fall2014growth.png" src="http://reputablejournal.com/images/fall2014growth.png"&gt;
+&lt;/div&gt;
+&lt;div class="section" id="code-coach"&gt;
+&lt;h2&gt;Code Coach&lt;/h2&gt;
+&lt;p&gt;One of the new features in our 3.x release is the Code Coach.  You have probably noticed that button in some exercises, or some of the examples.  Code Coach is in its very early stages as a platform for providing students with intelligent automated feedback on their code.  I think this has &lt;strong&gt;huge&lt;/strong&gt; potential, but is going to require a lot of resources to bring to fruition.  Right now there are two things going on that I think do add value:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Every time the student presses the run button that version of the code is saved.  Code Coach lets a student move backward and forward through their history to view the differences between one version of the code and the next.  I can see this as a very valuable teaching tool for an instructor to use with the student.  I've looked at a bunch of these and its amazing how often a student gets off in the weeds over a very simple project and ends up throwing away a huge amount of work, or just making random changes.  I would really like to have the conversation where I can show the student, if you would have fixed this, you would not have had to delete all of this other stuff.&lt;/li&gt;
+&lt;li&gt;Everytime the student runs a program, I run Pylint on it in the background.  Pylint catches all sorts of "errors" that do not show up as Python runtime errors.  One big one is forgetting parentheses.  I've seen this so many times:  &lt;tt class="docutils literal"&gt;myTurtle.forward&lt;/tt&gt; this is not a runtime error because Python evaluates the statement to simply be a reference to a function.  But the student can't see it.  "Dr. Miller, I don't get any errors, but my turtle isn't doing anything, what am I doing wrong?"  Pylint flags this for the useless statement that it is.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I'm really looking forward to applying much more advanced analysis to the code in order to provide better coaching.&lt;/p&gt;
+&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2014/09/runestone-fall-report.html</guid><pubDate>Sat, 20 Sep 2014 19:57:48 GMT</pubDate></item><item><title>Version 3.0 of Runestone Interactive released</title><link>http://reputablejournal.com/posts/2014/08/runestone-interactive-3-0.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;I'm pleased to announce that over the weekend, I updated &lt;a class="reference external" href="http://interactivepython.org"&gt;interactivepython.org&lt;/a&gt; to version 3.0.  This release completes another summer of hacking, and integrating contributions from colleagues around the world.&lt;/p&gt;
 &lt;p&gt;My plan in this post is to briefly summarize some of the highlights of the new release and then follow up over the course of this week with posts and screencasts about specific features.&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;strong&gt;Progress tracking, and cohorts.&lt;/strong&gt;  This is one of the major visual changes to the books, thanks to some great work by &lt;a class="reference external" href="http://www.ivipul.com"&gt;Vipul Thackur&lt;/a&gt;.  The "chapters" have been broken up into subchapters and you can now track your progress through each chapter/sub-chapter on the table of contents.  In addition, there is now the facility to create a study group and to negotiate reading deadlines and have discussions with members of your own cohort.&lt;/li&gt;
@@ -187,45 +201,4 @@ plt.show()
 &lt;/pre&gt;</description><category>Interactivepython</category><category>Python</category><category>Runestoneinteractive</category><guid>http://reputablejournal.com/posts/2013/02/we-passed-3-million-entries-in-our-log-data-for-interactivepython-org-which-got-.html</guid><pubDate>Sun, 17 Feb 2013 00:00:00 GMT</pubDate></item><item><title>Everyday Python - New Blog</title><link>http://reputablejournal.com/posts/2013/01/everyday-python-new-blog.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;I've decided that it will be best to keep my personal blog separate from the new Everyday Python blog project.  All of the infrastructure to make the posts interactive just work so much better when I have control of the server and everything else.  So  You can head over to &lt;a href="http://interactivepython.org/courselib/everyday"&gt;Everyday Python&lt;/a&gt; and click on the Everyday Python link there, or if you want to subscribe to the RSS feed for that project you can use &lt;a href="http://feeds.feedburner.com/everydaypython"&gt;this link&lt;/a&gt;.
 &lt;/p&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/everyday-python-new-blog.html</guid><pubDate>Sun, 13 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Generating a password - part 1</title><link>http://reputablejournal.com/posts/2013/01/generating-a-password-part-1.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;OK, here is the first installment of the new Everyday Python series.  Today I'm just providing a link, as I still have some infrastructure work to get done in order to publish each installment both here and at Runestone Interactive.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://interactivepython.org/courselib/static/everyday/2013/01/2_password.html"&gt;Generating a password part 1&lt;/a&gt;&lt;/p&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/generating-a-password-part-1.html</guid><pubDate>Thu, 03 Jan 2013 00:00:00 GMT</pubDate></item><item><title>Introducing Everyday Python</title><link>http://reputablejournal.com/posts/2013/01/introducing-everyday-python.html</link><dc:creator>Brad Miller</dc:creator><description>&lt;p&gt;&lt;/p&gt;&lt;div class="section" id="everyday-python"&gt;
-&lt;h2&gt;Everyday Python&lt;a class="headerlink" href="http://reputablejournal.com/posts/2013/01/introducing-everyday-python.html#everyday-python" title="Permalink to this headline"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;It is always risky to make your New Years resolutions public, but this is one I’ve
-been thinking about for a while now, and so I’m going to go ahead and impose a
-measure of accountability on myself by proclaiming this publicly.  This week, I’m
-starting a series of educational blog posts here, and as a part of my &lt;a class="reference external" href="http://interactivepython.org"&gt;Runestone
-Interactive&lt;/a&gt; publishing project.&lt;/p&gt;
-&lt;p&gt;My idea is to publish a series of Python programming projects, aimed at solving
-everyday problems, or puzzles. Hopefully these little projects will be interesting
-and will give learners motivation to dig into the details of the solutions.  I
-will provide links to the relevant Python programming constructs and data types in
-either of the two interactive books (&lt;a class="reference external" href="http://interactivepython.org/courselib/static/thinkcspy/index.html"&gt;How to think like a computer scientist:
-Interactive Edition&lt;/a&gt; , or
-&lt;a class="reference external" href="http://interactivepython.org/courselib/static/pythonds/index.html"&gt;Problem Solving with Algorithms and Data Structures using Python&lt;/a&gt;) This will let me
-focus on the problems, and not the minutia of the language.  Lets face it, reading
-about all the different possible string methods is not that exciting, but seeing
-them in action, and then wondering about what else you might be able to do with
-strings is OK.&lt;/p&gt;
-&lt;p&gt;The great thing about Python is that if you write things in a straightforward
-manner its pretty easy to follow even if you don’t know all the details.  So, that
-is my intention.  Write a solution and do it in straightforward Python that
-beginners can understand.  Each project will appear over several days, and
-will likely include some homework related to the project.  I’ll provide the solution
-in a followup post.  In addition, I may refine the solution over the course of
-several days introducing more and interesting solutions or more advanced features
-of the Python language.&lt;/p&gt;
-&lt;p&gt;In the back of my mind I am drawing inspiration from the old &lt;em&gt;Communications of the ACM&lt;/em&gt; column by John
-Bently called &lt;em&gt;Programming Pearls&lt;/em&gt; In John’s columns he would feature a particular
-problem or algorithm, and present it in a straight forward way, but then he would
-refine that solution again and again polishing it until he had an incredibly
-elegant solution.  It was beautiful because even a novice programmer could
-understand what was going on at the start of the article, but would get sucked in
-to the beautiful solution and would learn more than they thought possible.  While
-advanced programmers might chuckle at the initial solutions, even they would have
-to admit that they learned something by the end of each column.&lt;/p&gt;
-&lt;p&gt;I already have a few ideas in mind for the first few projects.  I’m going to try
-to start fairly easy with some string and list kind of projects, and work my way up
-to more complex problems and algorithms, again this is meant to be educational so
-that in theory a beginner might read through these posts more or less
-chronologically, and learn some computer science along the way.&lt;/p&gt;
-&lt;p&gt;Click the title to leave a comment.&lt;/p&gt;
-&lt;/div&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/introducing-everyday-python.html</guid><pubDate>Wed, 02 Jan 2013 00:00:00 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://interactivepython.org/courselib/static/everyday/2013/01/2_password.html"&gt;Generating a password part 1&lt;/a&gt;&lt;/p&gt;</description><category>Python</category><guid>http://reputablejournal.com/posts/2013/01/generating-a-password-part-1.html</guid><pubDate>Thu, 03 Jan 2013 00:00:00 GMT</pubDate></item></channel></rss>
