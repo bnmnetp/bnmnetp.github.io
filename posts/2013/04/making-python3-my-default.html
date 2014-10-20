@@ -73,6 +73,18 @@ article: http://ogp.me/ns/article#
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://reputablejournal.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -107,7 +119,8 @@ article: http://ogp.me/ns/article#
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p>I'm finally there.  After a long time of writing books using Python 3, and teaching in Python 3 on a daily basis, I'm finally at the point where I'm changing my work environment to use Python 3 by default.</p>
+    <div>
+<p>I'm finally there.  After a long time of writing books using Python 3, and teaching in Python 3 on a daily basis, I'm finally at the point where I'm changing my work environment to use Python 3 by default.</p>
 
 <p>Here are the signs that convinced me it was time:</p>
 
@@ -153,6 +166,7 @@ article: http://ogp.me/ns/article#
 <pre>export PATH=/Library/Frameworks/Python.framework/Versions/3.3/bin:$PATH</pre>
 
 <p>Easy!  You were expecting this to be a long and arduous process fraught with hacks and silly edits to config files.  Nope, just a few basic commands.  I take this as the final sign that Python 3 is here and ready to be your day to day Python.</p>
+</div>
     </div>
     <aside class="postpromonav">
     <nav>

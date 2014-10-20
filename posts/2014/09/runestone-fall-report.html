@@ -73,6 +73,18 @@ article: http://ogp.me/ns/article#
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://reputablejournal.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -107,7 +119,8 @@ article: http://ogp.me/ns/article#
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p>School is underway again, and now that we are a few weeks in to the semester I wanted to take a minute to talk about growth.  Last year about this time things were still pretty chaotic, with the unexpected success of the books the servers were laboring intensely to keep up with all of the new users.   This necessitated a weekend switch to a larger server.</p>
+    <div>
+<p>School is underway again, and now that we are a few weeks in to the semester I wanted to take a minute to talk about growth.  Last year about this time things were still pretty chaotic, with the unexpected success of the books the servers were laboring intensely to keep up with all of the new users.   This necessitated a weekend switch to a larger server.</p>
 <div class="section" id="growth">
 <h2>Growth</h2>
 <p>This year, Google Analytics is showing that our daily traffic has doubled from last fall!  Here's a comparison to a year ago, adjusting for the days of the week to be the same.  Its amazing how consistent the weekly pattern is.</p>
@@ -121,6 +134,7 @@ article: http://ogp.me/ns/article#
 <li>Everytime the student runs a program, I run Pylint on it in the background.  Pylint catches all sorts of "errors" that do not show up as Python runtime errors.  One big one is forgetting parentheses.  I've seen this so many times:  <tt class="docutils literal">myTurtle.forward</tt> this is not a runtime error because Python evaluates the statement to simply be a reference to a function.  But the student can't see it.  "Dr. Miller, I don't get any errors, but my turtle isn't doing anything, what am I doing wrong?"  Pylint flags this for the useless statement that it is.</li>
 </ol>
 <p>I'm really looking forward to applying much more advanced analysis to the code in order to provide better coaching.</p>
+</div>
 </div>
     </div>
     <aside class="postpromonav">

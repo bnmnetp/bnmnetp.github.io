@@ -73,6 +73,18 @@ article: http://ogp.me/ns/article#
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://reputablejournal.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -107,14 +119,19 @@ article: http://ogp.me/ns/article#
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p>The documentation included with the Python RTM API is a bit sparse, so here is a really simple example of a script that allows you to add tasks to your Remember the Milk inbox from the command line. I actually integrated this script with LaunchBar for an even nicer experience.<br><br></p>
+    <div>
+<p>The documentation included with the Python RTM API is a bit sparse, so here is a really simple example of a script that allows you to add tasks to your Remember the Milk inbox from the command line. I actually integrated this script with LaunchBar for an even nicer experience.<br><br></p>
 <pre>#!/usr/bin/env python<br>from rtm import <em><br>import sys<br>apiKey = "get your own"<br>secret = "this too"<br>token = "you'll create this with apiKey and secret"<br><br>newTask = " ".join(sys.argv[1:])<br>rtm = createRTM(apiKey, secret, token)<br>tl = rtm.timelines.create()<br>rsp = rtm.tasks.add(timeline=tl.timeline,name=newTask,parse=1)<br></em></pre>
 <br><br>There now that is really very easy.<br><br>To Add this to LaunchBar create a new search template. Name it something simple like TD and add this to the details section: <br><br>x-launchbar:execute?path=/Your/path/here/addinbox.py&amp;arguments=""<br><br>Cool! Now I can bring up LaunchBar, type TD to bring up my search template.  Hit the spacebar to get a text entry box and then type in my todo item. Hit return and the above script is run to instantly add your new task to your inbox.   You'll notice that the call to rtm.tasks.add has a parameter parse=1 This parameter tells RTM to parse due date information out of the string you give it.<br><br>Of course you could build on the above script to create your own little syntax to specify the list you wanted to add the task to, or for adding tags etc.  But this is really simple to get started.<div class="blogger-post-footer"><img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/2759017781463016019-4846940317834581701?l=blog.bonelakesoftware.com" alt=""></div>
+</div>
     </div>
     <aside class="postpromonav">
     <nav>
     
             <ul class="pager">
+            <li class="previous">
+                <a href="../../2007/06/A-Long-Long-Day.html" rel="prev" title="A Long Long Day">Previous post</a>
+            </li>
             <li class="next">
                 <a href="creating-a-group-twitter-repository.html" rel="next" title="Creating a Group Twitter Repository">Next post</a>
             </li>

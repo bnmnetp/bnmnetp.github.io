@@ -73,6 +73,18 @@ article: http://ogp.me/ns/article#
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://reputablejournal.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -107,7 +119,8 @@ article: http://ogp.me/ns/article#
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p>During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been very happy.  Nothing like hacker level control of your own blog.  But more, than just the switch in tools, the move to Octopress inspired me to make it easier for people to publish small or large works using the Runestone tools.</p>
+    <div>
+<p>During my January travels, I also converted this blog from tubmlr, which had been frustrating me for a while, to Octopress, with which I have been very happy.  Nothing like hacker level control of your own blog.  But more, than just the switch in tools, the move to Octopress inspired me to make it easier for people to publish small or large works using the Runestone tools.</p>
 <p>Yesterday, at the Learning @ Scale conference we demoed this new capability.  See <a href="http://runestoneinteractive.org/LearningAtScal">the demo here</a>.  To make it super easy to publish:</p>
 <ul>
 <li>Lecture slides</li>
@@ -141,6 +154,7 @@ If you want to host these pages behind a custom domain name, you can follow the 
 <p>I hope this new capability will inspire lots of people to give these tools a try.  I also hope that we can build a repository of resources built with the tools, so that we can all share our teaching ideas.  Stay tuned for more on that.</p>
 <h4>Caveats</h4>
 <p>All of the features, activecode, codelens, assessment questions, parson's problems, <a href="http://interactivepython.org/overview/overview.html">and more</a> work just fine.  The major thing that will not work (yet!) is the login/logout.  I need to rework our authentication system in order for this to work.  This will for sure need to happen before the end of summer.</p>
+</div>
     </div>
     <aside class="postpromonav">
     <nav>

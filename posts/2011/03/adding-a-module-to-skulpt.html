@@ -73,6 +73,18 @@ article: http://ogp.me/ns/article#
                 
             </li>
 </ul>
+                
+<!-- Custom search -->
+<form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://reputablejournal.com/">
+<input type="hidden" name="k8" value="#444444">
+<input type="hidden" name="k9" value="#D51920">
+<input type="hidden" name="kt" value="h">
+<input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;">
+<input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+<!-- End of custom search -->
+
 
             <ul class="nav navbar-nav navbar-right">
                 
@@ -107,7 +119,8 @@ article: http://ogp.me/ns/article#
     </header>
 
     <div class="e-content entry-content" itemprop="articleBody text">
-    <p>Now that I'm back from traveling in South America I've started on a project to add a turtle graphics module to skulpt.  Skulpt is a javascript implementation of Python written by Scott Graham, and is available on skulpt.googlecode.com.  Its a very nice project because it allows you to embed a Python interpreter right in your web page.  I've written about how to do this <a href="http://blog.bonelakesoftware.com/2011/02/python-in-your-browser-in-javascript.html">in a previous post.</a><br>The skulpt interpreter works like a charm, but it does not yet have any of the Python standard library modules implemented.  Scott has been working with wrapping some of Googles closure libraries, and has a webgl module too.  But none of your regular Python friends are available, things like math, random, turtle, etc need to be implemented.  For the most part these things are already available in javascript so the work is in creating the module and then wrapping the underlying Javascript inside the standard Python API.<br>Where to start?  There's not a lot of documentation provided for skulpt, so I'm hoping this post will be enough to help others get going a bit quicker.  Scott was very helpful in responding to all my emails so this is not a criticism of him, rather I'm hoping this will save him the effort the next time someone wants to extend skulpt.  So, here's the deal.  skulpt relies on two javascript files the first is skulpt.js  and builtin.js  A very minimal installation only uses skulpt.js, whereas if you want to use any modules they are in builtin.js.  Looking around the distribution you will not immediately find skulpt.js because you need to build it. You get a sculpt.js file by using the m script that comes with the distribution.  running m --help will give you the full list of commands, but the two that you probably most care about are <span style="text-decoration: underline;">m dist</span> and <span style="text-decoration: underline;">m docbi</span> The dist command builds both skulpt.js and builtin.js  docbi builds builtin.js and puts a new copy of it in the doc/static directory.<br>Lets begin with a quick tour of the source tree:<br></p>
+    <div>
+<p>Now that I'm back from traveling in South America I've started on a project to add a turtle graphics module to skulpt.  Skulpt is a javascript implementation of Python written by Scott Graham, and is available on skulpt.googlecode.com.  Its a very nice project because it allows you to embed a Python interpreter right in your web page.  I've written about how to do this <a href="http://blog.bonelakesoftware.com/2011/02/python-in-your-browser-in-javascript.html">in a previous post.</a><br>The skulpt interpreter works like a charm, but it does not yet have any of the Python standard library modules implemented.  Scott has been working with wrapping some of Googles closure libraries, and has a webgl module too.  But none of your regular Python friends are available, things like math, random, turtle, etc need to be implemented.  For the most part these things are already available in javascript so the work is in creating the module and then wrapping the underlying Javascript inside the standard Python API.<br>Where to start?  There's not a lot of documentation provided for skulpt, so I'm hoping this post will be enough to help others get going a bit quicker.  Scott was very helpful in responding to all my emails so this is not a criticism of him, rather I'm hoping this will save him the effort the next time someone wants to extend skulpt.  So, here's the deal.  skulpt relies on two javascript files the first is skulpt.js  and builtin.js  A very minimal installation only uses skulpt.js, whereas if you want to use any modules they are in builtin.js.  Looking around the distribution you will not immediately find skulpt.js because you need to build it. You get a sculpt.js file by using the m script that comes with the distribution.  running m --help will give you the full list of commands, but the two that you probably most care about are <span style="text-decoration: underline;">m dist</span> and <span style="text-decoration: underline;">m docbi</span> The dist command builds both skulpt.js and builtin.js  docbi builds builtin.js and puts a new copy of it in the doc/static directory.<br>Lets begin with a quick tour of the source tree:<br></p>
 <ul>
 <li>
 <strong>src</strong> - contains the implementation of the Python interpreter</li>
@@ -132,6 +145,7 @@ article: http://ogp.me/ns/article#
 <pre>print x.pop()</pre>
 <pre>print 'done'</pre>
 <br>Its not obvious, but the buildClass method takes four parameters:  globals, func, name, bases<br>It seems that you always pass the mod object itself as the globals parameter, the func parameter is a function that represents the class object, the Name is the external name of the class, and bases presumably would be if the class is inheriting from another class.<br>The Sk.builtin.func method creates a function.  For module creation we typically only have to worry about the one parameter, func, which is the javascript implementation of our Python function.  The method can also take a globals object and two closure objects.  Look at the comments in function.js if you want more explanation of how the builtin.func method works.<br>Well, I think this should be enough to get you going.  Its worth repeating, if you made it this far, don't forget to call m docbi or m dist after you make changes in your module, its easy to get into the mode of thinking that the new javascript is automatically loaded.  But builtin.js is not automatically rebuilt!<br>I'll consider this post a work in progress, please leave a comment if something is unclear or you would like something explained in more detail.<br><div class="blogger-post-footer"><img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/2759017781463016019-6096495771804140916?l=blog.bonelakesoftware.com" alt=""></div>
+</div>
     </div>
     <aside class="postpromonav">
     <nav>
