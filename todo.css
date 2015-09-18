@@ -39,3 +39,9 @@ section {
     width: 300px;
     overflow: auto;	
 }
+
+
+
+section.medium {
+   display: none;	
+}
