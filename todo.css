@@ -37,11 +37,9 @@ section {
     border: 5px solid black;
     height: 200px;
     width: 300px;
-    overflow: auto;	
+    overflow: auto;
+    float: left;
 }
 
 
 
-section.medium {
-   visibility: hidden;	
-}
