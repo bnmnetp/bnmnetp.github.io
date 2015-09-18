@@ -11,12 +11,12 @@
 }
 
 .done {
-	background-color: black
+	background-color: black;
+	text-decoration: line-through;
 }
 
 .done li {
 	color: cyan;
-	text-decoration: line-through;
 }
 
 .medium {
