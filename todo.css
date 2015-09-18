@@ -43,5 +43,5 @@ section {
 
 
 section.medium {
-   display: none;	
+   visibility: hidden;	
 }
