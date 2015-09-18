@@ -1,16 +1,33 @@
 .high {
-    color: red;
-    }
+	background-color: red;
+}
   
 .medium {
-    color: orange;
-    }
+	background-color: orange;
+}
 
 .low {
-    color: #666666;
-    }
+	background-color: #666666;
+}
 
 .done {
-    color: #aaaaaa;
-    text-decoration: line-through;
-    }
+	background-color: black
+}
+
+.done li {
+	color: cyan;
+}
+
+.medium {
+	color: brown;
+}
+	
+.high li {
+	color: white;
+}
+	
+h2 {
+	color: white;
+	text-align: center;
+		
+}
